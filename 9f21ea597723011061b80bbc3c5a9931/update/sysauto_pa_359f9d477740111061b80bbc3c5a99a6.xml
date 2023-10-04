@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysauto_pa">
+    <sysauto_pa action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <benchmarking>false</benchmarking>
+        <business_calendar/>
+        <collect>scores</collect>
+        <condition/>
+        <conditional>false</conditional>
+        <description>[CIO Dashboard] - Metrics Data collection - Historic - For Monthly frequency</description>
+        <entered_time/>
+        <kill_job>false</kill_job>
+        <max_drift/>
+        <name>[CIO Dashboard] - Metrics Data collection - Historic - Monthly</name>
+        <offset/>
+        <offset_type/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz>US/Pacific</run_as_tz>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2022-06-17 06:33:38</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>on_demand</run_type>
+        <score_fixed_end>00000000</score_fixed_end>
+        <score_fixed_start>00000000</score_fixed_start>
+        <score_operator>relative</score_operator>
+        <score_relative_end>1</score_relative_end>
+        <score_relative_end_interval>months</score_relative_end_interval>
+        <score_relative_start>2</score_relative_start>
+        <score_relative_start_interval>months</score_relative_start_interval>
+        <sys_class_name>sysauto_pa</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 06:33:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>359f9d477740111061b80bbc3c5a99a6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>[CIO Dashboard] - Metrics Data collection - Historic - Monthly</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sysauto_pa_359f9d477740111061b80bbc3c5a99a6</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-09-21 09:25:38</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_pa>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18afa861f300000001</claim_timestamp>
+        <metadata_update_name>sysauto_pa_359f9d477740111061b80bbc3c5a99a6</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-10-04 11:50:08</sys_created_on>
+        <sys_id>ab99eb2b1b217590d9e4a755bd4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-10-04 11:50:08</sys_updated_on>
+    </sys_claim>
+</record_update>
