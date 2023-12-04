@@ -7412,7 +7412,7 @@
           }
         }, {
           "elementId" : "single_score_14",
-          "elementLabel" : "Vertical bar",
+          "elementLabel" : "Line",
           "propertyValues" : {
             "yAxisStyle" : {
               "type" : "JSON_LITERAL",
@@ -7422,41 +7422,13 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "yAxisShowGrid" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "showFilterIcon" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "yAxisPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "bottom"
-            },
             "dateFormat" : {
               "type" : "JSON_LITERAL",
               "value" : "default"
             },
-            "showMaximumRange" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "emptyStateAlignment" : {
-              "type" : "JSON_LITERAL",
-              "value" : "vertical-centered"
-            },
-            "showLegend" : {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            },
-            "showOverlappingLabels" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
             "scoreType" : {
               "type" : "JSON_LITERAL",
-              "value" : "latest"
+              "value" : null
             },
             "showFirstGroupAggregate" : {
               "type" : "JSON_LITERAL",
@@ -7474,13 +7446,13 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "legendHorizontalAlignment" : {
-              "type" : "JSON_LITERAL",
-              "value" : "center"
-            },
-            "yAxisFrom" : {
+            "yAxis0Title" : {
               "type" : "JSON_LITERAL",
               "value" : null
+            },
+            "disableTooltip" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
             },
             "sortBy" : {
               "type" : "JSON_LITERAL",
@@ -7490,13 +7462,7 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "dataSources" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "tab3verticalCSupportingMetric1", "0", "datasources" ]
-              }
-            },
-            "yAxisTitle" : {
+            "yAxis1From" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -7504,17 +7470,9 @@
               "type" : "JSON_LITERAL",
               "value" : "M"
             },
-            "showChange" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "configVersion" : {
               "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "legendExpandToFit" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : "23.0.0-ci-SNAPSHOT"
             },
             "showSubAggregate" : {
               "type" : "JSON_LITERAL",
@@ -7522,19 +7480,11 @@
             },
             "chartVariation" : {
               "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "dataLabelPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "middle"
+              "value" : "stacked"
             },
             "legendMaxItemWidth" : {
               "type" : "JSON_LITERAL",
               "value" : null
-            },
-            "showSecondGroupAggregate" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
             },
             "showMetricLabel" : {
               "type" : "JSON_LITERAL",
@@ -7544,17 +7494,25 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "showSparkline" : {
+            "yAxis1To" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
-            "showTarget" : {
+            "extensionType" : {
+              "type" : "JSON_LITERAL",
+              "value" : "line"
+            },
+            "showSparkline" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
             "showDataLabels" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "yAxis3Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
             },
             "telemetry" : {
               "type" : "JSON_LITERAL",
@@ -7566,11 +7524,11 @@
                 "address" : [ "tab3verticalCSupportingMetric1", "0", "metrics" ]
               }
             },
-            "showChangeFrom" : {
+            "yAxis3From" : {
               "type" : "JSON_LITERAL",
-              "value" : "previous"
+              "value" : null
             },
-            "chartSize" : {
+            "yAxis2Title" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -7582,17 +7540,13 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "formats" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "sortByOrder" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "enableCustomEmptyState" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "showYGrid" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
             },
             "showThreshold" : {
               "type" : "JSON_LITERAL",
@@ -7602,57 +7556,25 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "hideMatrixAggregate" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "description" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "trendBy" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalCSupportingMetric1", "0", "trendBy" ]
+              }
             },
             "numberOfPeriods" : {
               "type" : "JSON_LITERAL",
               "value" : 3
             },
             "groupBy" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "tab3verticalCSupportingMetric1", "0", "groupBy" ]
-              }
-            },
-            "title" : {
               "type" : "JSON_LITERAL",
               "value" : null
-            },
-            "xAxisTruncationType" : {
-              "type" : "JSON_LITERAL",
-              "value" : "end"
             },
             "showTrend" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "showStackedValues" : {
-              "type" : "JSON_LITERAL",
-              "value" : "none"
-            },
-            "enableRealTimeUpdate" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "showForecastRange" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "showAbsolutePeriod" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "dataCategory" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -7668,27 +7590,7 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "showChangePercentage" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "yAxisTo" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "xAxisWrapLabels" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "showHeader" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
             "bareBorder" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "yAxisHidden" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
@@ -7704,27 +7606,22 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "refreshFrequency" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "wrapTitle" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "showBorder" : {
+            "yAxis3Title" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
-            "showLegendValue" : {
+            "yAxis4To" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
             "colorConfig" : {
               "type" : "JSON_LITERAL",
               "value" : {
-                "palette" : "0c6509717767011061b80bbc3c5a99b5",
-                "type" : "palette"
+                "type" : "default"
               }
             },
             "filterConfigurations" : {
@@ -7737,7 +7634,7 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "backgroundRefreshInterval" : {
+            "yAxis0To" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -7745,25 +7642,9 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "emptyStateContent" : {
-              "type" : "JSON_LITERAL",
-              "value" : "There are no scores available for the selected criteria. Contact your admin for more info."
-            },
-            "xAxisMaxLabelSize" : {
-              "type" : "JSON_LITERAL",
-              "value" : 100
-            },
             "newReporting" : {
               "type" : "JSON_LITERAL",
               "value" : false
-            },
-            "emptyStateIllustration" : {
-              "type" : "JSON_LITERAL",
-              "value" : "no-data"
-            },
-            "legendPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "bottom"
             },
             "endTime" : {
               "type" : "JSON_LITERAL",
@@ -7772,12 +7653,202 @@
             "enableDrilldown" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "yAxis4Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "showFilterIcon" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showMaximumRange" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyStateAlignment" : {
+              "type" : "JSON_LITERAL",
+              "value" : "vertical-centered"
+            },
+            "showLegend" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "yAxis0Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "left"
+            },
+            "yAxis0From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "legendHorizontalAlignment" : {
+              "type" : "JSON_LITERAL",
+              "value" : "center"
+            },
+            "yAxis4Title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "dataSources" : {
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalCSupportingMetric1", "0", "datasources" ]
+              }
+            },
+            "showChange" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "legendExpandToFit" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis1Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "showSecondGroupAggregate" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis3To" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "yAxis2From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showTarget" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showChangeFrom" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "chartSize" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideYAxis4" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "formats" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "sortByOrder" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideYAxis1" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis0" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis3" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis2" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis4From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideMatrixAggregate" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "description" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "enableRealTimeUpdate" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showAbsolutePeriod" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "dataCategory" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showChangePercentage" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "lineStrokeWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "2"
+            },
+            "showHeader" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis1Title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "refreshFrequency" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showBorder" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showLegendValue" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "backgroundRefreshInterval" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "yAxis2Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "yAxis2To" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showXGrid" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyStateContent" : {
+              "type" : "JSON_LITERAL",
+              "value" : "There are no scores available for the selected criteria. Contact your admin for more info."
+            },
+            "emptyStateIllustration" : {
+              "type" : "JSON_LITERAL",
+              "value" : "no-data"
+            },
+            "legendPosition" : {
+              "type" : "JSON_LITERAL",
+              "value" : "bottom"
             }
           },
           "eventMappings" : [ ],
           "slot" : "Main",
           "definition" : {
-            "id" : "23051643b7e03010097cb81cde11a910",
+            "id" : "18ac962264404bcc0039359d184b15f3",
             "type" : "MACROPONENT"
           },
           "overrides" : null,
@@ -7896,7 +7967,7 @@
             },
             "configVersion" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : "23.0.0-ci-SNAPSHOT"
             },
             "showSubAggregate" : {
               "type" : "JSON_LITERAL",
@@ -8153,7 +8224,7 @@
             },
             "showChangeFrom" : {
               "type" : "JSON_LITERAL",
-              "value" : "previous"
+              "value" : null
             },
             "chartSize" : {
               "type" : "JSON_LITERAL",
@@ -8233,7 +8304,7 @@
             },
             "refreshFrequency" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : false
             },
             "showBorder" : {
               "type" : "JSON_LITERAL",
@@ -9536,7 +9607,7 @@
           }
         }, {
           "elementId" : "single_score_16",
-          "elementLabel" : "Vertical bar",
+          "elementLabel" : "Line",
           "propertyValues" : {
             "yAxisStyle" : {
               "type" : "JSON_LITERAL",
@@ -9546,41 +9617,13 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "yAxisShowGrid" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "showFilterIcon" : {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            },
-            "yAxisPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "bottom"
-            },
             "dateFormat" : {
               "type" : "JSON_LITERAL",
               "value" : "default"
             },
-            "showMaximumRange" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "emptyStateAlignment" : {
-              "type" : "JSON_LITERAL",
-              "value" : "vertical-centered"
-            },
-            "showLegend" : {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            },
-            "showOverlappingLabels" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
             "scoreType" : {
               "type" : "JSON_LITERAL",
-              "value" : "latest"
+              "value" : null
             },
             "showFirstGroupAggregate" : {
               "type" : "JSON_LITERAL",
@@ -9598,13 +9641,13 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "legendHorizontalAlignment" : {
-              "type" : "JSON_LITERAL",
-              "value" : "center"
-            },
-            "yAxisFrom" : {
+            "yAxis0Title" : {
               "type" : "JSON_LITERAL",
               "value" : null
+            },
+            "disableTooltip" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
             },
             "sortBy" : {
               "type" : "JSON_LITERAL",
@@ -9614,13 +9657,7 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "dataSources" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "tab3verticalDSupportingMetric1", "0", "datasources" ]
-              }
-            },
-            "yAxisTitle" : {
+            "yAxis1From" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -9628,17 +9665,9 @@
               "type" : "JSON_LITERAL",
               "value" : "M"
             },
-            "showChange" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "configVersion" : {
               "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "legendExpandToFit" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : "23.0.0-ci-SNAPSHOT"
             },
             "showSubAggregate" : {
               "type" : "JSON_LITERAL",
@@ -9646,19 +9675,11 @@
             },
             "chartVariation" : {
               "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "dataLabelPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "middle"
+              "value" : "stacked"
             },
             "legendMaxItemWidth" : {
               "type" : "JSON_LITERAL",
               "value" : null
-            },
-            "showSecondGroupAggregate" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
             },
             "showMetricLabel" : {
               "type" : "JSON_LITERAL",
@@ -9668,17 +9689,25 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "showSparkline" : {
+            "yAxis1To" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
-            "showTarget" : {
+            "extensionType" : {
+              "type" : "JSON_LITERAL",
+              "value" : "line"
+            },
+            "showSparkline" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
             "showDataLabels" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "yAxis3Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
             },
             "telemetry" : {
               "type" : "JSON_LITERAL",
@@ -9690,11 +9719,11 @@
                 "address" : [ "tab3verticalDSupportingMetric1", "0", "metrics" ]
               }
             },
-            "showChangeFrom" : {
+            "yAxis3From" : {
               "type" : "JSON_LITERAL",
-              "value" : "previous"
+              "value" : null
             },
-            "chartSize" : {
+            "yAxis2Title" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -9704,19 +9733,15 @@
             },
             "applyDateRange" : {
               "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "formats" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "sortByOrder" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : true
             },
             "enableCustomEmptyState" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "showYGrid" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
             },
             "showThreshold" : {
               "type" : "JSON_LITERAL",
@@ -9726,57 +9751,25 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "hideMatrixAggregate" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "description" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "trendBy" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalDSupportingMetric1", "0", "trendBy" ]
+              }
             },
             "numberOfPeriods" : {
               "type" : "JSON_LITERAL",
               "value" : 3
             },
             "groupBy" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "tab3verticalDSupportingMetric1", "0", "groupBy" ]
-              }
-            },
-            "title" : {
               "type" : "JSON_LITERAL",
               "value" : null
-            },
-            "xAxisTruncationType" : {
-              "type" : "JSON_LITERAL",
-              "value" : "end"
             },
             "showTrend" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "showStackedValues" : {
-              "type" : "JSON_LITERAL",
-              "value" : "none"
-            },
-            "enableRealTimeUpdate" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "showForecastRange" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "showAbsolutePeriod" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "dataCategory" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -9786,33 +9779,13 @@
             },
             "startTime" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : "2023-01-04T11:16:12.000Z"
             },
             "showTotalAggregate" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "showChangePercentage" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "yAxisTo" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "xAxisWrapLabels" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "showHeader" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
             "bareBorder" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "yAxisHidden" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
@@ -9828,27 +9801,22 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "refreshFrequency" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "wrapTitle" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "showBorder" : {
+            "yAxis3Title" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
-            "showLegendValue" : {
+            "yAxis4To" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
             "colorConfig" : {
               "type" : "JSON_LITERAL",
               "value" : {
-                "palette" : "0c6509717767011061b80bbc3c5a99b5",
-                "type" : "palette"
+                "type" : "default"
               }
             },
             "filterConfigurations" : {
@@ -9861,7 +9829,7 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "backgroundRefreshInterval" : {
+            "yAxis0To" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -9869,25 +9837,9 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "emptyStateContent" : {
-              "type" : "JSON_LITERAL",
-              "value" : "There are no scores available for the selected criteria. Contact your admin for more info."
-            },
-            "xAxisMaxLabelSize" : {
-              "type" : "JSON_LITERAL",
-              "value" : 100
-            },
             "newReporting" : {
               "type" : "JSON_LITERAL",
               "value" : false
-            },
-            "emptyStateIllustration" : {
-              "type" : "JSON_LITERAL",
-              "value" : "no-data"
-            },
-            "legendPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "bottom"
             },
             "endTime" : {
               "type" : "JSON_LITERAL",
@@ -9896,12 +9848,202 @@
             "enableDrilldown" : {
               "type" : "JSON_LITERAL",
               "value" : true
+            },
+            "yAxis4Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "showFilterIcon" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "showMaximumRange" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyStateAlignment" : {
+              "type" : "JSON_LITERAL",
+              "value" : "vertical-centered"
+            },
+            "showLegend" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "yAxis0Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "left"
+            },
+            "yAxis0From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "legendHorizontalAlignment" : {
+              "type" : "JSON_LITERAL",
+              "value" : "center"
+            },
+            "yAxis4Title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "dataSources" : {
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalDSupportingMetric1", "0", "datasources" ]
+              }
+            },
+            "showChange" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "legendExpandToFit" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis1Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "showSecondGroupAggregate" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis3To" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "yAxis2From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showTarget" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showChangeFrom" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "chartSize" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideYAxis4" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "formats" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "sortByOrder" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideYAxis1" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis0" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis3" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis2" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis4From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideMatrixAggregate" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "description" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "enableRealTimeUpdate" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showAbsolutePeriod" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "dataCategory" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showChangePercentage" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "lineStrokeWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "2"
+            },
+            "showHeader" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis1Title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "refreshFrequency" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showBorder" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showLegendValue" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "backgroundRefreshInterval" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "yAxis2Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "yAxis2To" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showXGrid" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyStateContent" : {
+              "type" : "JSON_LITERAL",
+              "value" : "There are no scores available for the selected criteria. Contact your admin for more info."
+            },
+            "emptyStateIllustration" : {
+              "type" : "JSON_LITERAL",
+              "value" : "no-data"
+            },
+            "legendPosition" : {
+              "type" : "JSON_LITERAL",
+              "value" : "bottom"
             }
           },
           "eventMappings" : [ ],
           "slot" : "Main",
           "definition" : {
-            "id" : "23051643b7e03010097cb81cde11a910",
+            "id" : "18ac962264404bcc0039359d184b15f3",
             "type" : "MACROPONENT"
           },
           "overrides" : null,
@@ -9960,7 +10102,7 @@
           }
         }, {
           "elementId" : "single_score_17",
-          "elementLabel" : "Vertical bar",
+          "elementLabel" : "Line",
           "propertyValues" : {
             "yAxisStyle" : {
               "type" : "JSON_LITERAL",
@@ -9970,41 +10112,13 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "yAxisShowGrid" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "showFilterIcon" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "yAxisPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "bottom"
-            },
             "dateFormat" : {
               "type" : "JSON_LITERAL",
               "value" : "default"
             },
-            "showMaximumRange" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "emptyStateAlignment" : {
-              "type" : "JSON_LITERAL",
-              "value" : "vertical-centered"
-            },
-            "showLegend" : {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            },
-            "showOverlappingLabels" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
             "scoreType" : {
               "type" : "JSON_LITERAL",
-              "value" : "latest"
+              "value" : null
             },
             "showFirstGroupAggregate" : {
               "type" : "JSON_LITERAL",
@@ -10022,13 +10136,13 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "legendHorizontalAlignment" : {
-              "type" : "JSON_LITERAL",
-              "value" : "center"
-            },
-            "yAxisFrom" : {
+            "yAxis0Title" : {
               "type" : "JSON_LITERAL",
               "value" : null
+            },
+            "disableTooltip" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
             },
             "sortBy" : {
               "type" : "JSON_LITERAL",
@@ -10038,13 +10152,7 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "dataSources" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "tab3verticalDSupportingMetric2", "0", "datasources" ]
-              }
-            },
-            "yAxisTitle" : {
+            "yAxis1From" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -10052,17 +10160,9 @@
               "type" : "JSON_LITERAL",
               "value" : "M"
             },
-            "showChange" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "configVersion" : {
               "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "legendExpandToFit" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : "23.0.0-ci-SNAPSHOT"
             },
             "showSubAggregate" : {
               "type" : "JSON_LITERAL",
@@ -10070,19 +10170,11 @@
             },
             "chartVariation" : {
               "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "dataLabelPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "middle"
+              "value" : "stacked"
             },
             "legendMaxItemWidth" : {
               "type" : "JSON_LITERAL",
               "value" : null
-            },
-            "showSecondGroupAggregate" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
             },
             "showMetricLabel" : {
               "type" : "JSON_LITERAL",
@@ -10092,17 +10184,25 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "showSparkline" : {
+            "yAxis1To" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
-            "showTarget" : {
+            "extensionType" : {
+              "type" : "JSON_LITERAL",
+              "value" : "line"
+            },
+            "showSparkline" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
             "showDataLabels" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "yAxis3Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
             },
             "telemetry" : {
               "type" : "JSON_LITERAL",
@@ -10114,11 +10214,11 @@
                 "address" : [ "tab3verticalDSupportingMetric2", "0", "metrics" ]
               }
             },
-            "showChangeFrom" : {
+            "yAxis3From" : {
               "type" : "JSON_LITERAL",
-              "value" : "previous"
+              "value" : null
             },
-            "chartSize" : {
+            "yAxis2Title" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -10130,17 +10230,13 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "formats" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "sortByOrder" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "enableCustomEmptyState" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "showYGrid" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
             },
             "showThreshold" : {
               "type" : "JSON_LITERAL",
@@ -10150,57 +10246,25 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "hideMatrixAggregate" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "description" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "trendBy" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalDSupportingMetric2", "0", "trendBy" ]
+              }
             },
             "numberOfPeriods" : {
               "type" : "JSON_LITERAL",
               "value" : 3
             },
             "groupBy" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "tab3verticalDSupportingMetric2", "0", "groupBy" ]
-              }
-            },
-            "title" : {
               "type" : "JSON_LITERAL",
               "value" : null
-            },
-            "xAxisTruncationType" : {
-              "type" : "JSON_LITERAL",
-              "value" : "end"
             },
             "showTrend" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "showStackedValues" : {
-              "type" : "JSON_LITERAL",
-              "value" : "none"
-            },
-            "enableRealTimeUpdate" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "showForecastRange" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "showAbsolutePeriod" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "dataCategory" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -10216,27 +10280,7 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "showChangePercentage" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "yAxisTo" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "xAxisWrapLabels" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "showHeader" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
             "bareBorder" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "yAxisHidden" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
@@ -10252,27 +10296,22 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "refreshFrequency" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "wrapTitle" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "showBorder" : {
+            "yAxis3Title" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
-            "showLegendValue" : {
+            "yAxis4To" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
             "colorConfig" : {
               "type" : "JSON_LITERAL",
               "value" : {
-                "palette" : "0c6509717767011061b80bbc3c5a99b5",
-                "type" : "palette"
+                "type" : "default"
               }
             },
             "filterConfigurations" : {
@@ -10285,7 +10324,7 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "backgroundRefreshInterval" : {
+            "yAxis0To" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -10293,25 +10332,9 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "emptyStateContent" : {
-              "type" : "JSON_LITERAL",
-              "value" : "There are no scores available for the selected criteria. Contact your admin for more info."
-            },
-            "xAxisMaxLabelSize" : {
-              "type" : "JSON_LITERAL",
-              "value" : 100
-            },
             "newReporting" : {
               "type" : "JSON_LITERAL",
               "value" : false
-            },
-            "emptyStateIllustration" : {
-              "type" : "JSON_LITERAL",
-              "value" : "no-data"
-            },
-            "legendPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "bottom"
             },
             "endTime" : {
               "type" : "JSON_LITERAL",
@@ -10320,12 +10343,202 @@
             "enableDrilldown" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "yAxis4Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "showFilterIcon" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showMaximumRange" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyStateAlignment" : {
+              "type" : "JSON_LITERAL",
+              "value" : "vertical-centered"
+            },
+            "showLegend" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "yAxis0Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "left"
+            },
+            "yAxis0From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "legendHorizontalAlignment" : {
+              "type" : "JSON_LITERAL",
+              "value" : "center"
+            },
+            "yAxis4Title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "dataSources" : {
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalDSupportingMetric2", "0", "datasources" ]
+              }
+            },
+            "showChange" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "legendExpandToFit" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis1Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "showSecondGroupAggregate" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis3To" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "yAxis2From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showTarget" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showChangeFrom" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "chartSize" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideYAxis4" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "formats" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "sortByOrder" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideYAxis1" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis0" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis3" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis2" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis4From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideMatrixAggregate" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "description" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "enableRealTimeUpdate" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showAbsolutePeriod" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "dataCategory" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showChangePercentage" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "lineStrokeWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "2"
+            },
+            "showHeader" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis1Title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "refreshFrequency" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showBorder" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showLegendValue" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "backgroundRefreshInterval" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "yAxis2Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "yAxis2To" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showXGrid" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyStateContent" : {
+              "type" : "JSON_LITERAL",
+              "value" : "There are no scores available for the selected criteria. Contact your admin for more info."
+            },
+            "emptyStateIllustration" : {
+              "type" : "JSON_LITERAL",
+              "value" : "no-data"
+            },
+            "legendPosition" : {
+              "type" : "JSON_LITERAL",
+              "value" : "bottom"
             }
           },
           "eventMappings" : [ ],
           "slot" : "Main",
           "definition" : {
-            "id" : "23051643b7e03010097cb81cde11a910",
+            "id" : "18ac962264404bcc0039359d184b15f3",
             "type" : "MACROPONENT"
           },
           "overrides" : null,
@@ -14530,7 +14743,7 @@
         "sourceType" : "indicator",
         "uuid" : {
           "breakdowns" : [ ],
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4"
+          "indicator" : "1061dada1b2e111057842144b24bcbf7"
         }
       } ],
       "groupBy" : [ {
@@ -14628,7 +14841,7 @@
         "sourceType" : "indicator",
         "uuid" : {
           "breakdowns" : [ ],
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4"
+          "indicator" : "299c0b011b745910550b97d0b24bcb99"
         }
       } ],
       "groupBy" : [ {
@@ -14677,7 +14890,7 @@
         "sourceType" : "indicator",
         "uuid" : {
           "breakdowns" : [ ],
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4"
+          "indicator" : "1f125a051b381910550b97d0b24bcb34"
         }
       } ],
       "groupBy" : [ {
@@ -14809,7 +15022,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>73</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name>Usage</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -14817,7 +15030,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-01 15:12:24</sys_updated_on>
+        <sys_updated_on>2023-12-04 11:26:12</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
