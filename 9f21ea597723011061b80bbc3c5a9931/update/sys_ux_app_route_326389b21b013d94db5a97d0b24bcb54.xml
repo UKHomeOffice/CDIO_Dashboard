@@ -8,7 +8,7 @@
         <name>Operations</name>
         <optional_parameters/>
         <order>300</order>
-        <parent_macroponent display_value="Duplicated CIO Dashboard">45b205be1bcdf994db5a97d0b24bcbab</parent_macroponent>
+        <parent_macroponent/>
         <parent_macroponent_composition_element_id>viewport_trh</parent_macroponent_composition_element_id>
         <route_type>operations</route_type>
         <screen_type display_value="Operations">57f2c9fe1bcdf994db5a97d0b24bcb3a</screen_type>

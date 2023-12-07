@@ -2159,7 +2159,7 @@
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "caret-up-fill"
+                  "value" : "square-arrow-up-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -2175,7 +2175,7 @@
                   "apiVersion" : "2.0.0",
                   "controllerElementId" : null,
                   "inlineScript" : null,
-                  "scriptSysId" : "59f45d937723011061b80bbc3c5a99ce",
+                  "scriptSysId" : "523581801b07715064122144b24bcb4a",
                   "target" : null
                 }
               },
@@ -2196,7 +2196,7 @@
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "caret-down-fill"
+                  "value" : "square-arrow-right-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -2207,14 +2207,8 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "7c059d937723011061b80bbc3c5a99a8",
-                  "target" : null
-                }
+                "type" : "JSON_LITERAL",
+                "value" : true
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -2223,6 +2217,35 @@
               "styles" : {
                 "color" : "#bfbfbf"
               }
+            }, {
+              "elementId" : "icon_31",
+              "elementLabel" : "Icon 31",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "circle-question-outline"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : true
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
             }, {
               "elementId" : "stylized_text_237",
               "elementLabel" : "Stylized text 237",
@@ -5215,7 +5238,7 @@
             },
             "scoreType" : {
               "type" : "JSON_LITERAL",
-              "value" : "latest"
+              "value" : null
             },
             "showFirstGroupAggregate" : {
               "type" : "JSON_LITERAL",
@@ -5243,7 +5266,7 @@
             },
             "sortBy" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : "value"
             },
             "showTotalValue" : {
               "type" : "JSON_LITERAL",
@@ -5269,7 +5292,7 @@
             },
             "configVersion" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : "23.0.0-ci-SNAPSHOT"
             },
             "legendExpandToFit" : {
               "type" : "JSON_LITERAL",
@@ -5347,7 +5370,7 @@
             },
             "sortByOrder" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : "desc"
             },
             "enableCustomEmptyState" : {
               "type" : "JSON_LITERAL",
@@ -15016,13 +15039,46 @@
       }
     } ]
   }
+}, {
+  "name" : "tab3verticalAMetric1ShowGreen",
+  "label" : "tab3verticalAMetric1ShowGreen",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}, {
+  "name" : "tab3verticalAMetric1ShowAmber",
+  "label" : "tab3verticalAMetric1ShowAmber",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}, {
+  "name" : "tab3verticalAMetric1ShowRed",
+  "label" : "tab3verticalAMetric1ShowRed",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>84</sys_mod_count>
+        <sys_mod_count>102</sys_mod_count>
         <sys_name>Usage</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -15030,7 +15086,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-04 11:26:12</sys_updated_on>
+        <sys_updated_on>2023-12-06 16:27:24</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

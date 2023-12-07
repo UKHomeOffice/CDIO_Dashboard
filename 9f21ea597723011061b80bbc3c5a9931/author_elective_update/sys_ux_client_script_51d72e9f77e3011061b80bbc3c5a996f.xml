@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Usage">93e3bed97763011061b80bbc3c5a991e</macroponent>
+        <name>rich_text_8_html</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    var x = '';
+    if (api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics.hasOwnProperty(0)) {
+        x = x + '<p>' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[0].metricLabel + ': ' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[0].metricDefinition +
+        '<br>[Source: '+ api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[0].metricProduct + ' - ' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[0].metricApplication+']</br></p>';
+    }
+    if (api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics.hasOwnProperty(1)) {
+        x = x + '<p>' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[1].metricLabel + ': ' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[1].metricDefinition +
+        '<br>[Source: '+ api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[1].metricProduct + ' - ' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[1].metricApplication+']</br></p>';
+    }
+    if (api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics.hasOwnProperty(0)) {
+        x = x + '<p>' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricLabel + ': ' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricDefinition +
+        '<br>[Source: '+ api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricProduct + ' - ' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricApplication+']</br></p>';
+    }
+    if (api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics.hasOwnProperty(1)) {
+        x = x + '<p>' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricLabel + ': ' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricDefinition +
+        '<br>[Source: '+ api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricProduct + ' - ' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricApplication+']</br></p>';
+    }
+
+    return x;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-24 09:56:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>51d72e9f77e3011061b80bbc3c5a996f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>rich_text_8_html</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_51d72e9f77e3011061b80bbc3c5a996f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 08:32:06</sys_updated_on>
+        <target/>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ux_client_script_51d72e9f77e3011061b80bbc3c5a996f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Usage"&gt;93e3bed97763011061b80bbc3c5a991e&lt;/macroponent&gt;&lt;name&gt;rich_text_8_html&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    var x = '';
+    if (api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics.hasOwnProperty(0)) {
+        x = x + '&lt;p&gt;' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[0].metricLabel + ': ' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[0].metricDefinition +
+        '&lt;br&gt;[Source: '+ api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[0].metricProduct + ' - ' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[0].metricApplication+']&lt;/br&gt;&lt;/p&gt;';
+    }
+    if (api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics.hasOwnProperty(1)) {
+        x = x + '&lt;p&gt;' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[1].metricLabel + ': ' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[1].metricDefinition +
+        '&lt;br&gt;[Source: '+ api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[1].metricProduct + ' - ' + api.data.getmetricsofciodashboard.output.VerticalA.headlineMetrics[1].metricApplication+']&lt;/br&gt;&lt;/p&gt;';
+    }
+    if (api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics.hasOwnProperty(0)) {
+        x = x + '&lt;p&gt;' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricLabel + ': ' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricDefinition +
+        '&lt;br&gt;[Source: '+ api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricProduct + ' - ' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricApplication+']&lt;/br&gt;&lt;/p&gt;';
+    }
+    if (api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics.hasOwnProperty(1)) {
+        x = x + '&lt;p&gt;' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricLabel + ': ' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricDefinition +
+        '&lt;br&gt;[Source: '+ api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricProduct + ' - ' + api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricApplication+']&lt;/br&gt;&lt;/p&gt;';
+    }
+
+    return x;
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-24 09:56:20&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;51d72e9f77e3011061b80bbc3c5a996f&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;rich_text_8_html&lt;/sys_name&gt;&lt;sys_package display_value="CIO Dashboard" source="sn_ciodashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="CIO Dashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_51d72e9f77e3011061b80bbc3c5a996f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-06-17 08:32:06&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2141669769</payload_hash>
+        <record_name>rich_text_8_html</record_name>
+        <reverted_from/>
+        <source>26c550eb1b2ab910dba1c3e5464bcb10</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-11-24 13:12:44</sys_created_on>
+        <sys_id>be952e441b7a3150dba1c3e5464bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c017613ac0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-11-24 13:12:44</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>36952e44ce7a3150772e3906a34606a0</update_guid>
+        <update_guid_history>36952e44ce7a3150772e3906a34606a0:2141669769,95228ecc7af231503c7de3d8cb1050f5:2063734591,d45e3173086e7d1062154b94a51f2d8a:2141669769</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-11-24 14:12:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>28dd2aa99b164d25a4597d1e68a54729</sys_id>
+        <sys_metadata>51d72e9f77e3011061b80bbc3c5a996f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>rich_text_8_html</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_51d72e9f77e3011061b80bbc3c5a996f</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_51d72e9f77e3011061b80bbc3c5a996f">be952e441b7a3150dba1c3e5464bcba0</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-11-24 14:12:30</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18c01ba4d0e0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_51d72e9f77e3011061b80bbc3c5a996f</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-11-24 14:27:15</sys_created_on>
+        <sys_id>5aa67a0c1bfa3150dba1c3e5464bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-11-24 14:27:15</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
     <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
         <macroponent_config/>
-        <screen display_value="Duplicated CIO Dashboard">41b205be1bcdf994db5a97d0b24bcbb3</screen>
+        <screen/>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2023-09-06 19:14:02</sys_created_on>

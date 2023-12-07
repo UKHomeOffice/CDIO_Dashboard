@@ -41,7 +41,7 @@
 }</macroponent_config>
         <name>Experience default</name>
         <order>0</order>
-        <parent_macroponent display_value="Duplicated CIO Dashboard">45b205be1bcdf994db5a97d0b24bcbab</parent_macroponent>
+        <parent_macroponent/>
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
         <screen_condition/>

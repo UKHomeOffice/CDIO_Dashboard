@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="DELETE">
+        <acl_failure_result/>
+        <api_name>sn_ciodashboard.mynewdataresource</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>mynewdataresource</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script/>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-12-05 16:20:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d20a7f231bf2bd1064122144b24bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mynewdataresource</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_d20a7f231bf2bd1064122144b24bcb97</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-12-05 16:20:39</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ux_data_broker_transform_d20a7f231bf2bd1064122144b24bcb97</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform"><sys_ux_data_broker_transform action="INSERT_OR_UPDATE"><acl_failure_result/><api_name>sn_ciodashboard.mynewdataresource</api_name><description/><mutates_server_data>false</mutates_server_data><name>mynewdataresource</name><output_schema/><private>false</private><props/><required_translations>[ ]</required_translations><schema_version>1.0.0</schema_version><script/><sys_class_name>sys_ux_data_broker_transform</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2023-12-05 16:20:39</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d20a7f231bf2bd1064122144b24bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_name>mynewdataresource</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ux_data_broker_transform_d20a7f231bf2bd1064122144b24bcb97</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2023-12-05 16:20:39</sys_updated_on></sys_ux_data_broker_transform></record_update>]]></payload>
+        <payload_hash>-1288474335</payload_hash>
+        <record_name>mynewdataresource</record_name>
+        <reverted_from/>
+        <source>e9662a1a1bfab11064122144b24bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-12-05 16:20:39</sys_created_on>
+        <sys_id>261aff231bf2bd1064122144b24bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c3ac80ffe0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-12-05 16:20:39</sys_updated_on>
+        <type>Data Broker Server Script</type>
+        <update_guid>221a772fd5b2bd108b973c199fede84b</update_guid>
+        <update_guid_history>221a772fd5b2bd108b973c199fede84b:-1288474335</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-12-05 16:29:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_data_broker_transform">sys_ux_data_broker_transform</sys_db_object>
+        <sys_id>4a1ec50d02d64168a840753150faa881</sys_id>
+        <sys_metadata>d20a7f231bf2bd1064122144b24bcb97</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mynewdataresource</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_transform_d20a7f231bf2bd1064122144b24bcb97</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_transform_d20a7f231bf2bd1064122144b24bcb97">261aff231bf2bd1064122144b24bcbf8</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-12-05 16:29:57</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18c4391d3650000001</claim_timestamp>
+        <metadata_update_name>sys_ux_data_broker_transform_d20a7f231bf2bd1064122144b24bcb97</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-12-07 09:17:59</sys_created_on>
+        <sys_id>728cacd01b87f15064122144b24bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-12-07 09:17:59</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>GetScoreForIndicator [ Default GET ]</qualified_name>
+        <rest_endpoint>'/api/now/pa/scorecards'</rest_endpoint>
+        <rest_message display_value="GetScoreForIndicator">0fe08a701b3eb9d064122144b24bcb29</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-11-26 18:29:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dd618a701b3eb9d064122144b24bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_rest_message_fn_dd618a701b3eb9d064122144b24bcb49</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-11-26 18:29:58</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_rest_message_fn_dd618a701b3eb9d064122144b24bcb49</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>GetScoreForIndicator [ Default GET ]</qualified_name><rest_endpoint>'/api/now/pa/scorecards'</rest_endpoint><rest_message display_value="GetScoreForIndicator">0fe08a701b3eb9d064122144b24bcb29</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2023-11-26 18:29:58</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>dd618a701b3eb9d064122144b24bcb49</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_rest_message_fn_dd618a701b3eb9d064122144b24bcb49</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2023-11-26 18:29:58</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-344917521</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>26c550eb1b2ab910dba1c3e5464bcb10</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-11-26 18:29:58</sys_created_on>
+        <sys_id>51618a701b3eb9d064122144b24bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c0ce53afe0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-11-26 18:29:58</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>55618a70443eb9d036c9518e0c0a124c</update_guid>
+        <update_guid_history>55618a70443eb9d036c9518e0c0a124c:-344917521</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-11-27 09:16:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>167aef6a03a341e88f2f3476f1d8ce90</sys_id>
+        <sys_metadata>dd618a701b3eb9d064122144b24bcb49</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_dd618a701b3eb9d064122144b24bcb49</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_dd618a701b3eb9d064122144b24bcb49">51618a701b3eb9d064122144b24bcb4d</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-11-27 09:16:36</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18c0fea188f0000001</claim_timestamp>
+        <metadata_update_name>sys_rest_message_fn_dd618a701b3eb9d064122144b24bcb49</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-11-27 08:34:09</sys_created_on>
+        <sys_id>0392454d1bf63dd064122144b24bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-11-27 08:34:09</sys_updated_on>
+    </sys_claim>
+</record_update>
