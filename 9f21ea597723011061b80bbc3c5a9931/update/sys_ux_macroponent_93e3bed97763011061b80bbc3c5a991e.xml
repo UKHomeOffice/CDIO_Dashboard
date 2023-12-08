@@ -1722,11 +1722,11 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "xl"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -1737,25 +1737,33 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "a8bf27241b0bf55064122144b24bcbd2",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_34",
               "elementLabel" : "Icon 34",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "xl"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -1766,25 +1774,33 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "3d80f3a41b0bf55064122144b24bcba5",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_35",
               "elementLabel" : "Icon 35",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "xl"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -1795,20 +1811,28 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "bab0fba41b0bf55064122144b24bcbbf",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"rules":{"flex":"1"},"slotName":"Main","styles":{"display":"flex","flex-direction":"column"}}],
+                "items" : [{"rules":{"flex":"1"},"slotName":"Main","styles":{"display":"flex","flex-direction":"row"}}],
                 "root" : null,
                 "rules" : {"align-items":"stretch","flex-flow":"row nowrap","height":"100%"},
                 "styles" : null,
@@ -15177,13 +15201,24 @@
     "type" : "JSON_LITERAL",
     "value" : "red"
   }
+}, {
+  "name" : "tab3verticalAShowHealth",
+  "label" : "tab3verticalAShowHealth",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "red"
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>132</sys_mod_count>
+        <sys_mod_count>140</sys_mod_count>
         <sys_name>Usage</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -15191,7 +15226,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-08 17:26:40</sys_updated_on>
+        <sys_updated_on>2023-12-08 18:13:40</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
