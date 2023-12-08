@@ -14,7 +14,7 @@
 */
 function handler({api, event, helpers, imports}) {
      var value  = api.data.verticalA_headlinemetric1.output.result[0].value;
-    if(value>2){
+    if(value>20){
         api.setState('tab3verticalAMetric1ShowRed',false); //Show component
     }
     else{
@@ -28,7 +28,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2023-12-07 12:49:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>effc5d9c1b4ff15064122144b24bcb88</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>tab3showVerticalAMetric1Red</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -36,7 +36,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_effc5d9c1b4ff15064122144b24bcb88</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-07 12:58:49</sys_updated_on>
+        <sys_updated_on>2023-12-08 10:03:28</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
