@@ -2587,7 +2587,7 @@
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "caret-up-fill"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -2612,7 +2612,7 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#bfbfbf"
+                "color" : "#008000"
               }
             }, {
               "elementId" : "icon_30",
@@ -2624,7 +2624,7 @@
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "caret-down-fill"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -2649,7 +2649,44 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#bfbfbf"
+                "color" : "#FFA500"
+              }
+            }, {
+              "elementId" : "icon_32",
+              "elementLabel" : "Icon 32",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "xl"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "908c3aa41b03f55064122144b24bcbef",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FF0000"
               }
             }, {
               "elementId" : "stylized_text_252",
@@ -14372,6 +14409,39 @@
       "operation" : null,
       "targetId" : "clddiqiipjtaabbgccddfhhbbwgibbaairp",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "28e736a81bcfb55064122144b24bcb03"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clpwpckbxaaaapkddnhhxhmddeieccb",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "b7f97eec1bcfb55064122144b24bcbad"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clpwponddaaaaaatffddnhhxeehhhhcxpzl",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "125bb2e01b03f55064122144b24bcbec"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clpwpvjjggaaaaaxbddnhhxfbmtiikur",
+      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -15119,13 +15189,46 @@
     "type" : "JSON_LITERAL",
     "value" : true
   }
+}, {
+  "name" : "tab3verticalAMetric2ShowGreen",
+  "label" : "tab3verticalAMetric2ShowGreen",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
+}, {
+  "name" : "tab3verticalAMetric2ShowAmber",
+  "label" : "tab3verticalAMetric2ShowAmber",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
+}, {
+  "name" : "tab3verticalAMetric2ShowRed",
+  "label" : "tab3verticalAMetric2ShowRed",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>114</sys_mod_count>
+        <sys_mod_count>122</sys_mod_count>
         <sys_name>Usage</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -15133,7 +15236,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-08 10:01:39</sys_updated_on>
+        <sys_updated_on>2023-12-08 14:25:28</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
