@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="Usage">93e3bed97763011061b80bbc3c5a991e</macroponent>
-        <name>tab3showVerticalAMetric1Amber</name>
+        <name>tab3showVerticalAMetric1Health</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
@@ -13,45 +13,49 @@
 * @param {ApiHelpers} params.helpers
 */
 function handler({api, event, helpers, imports}) {
-     var value  = api.data.verticalA_headlinemetric1.output.result[0].value;
-    if(value>=13 && value<20){
-        api.setState('tab3verticalAMetric1ShowAmber',false); //Show component
+    var value  = api.data.verticalA_headlinemetric1.output.result[0].value;
+    helpers.translate('')
+    if(value<13){
+        api.setState('tab3verticalAMetric1ShowHealth','green');
     }
-    else{
-        api.setState('tab3verticalAMetric1ShowAmber',true);
+    else if (value>=13 && value<20 ){
+        api.setState('tab3verticalAMetric1ShowHealth','amber');
+    }
+    else {
+        api.setState('tab3verticalAMetric1ShowHealth','red');
     }
 
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2023-12-07 12:30:34</sys_created_on>
+        <sys_created_on>2023-12-08 16:18:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>739891941b4ff15064122144b24bcb5b</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>tab3showVerticalAMetric1Amber</sys_name>
+        <sys_id>c5469b641b07f55064122144b24bcb61</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>tab3showVerticalAMetric1Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
-        <sys_update_name>sys_ux_client_script_739891941b4ff15064122144b24bcb5b</sys_update_name>
+        <sys_update_name>sys_ux_client_script_c5469b641b07f55064122144b24bcb61</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-08 10:03:26</sys_updated_on>
+        <sys_updated_on>2023-12-11 12:55:46</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18c445d32420000001</claim_timestamp>
-        <metadata_update_name>sys_ux_client_script_739891941b4ff15064122144b24bcb5b</metadata_update_name>
+        <claim_timestamp>18c4a7a6bf00000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_c5469b641b07f55064122144b24bcb61</metadata_update_name>
         <previous_claim_app_version>1.0.2</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2023-12-07 13:00:07</sys_created_on>
-        <sys_id>fc6f59941b8ff15064122144b24bcb42</sys_id>
+        <sys_created_on>2023-12-08 17:29:46</sys_created_on>
+        <sys_id>18b62f201bc7f55064122144b24bcbf7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-07 13:00:07</sys_updated_on>
+        <sys_updated_on>2023-12-08 17:29:46</sys_updated_on>
     </sys_claim>
 </record_update>
