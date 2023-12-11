@@ -2175,92 +2175,6 @@
               "items" : [ ],
               "styles" : { }
             }, {
-              "elementId" : "label_value_42",
-              "elementLabel" : "Label value 42",
-              "propertyValues" : {
-                "truncated" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "label" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Target",
-                    "comment" : ""
-                  }
-                },
-                "value" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "0", "target_formatted" ]
-                  }
-                },
-                "reversed" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 1",
-              "definition" : {
-                "id" : "bb63b710d208796b7ceaab7812bddef1",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : ""
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "label_value_43",
-              "elementLabel" : "Label value 43",
-              "propertyValues" : {
-                "truncated" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "label" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Gap",
-                    "comment" : ""
-                  }
-                },
-                "value" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "0", "gap_formatted" ]
-                  }
-                },
-                "reversed" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 1",
-              "definition" : {
-                "id" : "bb63b710d208796b7ceaab7812bddef1",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : ""
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
               "elementId" : "icon_21",
               "elementLabel" : "Icon 21",
               "propertyValues" : {
@@ -2370,49 +2284,6 @@
               "items" : [ ],
               "styles" : {
                 "color" : "#FF0000"
-              }
-            }, {
-              "elementId" : "stylized_text_237",
-              "elementLabel" : "Stylized text 237",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "cc1c1b1f7723011061b80bbc3c5a9914",
-                    "target" : null
-                  }
-                },
-                "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "0", "changeperc_formatted" ]
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "span"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "padding-top" : "5px"
               }
             } ],
             "layout" : {
@@ -2603,92 +2474,6 @@
               "items" : [ ],
               "styles" : { }
             }, {
-              "elementId" : "label_value_54",
-              "elementLabel" : "Label value 54",
-              "propertyValues" : {
-                "truncated" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "label" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Target",
-                    "comment" : ""
-                  }
-                },
-                "value" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric2", "output", "result", "0", "target_formatted" ]
-                  }
-                },
-                "reversed" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 1",
-              "definition" : {
-                "id" : "bb63b710d208796b7ceaab7812bddef1",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "label_value_55",
-              "elementLabel" : "Label value 55",
-              "propertyValues" : {
-                "truncated" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "label" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Gap",
-                    "comment" : ""
-                  }
-                },
-                "value" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric2", "output", "result", "0", "gap_formatted" ]
-                  }
-                },
-                "reversed" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 1",
-              "definition" : {
-                "id" : "bb63b710d208796b7ceaab7812bddef1",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
               "elementId" : "icon_29",
               "elementLabel" : "Icon 29",
               "propertyValues" : {
@@ -2798,49 +2583,6 @@
               "items" : [ ],
               "styles" : {
                 "color" : "#FF0000"
-              }
-            }, {
-              "elementId" : "stylized_text_252",
-              "elementLabel" : "Stylized text 252",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "cf4c1f1f7723011061b80bbc3c5a99bc",
-                    "target" : null
-                  }
-                },
-                "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric2", "output", "result", "0", "changeperc_formatted" ]
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "span"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "padding-top" : "5px"
               }
             } ],
             "layout" : {
@@ -15229,7 +14971,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>147</sys_mod_count>
+        <sys_mod_count>150</sys_mod_count>
         <sys_name>Usage</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -15237,7 +14979,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-11 12:22:47</sys_updated_on>
+        <sys_updated_on>2023-12-11 14:58:31</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

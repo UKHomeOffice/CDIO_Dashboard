@@ -12,12 +12,6 @@
 * @param {any} params.imports
 * @param {ApiHelpers} params.helpers
 // */
-// This script worked as expected
-// function evaluateProperty({api, event, helpers, imports}) {
-//     if (api.state.tab3verticalAMetric1ShowHealth === 'amber') {
-//         api.setState('tab3verticalAShowHealth','amber');
-//     }
-// }
 
 function evaluateProperty({api, event, helpers, imports}) {
     var m1health = api.state.tab3verticalAMetric1ShowHealth;
@@ -40,7 +34,7 @@ function evaluateProperty({api, event, helpers, imports}) {
         <sys_created_on>2023-12-08 17:36:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>393823241bc7f55064122144b24bcb4c</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>tab3showVerticalAHealth</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -48,7 +42,7 @@ function evaluateProperty({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_393823241bc7f55064122144b24bcb4c</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-11 12:47:58</sys_updated_on>
+        <sys_updated_on>2023-12-11 14:47:09</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
