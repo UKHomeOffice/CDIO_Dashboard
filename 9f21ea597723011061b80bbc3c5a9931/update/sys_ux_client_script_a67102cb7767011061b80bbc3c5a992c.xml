@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
-        <macroponent display_value="Usage">93e3bed97763011061b80bbc3c5a991e</macroponent>
+        <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
         <name>tab3showVerticalBMetric1Delta</name>
         <preset/>
         <required_translations>[ ]</required_translations>
