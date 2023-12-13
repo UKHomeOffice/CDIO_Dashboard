@@ -1937,6 +1937,195 @@
             "position" : "absolute",
             "right" : "8px"
           }
+        }, {
+          "elementId" : "dropdown_1",
+          "elementLabel" : "Dropdown 1",
+          "propertyValues" : {
+            "select" : {
+              "type" : "JSON_LITERAL",
+              "value" : "single"
+            },
+            "showPadding" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "opened" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "tooltipContent" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "panelFitProps" : {
+              "type" : "JSON_LITERAL",
+              "value" : { }
+            },
+            "configAria" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideCaret" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "search" : {
+              "type" : "JSON_LITERAL",
+              "value" : "none"
+            },
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "variant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "secondary"
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "placeholder" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Dropdown",
+                "comment" : ""
+              }
+            },
+            "bare" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "items" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "l1"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "List item 1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "l2"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "List item 2",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "l3"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "List item 3",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "l4"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "List item 4",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "l5"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "List item 5",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "l6"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "List item 6",
+                      "comment" : ""
+                    }
+                  }
+                }
+              } ]
+            },
+            "selectedItems" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ ]
+            },
+            "hideLabel" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "22c67d9a1e515fef66442e1469bed3a2",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : { }
         } ],
         "layout" : {
           "default" : {
@@ -2984,7 +3173,7 @@
             },
             "showYGrid" : {
               "type" : "JSON_LITERAL",
-              "value" : true
+              "value" : false
             },
             "showThreshold" : {
               "type" : "JSON_LITERAL",
@@ -3002,15 +3191,17 @@
             },
             "numberOfPeriods" : {
               "type" : "JSON_LITERAL",
-              "value" : 3
+              "value" : 11
             },
             "groupBy" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalASupportingMetric1", "0", "groupBy", "0", "groupBy" ]
+              }
             },
             "showTrend" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : false
             },
             "showForecastRange" : {
               "type" : "JSON_LITERAL",
@@ -3018,7 +3209,7 @@
             },
             "followFilters" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : true
             },
             "startTime" : {
               "type" : "JSON_LITERAL",
@@ -3090,7 +3281,7 @@
             },
             "enableDrilldown" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : true
             },
             "yAxis4Position" : {
               "type" : "JSON_LITERAL",
@@ -3098,7 +3289,7 @@
             },
             "showFilterIcon" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : true
             },
             "showMaximumRange" : {
               "type" : "JSON_LITERAL",
@@ -3220,7 +3411,7 @@
             },
             "showAbsolutePeriod" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : true
             },
             "dataCategory" : {
               "type" : "JSON_LITERAL",
@@ -5648,7 +5839,7 @@
             },
             "configVersion" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : "23.0.0-ci-SNAPSHOT"
             },
             "showSubAggregate" : {
               "type" : "JSON_LITERAL",
@@ -5905,7 +6096,7 @@
             },
             "showChangeFrom" : {
               "type" : "JSON_LITERAL",
-              "value" : "previous"
+              "value" : null
             },
             "chartSize" : {
               "type" : "JSON_LITERAL",
@@ -5985,7 +6176,7 @@
             },
             "refreshFrequency" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : false
             },
             "showBorder" : {
               "type" : "JSON_LITERAL",
@@ -14308,7 +14499,28 @@
   "message" : "Description",
   "comment" : ""
 }, {
+  "message" : "Dropdown",
+  "comment" : ""
+}, {
   "message" : "Gap",
+  "comment" : ""
+}, {
+  "message" : "List item 1",
+  "comment" : ""
+}, {
+  "message" : "List item 2",
+  "comment" : ""
+}, {
+  "message" : "List item 3",
+  "comment" : ""
+}, {
+  "message" : "List item 4",
+  "comment" : ""
+}, {
+  "message" : "List item 5",
+  "comment" : ""
+}, {
+  "message" : "List item 6",
   "comment" : ""
 }, {
   "message" : "Loading",
@@ -14971,7 +15183,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>151</sys_mod_count>
+        <sys_mod_count>158</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -14979,7 +15191,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-12 15:21:58</sys_updated_on>
+        <sys_updated_on>2023-12-13 11:39:41</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
