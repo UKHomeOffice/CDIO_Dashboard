@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <before>false</before>
+        <description/>
+        <name>Test script</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script/>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-12-20 17:30:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c9d951a81b9b3150dba1c3e5464bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test script</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_script_fix_c9d951a81b9b3150dba1c3e5464bcbce</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-12-20 17:30:33</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_script_fix_c9d951a81b9b3150dba1c3e5464bcbce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix"><sys_script_fix action="INSERT_OR_UPDATE"><before>false</before><description/><name>Test script</name><record_for_rollback>true</record_for_rollback><script/><sys_class_name>sys_script_fix</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2023-12-20 17:30:33</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c9d951a81b9b3150dba1c3e5464bcbce</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Test script</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_script_fix_c9d951a81b9b3150dba1c3e5464bcbce</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2023-12-20 17:30:33</sys_updated_on><unloadable>false</unloadable></sys_script_fix></record_update>]]></payload>
+        <payload_hash>116472279</payload_hash>
+        <record_name>Test script</record_name>
+        <reverted_from/>
+        <source>f6d6a6771b03791064122144b24bcbe2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-12-20 17:30:33</sys_created_on>
+        <sys_id>c5f955a81b9b3150dba1c3e5464bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c884775f10000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-12-20 17:30:33</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>89f955a86d9b315078293f7924192463</update_guid>
+        <update_guid_history>89f955a86d9b315078293f7924192463:116472279</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-12-20 17:31:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>29ec5a44992c47279e6c94444b428691</sys_id>
+        <sys_metadata>c9d951a81b9b3150dba1c3e5464bcbce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test script</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_script_fix_c9d951a81b9b3150dba1c3e5464bcbce</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_c9d951a81b9b3150dba1c3e5464bcbce">c5f955a81b9b3150dba1c3e5464bcb64</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-12-20 17:31:54</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18c885d7e6a0000001</claim_timestamp>
+        <metadata_update_name>sys_script_fix_c9d951a81b9b3150dba1c3e5464bcbce</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2023-12-20 17:54:37</sys_created_on>
+        <sys_id>a97f1d681bdb3150dba1c3e5464bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2023-12-20 17:54:37</sys_updated_on>
+    </sys_claim>
+</record_update>
