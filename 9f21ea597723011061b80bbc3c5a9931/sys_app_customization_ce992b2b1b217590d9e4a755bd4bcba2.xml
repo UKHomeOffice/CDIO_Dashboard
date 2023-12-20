@@ -3,12 +3,12 @@
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2023-10-04 11:50:02</sys_created_on>
         <sys_id>ce992b2b1b217590d9e4a755bd4bcba2</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-12 15:39:11</sys_updated_on>
+        <sys_updated_on>2023-12-20 11:18:56</sys_updated_on>
         <vendor_app display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</vendor_app>
         <vendor_app_version>1.0.2</vendor_app_version>
         <version>1.0.0</version>
-        <war_version>glide-utah-12-21-2022__patch8-10-12-2023_10-26-2023_1319.zip</war_version>
+        <war_version>glide-utah-12-21-2022__patch9-11-01-2023_11-15-2023_0222.zip</war_version>
     </sys_app_customization>
 </record_update>
