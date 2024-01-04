@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="CIO Summary">909baa157763011061b80bbc3c5a9918</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Execution</name>
+        <optional_parameters/>
+        <order>500</order>
+        <parent_macroponent display_value="Summary">2cdeaad57763011061b80bbc3c5a9930</parent_macroponent>
+        <parent_macroponent_composition_element_id>viewport_trh</parent_macroponent_composition_element_id>
+        <route_type>execution</route_type>
+        <screen_type display_value="Execution">9c14bed97763011061b80bbc3c5a99f4</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-18 05:41:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d414321d7763011061b80bbc3c5a99e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Execution</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_app_route_d414321d7763011061b80bbc3c5a99e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-18 05:41:58</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ux_app_route_d414321d7763011061b80bbc3c5a99e8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="CIO Summary">909baa157763011061b80bbc3c5a9918</app_config><description/><extension_point/><fields/><icon/><name>Execution</name><optional_parameters/><order>500</order><parent_macroponent display_value="Summary">2cdeaad57763011061b80bbc3c5a9930</parent_macroponent><parent_macroponent_composition_element_id>viewport_trh</parent_macroponent_composition_element_id><route_type>execution</route_type><screen_type display_value="Execution">9c14bed97763011061b80bbc3c5a99f4</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-18 05:41:58</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d414321d7763011061b80bbc3c5a99e8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Execution</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ux_app_route_d414321d7763011061b80bbc3c5a99e8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-18 05:41:58</sys_updated_on></sys_ux_app_route></record_update>]]></payload>
+        <payload_hash>-730411995</payload_hash>
+        <record_name>Execution</record_name>
+        <reverted_from/>
+        <source>9f21ea597723011061b80bbc3c5a9931</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-05-18 05:41:58</sys_created_on>
+        <sys_id>0f485ed91beb79dc64122144b24bcbf5</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>180d5afec700000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX App Route</type>
+        <update_guid>cb485ed9f9eb79dc21d003b37f7c16f5</update_guid>
+        <update_guid_history>cb485ed9f9eb79dc21d003b37f7c16f5:-730411995</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-04 16:14:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>53c75f7ba15546d8964fd10ed63a3390</sys_id>
+        <sys_metadata>d414321d7763011061b80bbc3c5a99e8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Execution</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_d414321d7763011061b80bbc3c5a99e8</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_d414321d7763011061b80bbc3c5a99e8">0f485ed91beb79dc64122144b24bcbf5</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-04 16:14:06</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18cd5424b130000001</claim_timestamp>
+        <metadata_update_name>sys_ux_app_route_d414321d7763011061b80bbc3c5a99e8</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-04 16:15:40</sys_created_on>
+        <sys_id>cea816551b2f79dc64122144b24bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-04 16:15:40</sys_updated_on>
+    </sys_claim>
+</record_update>
