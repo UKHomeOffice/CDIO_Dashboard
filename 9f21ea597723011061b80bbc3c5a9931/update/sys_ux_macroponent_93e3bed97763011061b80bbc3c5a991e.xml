@@ -1604,7 +1604,7 @@
       "propertyValues" : {
         "select" : {
           "type" : "JSON_LITERAL",
-          "value" : "multi"
+          "value" : "single"
         },
         "showPadding" : {
           "type" : "JSON_LITERAL",
@@ -1681,7 +1681,31 @@
           "value" : false
         }
       },
-      "eventMappings" : [ ],
+      "eventMappings" : [ {
+        "eventMappingId" : "clriicctiiccccaabbixddohhxxbbggonccwcc",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "060275531b6ff55864122144b24bcb54"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clriiggzjjrcaaccffaaddffhhyiiggffpccffgii",
+          "type" : "CLIENT_SCRIPT"
+        } ]
+      } ],
       "slot" : "default-slot",
       "definition" : {
         "id" : "22c67d9a1e515fef66442e1469bed3a2",
@@ -2274,9 +2298,9 @@
                   }
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
+                  "type" : "STATE_BINDING",
                   "binding" : {
-                    "address" : [ "verticalA_headlinemetric1v", "output", "result", "0", "scores", "0", "value_formatted" ]
+                    "address" : [ "tab3Portfolio", "0", "scores", "0", "value_formatted" ]
                   }
                 },
                 "tag" : {
@@ -12469,6 +12493,17 @@
       "operation" : null,
       "targetId" : "clrhhyyffyyaaaalfddohhxhhwytblud",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "060275531b6ff55864122144b24bcb54"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clriiggfxjgaacceeeddffhhyzvjjaaqtev",
+      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -12531,8 +12566,6 @@
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "1", "metricSysid" ]
       }
-=======
-
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -13233,13 +13266,135 @@
     "type" : "JSON_LITERAL",
     "value" : "red"
   }
+}, {
+  "name" : "tab3PortfolioElement",
+  "label" : "tab3PortfolioElement",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "tab3Portfolio",
+  "label" : "tab3Portfolio",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : [ {
+      "indicator" : {
+        "display_value" : "MTTR Priority 1 Incidents",
+        "link" : "https://lssidev3.service-now.com/api/now/table/pa_indicators/eac99dc51b3ee99025dd5946464bcb6a",
+        "value" : "eac99dc51b3ee99025dd5946464bcb6a"
+      },
+      "gap_formatted" : "-39.49 Hrs",
+      "benchmarking" : false,
+      "frequency_label" : "Monthly",
+      "scores" : [ {
+        "end_at" : "2023-06-30",
+        "period" : "Jun 2023",
+        "value_formatted" : "46.49 Hrs",
+        "start_at" : "2023-06-01",
+        "value" : 46.48787036666667,
+        "target" : 7
+      }, {
+        "end_at" : "2023-05-31",
+        "period" : "May 2023",
+        "value_formatted" : "1.26 Hrs",
+        "start_at" : "2023-05-01",
+        "value" : 1.2575,
+        "target" : 7
+      }, {
+        "end_at" : "2023-04-30",
+        "period" : "Apr 2023",
+        "value_formatted" : "",
+        "start_at" : "2023-04-01",
+        "value" : null,
+        "target" : 7
+      }, {
+        "end_at" : "2023-03-31",
+        "period" : "Mar 2023",
+        "value_formatted" : "",
+        "start_at" : "2023-03-01",
+        "value" : null,
+        "target" : 7
+      }, {
+        "end_at" : "2023-02-28",
+        "period" : "Feb 2023",
+        "value_formatted" : "",
+        "start_at" : "2023-02-01",
+        "value" : null,
+        "target" : 7
+      }, {
+        "end_at" : "2023-01-31",
+        "period" : "Jan 2023",
+        "value_formatted" : "1.86 Hrs",
+        "start_at" : "2023-01-01",
+        "value" : 1.8597222,
+        "target" : 7
+      } ],
+      "changeperc_formatted" : "3,596.8%",
+      "direction_label" : "Minimize",
+      "precision" : 2,
+      "breakdown" : {
+        "display_value" : "Portfolio",
+        "link" : "https://lssidev3.service-now.com/api/now/table/pa_breakdowns/e6def6531bf5fc50550b97d0b24bcb21",
+        "value" : "e6def6531bf5fc50550b97d0b24bcb21"
+      },
+      "personal_target" : null,
+      "description" : "",
+      "value_color" : "#c83c36",
+      "uuid" : "eac99dc51b3ee99025dd5946464bcb6a:e6def6531bf5fc50550b97d0b24bcb21:3ae6590e4f407f089e23e1128110c77f",
+      "frequency" : 40,
+      "gap" : -39.48787036666667,
+      "value_unit" : "46.49 Hrs",
+      "indicator_frequency" : 40,
+      "value" : 46.48787036666667,
+      "indicator_aggregate" : 1,
+      "key" : false,
+      "indicator_frequency_label" : "Monthly",
+      "direction" : 2,
+      "element" : {
+        "display_value" : "Corporate Enablers - Enabling Services",
+        "link" : "https://lssidev3.service-now.com/api/now/table/u_cmdb_ci_portfolio/3ae6590e4f407f089e23e1128110c77f",
+        "value" : "3ae6590e4f407f089e23e1128110c77f"
+      },
+      "period_title" : "Jun 2023",
+      "period" : "Jun 2023",
+      "target_formatted" : "7.00 Hrs",
+      "change" : 45.23037036666667,
+      "gapperc_formatted" : "-564.1%",
+      "realtime_enabled" : false,
+      "changeperc" : 3596.8485381047053,
+      "target" : 7,
+      "unit" : {
+        "display_value" : "Hours",
+        "link" : "https://lssidev3.service-now.com/api/now/table/pa_units/2ef365e2d7320100ba986f14ce6103e2",
+        "format" : "{0} Hrs",
+        "type" : "formatted",
+        "value" : "2ef365e2d7320100ba986f14ce6103e2"
+      },
+      "value_formatted" : "46.49",
+      "name" : "MTTR Priority 1 Incidents &gt; Portfolio = Corporate Enablers - Enabling Services",
+      "formula" : "[[All MTTR Incident Management Tickets (HRS) / By month SUM]] / [[All P1 &amp; P2's &gt; Priority = 1 - Critical / By month SUM]]",
+      "gapperc" : -5.6411243380952385,
+      "change_formatted" : "45.23",
+      "favorite" : true,
+      "personal_target_formatted" : ""
+    } ]
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>203</sys_mod_count>
+        <sys_mod_count>212</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13247,20 +13402,20 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-10 16:30:41</sys_updated_on>
+        <sys_updated_on>2024-01-10 19:48:47</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18c25fe5e650000001</claim_timestamp>
+        <claim_timestamp>18cf4ef9f210000001</claim_timestamp>
         <metadata_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</metadata_update_name>
         <previous_claim_app_version>1.0.2</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2023-12-01 15:27:56</sys_created_on>
-        <sys_id>1ba787561b36351064122144b24bcb48</sys_id>
+        <sys_created_on>2024-01-10 19:53:13</sys_created_on>
+        <sys_id>d3f34ed71bab795864122144b24bcb37</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-01 15:27:56</sys_updated_on>
+        <sys_updated_on>2024-01-10 19:53:13</sys_updated_on>
     </sys_claim>
 </record_update>
