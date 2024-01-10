@@ -2276,7 +2276,7 @@
                 "text" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "0", "value_unit" ]
+                    "address" : [ "verticalA_headlinemetric1v", "output", "result", "0", "scores", "0", "value_formatted" ]
                   }
                 },
                 "tag" : {
@@ -2311,7 +2311,7 @@
                 "label" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "0", "period" ]
+                    "address" : [ "verticalA_headlinemetric1v", "output", "result", "0", "scores", "0", "period" ]
                   }
                 },
                 "value" : {
@@ -2575,7 +2575,7 @@
                 "text" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "verticalA_headlinemetric2", "output", "result", "0", "value_unit" ]
+                    "address" : [ "verticalA_headlinemetric2v", "output", "result", "0", "scores", "0", "value_formatted" ]
                   }
                 },
                 "tag" : {
@@ -2610,7 +2610,7 @@
                 "label" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "verticalA_headlinemetric2", "output", "result", "0", "period" ]
+                    "address" : [ "verticalA_headlinemetric2v", "output", "result", "0", "scores", "0", "period" ]
                   }
                 },
                 "value" : {
@@ -5123,10 +5123,8 @@
       "elementLabel" : "Stylized text 256",
       "propertyValues" : {
         "text" : {
-          "type" : "STATE_BINDING",
-          "binding" : {
-            "address" : [ "tab3verticalAShowBreakdown" ]
-          }
+          "type" : "JSON_LITERAL",
+          "value" : null
         }
       },
       "eventMappings" : [ ],
@@ -11747,17 +11745,6 @@
     }, {
       "broker" : null,
       "clientScript" : {
-        "sysId" : "c5469b641b07f55064122144b24bcb61"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clpwuggxgghhaaaaqggddnhhxcciihuddfuj",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
         "sysId" : "393823241bc7f55064122144b24bcb4c"
       },
       "conditional" : null,
@@ -11776,6 +11763,17 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clqeaahvnqaaaanddddohhxluegggmlz",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "c5469b641b07f55064122144b24bcb61"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrhhxiiiictaaaajrddohhxeebaaccbbezm",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -12431,49 +12429,110 @@
 }, {
   "cachePolicy" : null,
   "definition" : {
-    "id" : "b997a84053021010cbc2ddeeff7b1228",
-    "type" : "COMPOSITE"
+    "id" : "7268bc971b2f3918dba1c3e5464bcbe3",
+    "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "breakdown_service",
-  "elementLabel" : "Breakdown Service",
-  "eventMappings" : [ ],
+  "elementId" : "verticalA_headlinemetric1v",
+  "elementLabel" : "VerticalA Headline Metric1v",
+  "eventMappings" : [ {
+    "eventMappingId" : "clrhhxjjzbbbbaaaakiddohhxhhriksncp",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "c5469b641b07f55064122144b24bcb61"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrhhxjjzbbbbaaaakjddohhxhhjjuasoid",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "393823241bc7f55064122144b24bcb4c"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrhhyyffyyaaaalfddohhxhhwytblud",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
   "inputValues" : {
-    "table" : {
-      "type" : "JSON_LITERAL",
-      "value" : "cmdb_ci_service"
+    "uuid" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "7268bc971b2f3918dba1c3e5464bcbe3",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "verticalA_headlinemetric2v",
+  "elementLabel" : "VerticalA Headline Metric2v",
+  "eventMappings" : [ {
+    "eventMappingId" : "clrhhykeedeeaaaagxddohhxhddccygklee",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
     },
-    "encodedQuery" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "returnFields" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "orderBy" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "sortType" : {
-      "type" : "JSON_LITERAL",
-      "value" : "asc"
-    },
-    "limit" : {
-      "type" : "JSON_LITERAL",
-      "value" : "1000"
-    },
-    "offset" : {
-      "type" : "JSON_LITERAL",
-      "value" : null
-    },
-    "queryCategory" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "returnFieldMetadata" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "4ecf13601b87f55064122144b24bcb84"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrhhykeedeeaaaagyddohhxkinddggqd",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "393823241bc7f55064122144b24bcb4c"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrhhyymwyaaaalkddohhxreehhshhyccc",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "uuid" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "1", "metricSysid" ]
+      }
+=======
+
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -13174,24 +13233,13 @@
     "type" : "JSON_LITERAL",
     "value" : "red"
   }
-}, {
-  "name" : "tab3verticalAShowBreakdown",
-  "label" : "tab3verticalAShowBreakdown",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>191</sys_mod_count>
+        <sys_mod_count>203</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13199,7 +13247,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-09 16:29:13</sys_updated_on>
+        <sys_updated_on>2024-01-10 16:30:41</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

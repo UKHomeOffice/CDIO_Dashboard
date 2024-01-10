@@ -13,8 +13,8 @@
 * @param {ApiHelpers} params.helpers
 */
 function handler({api, event, helpers, imports}) {
-     var value  = api.data.verticalA_headlinemetric2.output.result[0].value;
-     var target  = api.data.verticalA_headlinemetric2.output.result[0].target;
+     var value  = api.data.verticalA_headlinemetric2v.output.result[0].scores[0].value;
+     var target  = api.data.verticalA_headlinemetric2v.output.result[0].scores[0].target;
     if(value<0.8*target){
         api.setState('tab3verticalAMetric2ShowHealth','green'); 
     }
@@ -31,7 +31,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2023-12-08 16:59:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4ecf13601b87f55064122144b24bcb84</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>tab3showVerticalAMetric2Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -39,7 +39,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_4ecf13601b87f55064122144b24bcb84</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-11 12:55:43</sys_updated_on>
+        <sys_updated_on>2024-01-10 15:49:21</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
