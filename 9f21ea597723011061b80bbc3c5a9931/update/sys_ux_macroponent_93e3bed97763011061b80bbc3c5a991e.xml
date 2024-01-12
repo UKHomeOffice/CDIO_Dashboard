@@ -1682,7 +1682,7 @@
         }
       },
       "eventMappings" : [ {
-        "eventMappingId" : "clrjjaawizjaaaacoddohhxbnjsajjjjjj",
+        "eventMappingId" : "clransgpaaaaafiiddohhxbtxmqivn",
         "isConfiguration" : false,
         "offRowStorageId" : null,
         "sourceEventApiName" : "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
@@ -1718,7 +1718,7 @@
             "sysId" : "32408b42ff7a10109046e490703bf176"
           },
           "operation" : null,
-          "targetId" : "clrjjaawizjaaaacpddohhxiiggggarnegg",
+          "targetId" : "clransgpaaaaafjjddohhxfjjddbbhhhom",
           "type" : "EVENT"
         } ]
       } ],
@@ -2319,7 +2319,7 @@
                     "apiVersion" : "2.0.0",
                     "controllerElementId" : null,
                     "inlineScript" : null,
-                    "scriptSysId" : "6bf58d2f1bebfd58dba1c3e5464bcbc8",
+                    "scriptSysId" : "ad1efef31b2bb15c64122144b24bcb42",
                     "target" : null
                   }
                 },
@@ -4995,7 +4995,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "lg"
+                  "value" : "xl"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -12515,17 +12515,6 @@
       "type" : "CLIENT_SCRIPT"
     }, {
       "broker" : null,
-      "clientScript" : {
-        "sysId" : "060275531b6ff55864122144b24bcb54"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clriiggfxjgaacceeeddffhhyzvjjaaqtev",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
       "clientScript" : null,
       "conditional" : null,
       "declarativeAction" : null,
@@ -13306,8 +13295,8 @@
 }, {
   "name" : "tab3PortfolioElement",
   "label" : "tab3PortfolioElement",
-  "fieldType" : "",
-  "valueType" : "",
+  "fieldType" : "string",
+  "valueType" : "string",
   "shape" : "",
   "description" : "",
   "initialValue" : {
@@ -13320,7 +13309,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>230</sys_mod_count>
+        <sys_mod_count>251</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13328,7 +13317,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-11 15:12:45</sys_updated_on>
+        <sys_updated_on>2024-01-12 14:26:28</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
