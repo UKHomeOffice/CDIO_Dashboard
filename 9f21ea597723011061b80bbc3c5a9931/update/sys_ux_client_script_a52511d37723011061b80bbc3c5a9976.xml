@@ -6,12 +6,34 @@
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
-  * @param {params} params
-  * @param {api} params.api
-  * @param {TransformApiHelpers} params.helpers
-  */
-function evaluateProperty({api, helpers}) {
-	return !(api.state.tab3verticalAMetric2ShowHealth === 'green');
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    var KPI_bds_list = api.data.verticalA_headlinemetric2v.output.result;
+    var dropdown_selection = api.state.tab3PortfolioElement;
+
+    for (let i = 0; i < KPI_bds_list.length; i++) {
+        var KPI_bd_sysid = KPI_bds_list[i].element.value;
+        if (dropdown_selection === KPI_bd_sysid) {
+            var KPI_bd_score = KPI_bds_list[i].scores[0].value;
+            var KPI_bd_target = KPI_bds_list[i].scores[0].target;
+            break;
+        }
+    }
+    var val = KPI_bd_score;
+    // target = KPI_bd_target; doesn't exist at the time of scripting
+    var target = 8;
+    if (val < 0.8 * target) {
+        return false;
+    } else {
+        return true;
+    }
+
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
@@ -19,7 +41,7 @@ function evaluateProperty({api, helpers}) {
         <sys_created_on>2022-05-24 03:55:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a52511d37723011061b80bbc3c5a9976</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>icon_29___isHidden__</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -27,7 +49,7 @@ function evaluateProperty({api, helpers}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_a52511d37723011061b80bbc3c5a9976</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-08 17:10:47</sys_updated_on>
+        <sys_updated_on>2024-01-15 14:54:55</sys_updated_on>
         <target/>
         <type>transform</type>
     </sys_ux_client_script>
@@ -39,10 +61,10 @@ function evaluateProperty({api, helpers}) {
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-04 13:15:02</sys_created_on>
-        <sys_id>4c5f2dd51bef75dc64122144b24bcbfe</sys_id>
+        <sys_created_on>2024-01-11 15:03:50</sys_created_on>
+        <sys_id>865b4a2f1be77598dba1c3e5464bcb29</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-04 13:15:02</sys_updated_on>
+        <sys_updated_on>2024-01-11 15:03:50</sys_updated_on>
     </sys_claim>
 </record_update>

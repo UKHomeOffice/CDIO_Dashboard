@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
     <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
         <api_name>sn_ciodashboard.getPAscoreVA</api_name>
-        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}&amp;sysparm_include_scores=true&amp;sysparm_to=2023-06-30</api_url>
+        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}&amp;sysparm_breakdown=e6def6531bf5fc50550b97d0b24bcb21&amp;sysparm_include_scores=true&amp;sysparm_to=2023-06-30</api_url>
         <description>Retrieves PA indicator score using PA Scorecard API</description>
         <http_method>GET</http_method>
         <mutates_server_data>false</mutates_server_data>
@@ -37,7 +37,7 @@
         <sys_created_on>2024-01-10 14:23:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7268bc971b2f3918dba1c3e5464bcbe3</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>getPAscoreVA</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -45,7 +45,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_data_broker_rest_7268bc971b2f3918dba1c3e5464bcbe3</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-10 16:25:54</sys_updated_on>
+        <sys_updated_on>2024-01-10 17:07:47</sys_updated_on>
     </sys_ux_data_broker_rest>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
