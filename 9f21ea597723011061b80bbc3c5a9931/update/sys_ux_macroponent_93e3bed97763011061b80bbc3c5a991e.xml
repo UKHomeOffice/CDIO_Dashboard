@@ -1599,8 +1599,8 @@
   },
   "overrides" : {
     "composition" : [ {
-      "elementId" : "dropdown_1",
-      "elementLabel" : "Dropdown 1",
+      "elementId" : "portfolio_dropdown",
+      "elementLabel" : "Portfolio dropdown",
       "propertyValues" : {
         "select" : {
           "type" : "JSON_LITERAL",
@@ -1753,8 +1753,127 @@
           "operation" : null,
           "targetId" : "clrhnyiifpaaaadlddohhxbuiikhuhm",
           "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : null,
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : {
+            "dataBrokerId" : "b997a84053021010cbc2ddeeff7b1228",
+            "operationName" : "REFRESH",
+            "parentResourceId" : "dropdown_pis",
+            "payload" : {
+              "type" : "JSON_LITERAL",
+              "value" : { }
+            }
+          },
+          "targetId" : "clrhywnrdaaaasjjddohhxkujjoctif",
+          "type" : "DATABROKER_OP"
         } ]
       } ],
+      "slot" : "default-slot",
+      "definition" : {
+        "id" : "22c67d9a1e515fef66442e1469bed3a2",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : {
+        "color" : "rgb(var(--now-color--secondary-3))",
+        "padding-top" : "8px"
+      }
+    }, {
+      "elementId" : "pis_dropdown",
+      "elementLabel" : "PIS dropdown",
+      "propertyValues" : {
+        "select" : {
+          "type" : "JSON_LITERAL",
+          "value" : "single"
+        },
+        "showPadding" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "opened" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "tooltipContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "panelFitProps" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "configAria" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "hideCaret" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "search" : {
+          "type" : "JSON_LITERAL",
+          "value" : "none"
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "secondary"
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "placeholder" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "Primary Impacted Service",
+            "comment" : ""
+          }
+        },
+        "bare" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "items" : {
+          "type" : "CLIENT_TRANSFORM_SCRIPT",
+          "script" : {
+            "apiVersion" : "2.0.0",
+            "controllerElementId" : null,
+            "inlineScript" : null,
+            "scriptSysId" : "f44ac9211bf77954dba1c3e5464bcb0c",
+            "target" : null
+          }
+        },
+        "selectedItems" : {
+          "type" : "JSON_LITERAL",
+          "value" : [ ]
+        },
+        "hideLabel" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        }
+      },
+      "eventMappings" : [ ],
       "slot" : "default-slot",
       "definition" : {
         "id" : "22c67d9a1e515fef66442e1469bed3a2",
@@ -12636,6 +12755,69 @@
     }
   },
   "readEvaluationMode" : "EAGER"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "dependencies" : { },
+  "elementId" : "dropdown_pis",
+  "elementLabel" : "Dropdown PIS",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "cmdb_ci_service"
+    },
+    "encodedQuery" : {
+      "type" : "CLIENT_TRANSFORM",
+      "transform" : {
+        "operands" : {
+          "type" : "LIST_CONTAINER",
+          "container" : [ {
+            "type" : "JSON_LITERAL",
+            "value" : "u_providing_portfolio="
+          }, {
+            "type" : "STATE_BINDING",
+            "binding" : {
+              "address" : [ "tab3PortfolioElement" ]
+            }
+          } ]
+        },
+        "operator" : "CONCAT"
+      }
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "name,sys_id,u_providing_portfolio"
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "asc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1050"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
 } ]</data>
         <description/>
         <dispatched_events/>
@@ -12692,6 +12874,9 @@
   "comment" : ""
 }, {
   "message" : "Portfolio",
+  "comment" : ""
+}, {
+  "message" : "Primary Impacted Service",
   "comment" : ""
 }, {
   "message" : "Project",
@@ -13350,7 +13535,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>297</sys_mod_count>
+        <sys_mod_count>309</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13358,7 +13543,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-17 13:50:22</sys_updated_on>
+        <sys_updated_on>2024-01-17 15:59:02</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
