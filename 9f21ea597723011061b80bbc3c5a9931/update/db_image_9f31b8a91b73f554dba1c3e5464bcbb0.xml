@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format>png</format>
+        <height>97</height>
+        <image>df4138211bf3f554dba1c3e5464bcb23</image>
+        <name>sn_ciodashboard.Red.png</name>
+        <size_bytes>621</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:38:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9f31b8a91b73f554dba1c3e5464bcbb0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sn_ciodashboard.Red.png</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>db_image_9f31b8a91b73f554dba1c3e5464bcbb0</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:38:17</sys_updated_on>
+        <thumbnail/>
+        <width>180</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ff0000</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash>b4f363915e1a0b19daef970d24b0b2179b693c1f0f69c0a1286046e2a29b31b3</hash>
+        <image_height>97</image_height>
+        <image_width>180</image_width>
+        <size_bytes>621</size_bytes>
+        <size_compressed>565</size_compressed>
+        <state>available</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:38:16</sys_created_on>
+        <sys_id>df4138211bf3f554dba1c3e5464bcb23</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:38:17</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>9f31b8a91b73f554dba1c3e5464bcbb0</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="df4138211bf3f554dba1c3e5464bcb23">df4138211bf3f554dba1c3e5464bcb23</sys_attachment>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:38:16</sys_created_on>
+        <sys_id>134138211bf3f554dba1c3e5464bcb24</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSW4A4kYMZSHo8qJ4DpBiLg9ydGNadk3kJ5LCkO/o6MjBs7Of+k8gK5NcF+IS4/mdg+M/O/l9Q8L+MzH8Njf9GRv8tLf/b2f23t/+vrv7f0PC/hcV/W9v/AgL/paT+q6j819X9b2Ly38rqPxvbfz6+/2Ji/+Xl/7Ow/Ofm/i8k9F9S8r+Cwn9V1f+amv+Zmf9zcv4XEfkvK/ufh+e/qOh/aen/HBz/eXn/i4v/l5MDOiHUg/UGkNIqCfIL/k8sYDBa8SEGqIuzwCOymIGB7zAIMx7PX5EC9LCTp4tjSEXc25mOXCyGHCziigbb//zfLh29f0HAhdLP10RkryfWqyi9s7xfXpUiEL5wv5zkiS8LZ0575cz9N8i+KuWDk3Zpv8ijfTcuMjeb/DU67BNuH7Hsq1D8q3kKIWlxyyuXeW/1Pb/4is3lm3yz5dQ/LSpbLh6QNjtOwfrt242OoVIZUt8F4pdvlvW4fO/yZ42t248zuVwO4r0rt8E2dmGtwdnFfszySudK0o9dVTZ+LKd0qaTt2F05kEnstzPvfVvhtfvy4x2Xo0usc6rm/OEoWG4ekDbr5S+3lpnvvj6MP1I4YW5aHv//3VtdXMuWP1947/LMm9VVjK3bXlZOubUMqHT2vOVOt7/YePkav62u6lxl8tlePCzj7uUAkpyy6KV0fZ+t0HFBW30fYBAzeLr6uaxzSmgCAG+pDM9tAgAA</data>
+        <length>740</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="df4138211bf3f554dba1c3e5464bcb23">df4138211bf3f554dba1c3e5464bcb23</sys_attachment>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:38:16</sys_created_on>
+        <sys_id>934138211bf3f554dba1c3e5464bcb24</sys_id>
+    </sys_attachment_doc>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18d17b61b640000001</claim_timestamp>
+        <metadata_update_name>db_image_9f31b8a91b73f554dba1c3e5464bcbb0</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:57:07</sys_created_on>
+        <sys_id>1795bce11b7bf554dba1c3e5464bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:57:07</sys_updated_on>
+    </sys_claim>
+</record_update>

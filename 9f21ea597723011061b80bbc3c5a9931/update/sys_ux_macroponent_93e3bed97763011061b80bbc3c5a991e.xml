@@ -1959,22 +1959,38 @@
                 "padding-top" : "8px"
               }
             }, {
-              "elementId" : "icon_33",
-              "elementLabel" : "Icon 33",
+              "elementId" : "green",
+              "elementLabel" : "Green",
               "propertyValues" : {
-                "size" : {
+                "fit" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "xl"
+                  "value" : "fill"
                 },
-                "icon" : {
+                "src" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
+                  "value" : "/sn_ciodashboard.Green.png"
+                },
+                "alt" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "",
+                    "comment" : ""
+                  }
+                },
+                "position" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "center center"
+                },
+                "height" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 50
                 }
               },
               "eventMappings" : [ ],
               "slot" : "Main",
               "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "id" : "15fe506403f8a98575b6df59008ea8f1",
                 "type" : "MACROPONENT"
               },
               "overrides" : null,
@@ -1984,7 +2000,7 @@
                   "apiVersion" : "2.0.0",
                   "controllerElementId" : null,
                   "inlineScript" : null,
-                  "scriptSysId" : "a8bf27241b0bf55064122144b24bcbd2",
+                  "scriptSysId" : "f3c1f86d1bf3f554dba1c3e5464bcb6e",
                   "target" : null
                 }
               },
@@ -1993,25 +2009,43 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#008000"
+                "width" : "100px",
+                "padding-top" : "8px",
+                "padding-left" : "150px"
               }
             }, {
-              "elementId" : "icon_34",
-              "elementLabel" : "Icon 34",
+              "elementId" : "amber",
+              "elementLabel" : "Amber",
               "propertyValues" : {
-                "size" : {
+                "fit" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "xl"
+                  "value" : "fill"
                 },
-                "icon" : {
+                "src" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
+                  "value" : "/sn_ciodashboard.Amber.png"
+                },
+                "alt" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "",
+                    "comment" : ""
+                  }
+                },
+                "position" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "center center"
+                },
+                "height" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
                 }
               },
               "eventMappings" : [ ],
               "slot" : "Main",
               "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "id" : "15fe506403f8a98575b6df59008ea8f1",
                 "type" : "MACROPONENT"
               },
               "overrides" : null,
@@ -2021,7 +2055,7 @@
                   "apiVersion" : "2.0.0",
                   "controllerElementId" : null,
                   "inlineScript" : null,
-                  "scriptSysId" : "3d80f3a41b0bf55064122144b24bcba5",
+                  "scriptSysId" : "8e33306d1b77f554dba1c3e5464bcb62",
                   "target" : null
                 }
               },
@@ -2030,25 +2064,43 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#FFA500"
+                "width" : "100px",
+                "padding-top" : "8px",
+                "padding-left" : "150px"
               }
             }, {
-              "elementId" : "icon_35",
-              "elementLabel" : "Icon 35",
+              "elementId" : "red",
+              "elementLabel" : "Red",
               "propertyValues" : {
-                "size" : {
+                "fit" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "xl"
+                  "value" : "fill"
                 },
-                "icon" : {
+                "src" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
+                  "value" : "/sn_ciodashboard.Red.png"
+                },
+                "alt" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "",
+                    "comment" : ""
+                  }
+                },
+                "position" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "center center"
+                },
+                "height" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
                 }
               },
               "eventMappings" : [ ],
               "slot" : "Main",
               "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "id" : "15fe506403f8a98575b6df59008ea8f1",
                 "type" : "MACROPONENT"
               },
               "overrides" : null,
@@ -2058,7 +2110,7 @@
                   "apiVersion" : "2.0.0",
                   "controllerElementId" : null,
                   "inlineScript" : null,
-                  "scriptSysId" : "bab0fba41b0bf55064122144b24bcbbf",
+                  "scriptSysId" : "1fb3b4691bb7f554dba1c3e5464bcb8f",
                   "target" : null
                 }
               },
@@ -2067,7 +2119,9 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#FF0000"
+                "width" : "100px",
+                "padding-top" : "8px",
+                "padding-left" : "150px"
               }
             } ],
             "layout" : {
@@ -13296,7 +13350,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>264</sys_mod_count>
+        <sys_mod_count>297</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13304,7 +13358,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-17 11:16:09</sys_updated_on>
+        <sys_updated_on>2024-01-17 13:50:22</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
