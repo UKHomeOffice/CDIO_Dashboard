@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="DELETE">
+        <api_name>sn_ciodashboard.getPAbreakdown</api_name>
+        <api_url>/api/now/pa/scorecards?sysparm_uuid=710a79131b31bc50550b97d0b24bcb05&amp;sysparm_display=all&amp;sysparm_include_scores=true&amp;sysparm_to=2023-06-30</api_url>
+        <description>Retrieves PA indicator breakdown using PA Scorecard API</description>
+        <http_method>GET</http_method>
+        <mutates_server_data>false</mutates_server_data>
+        <name>getPAbreakdown</name>
+        <output_schema/>
+        <parameters/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "uuid",&#13;
+    "label": "PA Indicator",&#13;
+    "description": "PA Indicator UUID",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_indicators"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props>
+        <request_body/>
+        <required_translations>[ {
+  "message" : "PA Indicator",
+  "comment" : ""
+}, {
+  "message" : "PA Indicator UUID",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-02 11:46:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0db74b641ba779d864122144b24bcba3</sys_id>
+        <sys_mod_count>63</sys_mod_count>
+        <sys_name>getPAbreakdown</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_0db74b641ba779d864122144b24bcba3</sys_update_name>
+        <sys_updated_by>LitchfE</sys_updated_by>
+        <sys_updated_on>2024-01-10 13:22:39</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18ccab289fe0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_data_broker_rest_0db74b641ba779d864122144b24bcba3</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-02 15:02:27</sys_created_on>
+        <sys_id>4eb4b3e41ba77dd864122144b24bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-02 15:02:27</sys_updated_on>
+    </sys_claim>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ux_data_broker_rest_0db74b641ba779d864122144b24bcba3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
+        <api_name>sn_ciodashboard.getPAbreakdown</api_name>
+        <api_url>/api/now/pa/scorecards?sysparm_uuid=710a79131b31bc50550b97d0b24bcb05&amp;sysparm_display=all&amp;sysparm_include_scores=true&amp;sysparm_to=2023-06-30</api_url>
+        <description>Retrieves PA indicator breakdown using PA Scorecard API</description>
+        <http_method>GET</http_method>
+        <mutates_server_data>false</mutates_server_data>
+        <name>getPAbreakdown</name>
+        <output_schema/>
+        <parameters/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "uuid",&#13;
+    "label": "PA Indicator",&#13;
+    "description": "PA Indicator UUID",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_indicators"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props>
+        <request_body/>
+        <required_translations>[ {
+  "message" : "PA Indicator",
+  "comment" : ""
+}, {
+  "message" : "PA Indicator UUID",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-02 11:46:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0db74b641ba779d864122144b24bcba3</sys_id>
+        <sys_mod_count>63</sys_mod_count>
+        <sys_name>getPAbreakdown</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_0db74b641ba779d864122144b24bcba3</sys_update_name>
+        <sys_updated_by>LitchfE</sys_updated_by>
+        <sys_updated_on>2024-01-10 13:22:39</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18ccab289fe0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_data_broker_rest_0db74b641ba779d864122144b24bcba3</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-02 15:02:27</sys_created_on>
+        <sys_id>4eb4b3e41ba77dd864122144b24bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-02 15:02:27</sys_updated_on>
+    </sys_claim>
+</record_update>]]></payload>
+        <payload_hash>1451399207</payload_hash>
+        <record_name>getPAbreakdown</record_name>
+        <reverted_from/>
+        <source>ce992b2b1b217590d9e4a755bd4bcba2</source>
+        <source_table>sys_app_customization</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-18 10:09:03</sys_created_on>
+        <sys_id>d80b013d1bf371d4dba1c3e5464bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d1c0badc90000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-18 10:09:03</sys_updated_on>
+        <type>REST Data Broker</type>
+        <update_guid>940b013d5cf371d473c2e99d252b1a63</update_guid>
+        <update_guid_history>940b013d5cf371d473c2e99d252b1a63:0,e55770f909f7fd94d9bd4b3b2822ed88:-895137931,da7c7c3513fffd942070d86da531007f:0,e55770f909f7fd94d9bd4b3b2822ed88:-895137931,896cd5574a6ff918cba1446536c1f3d4:0,f4c338d3d1a73918be8001add27e07c9:0,9343b05b5f673918b47f83e17bcc34c1:0,3002b89bd6e33918096557d646f6cbdb:-66084878,f6613013d9e339187ea7e9d05285c650:60315222,2ff074979ea33918572df1d0e31c5a0a:0,84bf289b2a2339180b81022684887b20:0,d29aecd7ae6bf518931958f782f53994:-727590289,274a2c53122bf518699be51159ff618c:60315222,da99a453f52bf51849bcec5594695d5b:-715324341,fe892c53932bf51852cd01493cf9879e:60315222,cd84d4df99eb7518026e6143c8c98c2a:-715324341,ec74905750eb75184947dfbae8acf1e5:60315222,5164905b26eb7518b3539d05d2a807f4:-543634850,cb4458d72dab751892fdf5b447295a6e:-1076289287,1124185742eb751888547d9918892937:60315222,ab51849f552335182d780322424db823:-1276400159,e2f0c05ff0233518fbf39ea1cde2c359:1279180370,43908c5f6feff118c931c1e1a789b031:-1380676165,e9ef774f3aeff118ad247abaef9d05da:-1568772118,58dfbfc727eff118ebbde011264469c7:312326786,a77f330746eff1180c870e4a3fb66ddc:-112099387,5c07f78fc723f118f4fdba03c08727c9:615010489,58b63fc383e3f118a7e79df06f44ed40:-1568772118,38a63fc32fe3f118a2eb11c72bf04e3c:-112099387,1a86330fcc23f1180218377980f9fd4a:312326786,6cd4f78f6123f1189c211f471928d9c1:-1397409698,c1c4ffcbdf23f118bc3c23886c33574a:-1383847519,0db4ffcbc123f1184276b08bd08029e9:-478359048,64a4bbcf2bafb118c8b4f609955fc1f2:-1347766859,86fae33a71a7f99407ef411d7d5f7f14:1551209895,072c8cc38167bd9406e76014c839c6ba:0,86fae33a71a7f99407ef411d7d5f7f14:1551209895,12eaa73e8167f9948f3863b982c1daf0:-57898585,9c6a63ba9a67f9940b53589302b1ed01:-1568772118,5b3a277a6667f994cb00c9e2884b3c8e:1526954986,033927326927f9940041109ba786c1f0:1551209895,fe1923329027f99408eb6f106d81b635:-1471678768,3fc8ef368fa3f994a3f70f3724375ad6:-1831533448,41f763763863f994329318b23136b002:-1478086307,071a07b254ab3994442fa1944274c5c1:1579804504,4af98372f26b3994ac6a5c2e881e4bf6:1920984687,48e94772086b39949b05941c5366eb29:1024918495,2d5983729f6b39946a5e660e0ed429ee:1031163576,86887ab21de3f59460fcfe7b91c1c579:-727590289,9a40f2f6802bb594b0b8a487bfb85245:-1736335526,ea307a72db2bb594ade3b1262a5d02c9:875660567,5dff2a72a92bb5943704e58e3c4a398b:-1736335526,6c9f267a74e7b594e0886d65c8389bd7:-1568772118,452fa2bad2a7b594dfba1bac8237d983:-57898585,2ede6a3682a7b594ad185870eeb6e7f6:875660567,dfbe6a36cfa7b59429a92664a3c686f0:-127476244,4c0d2a72ce27b5948c818dc9c66a684e:669220721,2cbc66f2a8e3b59430b076ede4921d96:-2071128914,beeb66b64da3b594ff2cb1777d82b538:-486167975,ac78c7e23967b154d05ef88e9048c5aa:735851644,7d3887aaf267b154928175faaabda35d:647667175,f7f7cbaa9027b1548de3ec05032a1043:897385120,11e78b662263b154e783fb642f45e24d:-591214050,87774fee3fef7154e0ea95fab97b5592:-485206923,bc934fe251af7154335f146c98d6c260:1272301459,a96347e290af715494b6fa38d6538e41:-766596115,67130faae66f7154175d2bdedd81d5b4:-450473556,35c24baa796f71540fcfdbfecff4b0f0:-34017144,e95287aa566f71545cffcd0103a223d7:262701883,bb1b72ee48e37154b2ac62b06d79d992:0,1d597a6657637154dc19cc0b0c313d0c:1932034655,c68fd6260eafbd146a2bf33d4171dd1a:0,ccb712e2e2e3bd147ba4c3e649ccae93:1932034655,cea87cf5682b7190ba8fcda738e73082:0,55577c3536a771902bfddd1316f457d6:1932034655,d786d2916e6b79dc67eb9ac8f4f45e60:0,93359611eae779dc4474b44b30de1e02:1932034655,3020054deeafb95c6e86d73da3e0ccc0:0,d9e9f809a167b95c1a69ebca1140313c:324366799,ff6fa0cd62a7795c0688ff46834c1191:-170692762,c04fe0c9f0a7795c1fe0c9a4456da98c:1443481776,57878845076f755c22c1e041b4c34716:0,fc578401bc6f755c8b3f0c52d1a8912c:1932034655,dec3f7702563355cc7f4fd59d52508d4:0,cad27bb81ceff15c28e1c4f484849ad6:1932034655,f4a9df2437efb9d8c6feaa7de404968d:-701392429,2fc75f64dd2fb9d80ecd62586d4dc552:1045552801,b4575f64fa2fb9d8416b3b13b9c8d24d:-1639539638,f0179f2888ebb9d87cc6755ebb30fc74:1520256122,76e6d36834ebb9d86f34653a4ca755a5:-59988858,b686532487ebb9d80e82e40e43b161c5:-1639539638,a9e55f20b9abb9d83e07c28124f3222c:-1403195953,0fe7c3a8e8a779d8952a44a828567776:956499308</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-18 14:32:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_data_broker_rest">sys_ux_data_broker_rest</sys_db_object>
+        <sys_id>03c65d1132514986801916f587030924</sys_id>
+        <sys_metadata>0db74b641ba779d864122144b24bcba3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getPAbreakdown</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_rest_0db74b641ba779d864122144b24bcba3</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_rest_0db74b641ba779d864122144b24bcba3">d80b013d1bf371d4dba1c3e5464bcb63</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-18 14:32:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
