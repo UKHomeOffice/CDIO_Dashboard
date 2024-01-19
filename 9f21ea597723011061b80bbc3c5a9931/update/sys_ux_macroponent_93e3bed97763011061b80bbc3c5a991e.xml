@@ -1781,6 +1781,17 @@
           "operation" : null,
           "targetId" : "clrjfkrcgaabbdhddjhhwcoscddjjwhh",
           "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "b5bc7e061b7b751c64122144b24bcbfd"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clrknrgaaddaaaakhhddjhhwggxzafffeed",
+          "type" : "CLIENT_SCRIPT"
         } ]
       } ],
       "slot" : "default-slot",
@@ -2093,171 +2104,6 @@
               "styles" : {
                 "color" : "rgb(var(--now-color--secondary-3))",
                 "padding-top" : "8px"
-              }
-            }, {
-              "elementId" : "green",
-              "elementLabel" : "Green",
-              "propertyValues" : {
-                "fit" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "fill"
-                },
-                "src" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "/sn_ciodashboard.Green.png"
-                },
-                "alt" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "",
-                    "comment" : ""
-                  }
-                },
-                "position" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "center center"
-                },
-                "height" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : 50
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Main",
-              "definition" : {
-                "id" : "15fe506403f8a98575b6df59008ea8f1",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "f3c1f86d1bf3f554dba1c3e5464bcb6e",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "width" : "100px",
-                "padding-top" : "8px",
-                "padding-left" : "150px"
-              }
-            }, {
-              "elementId" : "amber",
-              "elementLabel" : "Amber",
-              "propertyValues" : {
-                "fit" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "fill"
-                },
-                "src" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "/sn_ciodashboard.Amber.png"
-                },
-                "alt" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "",
-                    "comment" : ""
-                  }
-                },
-                "position" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "center center"
-                },
-                "height" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : null
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Main",
-              "definition" : {
-                "id" : "15fe506403f8a98575b6df59008ea8f1",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "8e33306d1b77f554dba1c3e5464bcb62",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "width" : "100px",
-                "padding-top" : "8px",
-                "padding-left" : "150px"
-              }
-            }, {
-              "elementId" : "red",
-              "elementLabel" : "Red",
-              "propertyValues" : {
-                "fit" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "fill"
-                },
-                "src" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "/sn_ciodashboard.Red.png"
-                },
-                "alt" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "",
-                    "comment" : ""
-                  }
-                },
-                "position" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "center center"
-                },
-                "height" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : null
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Main",
-              "definition" : {
-                "id" : "15fe506403f8a98575b6df59008ea8f1",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "1fb3b4691bb7f554dba1c3e5464bcb8f",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "width" : "100px",
-                "padding-top" : "8px",
-                "padding-left" : "150px"
               }
             } ],
             "layout" : {
@@ -4350,8 +4196,14 @@
               "elementLabel" : "Stylized text 16",
               "propertyValues" : {
                 "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* {font-size: 24px; font-weight: 500;}"
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "b95d7ec61bfb751c64122144b24bcb12",
+                    "target" : null
+                  }
                 },
                 "text" : {
                   "type" : "DATA_OUTPUT_BINDING",
@@ -12555,6 +12407,17 @@
       "operation" : null,
       "targetId" : "clrhhyymwyaaaalkddohhxreehhshhyccc",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "b5bc7e061b7b751c64122144b24bcbfd"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrkoyhfxaaaaohddjhhwxabtbccshh",
+      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -12638,7 +12501,31 @@
   "dependencies" : { },
   "elementId" : "verticalB_headlinemetric1v",
   "elementLabel" : "VerticalB Headline Metric1v",
-  "eventMappings" : [ ],
+  "eventMappings" : [ {
+    "eventMappingId" : "clrkoxaaccoaaaanvddjhhwclccdnaaau",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "b5bc7e061b7b751c64122144b24bcbfd"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrkoxaaccoaaaanwddjhhwzsrdydxo",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
   "inputValues" : {
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
@@ -13362,13 +13249,24 @@
     "type" : "JSON_LITERAL",
     "value" : "bae6590e4f407f089e23e1128110c780"
   }
+}, {
+  "name" : "tab3verticalBShowHealth",
+  "label" : "tab3verticalBShowHealth",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "amber"
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>343</sys_mod_count>
+        <sys_mod_count>348</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13376,7 +13274,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-19 10:39:17</sys_updated_on>
+        <sys_updated_on>2024-01-19 13:43:47</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
