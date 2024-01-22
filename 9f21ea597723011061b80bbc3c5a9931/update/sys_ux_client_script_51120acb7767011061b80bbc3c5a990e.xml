@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
-        <name>tab3showVerticalCMetric2Delta</name>
+        <name>tab3showVerticalCMetric2Health</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
@@ -13,13 +13,29 @@
 * @param {ApiHelpers} params.helpers
 */
 function handler({api, event, helpers, imports}) {
-     var changePerc = api.data.verticalc_headlinemetric2.output.result[0].changeperc;
-   
-    if(changePerc>=0){
-        api.setState('tab3verticalCMetric2ShowDelta',false);
+    var KPI_bds_list = api.data.verticalC_headlinemetric2v.output.result;
+    var dropdown_selection = api.state.tab3PortfolioElement;
+        
+    for(let i = 0; i < KPI_bds_list.length; i++) {
+        var KPI_bd_sysid = KPI_bds_list[i].element.value;
+        if (dropdown_selection === KPI_bd_sysid) {
+            var KPI_bd_score = KPI_bds_list[i].scores[0].value;
+          break;
+        }
     }
-    else{
-        api.setState('tab3verticalCMetric2ShowDelta',true);
+
+    var value  = KPI_bd_score;
+    if(value>20){
+        api.setState('tab3verticalBMetric1ShowHealth','green');
+    }
+    else if (value>=10 && value<=20 ){
+        api.setState('tab3verticalBMetric1ShowHealth','amber');
+    }
+    else if (value<10 ) {
+        api.setState('tab3verticalBMetric1ShowHealth','red');
+    }
+    else {
+        api.setState('tab3verticalBMetric1ShowHealth','');
     }
 
 }]]></script>
@@ -29,15 +45,15 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2022-05-23 12:32:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51120acb7767011061b80bbc3c5a990e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>tab3showVerticalCMetric2Delta</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>tab3showVerticalCMetric2Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_51120acb7767011061b80bbc3c5a990e</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-05-23 12:33:35</sys_updated_on>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-22 10:06:03</sys_updated_on>
         <target/>
         <type>default</type>
     </sys_ux_client_script>
