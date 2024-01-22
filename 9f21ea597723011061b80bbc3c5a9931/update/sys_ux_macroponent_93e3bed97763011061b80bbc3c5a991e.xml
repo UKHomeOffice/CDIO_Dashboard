@@ -8777,7 +8777,7 @@
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "caret-down-fill"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -8802,7 +8802,7 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#bfbfbf"
+                "color" : "#008000"
               }
             }, {
               "elementId" : "icon_24",
@@ -8814,7 +8814,7 @@
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "caret-up-fill"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -8839,50 +8839,44 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#bfbfbf"
+                "color" : "#ffa500"
               }
             }, {
-              "elementId" : "stylized_text_239",
-              "elementLabel" : "Stylized text 239",
+              "elementId" : "icon_38",
+              "elementLabel" : "Icon 38",
               "propertyValues" : {
-                "css" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "681dd75f7723011061b80bbc3c5a9947",
-                    "target" : null
-                  }
-                },
-                "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticald_headlinemetric1", "output", "result", "0", "changeperc_formatted" ]
-                  }
-                },
-                "tag" : {
+                "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "span"
+                  "value" : "xl"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
               "slot" : "Column 2",
               "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
                 "type" : "MACROPONENT"
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "1913ea471b7371dcdba1c3e5464bcb69",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "padding-top" : "5px"
+                "color" : "#ff0000"
               }
             } ],
             "layout" : {
@@ -13202,7 +13196,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>391</sys_mod_count>
+        <sys_mod_count>397</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13210,7 +13204,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-22 13:31:42</sys_updated_on>
+        <sys_updated_on>2024-01-22 13:46:20</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
