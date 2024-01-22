@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
+        <name>stylized_text_238/text</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  var KPI_bds_list = api.data.verticalD_headlinemetric1v.output.result;
+  var dropdown_selection = api.state.tab3PortfolioElement;
+    
+  for(let i = 0; i < KPI_bds_list.length; i++) {
+    var KPI_bd_sysid = KPI_bds_list[i].element.value;
+    if (dropdown_selection === KPI_bd_sysid) {
+      var KPI_bd_score = KPI_bds_list[i].scores[0].value_formatted;
+      return KPI_bd_score;
+      break;
+    }
+  }
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-22 13:30:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>df8f9a0f1bfb31dcdba1c3e5464bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>stylized_text_238/text</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_df8f9a0f1bfb31dcdba1c3e5464bcb22</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-22 13:30:51</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18d3164606d0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_df8f9a0f1bfb31dcdba1c3e5464bcb22</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-22 13:37:58</sys_created_on>
+        <sys_id>2f2162471bbf31dcdba1c3e5464bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-22 13:37:58</sys_updated_on>
+    </sys_claim>
+</record_update>
