@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
-        <name>stylized_text_149_css</name>
+        <name>stylized_text_24/css</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
@@ -14,60 +14,46 @@ function evaluateProperty({
     api,
     helpers
 }) {
-    var val = '';
-    var target = '';
-    var KPI_bds_list = api.data.verticalC_headlinemetric1v.output.result;
-    var dropdown_selection = api.state.tab3PortfolioElement;
-
-    for(let i = 0; i < KPI_bds_list.length; i++) {
-        var KPI_bd_sysid = KPI_bds_list[i].element.value;
-        if (dropdown_selection === KPI_bd_sysid) {
-          var KPI_bd_score = KPI_bds_list[i].scores[0].value;
-          break;
-        }
-      }
-
-
-    val = KPI_bd_score;
-
-    if (val < 5.5) {
-        return '* { font-size: 24px; font-weight: 600; color:#008000}';
-    } else if (val >= 5.5 && val <= 6.5) {
-        return '* { font-size: 24px; font-weight: 600; color:#FFA500}';
+    if (api.state.tab3verticalCShowHealth === 'green') {
+        return '* { font-size: 24px; font-weight: 500; color:#008000}';
+    } else if (api.state.tab3verticalCShowHealth === 'amber') {
+        return '* { font-size: 24px; font-weight: 500; color:#FFA500}';
+    } else if (api.state.tab3verticalCShowHealth === 'red') {
+        return '* { font-size: 24px; font-weight: 500; color:#FF0000}';
     } else {
-        return '* { font-size: 24px; font-weight: 600; color:#FF0000}';
+        return '* { font-size: 24px; font-weight: 500; color: rgb(var(--now-color--secondary-3))}';
     }
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-05-24 13:55:06</sys_created_on>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-22 10:23:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>7e7e5f9f7723011061b80bbc3c5a9957</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>stylized_text_149_css</sys_name>
+        <sys_id>c994b5471b337d9cdba1c3e5464bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>stylized_text_24/css</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
-        <sys_update_name>sys_ux_client_script_7e7e5f9f7723011061b80bbc3c5a9957</sys_update_name>
+        <sys_update_name>sys_ux_client_script_c994b5471b337d9cdba1c3e5464bcb45</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-22 10:27:26</sys_updated_on>
-        <target/>
+        <sys_updated_on>2024-01-22 10:23:06</sys_updated_on>
+        <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>00000000</claim_timestamp>
-        <metadata_update_name>sys_ux_client_script_7e7e5f9f7723011061b80bbc3c5a9957</metadata_update_name>
+        <claim_timestamp>18d30bba6ba0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_c994b5471b337d9cdba1c3e5464bcb45</metadata_update_name>
         <previous_claim_app_version>1.0.2</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-18 12:42:09</sys_created_on>
-        <sys_id>4b0ea9f51bb735d4dba1c3e5464bcb73</sys_id>
+        <sys_created_on>2024-01-22 10:33:40</sys_created_on>
+        <sys_id>fff6b5031bf37d9cdba1c3e5464bcb8f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-18 12:42:09</sys_updated_on>
+        <sys_updated_on>2024-01-22 10:33:40</sys_updated_on>
     </sys_claim>
 </record_update>
