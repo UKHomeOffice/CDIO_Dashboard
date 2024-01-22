@@ -1825,6 +1825,39 @@
           "operation" : null,
           "targetId" : "clrorniaaoaabbaaddddjhhwqkskznsw",
           "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "e052cacb7767011061b80bbc3c5a9974"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clroymagpaaaatlddjhhwjjzgglghiv",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "48928ecb7767011061b80bbc3c5a99a7"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clroymotkaaaatmddjhhwccgthiikkc",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "35dada8f1bf331dcdba1c3e5464bcb66"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clroynccnggaaaatnddjhhwbphiijjbbgge",
+          "type" : "CLIENT_SCRIPT"
         } ]
       } ],
       "slot" : "default-slot",
@@ -11811,17 +11844,6 @@
     }, {
       "broker" : null,
       "clientScript" : {
-        "sysId" : "e052cacb7767011061b80bbc3c5a9974"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqbvssaabbhaddfhhbbwccqolggco",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
         "sysId" : "4575068f7767011061b80bbc3c5a99f0"
       },
       "conditional" : null,
@@ -11872,17 +11894,6 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clddcozgglggaaaalhddfhhbbsjjccoaaapv",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "48928ecb7767011061b80bbc3c5a99a7"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqcfvgaabbhhddfhhbbsffkaargjt",
       "type" : "CLIENT_SCRIPT"
     }, {
       "broker" : null,
@@ -11949,17 +11960,6 @@
       "operation" : null,
       "targetId" : "clddiqczqzaabbhoddfhhbbaaqnffxgiid",
       "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "b4b50a8f7767011061b80bbc3c5a99cf"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqdjjeddaabbhpddfhhbbxkbhjfax",
-      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -12002,28 +12002,6 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clddcpaahheewaaaambddfhhbbbbvpuvraadd",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "b8d2820f7767011061b80bbc3c5a9966"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqdkxgaabbhvddfhhbbjmdqiilhj",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "b4d58a8f7767011061b80bbc3c5a9944"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqdxhhiiaabbhwddfhhbbffvcceeccagggg",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -12487,7 +12465,42 @@
   "dependencies" : { },
   "elementId" : "verticalD_headlinemetric1v",
   "elementLabel" : "VerticalD Headline Metric1v",
-  "eventMappings" : [ ],
+  "eventMappings" : [ {
+    "eventMappingId" : "clroyewwqaaaapsddjhhwddbbbtwugh",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "e052cacb7767011061b80bbc3c5a9974"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clroyewwqaaaaptddjhhwovyffjjejjx",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "35dada8f1bf331dcdba1c3e5464bcb66"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clroyffjsaaaapuddjhhwsobeetlffii",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
   "inputValues" : {
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
@@ -12506,7 +12519,42 @@
   "dependencies" : { },
   "elementId" : "verticalD_headlinemetric2v",
   "elementLabel" : "VerticalD Headline Metric2v",
-  "eventMappings" : [ ],
+  "eventMappings" : [ {
+    "eventMappingId" : "clroygiidiaaaaqbddjhhwpeaajbbfsi",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "48928ecb7767011061b80bbc3c5a99a7"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clroygiidiaaaaqcddjhhwhbnooleec",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "35dada8f1bf331dcdba1c3e5464bcb66"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clroygtgghhaaaaqdddjhhwzhhaagggffffo",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
   "inputValues" : {
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
@@ -13236,7 +13284,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>384</sys_mod_count>
+        <sys_mod_count>389</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13244,7 +13292,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-22 13:06:34</sys_updated_on>
+        <sys_updated_on>2024-01-22 13:26:03</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
