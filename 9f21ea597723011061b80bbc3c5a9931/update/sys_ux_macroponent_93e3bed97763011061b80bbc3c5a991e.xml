@@ -7027,7 +7027,7 @@
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "caret-down-fill"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -7052,7 +7052,7 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#bfbfbf"
+                "color" : "#008000"
               }
             }, {
               "elementId" : "icon_8",
@@ -7064,7 +7064,7 @@
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "caret-up-fill"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -7089,7 +7089,44 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : {
-                "color" : "#bfbfbf"
+                "color" : "#ffa500"
+              }
+            }, {
+              "elementId" : "icon_37",
+              "elementLabel" : "Icon 37",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "xl"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "fcef39831b3f7d9cdba1c3e5464bcb09",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#ff0000"
               }
             } ],
             "layout" : {
@@ -12581,7 +12618,7 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : "red"
+    "value" : "green"
   }
 }, {
   "name" : "tab3verticalDMetric1ShowDelta",
@@ -13183,7 +13220,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>373</sys_mod_count>
+        <sys_mod_count>377</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13191,7 +13228,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-22 11:00:34</sys_updated_on>
+        <sys_updated_on>2024-01-22 11:18:07</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
