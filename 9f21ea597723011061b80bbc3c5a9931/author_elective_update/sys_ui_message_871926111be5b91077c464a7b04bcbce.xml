@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="DELETE">
+        <application/>
+        <code/>
+        <commented_message/>
+        <key>Engagements: Computed as Sum of (Knowledge: Articles viewed this month + Communities: Views this month + Catalog: Views this month + VA: Conversations this month)</key>
+        <language>fr</language>
+        <message>Engagements : Calculé comme la somme des (Connaissances : Articles consultés ce mois-ci + Communautés : Vues ce mois-ci + Catalogue : Vues ce mois-ci + Catalogue : Vues ce mois-ci + VA : Conversations ce mois-ci)</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 07:21:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>871926111be5b91077c464a7b04bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Engagements: Computed as Sum of (Knowledge: Articles viewed this month + Communities: Views this month + Catalog: Views this month + VA: Conversations this month)</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ui_message_871926111be5b91077c464a7b04bcbce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 07:21:58</sys_updated_on>
+    </sys_ui_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ui_message_871926111be5b91077c464a7b04bcbce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application/><code/><commented_message/><key>Engagements: Computed as Sum of (Knowledge: Articles viewed this month + Communities: Views this month + Catalog: Views this month + VA: Conversations this month)</key><language>fr</language><message>Engagements : Calculé comme la somme des (Connaissances : Articles consultés ce mois-ci + Communautés : Vues ce mois-ci + Catalogue : Vues ce mois-ci + Catalogue : Vues ce mois-ci + VA : Conversations ce mois-ci)</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-27 07:21:58</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>871926111be5b91077c464a7b04bcbce</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Engagements: Computed as Sum of (Knowledge: Articles viewed this month + Communities: Views this month + Catalog: Views this month + VA: Conversations this month)</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ui_message_871926111be5b91077c464a7b04bcbce</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-27 07:21:58</sys_updated_on></sys_ui_message></record_update>]]></payload>
+        <payload_hash>-1514111762</payload_hash>
+        <record_name>Engagements: Computed as Sum of (Knowledge: Articles viewed this month + Communities: Views this mon</record_name>
+        <reverted_from/>
+        <source>9f21ea597723011061b80bbc3c5a9931</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-09-27 07:21:58</sys_created_on>
+        <sys_id>cfdec4bf1bfb7d9464122144b24bcbbf</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18ad58415f00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Message</type>
+        <update_guid>8fdec4bfb5fb7d9495723379f11f9fbf</update_guid>
+        <update_guid_history>8fdec4bfb5fb7d9495723379f11f9fbf:-1514111762</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-24 10:54:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_message">sys_ui_message</sys_db_object>
+        <sys_id>33d283f81fad46e38cedba73555bcb29</sys_id>
+        <sys_metadata>871926111be5b91077c464a7b04bcbce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Engagements: Computed as Sum of (Knowledge: Articles viewed this month + Communities: Views this month + Catalog: Views this month + VA: Conversations this month)</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ui_message_871926111be5b91077c464a7b04bcbce</sys_update_name>
+        <sys_update_version display_value="sys_ui_message_871926111be5b91077c464a7b04bcbce">cfdec4bf1bfb7d9464122144b24bcbbf</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-24 10:54:08</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18d3b1c8b830000001</claim_timestamp>
+        <metadata_update_name>sys_ui_message_871926111be5b91077c464a7b04bcbce</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-24 10:55:42</sys_created_on>
+        <sys_id>5e3f003b1b3f7d9464122144b24bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-24 10:55:42</sys_updated_on>
+    </sys_claim>
+</record_update>

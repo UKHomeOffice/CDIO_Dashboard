@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="DELETE">
+        <application/>
+        <code/>
+        <commented_message/>
+        <key>How are we tracking with the requests backlog?</key>
+        <language>ja</language>
+        <message>リクエストのバックログはどうなっていますか？</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-25 04:35:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b4efab201b61f51077c464a7b04bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>How are we tracking with the requests backlog?</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ui_message_b4efab201b61f51077c464a7b04bcbc8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-25 04:35:45</sys_updated_on>
+    </sys_ui_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ui_message_b4efab201b61f51077c464a7b04bcbc8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application/><code/><commented_message/><key>How are we tracking with the requests backlog?</key><language>ja</language><message>リクエストのバックログはどうなっていますか？</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-25 04:35:45</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>b4efab201b61f51077c464a7b04bcbc8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>How are we tracking with the requests backlog?</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ui_message_b4efab201b61f51077c464a7b04bcbc8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-25 04:35:45</sys_updated_on></sys_ui_message></record_update>]]></payload>
+        <payload_hash>1721800280</payload_hash>
+        <record_name>How are we tracking with the requests backlog?</record_name>
+        <reverted_from/>
+        <source>9f21ea597723011061b80bbc3c5a9931</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-09-25 04:35:45</sys_created_on>
+        <sys_id>30cec4fb1bfb7d9464122144b24bcb0c</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18aca9f30e80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Message</type>
+        <update_guid>fccec4fbb9fb7d949e1a46b5031b990b</update_guid>
+        <update_guid_history>fccec4fbb9fb7d949e1a46b5031b990b:1721800280</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-24 10:53:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_message">sys_ui_message</sys_db_object>
+        <sys_id>1d6b108c717643fab925912be27cc181</sys_id>
+        <sys_metadata>b4efab201b61f51077c464a7b04bcbc8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>How are we tracking with the requests backlog?</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ui_message_b4efab201b61f51077c464a7b04bcbc8</sys_update_name>
+        <sys_update_version display_value="sys_ui_message_b4efab201b61f51077c464a7b04bcbc8">30cec4fb1bfb7d9464122144b24bcb0c</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-24 10:53:42</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18d3b1c8a320000001</claim_timestamp>
+        <metadata_update_name>sys_ui_message_b4efab201b61f51077c464a7b04bcbc8</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-24 10:55:42</sys_created_on>
+        <sys_id>0a3fccf71b3f7d9464122144b24bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-24 10:55:42</sys_updated_on>
+    </sys_claim>
+</record_update>
