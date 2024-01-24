@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="DELETE">
+        <application/>
+        <code/>
+        <commented_message/>
+        <key>Average number of days a Demand is in State Submitted, Screen, Qualified, or Approved and has not been converted to Project.</key>
+        <language>fr</language>
+        <message>Nombre moyen de jours pendant lesquels une demande a été soumise, examinée, qualifiée ou approuvée et n'a pas été convertie en projet.</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 07:13:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>89272a9d1ba5b91077c464a7b04bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Average number of days a Demand is in State Submitted, Screen, Qualified, or Approved and has not been converted to Project.</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ui_message_89272a9d1ba5b91077c464a7b04bcbdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 07:13:21</sys_updated_on>
+    </sys_ui_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ui_message_89272a9d1ba5b91077c464a7b04bcbdc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application/><code/><commented_message/><key>Average number of days a Demand is in State Submitted, Screen, Qualified, or Approved and has not been converted to Project.</key><language>fr</language><message>Nombre moyen de jours pendant lesquels une demande a été soumise, examinée, qualifiée ou approuvée et n'a pas été convertie en projet.</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-27 07:13:21</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>89272a9d1ba5b91077c464a7b04bcbdc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Average number of days a Demand is in State Submitted, Screen, Qualified, or Approved and has not been converted to Project.</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ui_message_89272a9d1ba5b91077c464a7b04bcbdc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-27 07:13:21</sys_updated_on></sys_ui_message></record_update>]]></payload>
+        <payload_hash>1069783368</payload_hash>
+        <record_name>Average number of days a Demand is in State Submitted, Screen, Qualified, or Approved and has not be</record_name>
+        <reverted_from/>
+        <source>9f21ea597723011061b80bbc3c5a9931</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-09-27 07:13:21</sys_created_on>
+        <sys_id>5bbe4cbb1bfb7d9464122144b24bcb0d</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18ad57c32680000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Message</type>
+        <update_guid>1bbe4cbbcefb7d94994e8b679b96010d</update_guid>
+        <update_guid_history>1bbe4cbbcefb7d94994e8b679b96010d:1069783368</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-24 10:53:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_message">sys_ui_message</sys_db_object>
+        <sys_id>bdc55ac56dec47de9fa66f3ffea7c509</sys_id>
+        <sys_metadata>89272a9d1ba5b91077c464a7b04bcbdc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Average number of days a Demand is in State Submitted, Screen, Qualified, or Approved and has not been converted to Project.</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ui_message_89272a9d1ba5b91077c464a7b04bcbdc</sys_update_name>
+        <sys_update_version display_value="sys_ui_message_89272a9d1ba5b91077c464a7b04bcbdc">5bbe4cbb1bfb7d9464122144b24bcb0d</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-24 10:53:36</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18d3b1c8b780000001</claim_timestamp>
+        <metadata_update_name>sys_ui_message_89272a9d1ba5b91077c464a7b04bcbdc</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-24 10:55:42</sys_created_on>
+        <sys_id>d63f003b1b3f7d9464122144b24bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-24 10:55:42</sys_updated_on>
+    </sys_claim>
+</record_update>

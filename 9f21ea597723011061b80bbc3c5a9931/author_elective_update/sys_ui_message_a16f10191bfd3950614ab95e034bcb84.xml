@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="DELETE">
+        <application/>
+        <code/>
+        <commented_message/>
+        <key>Potential savings is measured as sum of potential_savings on table samp_sw_reclamation_candidate where State not in (Closed Skipped, Closed Canceled) and Active = true grouped by Product</key>
+        <language>ja</language>
+        <message>潜在的節約額は、samp_sw_reclamation_candidateテーブルの潜在的節約額の合計として測定される。</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 07:36:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a16f10191bfd3950614ab95e034bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Potential savings is measured as sum of potential_savings on table samp_sw_reclamation_candidate where State not in (Closed Skipped, Closed Canceled) and Active = true grouped by Product</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ui_message_a16f10191bfd3950614ab95e034bcb84</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 07:36:00</sys_updated_on>
+    </sys_ui_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ui_message_a16f10191bfd3950614ab95e034bcb84</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application/><code/><commented_message/><key>Potential savings is measured as sum of potential_savings on table samp_sw_reclamation_candidate where State not in (Closed Skipped, Closed Canceled) and Active = true grouped by Product</key><language>ja</language><message>潜在的節約額は、samp_sw_reclamation_candidateテーブルの潜在的節約額の合計として測定される。</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-09 07:36:00</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a16f10191bfd3950614ab95e034bcb84</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Potential savings is measured as sum of potential_savings on table samp_sw_reclamation_candidate where State not in (Closed Skipped, Closed Canceled) and Active = true grouped by Product</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ui_message_a16f10191bfd3950614ab95e034bcb84</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-09 07:36:00</sys_updated_on></sys_ui_message></record_update>]]></payload>
+        <payload_hash>-1987861137</payload_hash>
+        <record_name>Potential savings is measured as sum of potential_savings on table samp_sw_reclamation_candidate whe</record_name>
+        <reverted_from/>
+        <source>9f21ea597723011061b80bbc3c5a9931</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-10-09 07:36:00</sys_created_on>
+        <sys_id>528ec8371bfb7d9464122144b24bcb41</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18b135d3f000000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Message</type>
+        <update_guid>128ec83751fb7d943d39a316bf348041</update_guid>
+        <update_guid_history>128ec83751fb7d943d39a316bf348041:-1987861137</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-24 10:52:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_message">sys_ui_message</sys_db_object>
+        <sys_id>2453ec4fc585417b843f8586cc5ae829</sys_id>
+        <sys_metadata>a16f10191bfd3950614ab95e034bcb84</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Potential savings is measured as sum of potential_savings on table samp_sw_reclamation_candidate where State not in (Closed Skipped, Closed Canceled) and Active = true grouped by Product</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ui_message_a16f10191bfd3950614ab95e034bcb84</sys_update_name>
+        <sys_update_version display_value="sys_ui_message_a16f10191bfd3950614ab95e034bcb84">528ec8371bfb7d9464122144b24bcb41</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-24 10:52:43</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18d3b1c891e0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_message_a16f10191bfd3950614ab95e034bcb84</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-24 10:55:42</sys_created_on>
+        <sys_id>c63f8cf71b3f7d9464122144b24bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-24 10:55:42</sys_updated_on>
+    </sys_claim>
+</record_update>
