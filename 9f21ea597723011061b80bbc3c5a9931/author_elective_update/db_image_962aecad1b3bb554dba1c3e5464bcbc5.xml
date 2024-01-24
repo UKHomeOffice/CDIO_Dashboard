@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="DELETE">
+        <active>true</active>
+        <category/>
+        <format>png</format>
+        <height>97</height>
+        <image>6b7ae0a51b7bb554dba1c3e5464bcb99</image>
+        <name>sn_ciodashboard.Green.png</name>
+        <size_bytes>179</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:08:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>962aecad1b3bb554dba1c3e5464bcbc5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sn_ciodashboard.Green.png</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>db_image_962aecad1b3bb554dba1c3e5464bcbc5</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:08:32</sys_updated_on>
+        <thumbnail/>
+        <width>180</width>
+    </db_image>
+    <sys_attachment action="DELETE">
+        <average_image_color>#9900</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash>f4af37a266d3781cc616eb6f9bcb31e02a2363fc490b81a2eb1dfa88698b1e5e</hash>
+        <image_height>97</image_height>
+        <image_width>180</image_width>
+        <size_bytes>179</size_bytes>
+        <size_compressed>169</size_compressed>
+        <state>available</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:08:31</sys_created_on>
+        <sys_id>6b7ae0a51b7bb554dba1c3e5464bcb99</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:08:32</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>962aecad1b3bb554dba1c3e5464bcbc5</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="DELETE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="6b7ae0a51b7bb554dba1c3e5464bcb99">6b7ae0a51b7bb554dba1c3e5464bcb99</sys_attachment>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:08:31</sys_created_on>
+        <sys_id>ab7ae0a51b7bb554dba1c3e5464bcb99</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="DELETE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSW4A4kYMZSHo8qJ4DpBiLg9ydGNadk3kJ5LCkO/o6MjBs7Of+k8gK5LMF+IS4MjQAWQwijZyxQIqpJMgv+D/D0+0GXkAeZ4FHZDEDA99hEGY8nr8iBSio4eniGFIR9/agISOQd2jBV/+3mZwKDGigYTWjy1QGRoO9kW9BXE9XP5d1TglNABOaSF6zAAAA</data>
+        <length>212</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="6b7ae0a51b7bb554dba1c3e5464bcb99">6b7ae0a51b7bb554dba1c3e5464bcb99</sys_attachment>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:08:31</sys_created_on>
+        <sys_id>2f7ae0a51b7bb554dba1c3e5464bcb99</sys_id>
+    </sys_attachment_doc>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>db_image_962aecad1b3bb554dba1c3e5464bcbc5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category/><format>png</format><height>97</height><image>6b7ae0a51b7bb554dba1c3e5464bcb99</image><name>sn_ciodashboard.Green.png</name><size_bytes>179</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-01-17 13:08:20</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>962aecad1b3bb554dba1c3e5464bcbc5</sys_id><sys_mod_count>2</sys_mod_count><sys_name>sn_ciodashboard.Green.png</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>db_image_962aecad1b3bb554dba1c3e5464bcbc5</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2024-01-17 13:08:32</sys_updated_on><thumbnail/><width>180</width></db_image><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#9900</average_image_color><chunk_size_bytes>700000</chunk_size_bytes><compressed>true</compressed><content_type>image/png</content_type><encryption_context/><file_name>image</file_name><hash>f4af37a266d3781cc616eb6f9bcb31e02a2363fc490b81a2eb1dfa88698b1e5e</hash><image_height>97</image_height><image_width>180</image_width><size_bytes>179</size_bytes><size_compressed>169</size_compressed><state>available</state><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-01-17 13:08:31</sys_created_on><sys_id>6b7ae0a51b7bb554dba1c3e5464bcb99</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2024-01-17 13:08:32</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>962aecad1b3bb554dba1c3e5464bcbc5</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="6b7ae0a51b7bb554dba1c3e5464bcb99">6b7ae0a51b7bb554dba1c3e5464bcb99</sys_attachment><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-01-17 13:08:31</sys_created_on><sys_id>ab7ae0a51b7bb554dba1c3e5464bcb99</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>6wzwc+flkuJiYGDg9fRwCQLSW4A4kYMZSHo8qJ4DpBiLg9ydGNadk3kJ5LCkO/o6MjBs7Of+k8gK5LMF+IS4MjQAWQwijZyxQIqpJMgv+D/D0+0GXkAeZ4FHZDEDA99hEGY8nr8iBSio4eniGFIR9/agISOQd2jBV/+3mZwKDGigYTWjy1QGRoO9kW9BXE9XP5d1TglNABOaSF6zAAAA</data><length>212</length><position>1</position><sys_attachment display_value="image" sys_id="6b7ae0a51b7bb554dba1c3e5464bcb99">6b7ae0a51b7bb554dba1c3e5464bcb99</sys_attachment><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-01-17 13:08:31</sys_created_on><sys_id>2f7ae0a51b7bb554dba1c3e5464bcb99</sys_id></sys_attachment_doc></record_update>]]></payload>
+        <payload_hash>0</payload_hash>
+        <record_name>sn_ciodashboard.Green.png</record_name>
+        <reverted_from/>
+        <source>fc5c00c71b27bd94dba1c3e5464bcb28</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:08:32</sys_created_on>
+        <sys_id>e37a24a51b7bb554dba1c3e5464bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d1789a17e0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:08:32</sys_updated_on>
+        <type>Images</type>
+        <update_guid>2b7a24a5447bb5542fbb324516a766c7</update_guid>
+        <update_guid_history>2b7a24a5447bb5542fbb324516a766c7:-1502173965,2f7a24a5417bb554ace57a1dcdeac6c1:983603404,e37a24a5cc7bb554e6cad05870c0f5be:789157402,387aa421767bb554c99b8ff38420489f:1621058252</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 23/01/2024 08:33:37">8f15e69b1bb7b910dba1c3e5464bcb07</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-23 08:33:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="db_image">db_image</sys_db_object>
+        <sys_id>095d9182a20b4ae080e320ef156ab640</sys_id>
+        <sys_metadata>962aecad1b3bb554dba1c3e5464bcbc5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_ciodashboard.Green.png</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>db_image_962aecad1b3bb554dba1c3e5464bcbc5</sys_update_name>
+        <sys_update_version display_value="db_image_962aecad1b3bb554dba1c3e5464bcbc5">e37a24a51b7bb554dba1c3e5464bcbc8</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-23 08:33:37</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18d17b61b710000001</claim_timestamp>
+        <metadata_update_name>db_image_962aecad1b3bb554dba1c3e5464bcbc5</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-17 13:57:07</sys_created_on>
+        <sys_id>1b95bce11b7bf554dba1c3e5464bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-17 13:57:07</sys_updated_on>
+    </sys_claim>
+</record_update>

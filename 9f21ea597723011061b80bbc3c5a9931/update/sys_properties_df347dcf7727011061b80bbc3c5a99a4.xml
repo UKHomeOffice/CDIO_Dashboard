@@ -12,7 +12,7 @@
         <sys_created_on>2022-05-23 11:35:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>df347dcf7727011061b80bbc3c5a99a4</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>sn_ciodashboard.CIODashboardTab3Details</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -20,7 +20,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_properties_df347dcf7727011061b80bbc3c5a99a4</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-05 15:26:31</sys_updated_on>
+        <sys_updated_on>2024-01-23 09:32:59</sys_updated_on>
         <type>string</type>
         <value>{&#13;
 "verticalAName": "Reliability Metrics",&#13;
@@ -28,9 +28,9 @@
 "verticalBName": "Stability Metrics",&#13;
 "verticalBQuestion":"What's the health of the service?" ,&#13;
 "verticalCName": "Speed Metrics",&#13;
-"verticalCQuestion":"Test to see if responding" ,&#13;
+"verticalCQuestion":"How quickly does a service respond?" ,&#13;
 "verticalDName": "Product Delivery Performance",&#13;
-"verticalDQuestion":"TBD" ,&#13;
+"verticalDQuestion":"How well are we able to deliver products?" ,&#13;
 "verticalEName": "Hardware &amp; Software Asset Management",&#13;
 "verticalEQuestion":"Status of Hardware and Software assets" &#13;
 }</value>
@@ -39,16 +39,16 @@
     <sys_translated_text action="delete_multiple" query="documentkey=df347dcf7727011061b80bbc3c5a99a4"/>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18c259df68e0000001</claim_timestamp>
+        <claim_timestamp>00000000</claim_timestamp>
         <metadata_update_name>sys_properties_df347dcf7727011061b80bbc3c5a99a4</metadata_update_name>
         <previous_claim_app_version>1.0.2</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2023-12-01 13:42:38</sys_created_on>
-        <sys_id>349f6a5e1bb2f11064122144b24bcbde</sys_id>
+        <sys_created_on>2024-01-19 12:59:42</sys_created_on>
+        <sys_id>b9ab32ca1b3b751c64122144b24bcb07</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-12-01 13:42:38</sys_updated_on>
+        <sys_updated_on>2024-01-19 12:59:42</sys_updated_on>
     </sys_claim>
 </record_update>
