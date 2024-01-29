@@ -31,7 +31,7 @@ function handler({api, event, helpers, imports}) {
     else if (value>=95 && value<=97.5 ){
         api.setState('tab3verticalBMetric1ShowHealth','amber');
     }
-    else if (value<95 ) {
+    else if (value<95 && value>0 ) {
         api.setState('tab3verticalBMetric1ShowHealth','red');
     }
     else {
@@ -45,7 +45,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2022-05-23 12:30:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a67102cb7767011061b80bbc3c5a992c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>tab3showVerticalBMetric1Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -53,7 +53,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_a67102cb7767011061b80bbc3c5a992c</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-18 14:46:36</sys_updated_on>
+        <sys_updated_on>2024-01-29 15:34:59</sys_updated_on>
         <target/>
         <type>default</type>
     </sys_ux_client_script>
