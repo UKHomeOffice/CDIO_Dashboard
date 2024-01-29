@@ -25,7 +25,7 @@ function handler({api, event, helpers, imports}) {
     }
 
     var value  = KPI_bd_score;
-    if(value<13){
+    if(value<13 && value>0){
         api.setState('tab3verticalAMetric1ShowHealth','green');
     }
     else if (value>=13 && value<20 ){
@@ -45,7 +45,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2023-12-08 16:18:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c5469b641b07f55064122144b24bcb61</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>tab3showVerticalAMetric1Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -53,7 +53,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_c5469b641b07f55064122144b24bcb61</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-17 09:35:47</sys_updated_on>
+        <sys_updated_on>2024-01-29 15:43:57</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
