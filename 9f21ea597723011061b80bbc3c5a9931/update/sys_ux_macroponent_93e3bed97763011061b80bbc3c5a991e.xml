@@ -2022,6 +2022,127 @@
           "operation" : null,
           "targetId" : "clrupizpxaaaataddjhhwddccvccggcddq",
           "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "c5469b641b07f55064122144b24bcb61"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryuaiiffwaaaaspddjhhwunddlggcvhh",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "4ecf13601b87f55064122144b24bcb84"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryuasmccaaaasqddjhhwvgglciikdbb",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "393823241bc7f55064122144b24bcb4c"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryubezbbaaaasrddjhhwbdjjjmoddb",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "a67102cb7767011061b80bbc3c5a992c"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryubtqnaaaassddjhhwccetggccabbj",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "b5bc7e061b7b751c64122144b24bcbfd"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryuciiaddaaaastddjhhwujjmccpijbb",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "7ee146cb7767011061b80bbc3c5a99af"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryudadlaaaasuddjhhwkddddgffddddm",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "51120acb7767011061b80bbc3c5a990e"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryudkyeeaaaasvddjhhwddejfyijp",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "95d0b5c31bfb3d9cdba1c3e5464bcbb5"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryueddopaaaaswddjhhwmpvdvhmy",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "e052cacb7767011061b80bbc3c5a9974"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryueghhjjaaaasxddjhhwuhheeffqwdp",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "48928ecb7767011061b80bbc3c5a99a7"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryuetveaaaasyddjhhwjjxjfheeza",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "35dada8f1bf331dcdba1c3e5464bcb66"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "clryufggtpaaaaszddjhhwibbjjohzccv",
+          "type" : "CLIENT_SCRIPT"
         } ]
       } ],
       "slot" : "default-slot",
@@ -12067,6 +12188,12 @@
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
       }
+    },
+    "breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3BreakdownSource" ]
+      }
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -12131,6 +12258,12 @@
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "1", "metricSysid" ]
+      }
+    },
+    "breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3BreakdownSource" ]
       }
     }
   },
@@ -12237,6 +12370,12 @@
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "headlineMetrics", "0", "metricSysid" ]
+      }
+    },
+    "breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3BreakdownSource" ]
       }
     }
   },
@@ -12352,6 +12491,12 @@
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "1", "metricSysid" ]
       }
+    },
+    "breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3BreakdownSource" ]
+      }
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -12406,6 +12551,12 @@
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "0", "metricSysid" ]
       }
+    },
+    "breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3BreakdownSource" ]
+      }
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -12459,6 +12610,12 @@
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "1", "metricSysid" ]
+      }
+    },
+    "breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3BreakdownSource" ]
       }
     }
   },
@@ -13188,7 +13345,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>426</sys_mod_count>
+        <sys_mod_count>432</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13196,7 +13353,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-26 15:22:15</sys_updated_on>
+        <sys_updated_on>2024-01-29 13:09:24</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
