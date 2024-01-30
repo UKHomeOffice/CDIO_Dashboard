@@ -3542,7 +3542,7 @@
             "groupBy" : {
               "type" : "STATE_BINDING",
               "binding" : {
-                "address" : [ "tab3verticalASupportingMetric1", "0", "groupBy", "0", "groupBy" ]
+                "address" : [ "tab3verticalASupportingMetric1", "0", "groupBy" ]
               }
             },
             "showTrend" : {
@@ -3697,7 +3697,7 @@
             },
             "showTarget" : {
               "type" : "JSON_LITERAL",
-              "value" : null
+              "value" : false
             },
             "showChangeFrom" : {
               "type" : "JSON_LITERAL",
@@ -4037,8 +4037,10 @@
               "value" : 3
             },
             "groupBy" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalASupportingMetric2", "0", "groupBy" ]
+              }
             },
             "showTrend" : {
               "type" : "JSON_LITERAL",
@@ -5487,7 +5489,7 @@
           }
         }, {
           "elementId" : "single_score_12",
-          "elementLabel" : "Horizontal bar",
+          "elementLabel" : "Line",
           "propertyValues" : {
             "yAxisStyle" : {
               "type" : "JSON_LITERAL",
@@ -5497,37 +5499,9 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "yAxisShowGrid" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "showFilterIcon" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "yAxisPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "bottom"
-            },
             "dateFormat" : {
               "type" : "JSON_LITERAL",
               "value" : "default"
-            },
-            "showMaximumRange" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "emptyStateAlignment" : {
-              "type" : "JSON_LITERAL",
-              "value" : "vertical-centered"
-            },
-            "showLegend" : {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            },
-            "showOverlappingLabels" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
             },
             "scoreType" : {
               "type" : "JSON_LITERAL",
@@ -5549,29 +5523,23 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "legendHorizontalAlignment" : {
-              "type" : "JSON_LITERAL",
-              "value" : "center"
-            },
-            "yAxisFrom" : {
+            "yAxis0Title" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
+            "disableTooltip" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
             "sortBy" : {
               "type" : "JSON_LITERAL",
-              "value" : "value"
+              "value" : null
             },
             "showTotalValue" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "dataSources" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "tab3verticalBSupportingMetric1", "0", "datasources" ]
-              }
-            },
-            "yAxisTitle" : {
+            "yAxis1From" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -5579,17 +5547,9 @@
               "type" : "JSON_LITERAL",
               "value" : "M"
             },
-            "showChange" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "configVersion" : {
               "type" : "JSON_LITERAL",
               "value" : "23.0.0-ci-SNAPSHOT"
-            },
-            "legendExpandToFit" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
             },
             "showSubAggregate" : {
               "type" : "JSON_LITERAL",
@@ -5597,19 +5557,11 @@
             },
             "chartVariation" : {
               "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "dataLabelPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "middle"
+              "value" : "stacked"
             },
             "legendMaxItemWidth" : {
               "type" : "JSON_LITERAL",
               "value" : null
-            },
-            "showSecondGroupAggregate" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
             },
             "showMetricLabel" : {
               "type" : "JSON_LITERAL",
@@ -5619,17 +5571,25 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "showSparkline" : {
+            "yAxis1To" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
-            "showTarget" : {
+            "extensionType" : {
+              "type" : "JSON_LITERAL",
+              "value" : "line"
+            },
+            "showSparkline" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
             "showDataLabels" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "yAxis3Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
             },
             "telemetry" : {
               "type" : "JSON_LITERAL",
@@ -5641,11 +5601,11 @@
                 "address" : [ "tab3verticalBSupportingMetric1", "0", "metrics" ]
               }
             },
-            "showChangeFrom" : {
+            "yAxis3From" : {
               "type" : "JSON_LITERAL",
-              "value" : "previous"
+              "value" : null
             },
-            "chartSize" : {
+            "yAxis2Title" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -5657,17 +5617,13 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "formats" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "sortByOrder" : {
-              "type" : "JSON_LITERAL",
-              "value" : "desc"
-            },
             "enableCustomEmptyState" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "showYGrid" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
             },
             "showThreshold" : {
               "type" : "JSON_LITERAL",
@@ -5677,17 +5633,11 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "hideMatrixAggregate" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "description" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "trendBy" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalBSupportingMetric1", "0", "trendBy" ]
+              }
             },
             "numberOfPeriods" : {
               "type" : "JSON_LITERAL",
@@ -5699,35 +5649,11 @@
                 "address" : [ "tab3verticalBSupportingMetric1", "0", "groupBy" ]
               }
             },
-            "title" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "xAxisTruncationType" : {
-              "type" : "JSON_LITERAL",
-              "value" : "end"
-            },
             "showTrend" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "showStackedValues" : {
-              "type" : "JSON_LITERAL",
-              "value" : "none"
-            },
-            "enableRealTimeUpdate" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "showForecastRange" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "showAbsolutePeriod" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "dataCategory" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -5743,27 +5669,7 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "showChangePercentage" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "yAxisTo" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "xAxisWrapLabels" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "showHeader" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
             "bareBorder" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "yAxisHidden" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
@@ -5779,27 +5685,22 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "refreshFrequency" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
             "wrapTitle" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "showBorder" : {
+            "yAxis3Title" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
-            "showLegendValue" : {
+            "yAxis4To" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : null
             },
             "colorConfig" : {
               "type" : "JSON_LITERAL",
               "value" : {
-                "palette" : "0c6509717767011061b80bbc3c5a99b5",
-                "type" : "palette"
+                "type" : "default"
               }
             },
             "filterConfigurations" : {
@@ -5812,7 +5713,7 @@
               "type" : "JSON_LITERAL",
               "value" : null
             },
-            "backgroundRefreshInterval" : {
+            "yAxis0To" : {
               "type" : "JSON_LITERAL",
               "value" : null
             },
@@ -5820,25 +5721,9 @@
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "emptyStateContent" : {
-              "type" : "JSON_LITERAL",
-              "value" : "There are no scores available for the selected criteria. Contact your admin for more info."
-            },
-            "xAxisMaxLabelSize" : {
-              "type" : "JSON_LITERAL",
-              "value" : 100
-            },
             "newReporting" : {
               "type" : "JSON_LITERAL",
               "value" : false
-            },
-            "emptyStateIllustration" : {
-              "type" : "JSON_LITERAL",
-              "value" : "no-data"
-            },
-            "legendPosition" : {
-              "type" : "JSON_LITERAL",
-              "value" : "bottom"
             },
             "endTime" : {
               "type" : "JSON_LITERAL",
@@ -5847,12 +5732,202 @@
             "enableDrilldown" : {
               "type" : "JSON_LITERAL",
               "value" : false
+            },
+            "yAxis4Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "showFilterIcon" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showMaximumRange" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyStateAlignment" : {
+              "type" : "JSON_LITERAL",
+              "value" : "vertical-centered"
+            },
+            "showLegend" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "yAxis0Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "left"
+            },
+            "yAxis0From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "legendHorizontalAlignment" : {
+              "type" : "JSON_LITERAL",
+              "value" : "center"
+            },
+            "yAxis4Title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "dataSources" : {
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "tab3verticalBSupportingMetric1", "0", "datasources" ]
+              }
+            },
+            "showChange" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "legendExpandToFit" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis1Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "showSecondGroupAggregate" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis3To" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "yAxis2From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showTarget" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showChangeFrom" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "chartSize" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideYAxis4" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "formats" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "sortByOrder" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideYAxis1" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis0" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis3" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideYAxis2" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis4From" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideMatrixAggregate" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "description" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "enableRealTimeUpdate" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showAbsolutePeriod" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "dataCategory" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showChangePercentage" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "lineStrokeWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "2"
+            },
+            "showHeader" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "yAxis1Title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "refreshFrequency" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showBorder" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "showLegendValue" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "backgroundRefreshInterval" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "yAxis2Position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "yAxis2To" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "showXGrid" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyStateContent" : {
+              "type" : "JSON_LITERAL",
+              "value" : "There are no scores available for the selected criteria. Contact your admin for more info."
+            },
+            "emptyStateIllustration" : {
+              "type" : "JSON_LITERAL",
+              "value" : "no-data"
+            },
+            "legendPosition" : {
+              "type" : "JSON_LITERAL",
+              "value" : "bottom"
             }
           },
           "eventMappings" : [ ],
           "slot" : "Main",
           "definition" : {
-            "id" : "85855283b7e03010097cb81cde11a91d",
+            "id" : "18ac962264404bcc0039359d184b15f3",
             "type" : "MACROPONENT"
           },
           "overrides" : null,
@@ -5942,9 +6017,11 @@
               "value" : "* { }"
             },
             "text" : {
-              "type" : "DATA_OUTPUT_BINDING",
-              "binding" : {
-                "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "supportingMetrics", "1", "metricLabel" ]
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Response Time",
+                "comment" : ""
               }
             },
             "tag" : {
@@ -7706,10 +7783,7 @@
               "type" : "JSON_LITERAL",
               "value" : 3
             },
-            "groupBy" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
+            "groupBy" : null,
             "showTrend" : {
               "type" : "JSON_LITERAL",
               "value" : null
@@ -11538,82 +11612,6 @@
     "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "verticalA_headlinemetric1",
-  "elementLabel" : "VerticalA Headline Metric1",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddclcqlhhaaaabsddfhhbbjjuwhhaacchhn",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "48cef7297763011061b80bbc3c5a996e"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddclcqlhhaaaabtddfhhbbddwfhbbqqbb",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "fce074fd77e3011061b80bbc3c5a99e0"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddctdeeaataaaajjuddfhhbbfflddthpijj",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "c834064f7767011061b80bbc3c5a99ec"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqiieegghhaabbfuddfhhbbjjeeehhziiej",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "514db4201b973150dba1c3e5464bcb55"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clqeaahvnqaaaanddddohhxluegggmlz",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
   "elementId" : "verticalB_headlinemetric1",
   "elementLabel" : "VerticalB Headline Metric1",
   "eventMappings" : [ {
@@ -11638,17 +11636,6 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clddbuddaafiaaaagfddfhhbbjbbgggyic",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "bb740a4f7767011061b80bbc3c5a99d6"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqjjnyzaabbgjjddfhhbbftcmhqvi",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -11693,17 +11680,6 @@
       "operation" : null,
       "targetId" : "clddbvaamqraaaadiddfhhbbcggjccewfl",
       "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "40a48a4f7767011061b80bbc3c5a99ac"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqaggwaaaabbggddfhhbbddntwqhhxf",
-      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -11747,17 +11723,6 @@
       "operation" : null,
       "targetId" : "clddcmqjiiuaaaapaaddfhhbbuwsgdddlv",
       "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "dc15028f7767011061b80bbc3c5a9942"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqawwkaabbgnddfhhbbiyfggxmqi",
-      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -11800,17 +11765,6 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clddcodggdjaaaadccddfhhbbpvirrguh",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "0d45828f7767011061b80bbc3c5a99e2"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqbheehaabbguddfhhbbgjihccddvz",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -11934,135 +11888,6 @@
 }, {
   "cachePolicy" : null,
   "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticale_headlinemetric1",
-  "elementLabel" : "verticale_headlinemetric1",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcozueccaaaamddddfhhbbiufffymsa",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "e77518f977a3011061b80bbc3c5a999f"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcozueccaaaameeddfhhbbqbbaccddas",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalE", "headlineMetrics", "0", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticale_headlinemetric2",
-  "elementLabel" : "verticale_headlinemetric2",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcpaahheewaaaamaddfhhbbumddgoqvgg",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "bea598f977a3011061b80bbc3c5a99fb"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcpaahheewaaaambddfhhbbbbvpuvraadd",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalE", "headlineMetrics", "1", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticalA_headlinemetric2",
-  "elementLabel" : "verticalA headlinemetric2",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddiqiihiggaabbgaaddfhhbbggsedreeie",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "cd54c64f7767011061b80bbc3c5a9912"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddiqiipjtaabbgccddfhhbbwgibbaairp",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "1", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
     "id" : "6fe7810377e3011061b80bbc3c5a99c1",
     "type" : "TRANSFORM"
   },
@@ -12169,6 +11994,17 @@
       "operation" : null,
       "targetId" : "clrhhyyffyyaaaalfddohhxhhwytblud",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "c834064f7767011061b80bbc3c5a99ec"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clsaaiihhcfyaaaadzddjhhwffdrgriieb",
+      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -12239,6 +12075,17 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clrkoyhfxaaaaohddjhhwxabtbccshh",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "cd54c64f7767011061b80bbc3c5a9912"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clsaaiiiiddqwaaaaegddjhhwqyaaxhjjeecc",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -12352,6 +12199,17 @@
       "operation" : null,
       "targetId" : "clrkoxaaccoaaaanwddjhhwzsrdydxo",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "bb740a4f7767011061b80bbc3c5a99d6"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clsaadzpshhaabbhhnddjhhwggyaaiwvjdd",
+      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -12411,6 +12269,17 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clroruommaabbeehhddjhhwaggskxfhhff",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "dc15028f7767011061b80bbc3c5a9942"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clsaaaddhhgglaaaakfddjhhwrshfjgqv",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -12472,6 +12341,17 @@
       "operation" : null,
       "targetId" : "clrorvaaduaabbeecddjhhwocuccaaggwb",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "0d45828f7767011061b80bbc3c5a99e2"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clsaaaddrnaaaaaakkddjhhwhezybbbov",
+      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -12532,6 +12412,17 @@
       "operation" : null,
       "targetId" : "clroyffjsaaaapuddjhhwsobeetlffii",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "4575068f7767011061b80bbc3c5a99f0"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clsaaeaagyyaabbiiaaddjhhwffyyoffffeec",
+      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -12591,6 +12482,17 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clroygtgghhaaaaqdddjhhwzhhaagggffffo",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "e595c68f7767011061b80bbc3c5a990a"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clsaaeaawysaabbiiffddjhhwjjluaanmrf",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -12777,7 +12679,7 @@
       "groupBy" : [ {
         "groupBy" : [ {
           "dataSource" : "tab3datasourceID_VASM1",
-          "groupByField" : " ",
+          "groupByField" : "e6def6531bf5fc50550b97d0b24bcb21 ",
           "isPaBucket" : false,
           "isRange" : false
         } ],
@@ -12820,13 +12722,13 @@
         "sourceType" : "indicator",
         "uuid" : {
           "breakdowns" : [ ],
-          "indicator" : "9acc589b1bf2a110f8655946464bcbec"
+          "indicator" : "d5f1067b1b9fc1d0225097d0b24bcbd8"
         }
       } ],
       "groupBy" : [ {
         "groupBy" : [ {
           "dataSource" : "tab3datasourceID_VASM2",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
+          "groupByField" : "e6def6531bf5fc50550b97d0b24bcb21",
           "isPaBucket" : false,
           "isRange" : false
         } ],
@@ -12973,7 +12875,7 @@
       "groupBy" : [ {
         "groupBy" : [ {
           "dataSource" : "tab3datasourceID_VCSM1",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
+          "groupByField" : "e6def6531bf5fc50550b97d0b24bcb21",
           "isPaBucket" : false,
           "isRange" : false
         } ],
@@ -13334,7 +13236,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>436</sys_mod_count>
+        <sys_mod_count>455</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13342,7 +13244,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-30 09:42:13</sys_updated_on>
+        <sys_updated_on>2024-01-30 13:45:17</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
