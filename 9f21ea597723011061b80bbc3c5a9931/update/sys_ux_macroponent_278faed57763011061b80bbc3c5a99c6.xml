@@ -2238,159 +2238,55 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "list__simple_1",
-          "elementLabel" : "List - Simple 1",
+          "elementId" : "stylized_text_208",
+          "elementLabel" : "Stylized text 208",
           "propertyValues" : {
-            "highlightedValueConfigId" : {
+            "css" : {
               "type" : "JSON_LITERAL",
-              "value" : ""
+              "value" : "* { }"
             },
-            "maxCharLimit" : {
+            "text" : {
               "type" : "JSON_LITERAL",
-              "value" : 4000
+              "value" : "Let's workflow it."
             },
-            "columns" : {
+            "tag" : {
               "type" : "JSON_LITERAL",
-              "value" : "number,name,u_providing_portfolio"
-            },
-            "hideLinks" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "wordWrap" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideTitleRowCount" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideColumnFiltering" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "maxColumns" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "limit" : {
-              "type" : "JSON_LITERAL",
-              "value" : 10
-            },
-            "hideLastRefreshedText" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideInlineEditing" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideColumnReorder" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "table" : {
-              "type" : "JSON_LITERAL",
-              "value" : "cmdb_ci_service"
-            },
-            "hideHighlightedValues" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideRowSelector" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideColumnGrouping" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideHeader" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideColumnResizing" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "query" : {
-              "type" : "CLIENT_TRANSFORM_SCRIPT",
-              "script" : {
-                "apiVersion" : "2.0.0",
-                "controllerElementId" : null,
-                "inlineScript" : null,
-                "scriptSysId" : "d1aed5ae1be37914dba1c3e5464bcb23",
-                "target" : null
-              }
-            },
-            "refreshRequested" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "hideHighlightContent" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideEmptyStateImage" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "highlightContent" : {
-              "type" : "JSON_LITERAL",
-              "value" : {
-                "patterns" : [ ],
-                "color" : ""
-              }
-            },
-            "hideRefreshButton" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "listTitle" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Primary Impacted Services",
-                "comment" : ""
-              }
-            },
-            "groupByField" : {
-              "type" : "JSON_LITERAL",
-              "value" : ""
-            },
-            "fixedQuery" : {
-              "type" : "JSON_LITERAL",
-              "value" : ""
-            },
-            "hideTitle" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideDotwalk" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideColumnSorting" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "overrideWordWrapUserPref" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hidePersonalization" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideViewAll" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : "h1"
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Main",
+          "slot" : "Column 1",
           "definition" : {
-            "id" : "2b1c080881e05dc63b917044290b233f",
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : { }
+        }, {
+          "elementId" : "icon_1",
+          "elementLabel" : "Icon 1",
+          "propertyValues" : {
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "xl"
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "square-fill"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Column 2",
+          "definition" : {
+            "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
           },
           "overrides" : null,
@@ -2408,13 +2304,14 @@
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
             "root" : null,
-            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
             "styles" : null,
-            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-            "type" : "grid"
-          }
+            "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+            "type" : "flex"
+          },
+          "version" : "2.0.0"
         }
       },
       "isHidden" : {
@@ -2816,7 +2713,7 @@
   "inputValues" : {
     "tab" : {
       "type" : "JSON_LITERAL",
-      "value" : "Tab1"
+      "value" : "Tab3"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -2923,17 +2820,6 @@
       "operation" : null,
       "targetId" : "clddbuddaafiaaaagfddfhhbbjbbgggyic",
       "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "208eb4b97727011061b80bbc3c5a99b5"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddlhflbbwaaaaffxddfhhbbrqddhoddkg",
-      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -2941,60 +2827,6 @@
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "headlineMetrics", "0", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticalb_headlinemetric2",
-  "elementLabel" : "VerticalB Headline Metric2",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddbvaamqraaaadhddfhhbbddrdhezggx",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "12e595a9772b011061b80bbc3c5a9931"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddbvaamqraaaadiddfhhbbcggjccewfl",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "a6fe3cb97727011061b80bbc3c5a99db"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddlhgbbmddaaaaggddddfhhbbbbeebbccoffhjj",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "headlineMetrics", "1", "metricSysid" ]
       }
     }
   },
@@ -3030,17 +2862,6 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clddcmqjiiuaaaapaaddfhhbbuwsgdddlv",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "783ffcb97727011061b80bbc3c5a99a4"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddlhggiqaaaaggjjddfhhbbiqrdvgghhe",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -3085,17 +2906,6 @@
       "operation" : null,
       "targetId" : "clddcodggdjaaaadccddfhhbbpvirrguh",
       "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "be9f34f97727011061b80bbc3c5a99c8"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddlhgsdjjaaaaggeddfhhbbhlddiiageee",
-      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -3138,17 +2948,6 @@
       "event" : null,
       "operation" : null,
       "targetId" : "clddcoypshhaaaaladdfhhbblrkthhlaa",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "c760013d7727011061b80bbc3c5a9923"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddlhhddedaaaaggkddfhhbbvkmijjyky",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -3193,17 +2992,6 @@
       "operation" : null,
       "targetId" : "clddcozgglggaaaalhddfhhbbsjjccoaaapv",
       "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "aacff4f97727011061b80bbc3c5a9969"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddlhhhhhyaaaaggqddfhhbbxoibiyhhg",
-      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -3211,114 +2999,6 @@
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "1", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticale_headlinemetric1",
-  "elementLabel" : "verticale_headlinemetric1",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcozueccaaaamddddfhhbbiufffymsa",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "e77518f977a3011061b80bbc3c5a999f"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcozueccaaaameeddfhhbbqbbaccddas",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "5300c9f97727011061b80bbc3c5a9924"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddlhhsuyaaaaggwddfhhbbvxmhhshmq",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalE", "headlineMetrics", "0", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticale_headlinemetric2",
-  "elementLabel" : "verticale_headlinemetric2",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcpaahheewaaaamaddfhhbbumddgoqvgg",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "bea598f977a3011061b80bbc3c5a99fb"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcpaahheewaaaambddfhhbbbbvpuvraadd",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "8fef78f97727011061b80bbc3c5a9987"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddlhieetvaaaahhccddfhhbbpreetgffrhh",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalE", "headlineMetrics", "1", "metricSysid" ]
       }
     }
   },
@@ -3372,6 +3052,25 @@
     }
   },
   "readEvaluationMode" : "EAGER"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "verticalA_headlinemetric2",
+  "elementLabel" : "VerticalA Headline Metric2",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "uuid" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "1", "metricSysid" ]
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
 } ]</data>
         <description/>
         <dispatched_events>48756a4e7723011061b80bbc3c5a996c</dispatched_events>
@@ -3419,9 +3118,6 @@
   "comment" : ""
 }, {
   "message" : "Portfolio",
-  "comment" : ""
-}, {
-  "message" : "Primary Impacted Services",
   "comment" : ""
 }, {
   "message" : "Project",
@@ -3478,15 +3174,15 @@
     "value" : false
   }
 }, {
-  "name" : "verticalAMetric1ShowDelta",
-  "label" : "verticalAMetric1ShowDelta",
-  "fieldType" : "boolean",
-  "valueType" : "boolean",
+  "name" : "verticalAMetric1ShowHealth",
+  "label" : "verticalAMetric1ShowHealth",
+  "fieldType" : "string",
+  "valueType" : "string",
   "shape" : "",
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : false
+    "value" : "green"
   }
 }, {
   "name" : "verticalCMetric1ShowDelta",
@@ -3555,392 +3251,6 @@
     "value" : false
   }
 }, {
-  "name" : "verticalASupportingMetric1",
-  "label" : "verticalASupportingMetric1",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : [ {
-      "metrics" : [ {
-        "dataSource" : "datasourceID_VASM1",
-        "id" : "metricID_VASM1",
-        "aggregateIndicator" : "",
-        "frequency" : 10,
-        "numberFormat" : {
-          "customFormat" : false
-        },
-        "axisId" : "primary"
-      } ],
-      "datasources" : [ {
-        "sourceType" : "indicator",
-        "uuid" : {
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4",
-          "breakdowns" : [ ]
-        },
-        "id" : "datasourceID_VASM1"
-      } ],
-      "trendBy" : {
-        "trendByFrequency" : "date",
-        "trendByFields" : [ {
-          "field" : "anything",
-          "metric" : "metricID_VASM1"
-        } ]
-      },
-      "groupBy" : [ {
-        "maxNumberOfGroups" : 10,
-        "numberOfGroupsBasedOn" : "NO_OF_GROUP_BASED_ON_PER_METRIC",
-        "showOthers" : false,
-        "hideZeroValues" : false,
-        "groupBy" : [ {
-          "dataSource" : "datasourceID_VASM1",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
-          "isRange" : false,
-          "isPaBucket" : false
-        } ]
-      } ]
-    } ]
-  }
-}, {
-  "name" : "verticalBSupportingMetric1",
-  "label" : "verticalBSupportingMetric1",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : [ {
-      "metrics" : [ {
-        "dataSource" : "datasourceID_VBSM1",
-        "id" : "metricID_VBSM1",
-        "aggregateIndicator" : "",
-        "frequency" : 10,
-        "numberFormat" : {
-          "customFormat" : false
-        },
-        "axisId" : "primary"
-      } ],
-      "datasources" : [ {
-        "sourceType" : "indicator",
-        "uuid" : {
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4",
-          "breakdowns" : [ ]
-        },
-        "id" : "datasourceID_VBSM1"
-      } ],
-      "trendBy" : {
-        "trendByFrequency" : "date",
-        "trendByFields" : [ {
-          "field" : "anything",
-          "metric" : "metricID_VBSM1"
-        } ]
-      },
-      "groupBy" : [ {
-        "maxNumberOfGroups" : 10,
-        "numberOfGroupsBasedOn" : "NO_OF_GROUP_BASED_ON_PER_METRIC",
-        "showOthers" : false,
-        "hideZeroValues" : false,
-        "groupBy" : [ {
-          "dataSource" : "datasourceID_VBSM1",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
-          "isRange" : false,
-          "isPaBucket" : false
-        } ]
-      } ]
-    } ]
-  }
-}, {
-  "name" : "verticalBSupportingMetric2",
-  "label" : "verticalBSupportingMetric2",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : [ {
-      "metrics" : [ {
-        "dataSource" : "datasourceID_VBSM2",
-        "id" : "metricID_VBSM2",
-        "aggregateIndicator" : "",
-        "frequency" : 10,
-        "numberFormat" : {
-          "customFormat" : false
-        },
-        "axisId" : "primary"
-      } ],
-      "datasources" : [ {
-        "sourceType" : "indicator",
-        "uuid" : {
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4",
-          "breakdowns" : [ ]
-        },
-        "id" : "datasourceID_VBSM2"
-      } ],
-      "trendBy" : {
-        "trendByFrequency" : "date",
-        "trendByFields" : [ {
-          "field" : "anything",
-          "metric" : "metricID_VBSM2"
-        } ]
-      },
-      "groupBy" : [ {
-        "maxNumberOfGroups" : 10,
-        "numberOfGroupsBasedOn" : "NO_OF_GROUP_BASED_ON_PER_METRIC",
-        "showOthers" : false,
-        "hideZeroValues" : false,
-        "groupBy" : [ {
-          "dataSource" : "datasourceID_VBSM2",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
-          "isRange" : false,
-          "isPaBucket" : false
-        } ]
-      } ]
-    } ]
-  }
-}, {
-  "name" : "verticalCSupportingMetric1",
-  "label" : "verticalCSupportingMetric1",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : [ {
-      "metrics" : [ {
-        "dataSource" : "datasourceID_VCSM1",
-        "id" : "metricID_VCSM1",
-        "aggregateIndicator" : "",
-        "frequency" : 10,
-        "numberFormat" : {
-          "customFormat" : false
-        },
-        "axisId" : "primary"
-      } ],
-      "datasources" : [ {
-        "sourceType" : "indicator",
-        "uuid" : {
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4",
-          "breakdowns" : [ ]
-        },
-        "id" : "datasourceID_VCSM1"
-      } ],
-      "trendBy" : {
-        "trendByFrequency" : "date",
-        "trendByFields" : [ {
-          "field" : "anything",
-          "metric" : "metricID_VCSM1"
-        } ]
-      },
-      "groupBy" : [ {
-        "maxNumberOfGroups" : 10,
-        "numberOfGroupsBasedOn" : "NO_OF_GROUP_BASED_ON_PER_METRIC",
-        "showOthers" : false,
-        "hideZeroValues" : false,
-        "groupBy" : [ {
-          "dataSource" : "datasourceID_VCSM1",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
-          "isRange" : false,
-          "isPaBucket" : false
-        } ]
-      } ]
-    } ]
-  }
-}, {
-  "name" : "verticalCSupportingMetric2",
-  "label" : "verticalCSupportingMetric2",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : [ {
-      "metrics" : [ {
-        "dataSource" : "datasourceID_VCSM2",
-        "id" : "metricID_VCSM2",
-        "aggregateIndicator" : "",
-        "frequency" : 10,
-        "numberFormat" : {
-          "customFormat" : false
-        },
-        "axisId" : "primary"
-      } ],
-      "datasources" : [ {
-        "sourceType" : "indicator",
-        "uuid" : {
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4",
-          "breakdowns" : [ ]
-        },
-        "id" : "datasourceID_VCSM2"
-      } ],
-      "trendBy" : {
-        "trendByFrequency" : "date",
-        "trendByFields" : [ {
-          "field" : "anything",
-          "metric" : "metricID_VCSM2"
-        } ]
-      },
-      "groupBy" : [ {
-        "maxNumberOfGroups" : 10,
-        "numberOfGroupsBasedOn" : "NO_OF_GROUP_BASED_ON_PER_METRIC",
-        "showOthers" : false,
-        "hideZeroValues" : false,
-        "groupBy" : [ {
-          "dataSource" : "datasourceID_VCSM2",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
-          "isRange" : false,
-          "isPaBucket" : false
-        } ]
-      } ]
-    } ]
-  }
-}, {
-  "name" : "verticalDSupportingMetric1",
-  "label" : "verticalDSupportingMetric1",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : [ {
-      "metrics" : [ {
-        "dataSource" : "datasourceID_VDSM1",
-        "id" : "metricID_VDSM1",
-        "aggregateIndicator" : "",
-        "frequency" : 10,
-        "numberFormat" : {
-          "customFormat" : false
-        },
-        "axisId" : "primary"
-      } ],
-      "datasources" : [ {
-        "sourceType" : "indicator",
-        "uuid" : {
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4",
-          "breakdowns" : [ ]
-        },
-        "id" : "datasourceID_VDSM1"
-      } ],
-      "trendBy" : {
-        "trendByFrequency" : "date",
-        "trendByFields" : [ {
-          "field" : "anything",
-          "metric" : "metricID_VDSM1"
-        } ]
-      },
-      "groupBy" : [ {
-        "maxNumberOfGroups" : 10,
-        "numberOfGroupsBasedOn" : "NO_OF_GROUP_BASED_ON_PER_METRIC",
-        "showOthers" : false,
-        "hideZeroValues" : false,
-        "groupBy" : [ {
-          "dataSource" : "datasourceID_VDSM1",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
-          "isRange" : false,
-          "isPaBucket" : false
-        } ]
-      } ]
-    } ]
-  }
-}, {
-  "name" : "verticalDSupportingMetric2",
-  "label" : "verticalDSupportingMetric2",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : [ {
-      "metrics" : [ {
-        "dataSource" : "datasourceID_VDSM2",
-        "id" : "metricID_VDSM2"
-      } ],
-      "datasources" : [ {
-        "sourceType" : "indicator",
-        "uuid" : {
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4",
-          "breakdowns" : [ ]
-        },
-        "id" : "datasourceID_VDSM2"
-      } ],
-      "trendBy" : {
-        "trendByFrequency" : "date",
-        "trendByFields" : [ {
-          "field" : "anything",
-          "metric" : "metricID_VDSM2"
-        } ]
-      },
-      "groupBy" : [ {
-        "maxNumberOfGroups" : 10,
-        "numberOfGroupsBasedOn" : "NO_OF_GROUP_BASED_ON_PER_METRIC",
-        "showOthers" : false,
-        "hideZeroValues" : false,
-        "groupBy" : [ {
-          "dataSource" : "datasourceID_VDSM2",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
-          "isRange" : false,
-          "isPaBucket" : false
-        } ]
-      } ]
-    } ]
-  }
-}, {
-  "name" : "verticalESupportingMetric1",
-  "label" : "verticalESupportingMetric1",
-  "fieldType" : "json",
-  "valueType" : "json",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : [ {
-      "metrics" : [ {
-        "dataSource" : "datasourceID_VESM1",
-        "id" : "metricID_VESM1",
-        "aggregateIndicator" : "",
-        "frequency" : 10,
-        "numberFormat" : {
-          "customFormat" : false
-        },
-        "axisId" : "primary"
-      } ],
-      "datasources" : [ {
-        "sourceType" : "indicator",
-        "uuid" : {
-          "indicator" : "fb007202d7130100b96d45a3ce6103b4",
-          "breakdowns" : [ ]
-        },
-        "id" : "datasourceID_VESM1"
-      } ],
-      "trendBy" : {
-        "trendByFrequency" : "date",
-        "trendByFields" : [ {
-          "field" : "anything",
-          "metric" : "metricID_VESM1"
-        } ]
-      },
-      "groupBy" : [ {
-        "maxNumberOfGroups" : 10,
-        "numberOfGroupsBasedOn" : "NO_OF_GROUP_BASED_ON_PER_METRIC",
-        "showOthers" : false,
-        "hideZeroValues" : false,
-        "groupBy" : [ {
-          "dataSource" : "datasourceID_VESM1",
-          "groupByField" : "0df47e02d7130100b96d45a3ce610399",
-          "isRange" : false,
-          "isPaBucket" : false
-        } ]
-      } ]
-    } ]
-  }
-}, {
   "name" : "verticalESupportingMetric2",
   "label" : "verticalESupportingMetric2",
   "fieldType" : "json",
@@ -4006,7 +3316,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>164</sys_mod_count>
+        <sys_mod_count>173</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -4014,7 +3324,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-24 10:39:24</sys_updated_on>
+        <sys_updated_on>2024-02-08 10:17:45</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
