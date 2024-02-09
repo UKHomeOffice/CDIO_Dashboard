@@ -13,15 +13,21 @@
 * @param {ApiHelpers} params.helpers
 */
 function handler({api, event, helpers, imports}) {
-     var changePerc = api.data.verticalc_headlinemetric2.output.result[0].changeperc;
-   
-    if(changePerc>=0){
-        api.setState('verticalCMetric2ShowDelta',false);
-    }
-    else{
-        api.setState('verticalCMetric2ShowDelta',true);
-    }
+    var value = api.data.verticalc_headlinemetric2.output.result[0].scores[0].value;
+    var clientStateParameter = 'verticalCMetric2ShowHealth';
 
+    if(value>20){
+        api.setState(clientStateParameter,'green');
+    }
+    else if (value>=10 && value<=20 ){
+        api.setState(clientStateParameter,'amber');
+    }
+    else if (value<10 && value>0 ) {
+        api.setState(clientStateParameter,'red');
+    }
+    else {
+        api.setState(clientStateParameter,'');
+    }
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
@@ -29,7 +35,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2022-05-19 07:10:17</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fbd1583977a3011061b80bbc3c5a99a4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>showVerticalCMetric2Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -37,7 +43,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_fbd1583977a3011061b80bbc3c5a99a4</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-08 10:39:38</sys_updated_on>
+        <sys_updated_on>2024-02-09 11:58:22</sys_updated_on>
         <target/>
         <type>default</type>
     </sys_ux_client_script>

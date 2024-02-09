@@ -11,8 +11,29 @@
 * @param {any} params.event
 * @param {any} params.imports
 * @param {ApiHelpers} params.helpers
-*/
-function handler({api, event, helpers, imports}) {
+// */
+
+function evaluateProperty({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var m1health = api.state.verticalCMetric1ShowHealth;
+    var m2health = api.state.verticalCMetric2ShowHealth;
+    var clientStateParameter = 'verticalCShowHealth';
+
+    if ((m1health === 'green' && (m2health === 'green' || m2health === 'amber' || m2health === '')) ||
+        (m2health === 'green' && (m1health === 'green' || m1health === 'amber' || m1health === ''))) {
+        api.setState(clientStateParameter, 'green');
+    } else if ((m1health === 'red' && (m2health === 'red' || m2health === '')) ||
+        (m2health === 'red' && (m1health === 'red' || m1health === ''))) {
+        api.setState(clientStateParameter, 'red');
+    } else if (m1health === '' && m2health === '') {
+        api.setState(clientStateParameter, '');
+    } else {
+        api.setState(clientStateParameter, 'amber');
+    }
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
@@ -20,7 +41,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2024-02-09 11:17:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e6bde2341bd80a90dba1c3e5464bcb70</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>showVerticalCHealth</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -28,7 +49,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_e6bde2341bd80a90dba1c3e5464bcb70</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-09 11:18:15</sys_updated_on>
+        <sys_updated_on>2024-02-09 12:01:39</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
