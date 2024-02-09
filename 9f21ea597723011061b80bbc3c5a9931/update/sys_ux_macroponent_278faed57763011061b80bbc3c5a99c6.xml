@@ -2291,8 +2291,14 @@
           },
           "overrides" : null,
           "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
+            "type" : "CLIENT_TRANSFORM_SCRIPT",
+            "script" : {
+              "apiVersion" : "2.0.0",
+              "controllerElementId" : null,
+              "inlineScript" : null,
+              "scriptSysId" : "bf7cd2301b98c690dba1c3e5464bcbfc",
+              "target" : null
+            }
           },
           "isHero" : false,
           "extensionPoints" : [ ],
@@ -2322,8 +2328,14 @@
           },
           "overrides" : null,
           "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
+            "type" : "CLIENT_TRANSFORM_SCRIPT",
+            "script" : {
+              "apiVersion" : "2.0.0",
+              "controllerElementId" : null,
+              "inlineScript" : null,
+              "scriptSysId" : "7f1d12f81b98c690dba1c3e5464bcb20",
+              "target" : null
+            }
           },
           "isHero" : false,
           "extensionPoints" : [ ],
@@ -2353,8 +2365,14 @@
           },
           "overrides" : null,
           "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
+            "type" : "CLIENT_TRANSFORM_SCRIPT",
+            "script" : {
+              "apiVersion" : "2.0.0",
+              "controllerElementId" : null,
+              "inlineScript" : null,
+              "scriptSysId" : "bf1d12f81b98c690dba1c3e5464bcb75",
+              "target" : null
+            }
           },
           "isHero" : false,
           "extensionPoints" : [ ],
@@ -2865,6 +2883,17 @@
       "operation" : null,
       "targetId" : "clddclcqlhhaaaabtddfhhbbddwfhbbqqbb",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "265f1e7c1b1cc690dba1c3e5464bcb49"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clseiddghnaaddiirddjhhwgsmuvbbhv",
+      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -3149,7 +3178,42 @@
   "dependencies" : { },
   "elementId" : "verticalA_headlinemetric2",
   "elementLabel" : "VerticalA Headline Metric2",
-  "eventMappings" : [ ],
+  "eventMappings" : [ {
+    "eventMappingId" : "clseieebffaaddjjcddjhhwhhteziuce",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "bea598f977a3011061b80bbc3c5a99fb"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clseieebffaaddjjdddjhhwmhywhgggm",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "265f1e7c1b1cc690dba1c3e5464bcb49"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clseieevbblaaddjjeddjhhwzciiggiijhhp",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
   "inputValues" : {
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
@@ -3336,6 +3400,50 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
+    "value" : "amber"
+  }
+}, {
+  "name" : "verticalAShowHealth",
+  "label" : "verticalAShowHealth",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "amber"
+  }
+}, {
+  "name" : "verticalBShowHealth",
+  "label" : "verticalBShowHealth",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "green"
+  }
+}, {
+  "name" : "verticalCShowHealth",
+  "label" : "verticalCShowHealth",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "green"
+  }
+}, {
+  "name" : "verticalDShowHealth",
+  "label" : "verticalDShowHealth",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
     "value" : "green"
   }
 } ]</state_properties>
@@ -3344,7 +3452,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>181</sys_mod_count>
+        <sys_mod_count>192</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3352,7 +3460,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-08 12:11:06</sys_updated_on>
+        <sys_updated_on>2024-02-09 10:39:51</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
