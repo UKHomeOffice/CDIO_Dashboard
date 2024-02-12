@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="HO Product Performance League Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
-        <name>showVerticalDMetric2Health</name>
+        <name>showVerticalDHealth</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
@@ -13,53 +13,37 @@
 * @param {ApiHelpers} params.helpers
 */
 function handler({api, event, helpers, imports}) {
-    var value = api.data.verticalD_headlinemetric2.output.result[0].scores[0].value;
-    var clientStateParameter = 'verticalDMetric2ShowHealth';
-
-    if(value>20){
-        api.setState(clientStateParameter,'green');
-    }
-    else if (value>=10 && value<=20 ){
-        api.setState(clientStateParameter,'amber');
-    }
-    else if (value<10 && value>0 ) {
-        api.setState(clientStateParameter,'red');
-    }
-    else {
-        api.setState(clientStateParameter,'');
-    }
-
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-05-19 07:25:10</sys_created_on>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-02-09 11:18:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>754554f977a3011061b80bbc3c5a99c3</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>showVerticalDMetric2Health</sys_name>
+        <sys_id>34cda6b01b1c0a90dba1c3e5464bcb00</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>showVerticalDHealth</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
-        <sys_update_name>sys_ux_client_script_754554f977a3011061b80bbc3c5a99c3</sys_update_name>
+        <sys_update_name>sys_ux_client_script_34cda6b01b1c0a90dba1c3e5464bcb00</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-09 13:01:43</sys_updated_on>
-        <target/>
+        <sys_updated_on>2024-02-09 11:18:14</sys_updated_on>
+        <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>00000000</claim_timestamp>
-        <metadata_update_name>sys_ux_client_script_754554f977a3011061b80bbc3c5a99c3</metadata_update_name>
+        <claim_timestamp>18d8da0cd830000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_34cda6b01b1c0a90dba1c3e5464bcb00</metadata_update_name>
         <previous_claim_app_version>1.0.2</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-19 13:00:11</sys_created_on>
-        <sys_id>34cbf28e1b3b751c64122144b24bcbad</sys_id>
+        <sys_created_on>2024-02-09 11:29:02</sys_created_on>
+        <sys_id>e240b27c1b9c0a90dba1c3e5464bcb2f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-19 13:00:11</sys_updated_on>
+        <sys_updated_on>2024-02-09 11:29:02</sys_updated_on>
     </sys_claim>
 </record_update>

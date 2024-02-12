@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="HO Product Performance League Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
+        <name>showVerticalEMetric1Health</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+     var changePerc = api.data.verticale_headlinemetric1.output.result[0].changeperc;
+    if(changePerc>=0){
+        api.setState('verticalEMetric1ShowDelta',false);
+    }
+    else{
+        api.setState('verticalEMetric1ShowDelta',true);
+    }
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-19 07:26:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e77518f977a3011061b80bbc3c5a999f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>showVerticalEMetric1Health</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_e77518f977a3011061b80bbc3c5a999f</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-02-08 10:39:37</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>00000000</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_e77518f977a3011061b80bbc3c5a999f</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-19 13:00:15</sys_created_on>
+        <sys_id>f5cb7a8e1b3b751c64122144b24bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-19 13:00:15</sys_updated_on>
+    </sys_claim>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ux_client_script_e77518f977a3011061b80bbc3c5a999f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="HO Product Performance League Table default"&gt;278faed57763011061b80bbc3c5a99c6&lt;/macroponent&gt;&lt;name&gt;showVerticalEMetric1Health&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+     var changePerc = api.data.verticale_headlinemetric1.output.result[0].changeperc;
+    if(changePerc&gt;=0){
+        api.setState('verticalEMetric1ShowDelta',false);
+    }
+    else{
+        api.setState('verticalEMetric1ShowDelta',true);
+    }
+
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-19 07:26:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;e77518f977a3011061b80bbc3c5a999f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;showVerticalEMetric1Health&lt;/sys_name&gt;&lt;sys_package display_value="CIO Dashboard" source="sn_ciodashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="CIO Dashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_e77518f977a3011061b80bbc3c5a999f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;VelentL&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-08 10:39:37&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;sys_claim action="INSERT_OR_UPDATE"&gt;&lt;claim_owner_scope display_value="CIO Dashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/claim_owner_scope&gt;&lt;claim_timestamp&gt;00000000&lt;/claim_timestamp&gt;&lt;metadata_update_name&gt;sys_ux_client_script_e77518f977a3011061b80bbc3c5a999f&lt;/metadata_update_name&gt;&lt;previous_claim_app_version&gt;1.0.2&lt;/previous_claim_app_version&gt;&lt;previous_claim_name&gt;CIO Dashboard&lt;/previous_claim_name&gt;&lt;previous_claim_scope&gt;9f21ea597723011061b80bbc3c5a9931&lt;/previous_claim_scope&gt;&lt;sys_created_by&gt;VelentL&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-19 13:00:15&lt;/sys_created_on&gt;&lt;sys_id&gt;f5cb7a8e1b3b751c64122144b24bcb63&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;VelentL&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-19 13:00:15&lt;/sys_updated_on&gt;&lt;/sys_claim&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1107312625</payload_hash>
+        <record_name>showVerticalEMetric1Health</record_name>
+        <reverted_from/>
+        <source>fc5c00c71b27bd94dba1c3e5464bcb28</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-02-08 10:39:38</sys_created_on>
+        <sys_id>816b552c1b14421864122144b24bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d884d377d0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-02-08 10:39:38</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>c56b552cad144218eb0d60461b134d15</update_guid>
+        <update_guid_history>c56b552cad144218eb0d60461b134d15:1107312625,30dbc5606f140218775096eeb666c3dc:-1586273197,45e0435e3a048ed4c4f0eed8ff00d2aa:0,a5700716f4048ed46560286a2d7237f2:-605856784,ab0dc03f083b7d94f1761eb5af072aea:0,1fdc88b76c3b7d94e892a74c964ff1ac:0,af7b0473bab77d94d206bed9a74aa931:-1586273197,26ca4c7fa2377d949cfd5f816259a86a:0,b64ac8ff96f37d945c6e2237a1247120:-605856784,b4b56e530b3bb91067f8e43acd9ee164:-1586273197,0743b05b1c67391866b19dc452d2a672:0,4b02785f9be33918596864fa2ca220a0:449529506,931bbeaee2e371541b099e605e1cda09:0,065a3a6e2ba371540d796645e6defdf7:-605856784,198f162683afbd14acc2e0e99dca8964:0,2b98922a9d27bd14b1bf9035342c8191:-605856784,c2fcf5e2eaeff91415e4f4780950696f:449529506,8909756e796bf914328d64845d0c5a91:0,753335ae1823f914f33b32d20cc8a00e:449529506,173a21ea1fe3b914b2545b9ecb803840:0,e85cddea09237914727a7f4a579491ea:449529506,989e45e2676ff51497a64ca84d6aefb7:0,81a1b1562de3f1d00019bae0a8d0348d:449529506,29a8b8f5422b7190fc974454d35bd350:0,e518f039ede7719033e8cc96b1f8a3ff:-605856784,8be763a108ab7950beebe74753f89b44:0,bf20dfe53d27f550483bee109af0178b:449529506,89ef4b219a27f550a354d7afcbcfbb1b:0,09cf43ade7e3f550f7fe9f8a631f7f72:449529506,df7d8ba1e123f550761a66427b227d52:0,8829c725f06bb550177dbd3fde5ddc1d:449529506,49794b2d266bb55078ae9c36e10cac35:0,fa8d5aad21e3b150f8b6d774751000cb:449529506,0ca512a5b6e77150f1c545bd5f5a3cb1:0,b5a80e2dfda3315032e421edeec955ab:449529506,ca2906a930e33150b4d40b022cce7aa7:0,b5a80e2dfda3315032e421edeec955ab:449529506,ea869e51686b79dc29ddbe1db3773705:0,1dcba82092d331508dc190cea4f2b582:0,02882864cb1bb150df63490742549068:-1586273197</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-02-08 10:56:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>b854f8124f3940e89506834d90e8ccc1</sys_id>
+        <sys_metadata>e77518f977a3011061b80bbc3c5a999f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>showVerticalEMetric1Health</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_e77518f977a3011061b80bbc3c5a999f</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_e77518f977a3011061b80bbc3c5a999f">816b552c1b14421864122144b24bcb16</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-02-08 10:56:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
