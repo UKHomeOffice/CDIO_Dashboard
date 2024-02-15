@@ -3533,8 +3533,8 @@
     "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "verticalA_headlinemetric1",
-  "elementLabel" : "VerticalA Headline Metric1",
+  "elementId" : "verticalA_headlinemetric1v",
+  "elementLabel" : "VerticalA Headline Metric1v",
   "eventMappings" : [ ],
   "inputValues" : {
     "uuid" : {
@@ -3554,18 +3554,19 @@
 }, {
   "cachePolicy" : null,
   "definition" : {
-    "id" : "eda5a2351b9802dc64122144b24bcbec",
+    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
     "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "getpascoretab1_1",
-  "elementLabel" : "getPAscoreTab1 1",
+  "elementId" : "verticalA_headlinemetric1",
+  "elementLabel" : "VerticalA Headline Metric1",
   "eventMappings" : [ ],
   "inputValues" : {
-    "uuid" : null,
-    "sysid" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
+    "uuid" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
+      }
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3826,7 +3827,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>243</sys_mod_count>
+        <sys_mod_count>244</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3834,7 +3835,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-15 12:53:50</sys_updated_on>
+        <sys_updated_on>2024-02-15 13:30:33</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
