@@ -3552,14 +3552,39 @@
     "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "getpascoretab1vcm1_1",
-  "elementLabel" : "getPAscoreTab1VCM1 1",
+  "elementId" : "verticalC_headlinemetric1v",
+  "elementLabel" : "verticalC Headlinemetric1v",
   "eventMappings" : [ ],
   "inputValues" : {
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
+      }
+    },
+    "sysid" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "PortfolioElement" ]
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "55c46e7e1bdc4a1464122144b24bcb5e",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "getpascoretab1vcm2_1",
+  "elementLabel" : "getPAscoreTab1VCM2 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "uuid" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "1", "metricSysid" ]
       }
     },
     "sysid" : {
@@ -3821,13 +3846,24 @@
     "type" : "JSON_LITERAL",
     "value" : "b6e6590e4f407f089e23e1128110c77e"
   }
+}, {
+  "name" : "TestClient",
+  "label" : "TestClient",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>246</sys_mod_count>
+        <sys_mod_count>250</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3835,7 +3871,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-15 14:00:32</sys_updated_on>
+        <sys_updated_on>2024-02-15 15:52:53</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
