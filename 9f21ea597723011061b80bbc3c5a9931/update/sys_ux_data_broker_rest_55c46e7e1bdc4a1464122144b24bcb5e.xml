@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
     <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
-        <api_name>sn_ciodashboard.getPAscoreVCM2</api_name>
-        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:1d7a2073eb21020065deac6aa206fe5c&amp;sysparm_breakdown={{breakdown}}&amp;sysparm_per_page=10&amp;sysparm_include_scores=true&amp;sysparm_to=2023-10-30</api_url>
-        <description>Retrieves PA indicator score using PA Scorecard API, aggregation by month sum+ and breakdown for Portfolio</description>
+        <api_name>sn_ciodashboard.getPAscoreTab1VCM2</api_name>
+        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:e6def6531bf5fc50550b97d0b24bcb21:{{sysid}}:1d7a2073eb21020065deac6aa206fe5c&amp;sysparm_breakdown=b1616b8c4fe933002f3c71318110c743&amp;sysparm_include_scores=true&amp;sysparm_per_page=10&amp;sysparm_to=2023-10-31</api_url>
+        <description>Retrieves PA indicator score using PA Scorecard API,aggregation by month sum+ and breakdown for Portfolio 'Immigration' and PIS</description>
         <http_method>GET</http_method>
         <mutates_server_data>false</mutates_server_data>
-        <name>getPAscoreVCM2</name>
+        <name>getPAscoreTab1VCM2</name>
         <output_schema/>
         <parameters/>
         <private>false</private>
@@ -22,14 +22,14 @@
     "mandatory": true,&#13;
     "defaultValue": ""&#13;
   },&#13;
-  {&#13;
-    "name": "breakdown",&#13;
-    "label": "PA Breakdown",&#13;
-    "description": "PA Breakdown sysid",&#13;
+{&#13;
+    "name": "sysid",&#13;
+    "label": "Portfolio breakdown element",&#13;
+    "description": "Portfolio breadown element sysId",&#13;
     "readOnly": false,&#13;
     "fieldType": "reference",&#13;
     "typeMetadata": {&#13;
-      "reference": "pa_breakdowns"&#13;
+      "reference": "u_cmdb_ci_portfolio"&#13;
     },&#13;
     "mandatory": true,&#13;
     "defaultValue": ""&#13;
@@ -37,46 +37,46 @@
 ]</props>
         <request_body/>
         <required_translations>[ {
-  "message" : "PA Breakdown",
-  "comment" : ""
-}, {
-  "message" : "PA Breakdown sysid",
-  "comment" : ""
-}, {
   "message" : "PA Indicator",
   "comment" : ""
 }, {
   "message" : "PA Indicator UUID",
   "comment" : ""
+}, {
+  "message" : "Portfolio breadown element sysId",
+  "comment" : ""
+}, {
+  "message" : "Portfolio breakdown element",
+  "comment" : ""
 } ]</required_translations>
         <schema_version>1.0.0</schema_version>
         <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-22 09:37:51</sys_created_on>
+        <sys_created_on>2024-02-15 15:47:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>811ae5871b733d9cdba1c3e5464bcb5e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>getPAscoreVCM2</sys_name>
+        <sys_id>55c46e7e1bdc4a1464122144b24bcb5e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>getPAscoreTab1VCM2</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
-        <sys_update_name>sys_ux_data_broker_rest_811ae5871b733d9cdba1c3e5464bcb5e</sys_update_name>
+        <sys_update_name>sys_ux_data_broker_rest_55c46e7e1bdc4a1464122144b24bcb5e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-15 15:48:21</sys_updated_on>
+        <sys_updated_on>2024-02-15 16:06:40</sys_updated_on>
     </sys_ux_data_broker_rest>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18d3091ebd20000001</claim_timestamp>
-        <metadata_update_name>sys_ux_data_broker_rest_811ae5871b733d9cdba1c3e5464bcb5e</metadata_update_name>
+        <claim_timestamp>18dad7ab96d0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_data_broker_rest_55c46e7e1bdc4a1464122144b24bcb5e</metadata_update_name>
         <previous_claim_app_version>1.0.2</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-22 09:48:05</sys_created_on>
-        <sys_id>d89c210b1b773d9cdba1c3e5464bcbd0</sys_id>
+        <sys_created_on>2024-02-15 15:55:17</sys_created_on>
+        <sys_id>8dc6623a1b908a1464122144b24bcb40</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-22 09:48:05</sys_updated_on>
+        <sys_updated_on>2024-02-15 15:55:17</sys_updated_on>
     </sys_claim>
 </record_update>
