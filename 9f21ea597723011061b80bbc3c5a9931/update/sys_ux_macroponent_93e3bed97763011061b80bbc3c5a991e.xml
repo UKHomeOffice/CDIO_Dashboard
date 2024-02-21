@@ -3120,7 +3120,7 @@
                 "isInline" : null,
                 "items" : [{"rules":{"grid-area":"column1"},"slotName":"Column 1","styles":{"display":"flex","flex-direction":"column"}},{"rules":{"grid-area":"column2"},"slotName":"Column 2","styles":{"display":"flex","flex-direction":"row"}}],
                 "root" : null,
-                "rules" : {"grid-gap":"0rem","grid-template-areas":"\"column1 column2\"","grid-template-columns":"1fr 1fr","grid-template-rows":"auto","height":"100%"},
+                "rules" : {"grid-gap":"0rem","grid-template-areas":"\"column1 column2\"","grid-template-columns":"1.5fr 1fr","grid-template-rows":"auto","height":"100%"},
                 "styles" : null,
                 "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
                 "type" : "grid"
@@ -12582,7 +12582,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>512</sys_mod_count>
+        <sys_mod_count>513</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -12590,7 +12590,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-21 13:17:08</sys_updated_on>
+        <sys_updated_on>2024-02-21 13:24:49</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
