@@ -11,7 +11,7 @@
   * @param {TransformApiHelpers} params.helpers
   */
 function evaluateProperty({api, helpers}) {
-  var KPI_bds_list = api.data.verticalD_headlinemetric1v.output.result;
+  var KPI_bds_list = api.data.verticalC_headlinemetric2v.output.result;
   var dropdown_selection = api.state.tab3PortfolioElement;
     
   for(let i = 0; i < KPI_bds_list.length; i++) {
@@ -30,7 +30,7 @@ function evaluateProperty({api, helpers}) {
         <sys_created_on>2024-01-22 13:30:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>df8f9a0f1bfb31dcdba1c3e5464bcb22</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>stylized_text_238/text</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -38,7 +38,7 @@ function evaluateProperty({api, helpers}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_df8f9a0f1bfb31dcdba1c3e5464bcb22</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-22 13:30:51</sys_updated_on>
+        <sys_updated_on>2024-02-21 10:49:49</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>

@@ -9051,7 +9051,7 @@
             "text" : {
               "type" : "DATA_OUTPUT_BINDING",
               "binding" : {
-                "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "0", "metricLabel" ]
+                "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "1", "metricLabel" ]
               }
             },
             "tag" : {
@@ -9060,7 +9060,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "default-slot",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -9113,7 +9113,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "default-slot",
           "definition" : {
             "id" : "d356d14b6e293a3020a244b63d278d8f",
             "type" : "MACROPONENT"
@@ -9175,7 +9175,7 @@
                 "label" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "verticalD_headlinemetric1v", "output", "result", "0", "period" ]
+                    "address" : [ "verticalC_headlinemetric2v", "output", "result", "0", "period" ]
                   }
                 },
                 "value" : {
@@ -9184,6 +9184,92 @@
                     "code" : null,
                     "message" : "",
                     "comment" : ""
+                  }
+                },
+                "reversed" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "bb63b710d208796b7ceaab7812bddef1",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
+            }, {
+              "elementId" : "label_value_55",
+              "elementLabel" : "Label value 55",
+              "propertyValues" : {
+                "truncated" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "Target",
+                    "comment" : ""
+                  }
+                },
+                "value" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric2v", "output", "result", "0", "target_formatted" ]
+                  }
+                },
+                "reversed" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "bb63b710d208796b7ceaab7812bddef1",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
+            }, {
+              "elementId" : "label_value_56",
+              "elementLabel" : "Label value 56",
+              "propertyValues" : {
+                "truncated" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "Gap",
+                    "comment" : ""
+                  }
+                },
+                "value" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric2v", "output", "result", "0", "gap_formatted" ]
                   }
                 },
                 "reversed" : {
@@ -9318,6 +9404,41 @@
               "styles" : {
                 "color" : "#ff0000"
               }
+            }, {
+              "elementId" : "stylized_text_258",
+              "elementLabel" : "Stylized text 258",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric2v", "output", "result", "0", "changeperc_formatted" ]
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
             } ],
             "layout" : {
               "default" : {
@@ -9343,320 +9464,16 @@
           "styles" : {
             "width" : "100%"
           }
-        }, {
-          "elementId" : "stylized_text_50",
-          "elementLabel" : "Stylized text 50",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : ""
-            },
-            "text" : {
-              "type" : "DATA_OUTPUT_BINDING",
-              "binding" : {
-                "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "1", "metricLabel" ]
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "span"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 2",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : ""
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : {
-            "font-size" : "16px",
-            "font-weight" : "600",
-            "padding-bottom" : "16px"
-          }
-        }, {
-          "elementId" : "container_36",
-          "elementLabel" : "Container 36",
-          "propertyValues" : {
-            "ariaRegionHeadingLevel" : {
-              "type" : "JSON_LITERAL",
-              "value" : "1"
-            },
-            "hideEmptyStateUi" : {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            },
-            "ariaRegionName" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "",
-                "comment" : ""
-              }
-            },
-            "includeAriaHeading" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "type" : {
-              "type" : "JSON_LITERAL",
-              "value" : "section"
-            },
-            "ariaRole" : {
-              "type" : "JSON_LITERAL",
-              "value" : ""
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 2",
-          "definition" : {
-            "id" : "d356d14b6e293a3020a244b63d278d8f",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : {
-            "composition" : [ {
-              "elementId" : "stylized_text_240",
-              "elementLabel" : "Stylized text 240",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "75eed3df7723011061b80bbc3c5a9945",
-                    "target" : null
-                  }
-                },
-                "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "eab4a6cf1bf371dcdba1c3e5464bcb27",
-                    "target" : null
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "span"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 1",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "label_value_47",
-              "elementLabel" : "Label value 47",
-              "propertyValues" : {
-                "truncated" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "label" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalD_headlinemetric2v", "output", "result", "0", "period" ]
-                  }
-                },
-                "value" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "",
-                    "comment" : ""
-                  }
-                },
-                "reversed" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 1",
-              "definition" : {
-                "id" : "bb63b710d208796b7ceaab7812bddef1",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "icon_25",
-              "elementLabel" : "Icon 25",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "xl"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "5410651b7723011061b80bbc3c5a9961",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#008000"
-              }
-            }, {
-              "elementId" : "icon_26",
-              "elementLabel" : "Icon 26",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "xl"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "1310a51b7723011061b80bbc3c5a990b",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#ffa500"
-              }
-            }, {
-              "elementId" : "icon_39",
-              "elementLabel" : "Icon 39",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "xl"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "a1482a0b1b7b71dcdba1c3e5464bcb16",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#ff0000"
-              }
-            } ],
-            "layout" : {
-              "default" : {
-                "children" : null,
-                "isInline" : null,
-                "items" : [{"rules":{"grid-area":"column1"},"slotName":"Column 1","styles":{"display":"flex","flex-direction":"column"}},{"rules":{"grid-area":"column2"},"slotName":"Column 2","styles":{"display":"flex","flex-direction":"row"}}],
-                "root" : null,
-                "rules" : {"grid-gap":"0rem","grid-template-areas":"\"column1 column2\"","grid-template-columns":"1fr 1fr","grid-template-rows":"auto","height":"100%"},
-                "styles" : null,
-                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
-                "type" : "grid"
-              }
-            }
-          },
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : ""
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : {
-            "width" : "100%",
-            "padding-top" : "15%"
-          }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"rules":{"flex":"1","margin-right":"1rem"},"slotName":"Column 1","styles":{"display":"flex","flex-direction":"column"}},{"rules":{"flex":"1"},"slotName":"Column 2","styles":{"display":"flex","flex-direction":"column"}}],
+            "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
             "root" : null,
-            "rules" : {"align-items":"stretch","flex-flow":"row nowrap","height":"100%"},
-            "styles" : null,
-            "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+            "rules" : null,
+            "styles" : {"flex-direction":"column"},
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
             "type" : "flex"
           },
           "version" : "2.0.0"
@@ -12708,6 +12525,9 @@
   "message" : "Description",
   "comment" : ""
 }, {
+  "message" : "Gap",
+  "comment" : ""
+}, {
   "message" : "Loading",
   "comment" : ""
 }, {
@@ -12748,6 +12568,9 @@
   "comment" : ""
 }, {
   "message" : "Supporting dashboards",
+  "comment" : ""
+}, {
+  "message" : "Target",
   "comment" : ""
 }, {
   "message" : "TeamSpace1 Project Status",
@@ -13298,7 +13121,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>489</sys_mod_count>
+        <sys_mod_count>498</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13306,7 +13129,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-05 10:09:49</sys_updated_on>
+        <sys_updated_on>2024-02-21 11:10:46</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
