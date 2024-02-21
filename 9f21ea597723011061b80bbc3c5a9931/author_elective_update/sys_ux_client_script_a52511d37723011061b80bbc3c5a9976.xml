@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
+        <name>icon_29___isHidden__</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    return !(api.state.tab3verticalAMetric2ShowHealth === 'green');
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-24 03:55:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a52511d37723011061b80bbc3c5a9976</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>icon_29___isHidden__</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_a52511d37723011061b80bbc3c5a9976</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-17 10:17:47</sys_updated_on>
+        <target/>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>00000000</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_a52511d37723011061b80bbc3c5a9976</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-01-18 12:42:11</sys_created_on>
+        <sys_id>5b0e6df51bb735d4dba1c3e5464bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-01-18 12:42:11</sys_updated_on>
+    </sys_claim>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ux_client_script_a52511d37723011061b80bbc3c5a9976</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Product Performance default"&gt;93e3bed97763011061b80bbc3c5a991e&lt;/macroponent&gt;&lt;name&gt;icon_29___isHidden__&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    return !(api.state.tab3verticalAMetric2ShowHealth === 'green');
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-24 03:55:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;a52511d37723011061b80bbc3c5a9976&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;icon_29___isHidden__&lt;/sys_name&gt;&lt;sys_package display_value="CIO Dashboard" source="sn_ciodashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="CIO Dashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_a52511d37723011061b80bbc3c5a9976&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;VelentL&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-17 10:17:47&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;sys_claim action="INSERT_OR_UPDATE"&gt;&lt;claim_owner_scope display_value="CIO Dashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/claim_owner_scope&gt;&lt;claim_timestamp&gt;00000000&lt;/claim_timestamp&gt;&lt;metadata_update_name&gt;sys_ux_client_script_a52511d37723011061b80bbc3c5a9976&lt;/metadata_update_name&gt;&lt;previous_claim_app_version&gt;1.0.2&lt;/previous_claim_app_version&gt;&lt;previous_claim_name&gt;CIO Dashboard&lt;/previous_claim_name&gt;&lt;previous_claim_scope&gt;9f21ea597723011061b80bbc3c5a9931&lt;/previous_claim_scope&gt;&lt;sys_created_by&gt;VelentL&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-18 12:42:11&lt;/sys_created_on&gt;&lt;sys_id&gt;5b0e6df51bb735d4dba1c3e5464bcbbf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;VelentL&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-18 12:42:11&lt;/sys_updated_on&gt;&lt;/sys_claim&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-300956525</payload_hash>
+        <record_name>icon_29___isHidden__</record_name>
+        <reverted_from/>
+        <source>fc5c00c71b27bd94dba1c3e5464bcb28</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-02-21 12:52:53</sys_created_on>
+        <sys_id>fb86fc341bec869c64122144b24bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18dcbb9e2740000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-02-21 12:52:53</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>b386fc34a9ec869c4675307459ad3faa</update_guid>
+        <update_guid_history>b386fc34a9ec869c4675307459ad3faa:-300956525,d3c7e8bca8e8469c49fff8e5f626c846:0,540990f00428069c74dfbb3f932baf2b:-300956525,5e06d0b09c24069c5d3360d7f31f9507:0,773d04782428c29c20e9ec2ecbd0e4f4:1700890282,2bdfe12301808ed0c9369b40be7a09ed:-300956525,1bd0c31e7f048ed4193eddb8b14ed0e2:0,6d9f3ad27dc08ed46c5b84c9236b8bc9:1700890282,b97b7e9e278c4ed43a4d0856a85a2970:-300956525,4d436652354c0a18eb4da266ecace55f:0,7982915e68c8c218ec8bc74ed1ed042c:-300956525,83a1199eed88c218c1fabbedb4787872:0,3e27895e75cc8218fc57a33dd715c129:-300956525,f02e514e3c8806d41c1616dbb4b08cad:0,80475502fb0406d41073b068702c411b:-300956525,7fb61d4a25c006d4a59fcd243ac1071f:0,7d3e8d8276c8c2d40c90110fb54fd715:-300956525,24fcc98ea348c2d4adc17eeba198d4ae:0,d02785469e04c2d402f8e84d053d159a:-300956525,f83814c2838402d4cd7a6c864fdb2002:0,8f0af2d5dc088ed04f83c118cd6b4a6f:-300956525,712a6a59c5884ed00bdf1949d3c53f3d:0,acdc369492808e944738d6159ac17e78:-300956525,ac8e32dcbd048e94be647c0d0653f0b6:0,bb7eba9ccf048e941fc70ddc70ffbbf5:309477069,e92d369cb4808e948208744e61654eff:0,360dbad86d808e94af3bdafa9af478f7:0,09ac7a50bc808e94c2b36b7ff969dd90:-300956525,0d6c7ed8a0408e94fd317a11874fb31d:0,146c3ad8bf408e9476c9f9e24e7f689a:309477069,6d1cbe14d2408e9401279bed444ed4e0:0,0768fad84cc84e94c80961da8d93596c:-300956525,e40d46141a4c4a94748e821083940683:0,d933aecc9cc80a5803547f2869766ccc:309477069,ab92eaccfd880a5849a51cc8f9e3214f:0,2013a50024844e140f1145df490be2c8:309477069,e6469504f8c00e14484db68f496d940f:-300956525,45cacc3f53377d94dd79626ace338ad7:0,8559087703b37d940525541ebea9a243:1700890282,5038764b3073f1dc0398cc288dff9f78:-300956525,e3063e47ffbfb1dc0dd4a2f2f945f959:0,9089658359733d9c86abb17854080c57:-300956525,daac6bc6c37bb91c87cd32721509d106:0,156ae30e7e77b91cf073b3c59f3c5cb9:-300956525,9d15af82c57f791c6fb784511006a563:340292561,c5c45e0abf3b711c7fbcdd014a0135da:-300956525,60455e06ba7b711cd97405321dd10f2e:0,6171f1356cfb35d4c0590995a18ed25e:-300956525,c5c23d314d7f35d474aca21b7735c3a6:0,916459b1a773b1d41048ec1842535fca:-300956525,040b4df932f371d44c0da6c751f36682:0,f64c30715bfffd945f89bde7090a7eea:-300956525,397c78354afffd949e083cf0aff9a78e:0,72f5892d89337954c1810c03a7f32e3c:-300956525,6c6501ed1aff3954694e6ba313ad5fcf:0,5f5141e173bb39544618b747c138f1f0:-300956525,3c8e342188b73954507ebb770d01f76b:0,32638cad6833f15442fa97b922092d56:-300956525,f9983b19ca73b154921f7938a24148e2:-1442191953,c767f39d14ff7154f017e155d0ce0f71:0,bdb5bbd5f87f71549407333bd98550c1:-1442191953,7eb47b510d3f7154fe437c8312109c4f:0,fd8543bc1d77fdd007a2efc987cf12d9:-300956525,30e24f7c6c33fdd090728bf2dd6f7e5a:-2010323683,3aafa6b04f7f3dd0d1f75c25f43affce:-1442191953,467da670fa7b3dd0c6b51a2674c4f737:-2003275822,e22d6ef49e3b3dd0c492816b4bad1878:-1452641913,5aeca6306f3b3dd0ffe62a6350a04b11:-409575748,75bb484bde27bd94b2046ea18f8b6a75:1841495972,b22c0cc36067bd944c07122c86162be4:0,75bb484bde27bd94b2046ea18f8b6a75:1841495972,851b32ae0ae37154deb9ba573aa3efd2:0,8a59be6620637154dc2894d13dd0e862:1700890282,1b7f5ae27fafbd146f294c891b9040b4:0,fcb756e2dfe3bd1461f835b4e9be7e09:1700890282,f60465d22faf71d08061523e73648e0d:0,2b8654123b2bb99074db7232aca21690:1841495972,04a8bcb5252b7190605a14818e91a054:0,3d573075c2a77190b19e7ecf8d17c4ca:1700890282,41865251846b79dc67076c72629e7d2e:0,48455a1158e779dc091de9fda80b00b0:1700890282,58329995d567f1dc3224eb5cc2c195f4:1841495972,769b6409f663795ca167b90c8d7eb0d5:0,30a1640194e3395ccfff3e14f0b70a9a:1841495972,0f9d0c4100a7b55ce1b442a358fb549a:0,b5574801976f755c78a82652017eace5:1841495972,d8127b38f4aff15c7eb19d0d2965b055:311506905,c8e2b7f80ceff15cf1ae7cb7f241b843:0,05f80760122b79d89dc89ff5566c5269:311506905,361322818d97b550c8000a290693a595:0,a14d386065973150d2da56da065753ed:311506905,1fbba420e9d3315036a26049dbf6e3be:0,b81924e4521bb15045f5b1cb90723584:1700890282,d9487b4c82df3d101b4597bb50cc806e:0,292572bb9d8779101f9ffb32caec17a3:311506905</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-02-21 13:09:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>84243eb8245247aaae5949f7648a57e1</sys_id>
+        <sys_metadata>a52511d37723011061b80bbc3c5a9976</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>icon_29___isHidden__</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_a52511d37723011061b80bbc3c5a9976</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_a52511d37723011061b80bbc3c5a9976">fb86fc341bec869c64122144b24bcbaa</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-02-21 13:09:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
