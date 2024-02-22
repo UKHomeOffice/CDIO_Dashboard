@@ -3539,7 +3539,7 @@
             },
             "numberOfPeriods" : {
               "type" : "JSON_LITERAL",
-              "value" : 11
+              "value" : 18
             },
             "groupBy" : {
               "type" : "JSON_LITERAL",
@@ -5281,7 +5281,7 @@
             "text" : {
               "type" : "DATA_OUTPUT_BINDING",
               "binding" : {
-                "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "supportingMetrics", "0", "metricLabel" ]
+                "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "supportingMetrics", "1", "metricLabel" ]
               }
             },
             "tag" : {
@@ -5423,7 +5423,7 @@
             "metrics" : {
               "type" : "STATE_BINDING",
               "binding" : {
-                "address" : [ "tab3verticalBSupportingMetric1", "0", "metrics" ]
+                "address" : [ "tab3verticalASupportingMetric2", "0", "metrics" ]
               }
             },
             "yAxis3From" : {
@@ -5461,17 +5461,17 @@
             "trendBy" : {
               "type" : "STATE_BINDING",
               "binding" : {
-                "address" : [ "tab3verticalBSupportingMetric1", "0", "trendBy" ]
+                "address" : [ "tab3verticalASupportingMetric2", "0", "trendBy" ]
               }
             },
             "numberOfPeriods" : {
               "type" : "JSON_LITERAL",
-              "value" : 3
+              "value" : 15
             },
             "groupBy" : {
               "type" : "STATE_BINDING",
               "binding" : {
-                "address" : [ "tab3verticalBSupportingMetric1", "0", "groupBy" ]
+                "address" : [ "tab3verticalASupportingMetric2", "0", "groupBy" ]
               }
             },
             "showTrend" : {
@@ -5597,7 +5597,7 @@
             "dataSources" : {
               "type" : "STATE_BINDING",
               "binding" : {
-                "address" : [ "tab3verticalBSupportingMetric1", "0", "datasources" ]
+                "address" : [ "tab3verticalASupportingMetric2", "0", "datasources" ]
               }
             },
             "showChange" : {
@@ -7434,7 +7434,7 @@
             },
             "numberOfPeriods" : {
               "type" : "JSON_LITERAL",
-              "value" : 9
+              "value" : 12
             },
             "groupBy" : {
               "type" : "STATE_BINDING",
@@ -9100,7 +9100,7 @@
             "text" : {
               "type" : "DATA_OUTPUT_BINDING",
               "binding" : {
-                "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "supportingMetrics", "0", "metricLabel" ]
+                "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "supportingMetrics", "1", "metricLabel" ]
               }
             },
             "tag" : {
@@ -9242,7 +9242,7 @@
             "metrics" : {
               "type" : "STATE_BINDING",
               "binding" : {
-                "address" : [ "tab3verticalDSupportingMetric1", "0", "metrics" ]
+                "address" : [ "tab3verticalCSupportingMetric2", "0", "metrics" ]
               }
             },
             "yAxis3From" : {
@@ -9280,7 +9280,7 @@
             "trendBy" : {
               "type" : "STATE_BINDING",
               "binding" : {
-                "address" : [ "tab3verticalDSupportingMetric1", "0", "trendBy" ]
+                "address" : [ "tab3verticalCSupportingMetric2", "0", "trendBy" ]
               }
             },
             "numberOfPeriods" : {
@@ -9288,10 +9288,8 @@
               "value" : 3
             },
             "groupBy" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "tab3verticalDSupportingMetric1", "0", "groupBy" ]
-              }
+              "type" : "JSON_LITERAL",
+              "value" : null
             },
             "showTrend" : {
               "type" : "JSON_LITERAL",
@@ -9416,7 +9414,7 @@
             "dataSources" : {
               "type" : "STATE_BINDING",
               "binding" : {
-                "address" : [ "tab3verticalDSupportingMetric1", "0", "datasources" ]
+                "address" : [ "tab3verticalCSupportingMetric2", "0", "datasources" ]
               }
             },
             "showChange" : {
@@ -12355,7 +12353,7 @@
         "showOthers" : false
       } ],
       "metrics" : [ {
-        "aggregateIndicator" : "",
+        "aggregateIndicator" : "587fad00eb31020065deac6aa206fea5",
         "axisId" : "primary",
         "dataSource" : "tab3datasourceID_VCSM1",
         "frequency" : 10,
@@ -12404,7 +12402,7 @@
         "showOthers" : false
       } ],
       "metrics" : [ {
-        "aggregateIndicator" : "",
+        "aggregateIndicator" : "1d7a2073eb21020065deac6aa206fe5c",
         "axisId" : "primary",
         "dataSource" : "tab3datasourceID_VCSM2",
         "frequency" : 10,
@@ -12608,7 +12606,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>525</sys_mod_count>
+        <sys_mod_count>536</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -12616,7 +12614,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-22 11:46:05</sys_updated_on>
+        <sys_updated_on>2024-02-22 13:44:25</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
