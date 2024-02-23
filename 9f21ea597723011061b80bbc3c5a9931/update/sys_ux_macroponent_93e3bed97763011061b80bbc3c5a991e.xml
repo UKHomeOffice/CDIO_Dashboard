@@ -2027,7 +2027,7 @@
         },
         "disabled" : {
           "type" : "JSON_LITERAL",
-          "value" : false
+          "value" : true
         },
         "placeholder" : {
           "type" : "TRANSLATION_LITERAL",
@@ -9532,6 +9532,9 @@
             "binding" : {
               "address" : [ "tab3PortfolioElement" ]
             }
+          }, {
+            "type" : "JSON_LITERAL",
+            "value" : "^name=BX eGates^ORname=HMPO Digital Application Processing^ORnameLIKEAtlas"
           } ]
         },
         "operator" : "CONCAT"
@@ -10489,7 +10492,7 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : "bae6590e4f407f089e23e1128110c780"
+    "value" : "76e6590e4f407f089e23e1128110c77d"
   }
 }, {
   "name" : "tab3verticalBShowHealth",
@@ -10541,7 +10544,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>548</sys_mod_count>
+        <sys_mod_count>554</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -10549,7 +10552,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-23 15:46:06</sys_updated_on>
+        <sys_updated_on>2024-02-23 16:07:56</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
