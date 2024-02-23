@@ -15,13 +15,17 @@
 function handler({api, event, helpers, imports}) {
     var KPI_bds_list = api.data.verticalC_headlinemetric2v.output.result;
     var dropdown_selection = api.state.tab3PortfolioElement;
-        
-    for(let i = 0; i < KPI_bds_list.length; i++) {
-        var KPI_bd_sysid = KPI_bds_list[i].element.value;
-        if (dropdown_selection === KPI_bd_sysid) {
-            var KPI_bd_score = KPI_bds_list[i].scores[0].value;
-          break;
-        }
+    
+    if (api.state.tab3BreakdownSource != '') {
+        for(let i = 0; i < KPI_bds_list.length; i++) {
+            var KPI_bd_sysid = KPI_bds_list[i].element.value;
+            if (dropdown_selection === KPI_bd_sysid) {
+                var KPI_bd_score = KPI_bds_list[i].scores[0].value;
+              break;
+            }
+        }
+    } else {
+        var KPI_bd_score = KPI_bds_list[0].scores[0].value;
     }
 
     var value  = KPI_bd_score;
@@ -45,7 +49,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2022-05-23 12:32:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51120acb7767011061b80bbc3c5a990e</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>tab3showVerticalCMetric2Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -53,7 +57,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_51120acb7767011061b80bbc3c5a990e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-29 15:36:09</sys_updated_on>
+        <sys_updated_on>2024-02-23 14:58:06</sys_updated_on>
         <target/>
         <type>default</type>
     </sys_ux_client_script>
