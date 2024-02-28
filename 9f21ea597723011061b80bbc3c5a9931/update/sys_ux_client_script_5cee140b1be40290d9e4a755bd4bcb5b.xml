@@ -18,8 +18,8 @@ function handler({
     helpers,
     imports
 }) {
-    api.setState('tab3Portfoliobreakdown', 'e6def6531bf5fc50550b97d0b24bcb21');
-    api.setState('tab3PISbreakdown', '');
+    api.setState('tab3PortfolioBreakdown', 'e6def6531bf5fc50550b97d0b24bcb21');
+    api.setState('tab3PISBreakdown', '');
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
@@ -27,7 +27,7 @@ function handler({
         <sys_created_on>2024-02-28 10:55:46</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5cee140b1be40290d9e4a755bd4bcb5b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>tab3setPortfolioBreakdown</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -35,7 +35,7 @@ function handler({
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_5cee140b1be40290d9e4a755bd4bcb5b</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-28 11:07:12</sys_updated_on>
+        <sys_updated_on>2024-02-28 13:17:34</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
