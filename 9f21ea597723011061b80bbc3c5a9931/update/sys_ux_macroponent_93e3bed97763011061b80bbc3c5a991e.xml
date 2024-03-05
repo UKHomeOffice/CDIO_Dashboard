@@ -5692,13 +5692,9 @@
                   }
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "3b85f90b1b737d9cdba1c3e5464bcba8",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric1v", "output", "result", "0", "scores", "0", "value_formatted" ]
                   }
                 },
                 "tag" : {
@@ -5825,13 +5821,9 @@
                   }
                 },
                 "value" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "ee9e650d1bac8250dba1c3e5464bcbfe",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric1v", "output", "result", "0", "gap_formatted" ]
                   }
                 },
                 "reversed" : {
@@ -5975,13 +5967,9 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "f29e290d1bac8250dba1c3e5464bcb0d",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric1v", "output", "result", "0", "changeperc_formatted" ]
                   }
                 },
                 "tag" : {
@@ -9737,10 +9725,28 @@
         "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
     },
-    "breakdown" : {
+    "portfolio_breakdown" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
+        "address" : [ "tab3PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISBreakdown" ]
+      }
+    },
+    "pis_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISElement" ]
       }
     }
   },
@@ -10620,7 +10626,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>612</sys_mod_count>
+        <sys_mod_count>615</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -10628,7 +10634,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-05 09:31:23</sys_updated_on>
+        <sys_updated_on>2024-03-05 10:06:20</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
