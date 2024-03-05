@@ -19,18 +19,11 @@ function handler({
     imports
 }) {
     var indicator = api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].metricSysid;
-    // var breakdown = api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[0].breakdownSysid;
 
     var PortfolioBreakdown = api.state.tab3PortfolioBreakdown;
     var PortfolioElement = api.state.tab3PortfolioElement;
     var PISBreakdown = api.state.tab3PISBreakdown;
     var PISElement = api.state.tab3PISElement;
-
-    // var breakdown_arr = [api.state.tab3PISBreakdown ,api.state.tab3PortfolioBreakdown];
-    // var breakdownsourcesysid = breakdown_arr.find(el => el !== '') || '';
-
-    // var element_arr = [api.state.tab3PISElement ,api.state.tab3PortfolioElement];
-    // var dropdownelementsysid = element_arr.find(el => el !== '') || '';
 
     var breakdown = [];
     if (PortfolioBreakdown != '' && PISBreakdown != '') {
@@ -108,7 +101,7 @@ function handler({
         <sys_created_on>2022-05-23 12:42:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c834064f7767011061b80bbc3c5a99ec</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>tab3showVerticalASupportingMetric1Chart</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -116,7 +109,7 @@ function handler({
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_c834064f7767011061b80bbc3c5a99ec</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-05 08:57:19</sys_updated_on>
+        <sys_updated_on>2024-03-05 09:11:15</sys_updated_on>
         <target/>
         <type>default</type>
     </sys_ux_client_script>
