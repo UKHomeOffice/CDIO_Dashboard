@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
     <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
         <api_name>sn_ciodashboard.getPAscoreV</api_name>
-        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:{{portfolio_breakdown}}:{{portfolio_element}}&amp;sysparm_breakdown={{pis_breakdown}}&amp;sysparm_include_scores=true&amp;sysparm_per_page=10&amp;sysparm_to=2023-06-30</api_url>
+        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:{{portfolio_breakdown}}:{{portfolio_element}}:{{pis_breakdown}}:{{pis_element}}&amp;sysparm_include_scores=true&amp;sysparm_per_page=10&amp;sysparm_to=2023-06-30</api_url>
         <description>Retrieves PA indicator score using PA Scorecard API and breakdown for Portfolio</description>
         <http_method>GET</http_method>
         <mutates_server_data>false</mutates_server_data>
@@ -57,6 +57,18 @@
     },&#13;
     "mandatory": true,&#13;
     "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "pis_element",&#13;
+    "label": "PIS element",&#13;
+    "description": "PIS element sysid",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "cmdb_ci_service"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
   }&#13;
 ]</props>
         <request_body/>
@@ -71,6 +83,12 @@
   "comment" : ""
 }, {
   "message" : "PIS breakdown sysid",
+  "comment" : ""
+}, {
+  "message" : "PIS element",
+  "comment" : ""
+}, {
+  "message" : "PIS element sysid",
   "comment" : ""
 }, {
   "message" : "Portfolio Breakdown",
@@ -91,7 +109,7 @@
         <sys_created_on>2024-01-10 14:23:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7268bc971b2f3918dba1c3e5464bcbe3</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>getPAscoreV</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -99,7 +117,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_data_broker_rest_7268bc971b2f3918dba1c3e5464bcbe3</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-04 13:16:08</sys_updated_on>
+        <sys_updated_on>2024-03-05 07:54:07</sys_updated_on>
     </sys_ux_data_broker_rest>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

@@ -9453,6 +9453,12 @@
       "binding" : {
         "address" : [ "tab3PISBreakdown" ]
       }
+    },
+    "pis_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISElement" ]
+      }
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -9527,26 +9533,24 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "1", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
       }
     },
     "portfolio_breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3PortfolioBreakdown" ]
-      }
+      "type" : "JSON_LITERAL",
+      "value" : ""
     },
     "portfolio_element" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3PortfolioElement" ]
-      }
+      "type" : "JSON_LITERAL",
+      "value" : ""
     },
     "pis_breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3PISBreakdown" ]
-      }
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_element" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -9669,18 +9673,18 @@
       }
     },
     "portfolio_breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
-      }
+      "type" : "JSON_LITERAL",
+      "value" : ""
     },
     "portfolio_element" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3PortfolioElement" ]
-      }
+      "type" : "JSON_LITERAL",
+      "value" : ""
     },
     "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_element" : {
       "type" : "JSON_LITERAL",
       "value" : ""
     }
@@ -9892,18 +9896,18 @@
       }
     },
     "portfolio_breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
-      }
+      "type" : "JSON_LITERAL",
+      "value" : ""
     },
     "portfolio_element" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3PortfolioElement" ]
-      }
+      "type" : "JSON_LITERAL",
+      "value" : ""
     },
     "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_element" : {
       "type" : "JSON_LITERAL",
       "value" : ""
     }
@@ -10550,17 +10554,6 @@
     "value" : "amber"
   }
 }, {
-  "name" : "tab3PortfolioElement",
-  "label" : "tab3PortfolioElement",
-  "fieldType" : "string",
-  "valueType" : "string",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  }
-}, {
   "name" : "tab3verticalBShowHealth",
   "label" : "tab3verticalBShowHealth",
   "fieldType" : "",
@@ -10594,15 +10587,15 @@
     "value" : "amber"
   }
 }, {
-  "name" : "tab3BreakdownSource",
-  "label" : "tab3BreakdownSource",
+  "name" : "tab3PortfolioElement",
+  "label" : "tab3PortfolioElement",
   "fieldType" : "string",
   "valueType" : "string",
   "shape" : "",
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : ""
+    "value" : "76e6590e4f407f089e23e1128110c77d"
   }
 }, {
   "name" : "tab3PISBreakdown",
@@ -10613,7 +10606,7 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : ""
+    "value" : "b1616b8c4fe933002f3c71318110c743"
   }
 }, {
   "name" : "tab3PortfolioBreakdown",
@@ -10624,7 +10617,7 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : ""
+    "value" : "e6def6531bf5fc50550b97d0b24bcb21"
   }
 }, {
   "name" : "tab3PISElement",
@@ -10635,7 +10628,7 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : ""
+    "value" : "a72b89881b1e9450342441d7bd4bcb3f"
   }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -10643,7 +10636,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>598</sys_mod_count>
+        <sys_mod_count>602</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -10651,7 +10644,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-04 15:18:37</sys_updated_on>
+        <sys_updated_on>2024-03-05 07:59:17</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
