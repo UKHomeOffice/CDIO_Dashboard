@@ -1957,6 +1957,17 @@
           "operation" : null,
           "targetId" : "clsiirhhffggbbaaaaxtddjhhwldgypgghhgg",
           "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "5cee140b1be40290d9e4a755bd4bcb5b"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "cltffotxhhbbaaaagwddjhhwgggcexdxe",
+          "type" : "CLIENT_SCRIPT"
         } ]
       } ],
       "slot" : "default-slot",
@@ -2027,7 +2038,7 @@
         },
         "disabled" : {
           "type" : "JSON_LITERAL",
-          "value" : true
+          "value" : false
         },
         "placeholder" : {
           "type" : "TRANSLATION_LITERAL",
@@ -2084,7 +2095,7 @@
               "container" : {
                 "propName" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "tab3PortfolioElement"
+                  "value" : "tab3PISElement"
                 },
                 "value" : {
                   "type" : "EVENT_PAYLOAD_BINDING",
@@ -2318,6 +2329,17 @@
           "event" : null,
           "operation" : null,
           "targetId" : "clsiirsqxvaaaazcddjhhwukffcciwkt",
+          "type" : "CLIENT_SCRIPT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "829181431be44290d9e4a755bd4bcb49"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "cltffucctaaggaaaanpddjhhwttymexwk",
           "type" : "CLIENT_SCRIPT"
         } ]
       } ],
@@ -2808,13 +2830,9 @@
                   }
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "ad1efef31b2bb15c64122144b24bcb42",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalA_headlinemetric1v", "output", "result", "0", "scores", "0", "value_formatted" ]
                   }
                 },
                 "tag" : {
@@ -2941,13 +2959,9 @@
                   }
                 },
                 "value" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "d137a1051b688250dba1c3e5464bcbbb",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalA_headlinemetric1v", "output", "result", "0", "gap_formatted" ]
                   }
                 },
                 "reversed" : {
@@ -3091,13 +3105,9 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "11b829051ba88250dba1c3e5464bcb04",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalA_headlinemetric1v", "output", "result", "0", "changeperc_formatted" ]
                   }
                 },
                 "tag" : {
@@ -4266,13 +4276,9 @@
                   }
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "30215a3d1b3bf5d4dba1c3e5464bcb76",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalA_headlinemetric2v", "output", "result", "0", "scores", "0", "value_formatted" ]
                   }
                 },
                 "tag" : {
@@ -4399,13 +4405,9 @@
                   }
                 },
                 "value" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "736ba9c11b2c8250dba1c3e5464bcba8",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalA_headlinemetric2v", "output", "result", "0", "gap_formatted" ]
                   }
                 },
                 "reversed" : {
@@ -4549,13 +4551,9 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "8b6c25011b6c8250dba1c3e5464bcba0",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalA_headlinemetric2v", "output", "result", "0", "changeperc_formatted" ]
                   }
                 },
                 "tag" : {
@@ -5694,13 +5692,9 @@
                   }
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "3b85f90b1b737d9cdba1c3e5464bcba8",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric1v", "output", "result", "0", "scores", "0", "value_formatted" ]
                   }
                 },
                 "tag" : {
@@ -5827,13 +5821,9 @@
                   }
                 },
                 "value" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "ee9e650d1bac8250dba1c3e5464bcbfe",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric1v", "output", "result", "0", "gap_formatted" ]
                   }
                 },
                 "reversed" : {
@@ -5977,13 +5967,9 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "f29e290d1bac8250dba1c3e5464bcb0d",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric1v", "output", "result", "0", "changeperc_formatted" ]
                   }
                 },
                 "tag" : {
@@ -7049,13 +7035,9 @@
                   }
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "df8f9a0f1bfb31dcdba1c3e5464bcb22",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric2v", "output", "result", "0", "scores", "0", "value_formatted" ]
                   }
                 },
                 "tag" : {
@@ -7182,13 +7164,9 @@
                   }
                 },
                 "value" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "adff690d1bec8250dba1c3e5464bcbe6",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric2v", "output", "result", "0", "gap_formatted" ]
                   }
                 },
                 "reversed" : {
@@ -7332,13 +7310,9 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "6ad0f5851b20c250dba1c3e5464bcb83",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "verticalC_headlinemetric2v", "output", "result", "0", "changeperc_formatted" ]
                   }
                 },
                 "tag" : {
@@ -9030,264 +9004,6 @@
 }, {
   "cachePolicy" : null,
   "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticalB_headlinemetric1",
-  "elementLabel" : "VerticalB Headline Metric1",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddbuddaafiaaaageddfhhbbpbbqeehfaa",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "822dc9a1772b011061b80bbc3c5a99d8"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddbuddaafiaaaagfddfhhbbjbbgggyic",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "headlineMetrics", "0", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticalb_headlinemetric2",
-  "elementLabel" : "VerticalB Headline Metric2",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddbvaamqraaaadhddfhhbbddrdhezggx",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "12e595a9772b011061b80bbc3c5a9931"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddbvaamqraaaadiddfhhbbcggjccewfl",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "headlineMetrics", "1", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticalc_headlinemetric1",
-  "elementLabel" : "verticalc headlinemetric1",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcmqjiiuaaaaozddfhhbbbbqccrfffggz",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "c697403177a3011061b80bbc3c5a99df"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcmqjiiuaaaapaaddfhhbbuwsgdddlv",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticalc_headlinemetric2",
-  "elementLabel" : "verticalc_headlinemetric2",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcodggdjaaaadbbddfhhbbggxhatueez",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "fbd1583977a3011061b80bbc3c5a99a4"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcodggdjaaaadccddfhhbbpvirrguh",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "1", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticald_headlinemetric1",
-  "elementLabel" : "verticald_headlinemetric1",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcoypshhaaaaljjddfhhbbuamkrixk",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "b81590f977a3011061b80bbc3c5a99ec"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcoypshhaaaaladdfhhbblrkthhlaa",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "0", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticald_headlinemetric2",
-  "elementLabel" : "verticald_headlinemetric2",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcozgglggaaaalgddfhhbbxqeezgaawii",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "754554f977a3011061b80bbc3c5a99c3"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcozgglggaaaalhddfhhbbsjjccoaaapv",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "1", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
     "id" : "6fe7810377e3011061b80bbc3c5a99c1",
     "type" : "TRANSFORM"
   },
@@ -9414,10 +9130,28 @@
         "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
       }
     },
-    "breakdown" : {
+    "portfolio_breakdown" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
+        "address" : [ "tab3PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISBreakdown" ]
+      }
+    },
+    "pis_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISElement" ]
       }
     }
   },
@@ -9496,10 +9230,28 @@
         "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "1", "metricSysid" ]
       }
     },
-    "breakdown" : {
+    "portfolio_breakdown" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
+        "address" : [ "tab3PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISBreakdown" ]
+      }
+    },
+    "pis_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISElement" ]
       }
     }
   },
@@ -9619,14 +9371,24 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "headlineMetrics", "0", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
       }
     },
-    "breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
-      }
+    "portfolio_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "portfolio_element" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_element" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -9693,10 +9455,28 @@
         "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
     },
-    "breakdown" : {
+    "portfolio_breakdown" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
+        "address" : [ "tab3PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISBreakdown" ]
+      }
+    },
+    "pis_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISElement" ]
       }
     }
   },
@@ -9764,10 +9544,28 @@
         "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "1", "metricSysid" ]
       }
     },
-    "breakdown" : {
+    "portfolio_breakdown" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
+        "address" : [ "tab3PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISBreakdown" ]
+      }
+    },
+    "pis_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISElement" ]
       }
     }
   },
@@ -9832,14 +9630,24 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "0", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
       }
     },
-    "breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
-      }
+    "portfolio_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "portfolio_element" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_element" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -9903,13 +9711,31 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "1", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "1", "metricSysid" ]
       }
     },
-    "breakdown" : {
+    "portfolio_breakdown" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "tab3BreakdownSource" ]
+        "address" : [ "tab3PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISBreakdown" ]
+      }
+    },
+    "pis_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "tab3PISElement" ]
       }
     }
   },
@@ -10481,18 +10307,7 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : "amber"
-  }
-}, {
-  "name" : "tab3PortfolioElement",
-  "label" : "tab3PortfolioElement",
-  "fieldType" : "string",
-  "valueType" : "string",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : "76e6590e4f407f089e23e1128110c77d"
+    "value" : "green"
   }
 }, {
   "name" : "tab3verticalBShowHealth",
@@ -10528,10 +10343,43 @@
     "value" : "amber"
   }
 }, {
-  "name" : "tab3BreakdownSource",
-  "label" : "tab3BreakdownSource",
+  "name" : "tab3PortfolioElement",
+  "label" : "tab3PortfolioElement",
   "fieldType" : "string",
   "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  }
+}, {
+  "name" : "tab3PISBreakdown",
+  "label" : "tab3PISBreakdown",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  }
+}, {
+  "name" : "tab3PortfolioBreakdown",
+  "label" : "tab3PortfolioBreakdown",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  }
+}, {
+  "name" : "tab3PISElement",
+  "label" : "tab3PISElement",
+  "fieldType" : "",
+  "valueType" : "",
   "shape" : "",
   "description" : "",
   "initialValue" : {
@@ -10544,7 +10392,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>554</sys_mod_count>
+        <sys_mod_count>620</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -10552,7 +10400,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-23 16:07:56</sys_updated_on>
+        <sys_updated_on>2024-03-05 10:34:17</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

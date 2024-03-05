@@ -2,63 +2,56 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
-        <name>stylized_text_5/text</name>
+        <name>tab3setPortfolioBreakdown</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
-  * @param {params} params
-  * @param {api} params.api
-  * @param {TransformApiHelpers} params.helpers
-  // */
-function evaluateProperty({api, helpers}) {
-  var KPI_bds_list = api.data.verticalA_headlinemetric1v.output.result;
-  var dropdown_selection = api.state.tab3PortfolioElement;
-  
-  if (api.state.tab3BreakdownSource != '') {
-    for(let i = 0; i < KPI_bds_list.length; i++) {
-        var KPI_bd_sysid = KPI_bds_list[i].element.value;
-        if (dropdown_selection === KPI_bd_sysid) {
-          var KPI_bd_score = KPI_bds_list[i].scores[0].value_formatted;
-          return KPI_bd_score;
-          break;
-        }
-      }
-  } else {
-    return KPI_bds_list[0].scores[0].value_formatted;
-  }
-
-}
-]]></script>
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    api.setState('tab3PortfolioBreakdown', 'e6def6531bf5fc50550b97d0b24bcb21');
+    api.setState('tab3PISBreakdown', '');
+    api.setState('tab3PISElement', '');
+}]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-12 13:24:00</sys_created_on>
+        <sys_created_on>2024-02-28 10:55:46</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>ad1efef31b2bb15c64122144b24bcb42</sys_id>
-        <sys_mod_count>37</sys_mod_count>
-        <sys_name>stylized_text_5/text</sys_name>
+        <sys_id>5cee140b1be40290d9e4a755bd4bcb5b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>tab3setPortfolioBreakdown</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
-        <sys_update_name>sys_ux_client_script_ad1efef31b2bb15c64122144b24bcb42</sys_update_name>
+        <sys_update_name>sys_ux_client_script_5cee140b1be40290d9e4a755bd4bcb5b</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-23 11:15:27</sys_updated_on>
+        <sys_updated_on>2024-02-29 13:23:42</sys_updated_on>
         <target>macroponent</target>
-        <type>transform</type>
+        <type>default</type>
     </sys_ux_client_script>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18cfe1b0fe30000001</claim_timestamp>
-        <metadata_update_name>sys_ux_client_script_ad1efef31b2bb15c64122144b24bcb42</metadata_update_name>
+        <claim_timestamp>18def70d6690000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_5cee140b1be40290d9e4a755bd4bcb5b</metadata_update_name>
         <previous_claim_app_version>1.0.2</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-12 14:37:15</sys_created_on>
-        <sys_id>6ede0b331ba7355c64122144b24bcb37</sys_id>
+        <sys_created_on>2024-02-28 11:19:26</sys_created_on>
+        <sys_id>ba4464071ba80290d9e4a755bd4bcbd3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-12 14:37:15</sys_updated_on>
+        <sys_updated_on>2024-02-28 11:19:26</sys_updated_on>
     </sys_claim>
 </record_update>

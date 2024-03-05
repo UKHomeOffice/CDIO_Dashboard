@@ -19,23 +19,37 @@ function handler({
     imports
 }) {
     var indicator = api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].metricSysid;
-    var breakdown = api.data.getmetricsofciodashboard.output.VerticalA.supportingMetrics[1].breakdownSysid;
-    var breakdownsourcesysid = api.state.tab3BreakdownSource;
-    var dropdownelementsysid = api.state.tab3PortfolioElement;
 
-    var breakdown = [];
-    if (breakdownsourcesysid != '') {
-        breakdown = [
-              {
-                "sysId": breakdownsourcesysid,
-                "element_sys_ids": [
-                  dropdownelementsysid
-                ]
-              }
-            ]
-    } else {
-        breakdown = [];
-    }
+    var PortfolioBreakdown = api.state.tab3PortfolioBreakdown;
+    var PortfolioElement = api.state.tab3PortfolioElement;
+    var PISBreakdown = api.state.tab3PISBreakdown;
+    var PISElement = api.state.tab3PISElement;
+
+    var breakdown = [];
+    if (PortfolioBreakdown != '' && PISBreakdown != '') {
+        breakdown = [{
+                "sysId": PortfolioBreakdown,
+                "element_sys_ids": [
+                    PortfolioElement
+                ]
+            },
+            {
+                "sysId": PISBreakdown,
+                "element_sys_ids": [
+                    PISElement
+                ]
+            }
+        ];
+    } else if (PortfolioBreakdown != '') {
+        breakdown = [{
+            "sysId": PortfolioBreakdown,
+            "element_sys_ids": [
+                PortfolioElement
+            ]
+        }];
+    } else {
+        breakdown = [];
+    }
 
     var datasources = [{
         "metrics": [{
@@ -87,7 +101,7 @@ function handler({
         <sys_created_on>2022-05-23 12:42:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd54c64f7767011061b80bbc3c5a9912</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>tab3showVerticalASupportingMetric2Chart</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -95,7 +109,7 @@ function handler({
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_cd54c64f7767011061b80bbc3c5a9912</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-23 15:11:51</sys_updated_on>
+        <sys_updated_on>2024-03-05 09:13:45</sys_updated_on>
         <target/>
         <type>default</type>
     </sys_ux_client_script>

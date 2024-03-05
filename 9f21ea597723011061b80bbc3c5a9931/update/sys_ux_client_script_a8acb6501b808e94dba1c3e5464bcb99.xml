@@ -21,6 +21,7 @@ function handler({
     var Portfolio_list = [];
     var PIS_list = [];
     var dropdown_selection = api.state.tab3PortfolioElement;
+    var clientStateParameter = 'tab3BreakdownSource';
 
     for (var i = 0; i < api.data.dropdown_portfolio.results.length; i++) {
         var portfolio_element = api.data.dropdown_portfolio.results[i].sys_id.value;
@@ -33,11 +34,11 @@ function handler({
 
     if (Portfolio_list.includes(dropdown_selection)) {
         var portfolio_breakdown_sysid = 'e6def6531bf5fc50550b97d0b24bcb21';
-        api.setState('tab3BreakdownSource', portfolio_breakdown_sysid);
+        api.setState(clientStateParameter, portfolio_breakdown_sysid);
     }
     else if (PIS_list.includes(dropdown_selection)) {
         var pis_breakdown_sysid = 'b1616b8c4fe933002f3c71318110c743';
-        api.setState('tab3BreakdownSource', pis_breakdown_sysid);
+        api.setState(clientStateParameter, pis_breakdown_sysid);
     }
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
@@ -46,7 +47,7 @@ function handler({
         <sys_created_on>2024-01-26 12:50:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a8acb6501b808e94dba1c3e5464bcb99</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>tab3identifyBreakdownSource</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -54,7 +55,7 @@ function handler({
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_a8acb6501b808e94dba1c3e5464bcb99</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-26 13:50:12</sys_updated_on>
+        <sys_updated_on>2024-02-26 12:17:27</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
