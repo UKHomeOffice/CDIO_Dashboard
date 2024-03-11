@@ -4662,18 +4662,103 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : { }
+            }, {
+              "elementId" : "stylized_text_264",
+              "elementLabel" : "Stylized text 264",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "f3271ffa1b34cad8db5a97d0b24bcb24",
+                    "target" : null
+                  }
+                },
+                "text" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "882657f61bf0cad8db5a97d0b24bcb11",
+                    "target" : null
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 3",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
+            }, {
+              "elementId" : "stylized_text_265",
+              "elementLabel" : "Stylized text 265",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "54371ffa1b34cad8db5a97d0b24bcbe6",
+                    "target" : null
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 3",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"rules":{"grid-area":"column1"},"slotName":"Column 1","styles":{"display":"flex","flex-direction":"column"}},{"rules":{"grid-area":"column2"},"slotName":"Column 2","styles":{"display":"flex","flex-direction":"row"}}],
+                "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
                 "root" : null,
-                "rules" : {"grid-gap":"0rem","grid-template-areas":"\"column1 column2\"","grid-template-columns":"1fr 1fr","grid-template-rows":"auto","height":"100%"},
+                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
                 "styles" : null,
-                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
-                "type" : "grid"
-              }
+                "templateId" : "4105f10153071010e6bcddeeff7b121e",
+                "type" : "flex"
+              },
+              "version" : "2.0.0"
             }
           },
           "isHidden" : {
@@ -10442,7 +10527,7 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : ""
+    "value" : "green"
   }
 }, {
   "name" : "tab3verticalAShowHealth",
@@ -10538,7 +10623,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>633</sys_mod_count>
+        <sys_mod_count>636</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -10546,7 +10631,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-11 15:18:26</sys_updated_on>
+        <sys_updated_on>2024-03-11 15:58:17</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
