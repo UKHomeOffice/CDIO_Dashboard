@@ -3718,7 +3718,7 @@
     },
     "encodedQuery" : {
       "type" : "JSON_LITERAL",
-      "value" : "name=Immigration^ORname=Borders"
+      "value" : "name=Immigration^ORname=Borders^ORname=HM Passport Office/ General Register Office"
     },
     "returnFields" : {
       "type" : "JSON_LITERAL",
@@ -3832,11 +3832,21 @@
         "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
       }
     },
-    "breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "BreakdownPIS" ]
-      }
+    "portfolio_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "portfolio_element" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pis_element" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -4233,7 +4243,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>268</sys_mod_count>
+        <sys_mod_count>269</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -4241,20 +4251,20 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-20 16:07:21</sys_updated_on>
+        <sys_updated_on>2024-03-14 13:30:34</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
         <claim_timestamp>00000000</claim_timestamp>
         <metadata_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</metadata_update_name>
-        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-19 13:00:18</sys_created_on>
-        <sys_id>66cbfa8e1b3b751c64122144b24bcbfe</sys_id>
+        <sys_created_on>2024-03-13 11:15:51</sys_created_on>
+        <sys_id>cfb964671bb04e14d9e4a755bd4bcb1d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-19 13:00:18</sys_updated_on>
+        <sys_updated_on>2024-03-13 11:15:51</sys_updated_on>
     </sys_claim>
 </record_update>
