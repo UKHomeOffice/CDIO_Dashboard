@@ -3436,8 +3436,24 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalB", "headlineMetrics", "0", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
+    },
+    "portfolio_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3503,6 +3519,22 @@
       "binding" : {
         "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
+    },
+    "portfolio_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3566,8 +3598,24 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "1", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
+    },
+    "portfolio_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3631,8 +3679,24 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "0", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
+    },
+    "portfolio_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3696,8 +3760,24 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalD", "headlineMetrics", "1", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
+    },
+    "portfolio_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3810,41 +3890,22 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "1", "metricSysid" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "7268bc971b2f3918dba1c3e5464bcbe3",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "getpascorev_1",
-  "elementLabel" : "getPAscoreV 1",
-  "eventMappings" : [ ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
     },
     "portfolio_breakdown" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
     },
     "portfolio_element" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
     },
     "pis_breakdown" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "pis_element" : {
       "type" : "JSON_LITERAL",
       "value" : ""
     }
@@ -3864,8 +3925,24 @@
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalA", "headlineMetrics", "0", "metricSysid" ]
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
       }
+    },
+    "portfolio_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3963,6 +4040,43 @@
       "type" : "STATE_BINDING",
       "binding" : {
         "address" : [ "PortfolioElement" ]
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "TrialVCM1",
+  "elementLabel" : "TrialVCM1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "uuid" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
+      }
+    },
+    "portfolio_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PISBreakdown" ]
       }
     }
   },
@@ -4237,13 +4351,46 @@
     "type" : "JSON_LITERAL",
     "value" : null
   }
+}, {
+  "name" : "Tab1PortfolioBreakdown",
+  "label" : "Tab1PortfolioBreakdown",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "e6def6531bf5fc50550b97d0b24bcb21"
+  }
+}, {
+  "name" : "Tab1PortfolioElement",
+  "label" : "Tab1PortfolioElement",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "76e6590e4f407f089e23e1128110c77d"
+  }
+}, {
+  "name" : "Tab1PISBreakdown",
+  "label" : "Tab1PISBreakdown",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "b1616b8c4fe933002f3c71318110c743"
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>269</sys_mod_count>
+        <sys_mod_count>274</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -4251,7 +4398,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-14 13:30:34</sys_updated_on>
+        <sys_updated_on>2024-03-15 10:28:05</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
