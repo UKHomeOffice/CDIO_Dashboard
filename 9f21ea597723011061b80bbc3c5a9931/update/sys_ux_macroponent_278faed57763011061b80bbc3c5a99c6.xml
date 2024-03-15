@@ -1740,12 +1740,137 @@
         "color" : "rgb(var(--now-color--secondary-3))",
         "padding-top" : "8px"
       }
+    }, {
+      "elementId" : "dropdown_2",
+      "elementLabel" : "Dropdown 2",
+      "propertyValues" : {
+        "select" : {
+          "type" : "JSON_LITERAL",
+          "value" : "single"
+        },
+        "showPadding" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "opened" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "tooltipContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "panelFitProps" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "configAria" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "hideCaret" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "search" : {
+          "type" : "JSON_LITERAL",
+          "value" : "none"
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "secondary"
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "placeholder" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "Worst performing / Best performing",
+            "comment" : ""
+          }
+        },
+        "bare" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "items" : {
+          "type" : "LIST_CONTAINER",
+          "container" : [ {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "id" : {
+                "type" : "JSON_LITERAL",
+                "value" : "l1"
+              },
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "code" : null,
+                  "message" : "Worst",
+                  "comment" : ""
+                }
+              }
+            }
+          }, {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "id" : {
+                "type" : "JSON_LITERAL",
+                "value" : "l2"
+              },
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "code" : null,
+                  "message" : "Best",
+                  "comment" : ""
+                }
+              }
+            }
+          } ]
+        },
+        "selectedItems" : {
+          "type" : "JSON_LITERAL",
+          "value" : [ ]
+        },
+        "hideLabel" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "default-slot",
+      "definition" : {
+        "id" : "22c67d9a1e515fef66442e1469bed3a2",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : { }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
+        "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column","display":"flex"}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"column"},
@@ -2425,7 +2550,7 @@
                 "text" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "TrialVCM1", "output", "result", "0", "element_level2", "display_value" ]
+                    "address" : [ "verticalC_headlinemetric1", "output", "result", "0", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
@@ -2460,7 +2585,7 @@
                 "text" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "TrialVCM1", "output", "result", "1", "element_level2", "display_value" ]
+                    "address" : [ "verticalC_headlinemetric1", "output", "result", "1", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
@@ -2495,7 +2620,7 @@
                 "text" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "TrialVCM1", "output", "result", "2", "element_level2", "display_value" ]
+                    "address" : [ "verticalC_headlinemetric1", "output", "result", "2", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
@@ -2530,7 +2655,7 @@
                 "text" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "TrialVCM1", "output", "result", "3", "element_level2", "display_value" ]
+                    "address" : [ "verticalC_headlinemetric1", "output", "result", "3", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
@@ -2565,7 +2690,7 @@
                 "text" : {
                   "type" : "DATA_OUTPUT_BINDING",
                   "binding" : {
-                    "address" : [ "TrialVCM1", "output", "result", "4", "element_level2", "display_value" ]
+                    "address" : [ "verticalC_headlinemetric1", "output", "result", "4", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
@@ -3892,91 +4017,6 @@
     "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "verticalC_headlinemetric1",
-  "elementLabel" : "verticalC Headlinemetric1",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcmqjiiuaaaaozddfhhbbbbqccrfffggz",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "c697403177a3011061b80bbc3c5a99df"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcmqjiiuaaaapaaddfhhbbuwsgdddlv",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "e6bde2341bd80a90dba1c3e5464bcb70"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clsekbbxppaaggbbwddjhhwmzivffddaad",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "86212b381bdcca90dba1c3e5464bcbb2"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clsesjjgjjnaaaaqhhddjhhwddcmadsaj",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
-      }
-    },
-    "portfolio_breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "Tab1PortfolioBreakdown" ]
-      }
-    },
-    "portfolio_element" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "Tab1PortfolioElement" ]
-      }
-    },
-    "pis_breakdown" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "sortdir" : {
-      "type" : "JSON_LITERAL",
-      "value" : "desc"
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
   "elementId" : "verticalC_headlinemetric2",
   "elementLabel" : "verticalC Headlinemetric2",
   "eventMappings" : [ {
@@ -4401,55 +4441,6 @@
 }, {
   "cachePolicy" : null,
   "definition" : {
-    "id" : "44d982761b5cc61464122144b24bcb7e",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "verticalC_headlinemetric1v",
-  "elementLabel" : "verticalC Headlinemetric1v",
-  "eventMappings" : [ {
-    "eventMappingId" : "clssvlsimaaaakaddjhhwjjfaadrgijj",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "bd9e4e3e1bd00a1464122144b24bcbbe"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clssvlsimaaaakbddjhhwggggtkyxeea",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
-      }
-    },
-    "sysid" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "PortfolioElement" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
     "id" : "55c46e7e1bdc4a1464122144b24bcb5e",
     "type" : "REST"
   },
@@ -4503,9 +4494,33 @@
     "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "TrialVCM1",
-  "elementLabel" : "TrialVCM1",
-  "eventMappings" : [ ],
+  "elementId" : "verticalC_headlinemetric1",
+  "elementLabel" : "verticalC Headlinemetric1",
+  "eventMappings" : [ {
+    "eventMappingId" : "cltsseexaaxaacceaaddjhhwaahhuffhoiq",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "c697403177a3011061b80bbc3c5a99df"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cltsseexaaxaaccebbddjhhwlggapiileeii",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
   "inputValues" : {
     "uuid" : {
       "type" : "DATA_OUTPUT_BINDING",
@@ -4565,6 +4580,9 @@
         <output_prop_mapping/>
         <props>[ ]</props>
         <required_translations>[ {
+  "message" : "Best",
+  "comment" : ""
+}, {
   "message" : "Click here for drill down metrics",
   "comment" : ""
 }, {
@@ -4614,6 +4632,12 @@
   "comment" : ""
 }, {
   "message" : "Upcoming Release Date",
+  "comment" : ""
+}, {
+  "message" : "Worst",
+  "comment" : ""
+}, {
+  "message" : "Worst performing / Best performing",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -4857,7 +4881,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>288</sys_mod_count>
+        <sys_mod_count>294</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -4865,7 +4889,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-15 14:18:22</sys_updated_on>
+        <sys_updated_on>2024-03-15 15:11:07</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
