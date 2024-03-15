@@ -2288,13 +2288,13 @@
                   "type" : "TRANSLATION_LITERAL",
                   "value" : {
                     "code" : null,
-                    "message" : "Primary Impacted Service",
+                    "message" : "Lead Time for Changes",
                     "comment" : ""
                   }
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "h1"
+                  "value" : "h3"
                 }
               },
               "eventMappings" : [ ],
@@ -2329,7 +2329,7 @@
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "h1"
+                  "value" : "h3"
                 }
               },
               "eventMappings" : [ ],
@@ -2423,18 +2423,14 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "65649e801be402d864122144b24bcb09",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "TrialVCM1", "output", "result", "0", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "h3"
+                  "value" : "span"
                 }
               },
               "eventMappings" : [ ],
@@ -2462,18 +2458,14 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "4d47d2801be802d864122144b24bcb04",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "TrialVCM1", "output", "result", "1", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "h3"
+                  "value" : "span"
                 }
               },
               "eventMappings" : [ ],
@@ -2501,18 +2493,14 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "57e756801b2c02d864122144b24bcbfc",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "TrialVCM1", "output", "result", "2", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "h3"
+                  "value" : "span"
                 }
               },
               "eventMappings" : [ ],
@@ -2540,18 +2528,14 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "97e7d6801b2c02d864122144b24bcbe4",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "TrialVCM1", "output", "result", "3", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "h3"
+                  "value" : "span"
                 }
               },
               "eventMappings" : [ ],
@@ -2579,18 +2563,14 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "afe79a801b2c02d864122144b24bcb2f",
-                    "target" : null
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "TrialVCM1", "output", "result", "4", "element_level2", "display_value" ]
                   }
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "h3"
+                  "value" : "span"
                 }
               },
               "eventMappings" : [ ],
@@ -3454,6 +3434,10 @@
     "pis_breakdown" : {
       "type" : "JSON_LITERAL",
       "value" : ""
+    },
+    "sortdir" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3535,6 +3519,10 @@
     "pis_breakdown" : {
       "type" : "JSON_LITERAL",
       "value" : ""
+    },
+    "sortdir" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3616,6 +3604,10 @@
     "pis_breakdown" : {
       "type" : "JSON_LITERAL",
       "value" : ""
+    },
+    "sortdir" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3697,6 +3689,10 @@
     "pis_breakdown" : {
       "type" : "JSON_LITERAL",
       "value" : ""
+    },
+    "sortdir" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3778,6 +3774,10 @@
     "pis_breakdown" : {
       "type" : "JSON_LITERAL",
       "value" : ""
+    },
+    "sortdir" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3908,6 +3908,10 @@
     "pis_breakdown" : {
       "type" : "JSON_LITERAL",
       "value" : ""
+    },
+    "sortdir" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -3943,6 +3947,10 @@
     "pis_breakdown" : {
       "type" : "JSON_LITERAL",
       "value" : ""
+    },
+    "sortdir" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -4078,6 +4086,10 @@
       "binding" : {
         "address" : [ "Tab1PISBreakdown" ]
       }
+    },
+    "sortdir" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -4118,6 +4130,9 @@
   "message" : "Description",
   "comment" : ""
 }, {
+  "message" : "Lead Time for Changes",
+  "comment" : ""
+}, {
   "message" : "Loading",
   "comment" : ""
 }, {
@@ -4128,9 +4143,6 @@
   "comment" : ""
 }, {
   "message" : "Portfolio",
-  "comment" : ""
-}, {
-  "message" : "Primary Impacted Service",
   "comment" : ""
 }, {
   "message" : "Project",
@@ -4390,7 +4402,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>274</sys_mod_count>
+        <sys_mod_count>279</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -4398,7 +4410,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-15 10:28:05</sys_updated_on>
+        <sys_updated_on>2024-03-15 13:13:50</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
