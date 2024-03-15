@@ -18,8 +18,11 @@ function handler({
     helpers,
     imports
 }) {
+  // client state parameter to be updated
     var clientStateParameter = 'PISverticalCShowHealth';
 
+  // Assigns a health colour in each PIS under a chosen portfolio
+  // Returns an array of the form [{PIS1:health}, {PIS2:health}, ...]
     var KPI_PIS_list = api.data.verticalC_headlinemetric1v.output.result;
     var arr1 = [];
     for (let i = 0; i < KPI_PIS_list.length; i++) {
@@ -35,6 +38,7 @@ function handler({
         }
         arr1.push({[KPI_PIS]:health});
     }
+    // Visualise result with the following line
     // return JSON.stringify(arr1);
 
     var KPI_PIS_list = api.data.verticalC_headlinemetric2v.output.result;
@@ -127,7 +131,7 @@ api.setState(clientStateParameter, slicedInput);
         <sys_created_on>2024-02-15 14:09:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bd9e4e3e1bd00a1464122144b24bcbbe</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>PISVerticalCJSON</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -135,7 +139,7 @@ api.setState(clientStateParameter, slicedInput);
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_bd9e4e3e1bd00a1464122144b24bcbbe</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-19 11:52:49</sys_updated_on>
+        <sys_updated_on>2024-03-14 15:08:40</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

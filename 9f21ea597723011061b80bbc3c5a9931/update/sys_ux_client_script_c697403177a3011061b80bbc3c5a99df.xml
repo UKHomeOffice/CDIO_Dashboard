@@ -13,22 +13,22 @@
 * @param {ApiHelpers} params.helpers
 */
 function handler({api, event, helpers, imports}) {
-    var value = api.data.verticalC_headlinemetric1.output.result[0].scores[0].value;
+    var arr = [];
+    var results = api.data.verticalC_headlinemetric1.output.result;
     var clientStateParameter = 'verticalCMetric1ShowHealth';
 
-    if(value<5.5 && value>0){
-        api.setState(clientStateParameter,'green');
-    }
-    else if (value>=5.5 && value<=6.5 ){
-        api.setState(clientStateParameter,'amber');
-    }
-    else if (value>6.5 ) {
-        api.setState(clientStateParameter,'red');
-    }
-    else {
-        api.setState(clientStateParameter,'');
+    for (let i = 0; i < results.length; i++) {
+        var value = results[i].value;
+        if (value<24*7) {
+            arr.push('green');
+        } else if (value>=24*7 && value<24*30) {
+            arr.push('amber');
+        } else if (value>=24*30){
+            arr.push('red');
+        }
     }
 
+    api.setState(clientStateParameter, arr);
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
@@ -36,7 +36,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2022-05-19 06:25:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c697403177a3011061b80bbc3c5a99df</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>showVerticalCMetric1Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -44,7 +44,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_c697403177a3011061b80bbc3c5a99df</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-09 12:07:51</sys_updated_on>
+        <sys_updated_on>2024-03-15 15:00:05</sys_updated_on>
         <target/>
         <type>default</type>
     </sys_ux_client_script>
@@ -52,14 +52,14 @@ function handler({api, event, helpers, imports}) {
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
         <claim_timestamp>00000000</claim_timestamp>
         <metadata_update_name>sys_ux_client_script_c697403177a3011061b80bbc3c5a99df</metadata_update_name>
-        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-19 13:00:14</sys_created_on>
-        <sys_id>61cbf68e1b3b751c64122144b24bcbf1</sys_id>
+        <sys_created_on>2024-03-13 11:15:47</sys_created_on>
+        <sys_id>1ab920671bb04e14d9e4a755bd4bcb29</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-19 13:00:14</sys_updated_on>
+        <sys_updated_on>2024-03-13 11:15:47</sys_updated_on>
     </sys_claim>
 </record_update>

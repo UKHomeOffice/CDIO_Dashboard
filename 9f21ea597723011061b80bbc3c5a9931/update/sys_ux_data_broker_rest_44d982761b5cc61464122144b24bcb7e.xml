@@ -2,7 +2,7 @@
     <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
         <api_name>sn_ciodashboard.getPAscoreTab1VCM1</api_name>
         <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:e6def6531bf5fc50550b97d0b24bcb21:{{sysid}}:587fad00eb31020065deac6aa206fea5&amp;sysparm_breakdown=b1616b8c4fe933002f3c71318110c743&amp;sysparm_include_scores=true&amp;sysparm_per_page=30&amp;sysparm_to=2023-10-31</api_url>
-        <description>Retrieves PA indicator score using PA Scorecard API,aggregation by month avg+ and breakdown for Portfolio 'Immigration' and PIS</description>
+        <description>Retrieves PA indicator score using PA Scorecard API, aggregation by month avg+ and breakdown for Portfolio 'Immigration' and PIS</description>
         <http_method>GET</http_method>
         <mutates_server_data>false</mutates_server_data>
         <name>getPAscoreTab1VCM1</name>
@@ -55,7 +55,7 @@
         <sys_created_on>2024-02-15 13:49:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>44d982761b5cc61464122144b24bcb7e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>getPAscoreTab1VCM1</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_data_broker_rest_44d982761b5cc61464122144b24bcb7e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-16 10:11:59</sys_updated_on>
+        <sys_updated_on>2024-03-14 14:47:58</sys_updated_on>
     </sys_ux_data_broker_rest>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
