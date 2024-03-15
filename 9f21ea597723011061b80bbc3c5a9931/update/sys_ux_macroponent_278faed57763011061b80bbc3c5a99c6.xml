@@ -1648,7 +1648,7 @@
         },
         "disabled" : {
           "type" : "JSON_LITERAL",
-          "value" : false
+          "value" : true
         },
         "placeholder" : {
           "type" : "TRANSLATION_LITERAL",
@@ -1811,13 +1811,13 @@
             "container" : {
               "id" : {
                 "type" : "JSON_LITERAL",
-                "value" : "l1"
+                "value" : "worst"
               },
               "label" : {
                 "type" : "TRANSLATION_LITERAL",
                 "value" : {
                   "code" : null,
-                  "message" : "Worst",
+                  "message" : "Worst Performing",
                   "comment" : ""
                 }
               }
@@ -1827,13 +1827,13 @@
             "container" : {
               "id" : {
                 "type" : "JSON_LITERAL",
-                "value" : "l2"
+                "value" : "best"
               },
               "label" : {
                 "type" : "TRANSLATION_LITERAL",
                 "value" : {
                   "code" : null,
-                  "message" : "Best",
+                  "message" : "Best Performing",
                   "comment" : ""
                 }
               }
@@ -1849,7 +1849,58 @@
           "value" : false
         }
       },
-      "eventMappings" : [ ],
+      "eventMappings" : [ {
+        "eventMappingId" : "cltstxbdffaabbvcddjhhwaddkpggccpee",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+            "payload" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "propName" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "Tab1PerformanceSelection"
+                },
+                "value" : {
+                  "type" : "EVENT_PAYLOAD_BINDING",
+                  "binding" : {
+                    "address" : [ "value", "0" ]
+                  }
+                }
+              }
+            },
+            "sysId" : "32408b42ff7a10109046e490703bf176"
+          },
+          "operation" : null,
+          "targetId" : "cltstxbdffaabbvdddjhhwaghabbccccgg",
+          "type" : "EVENT"
+        }, {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "1f76bfc81bc9c6d4d9e4a755bd4bcb0e"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "cltsubhhfiaaccftddjhhwwxsrnhhkjj",
+          "type" : "CLIENT_SCRIPT"
+        } ]
+      } ],
       "slot" : "default-slot",
       "definition" : {
         "id" : "22c67d9a1e515fef66442e1469bed3a2",
@@ -1864,13 +1915,16 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : { }
+      "styles" : {
+        "color" : "rgb(var(--now-color--secondary-3))",
+        "padding-top" : "8px"
+      }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column","display":"flex"}}],
+        "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"column"},
@@ -2423,42 +2477,7 @@
                 }
               },
               "eventMappings" : [ ],
-              "slot" : "Column 1",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "stylized_text_211",
-              "elementLabel" : "Stylized text 211",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* { }"
-                },
-                "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "0", "scores", "0", "period" ]
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "h3"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
+              "slot" : "default-slot",
               "definition" : {
                 "id" : "4335ba6dca80378f7ba7a67cd6667bec",
                 "type" : "MACROPONENT"
@@ -2478,11 +2497,11 @@
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
                 "root" : null,
-                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
-                "styles" : null,
-                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "rules" : null,
+                "styles" : {"flex-direction":"column"},
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                 "type" : "flex"
               },
               "version" : "2.0.0"
@@ -2720,7 +2739,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -2757,7 +2776,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -2794,7 +2813,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -2831,7 +2850,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -2868,7 +2887,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -2905,7 +2924,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -2942,7 +2961,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -2979,7 +2998,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -3016,7 +3035,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -3053,7 +3072,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -3090,7 +3109,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -3127,7 +3146,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -3164,7 +3183,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -3201,7 +3220,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -3238,7 +3257,7 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
@@ -4547,8 +4566,10 @@
       }
     },
     "sortdir" : {
-      "type" : "JSON_LITERAL",
-      "value" : "desc"
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1SortDirection" ]
+      }
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -4580,7 +4601,7 @@
         <output_prop_mapping/>
         <props>[ ]</props>
         <required_translations>[ {
-  "message" : "Best",
+  "message" : "Best Performing",
   "comment" : ""
 }, {
   "message" : "Click here for drill down metrics",
@@ -4634,7 +4655,7 @@
   "message" : "Upcoming Release Date",
   "comment" : ""
 }, {
-  "message" : "Worst",
+  "message" : "Worst Performing",
   "comment" : ""
 }, {
   "message" : "Worst performing / Best performing",
@@ -4865,15 +4886,26 @@
     "value" : "b1616b8c4fe933002f3c71318110c743"
   }
 }, {
-  "name" : "",
-  "label" : "",
+  "name" : "Tab1PerformanceSelection",
+  "label" : "Tab1PerformanceSelection",
   "fieldType" : "",
   "valueType" : "",
   "shape" : "",
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : null
+    "value" : "worst"
+  }
+}, {
+  "name" : "Tab1SortDirection",
+  "label" : "Tab1SortDirection",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "nothing"
   }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -4881,7 +4913,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>294</sys_mod_count>
+        <sys_mod_count>326</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -4889,7 +4921,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-15 15:11:07</sys_updated_on>
+        <sys_updated_on>2024-03-15 16:26:27</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
