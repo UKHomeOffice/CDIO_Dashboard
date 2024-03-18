@@ -4907,8 +4907,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "084dd7851b8546d8d9e4a755bd4bcb97",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -4938,8 +4944,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "796e9b491bc546d8d9e4a755bd4bcb8f",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -4969,8 +4981,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "5e6e9f491bc546d8d9e4a755bd4bcb42",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5000,8 +5018,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "504d1b851b8546d8d9e4a755bd4bcb22",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5031,8 +5055,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "f26ed3891bc546d8d9e4a755bd4bcb5f",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5062,8 +5092,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "976ed7891bc546d8d9e4a755bd4bcb39",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5093,8 +5129,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "7c4d1b851b8546d8d9e4a755bd4bcbb3",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5124,8 +5166,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "f36e5b891bc546d8d9e4a755bd4bcb93",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5155,8 +5203,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "947e9b891bc546d8d9e4a755bd4bcb9e",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5186,8 +5240,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "1d4d5b851b8546d8d9e4a755bd4bcb46",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5217,8 +5277,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "f47edb891bc546d8d9e4a755bd4bcb85",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5248,8 +5314,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "d97e1f891bc546d8d9e4a755bd4bcb6d",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5279,8 +5351,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "f94d5b851b8546d8d9e4a755bd4bcb9c",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5310,8 +5388,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "bd7e5f891bc546d8d9e4a755bd4bcb88",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -5341,8 +5425,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "027edf891bc546d8d9e4a755bd4bcb9e",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -6906,7 +6996,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>353</sys_mod_count>
+        <sys_mod_count>355</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -6914,7 +7004,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-18 15:48:01</sys_updated_on>
+        <sys_updated_on>2024-03-18 16:16:25</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
