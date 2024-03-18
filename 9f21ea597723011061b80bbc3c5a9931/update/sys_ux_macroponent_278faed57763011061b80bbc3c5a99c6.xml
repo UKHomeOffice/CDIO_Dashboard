@@ -6059,91 +6059,6 @@
     "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "verticalC_headlinemetric2",
-  "elementLabel" : "verticalC Headlinemetric2",
-  "eventMappings" : [ {
-    "eventMappingId" : "clddcodggdjaaaadbbddfhhbbggxhatueez",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "fbd1583977a3011061b80bbc3c5a99a4"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clddcodggdjaaaadccddfhhbbpvirrguh",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "e6bde2341bd80a90dba1c3e5464bcb70"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clsekccffgfaaggccbbddjhhwkfmwwotbb",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "86212b381bdcca90dba1c3e5464bcbb2"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clsesjjnffoaaaaqcddjhhwtraaffggise",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "uuid" : {
-      "type" : "DATA_OUTPUT_BINDING",
-      "binding" : {
-        "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "0", "metricSysid" ]
-      }
-    },
-    "portfolio_breakdown" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "Tab1PortfolioBreakdown" ]
-      }
-    },
-    "portfolio_element" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "Tab1PortfolioElement" ]
-      }
-    },
-    "pis_breakdown" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "sortdir" : {
-      "type" : "JSON_LITERAL",
-      "value" : "desc"
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "3c1c7e9177a3011061b80bbc3c5a9962",
-    "type" : "REST"
-  },
-  "dependencies" : { },
   "elementId" : "verticalD_headlinemetric1",
   "elementLabel" : "verticalD Headlinemetric1",
   "eventMappings" : [ {
@@ -6487,8 +6402,8 @@
     "type" : "REST"
   },
   "dependencies" : { },
-  "elementId" : "verticalC_headlinemetric2v",
-  "elementLabel" : "verticalC Headlinemetric2v",
+  "elementId" : "verticalC_headlinemetric2",
+  "elementLabel" : "verticalC Headlinemetric2",
   "eventMappings" : [ {
     "eventMappingId" : "clssvmhheecaaaakgddjhhwhhggzjjbccjx",
     "isConfiguration" : false,
@@ -6521,10 +6436,28 @@
         "address" : [ "getmetricsofciodashboard", "output", "VerticalC", "headlineMetrics", "1", "metricSysid" ]
       }
     },
-    "sysid" : {
+    "portfolio_breakdown" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "PortfolioElement" ]
+        "address" : [ "Tab1PortfolioBreakdown" ]
+      }
+    },
+    "portfolio_element" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PortfolioElement" ]
+      }
+    },
+    "pis_breakdown" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1PISBreakdown" ]
+      }
+    },
+    "sortdir" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "Tab1SortDirection" ]
       }
     }
   },
@@ -6851,17 +6784,6 @@
     "value" : "b6e6590e4f407f089e23e1128110c77e"
   }
 }, {
-  "name" : "TestClient",
-  "label" : "TestClient",
-  "fieldType" : "",
-  "valueType" : "",
-  "shape" : "",
-  "description" : "",
-  "initialValue" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  }
-}, {
   "name" : "PISverticalCShowHealth",
   "label" : "PISverticalCShowHealth",
   "fieldType" : "json",
@@ -6933,7 +6855,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>345</sys_mod_count>
+        <sys_mod_count>348</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -6941,7 +6863,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-18 12:44:05</sys_updated_on>
+        <sys_updated_on>2024-03-18 13:16:24</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
