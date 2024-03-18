@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
     <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
-        <api_name>sn_ciodashboard.getPAscoreTab1VCM2</api_name>
-        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:e6def6531bf5fc50550b97d0b24bcb21:{{sysid}}:1d7a2073eb21020065deac6aa206fe5c&amp;sysparm_breakdown=b1616b8c4fe933002f3c71318110c743&amp;sysparm_include_scores=true&amp;sysparm_per_page=10&amp;sysparm_to=2023-10-31</api_url>
-        <description>Retrieves PA indicator score using PA Scorecard API,aggregation by month sum+ and breakdown for Portfolio 'Immigration' and PIS</description>
+        <api_name>sn_ciodashboard.Tab1getPAscoreVCM2</api_name>
+        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:{{portfolio_breakdown}}:{{portfolio_element}}:1d7a2073eb21020065deac6aa206fe5c&amp;sysparm_breakdown={{pis_breakdown}}&amp;sysparm_per_page=5&amp;sysparm_include_scores=true&amp;sysparm_to=2023-10-30&amp;sysparm_limit=1&amp;sysparm_sortby=value&amp;sysparm_sortdir={{sortdir}}</api_url>
+        <description>Retrieves PA indicator score using PA Scorecard API, aggregation by month sum+ and breakdown for PIS for selected Portfolio (from the front-end). Scorecard returns one score for the first 5 PIS elements in ascending order of score (nulls excluded)</description>
         <http_method>GET</http_method>
         <mutates_server_data>false</mutates_server_data>
-        <name>getPAscoreTab1VCM2</name>
+        <name>Tab1getPAscoreVCM2</name>
         <output_schema/>
         <parameters/>
         <private>false</private>
@@ -22,10 +22,22 @@
     "mandatory": true,&#13;
     "defaultValue": ""&#13;
   },&#13;
-{&#13;
-    "name": "sysid",&#13;
-    "label": "Portfolio breakdown element",&#13;
-    "description": "Portfolio breadown element sysId",&#13;
+  {&#13;
+    "name": "portfolio_breakdown",&#13;
+    "label": "Portfolio Breakdown",&#13;
+    "description": "Portfolio Breakdown sysid",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_breakdowns"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+  {&#13;
+    "name": "portfolio_element",&#13;
+    "label": "Portfolio element",&#13;
+    "description": "Portfolio element sysid",&#13;
     "readOnly": false,&#13;
     "fieldType": "reference",&#13;
     "typeMetadata": {&#13;
@@ -33,6 +45,27 @@
     },&#13;
     "mandatory": true,&#13;
     "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "pis_breakdown",&#13;
+    "label": "PIS breakdown",&#13;
+    "description": "PIS breakdown sysid",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_breakdowns"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "sortdir",&#13;
+    "label": "Sort direction",&#13;
+    "description": "Sort direction choice",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": "desc"&#13;
   }&#13;
 ]</props>
         <request_body/>
@@ -43,10 +76,28 @@
   "message" : "PA Indicator UUID",
   "comment" : ""
 }, {
-  "message" : "Portfolio breadown element sysId",
+  "message" : "PIS breakdown",
   "comment" : ""
 }, {
-  "message" : "Portfolio breakdown element",
+  "message" : "PIS breakdown sysid",
+  "comment" : ""
+}, {
+  "message" : "Portfolio Breakdown",
+  "comment" : ""
+}, {
+  "message" : "Portfolio Breakdown sysid",
+  "comment" : ""
+}, {
+  "message" : "Portfolio element",
+  "comment" : ""
+}, {
+  "message" : "Portfolio element sysid",
+  "comment" : ""
+}, {
+  "message" : "Sort direction",
+  "comment" : ""
+}, {
+  "message" : "Sort direction choice",
   "comment" : ""
 } ]</required_translations>
         <schema_version>1.0.0</schema_version>
@@ -55,15 +106,15 @@
         <sys_created_on>2024-02-15 15:47:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>55c46e7e1bdc4a1464122144b24bcb5e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>getPAscoreTab1VCM2</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Tab1getPAscoreVCM2</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_data_broker_rest_55c46e7e1bdc4a1464122144b24bcb5e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-15 16:06:40</sys_updated_on>
+        <sys_updated_on>2024-03-18 13:11:17</sys_updated_on>
     </sys_ux_data_broker_rest>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

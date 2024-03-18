@@ -2,63 +2,47 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="HO Product Performance League Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
-        <name>showSortDirection</name>
+        <name>icon_49/NODE__isHidden</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
- * @param {params} params
- * @param {api} params.api
- * @param {any} params.event
- * @param {any} params.imports
- * @param {ApiHelpers} params.helpers
- */
-function handler({
-    api,
-    event,
-    helpers,
-    imports
-}) {
-    var clientStateParameter = api.state.Tab1PerformanceSelection;
-    var clientStateParameterVC = 'Tab1VCSortDirection';
-    var clientStateParameterVD = 'Tab1VDSortDirection';
-    if (clientStateParameter === 'worst') {
-        api.setState(clientStateParameterVC, 'desc');
-        api.setState(clientStateParameterVD, 'asc');
-    } else if (clientStateParameter === 'best') {
-        api.setState(clientStateParameterVC, 'asc');
-        api.setState(clientStateParameterVD, 'desc');
-    }
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  return !(api.state.verticalCMetric2ShowHealth[0] === 'amber');
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-15 15:27:23</sys_created_on>
+        <sys_created_on>2024-03-18 16:16:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>1f76bfc81bc9c6d4d9e4a755bd4bcb0e</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>showSortDirection</sys_name>
+        <sys_id>796e9b491bc546d8d9e4a755bd4bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>icon_49/NODE__isHidden</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
-        <sys_update_name>sys_ux_client_script_1f76bfc81bc9c6d4d9e4a755bd4bcb0e</sys_update_name>
+        <sys_update_name>sys_ux_client_script_796e9b491bc546d8d9e4a755bd4bcb8f</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-18 16:56:22</sys_updated_on>
+        <sys_updated_on>2024-03-18 16:16:05</sys_updated_on>
         <target>macroponent</target>
-        <type>default</type>
+        <type>transform</type>
     </sys_ux_client_script>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18e42f54e570000001</claim_timestamp>
-        <metadata_update_name>sys_ux_client_script_1f76bfc81bc9c6d4d9e4a755bd4bcb0e</metadata_update_name>
+        <claim_timestamp>18e525b7f330000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_796e9b491bc546d8d9e4a755bd4bcb8f</metadata_update_name>
         <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-15 16:32:36</sys_created_on>
-        <sys_id>2e65c4d81bc90ad4d9e4a755bd4bcb33</sys_id>
+        <sys_created_on>2024-03-18 16:18:31</sys_created_on>
+        <sys_id>65fe9b811b0946d8d9e4a755bd4bcbc1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-15 16:32:36</sys_updated_on>
+        <sys_updated_on>2024-03-18 16:18:31</sys_updated_on>
     </sys_claim>
 </record_update>
