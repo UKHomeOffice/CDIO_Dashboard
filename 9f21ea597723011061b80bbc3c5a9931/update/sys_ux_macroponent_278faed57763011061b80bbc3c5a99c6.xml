@@ -4914,7 +4914,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_49",
               "elementLabel" : "Icon 49",
@@ -4943,7 +4945,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_50",
               "elementLabel" : "Icon 50",
@@ -4972,7 +4976,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_51",
               "elementLabel" : "Icon 51",
@@ -5001,7 +5007,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_52",
               "elementLabel" : "Icon 52",
@@ -5030,7 +5038,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_53",
               "elementLabel" : "Icon 53",
@@ -5059,7 +5069,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_54",
               "elementLabel" : "Icon 54",
@@ -5088,7 +5100,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_55",
               "elementLabel" : "Icon 55",
@@ -5117,7 +5131,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_56",
               "elementLabel" : "Icon 56",
@@ -5146,7 +5162,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_57",
               "elementLabel" : "Icon 57",
@@ -5175,7 +5193,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_58",
               "elementLabel" : "Icon 58",
@@ -5204,7 +5224,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_59",
               "elementLabel" : "Icon 59",
@@ -5233,7 +5255,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_60",
               "elementLabel" : "Icon 60",
@@ -5262,7 +5286,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_61",
               "elementLabel" : "Icon 61",
@@ -5291,7 +5317,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_62",
               "elementLabel" : "Icon 62",
@@ -5320,7 +5348,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             } ],
             "layout" : {
               "default" : {
@@ -6865,7 +6895,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>350</sys_mod_count>
+        <sys_mod_count>352</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -6873,7 +6903,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-18 15:40:00</sys_updated_on>
+        <sys_updated_on>2024-03-18 15:44:00</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
