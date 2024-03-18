@@ -6549,13 +6549,13 @@
     "targets" : [ {
       "broker" : null,
       "clientScript" : {
-        "sysId" : "bd9e4e3e1bd00a1464122144b24bcbbe"
+        "sysId" : "fbd1583977a3011061b80bbc3c5a99a4"
       },
       "conditional" : null,
       "declarativeAction" : null,
       "event" : null,
       "operation" : null,
-      "targetId" : "clssvmhheecaaaakhddjhhwwnhffgxeebb",
+      "targetId" : "cltxffjffaggaabbplddjhhwcsepsyap",
       "type" : "CLIENT_SCRIPT"
     } ]
   } ],
@@ -6587,7 +6587,7 @@
     "sortdir" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "Tab1SortDirection" ]
+        "address" : [ "Tab1VDSortDirection" ]
       }
     }
   },
@@ -6654,7 +6654,7 @@
     "sortdir" : {
       "type" : "STATE_BINDING",
       "binding" : {
-        "address" : [ "Tab1SortDirection" ]
+        "address" : [ "Tab1VCSortDirection" ]
       }
     }
   },
@@ -6969,15 +6969,15 @@
     "value" : "worst"
   }
 }, {
-  "name" : "Tab1SortDirection",
-  "label" : "Tab1SortDirection",
-  "fieldType" : "",
-  "valueType" : "",
+  "name" : "Tab1VCSortDirection",
+  "label" : "Tab1VCSortDirection",
+  "fieldType" : "string",
+  "valueType" : "string",
   "shape" : "",
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : "nothing"
+    "value" : "desc"
   }
 }, {
   "name" : "verticalCMetric2ShowHealth",
@@ -6990,13 +6990,24 @@
     "type" : "JSON_LITERAL",
     "value" : [ "green", "amber", "red", "amber", "green" ]
   }
+}, {
+  "name" : "Tab1VDSortDirection",
+  "label" : "Tab1VDSortDirection",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "asc"
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>355</sys_mod_count>
+        <sys_mod_count>361</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -7004,7 +7015,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-18 16:16:25</sys_updated_on>
+        <sys_updated_on>2024-03-18 16:59:07</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
