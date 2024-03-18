@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
     <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
-        <api_name>sn_ciodashboard.Tab1TrialVCM1</api_name>
+        <api_name>sn_ciodashboard.Tab1getPAscoreVCM1</api_name>
         <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:{{portfolio_breakdown}}:{{portfolio_element}}:587fad00eb31020065deac6aa206fea5&amp;sysparm_breakdown={{pis_breakdown}}&amp;sysparm_per_page=5&amp;sysparm_include_scores=true&amp;sysparm_to=2023-10-30&amp;sysparm_limit=1&amp;sysparm_sortby=value&amp;sysparm_sortdir={{sortdir}}</api_url>
         <description>Retrieves PA indicator score using PA Scorecard API, aggregation by month avg+ and breakdown for PIS for selected Portfolio (from the front-end). Scorecard returns one score for the first 5 PIS elements in ascending order of score (nulls excluded)</description>
         <http_method>GET</http_method>
         <mutates_server_data>false</mutates_server_data>
-        <name>Tab1TrialVCM1</name>
+        <name>Tab1getPAscoreVCM1</name>
         <output_schema/>
         <parameters/>
         <private>false</private>
@@ -106,15 +106,15 @@
         <sys_created_on>2022-05-18 06:17:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3c1c7e9177a3011061b80bbc3c5a9962</sys_id>
-        <sys_mod_count>22</sys_mod_count>
-        <sys_name>Tab1TrialVCM1</sys_name>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Tab1getPAscoreVCM1</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_data_broker_rest_3c1c7e9177a3011061b80bbc3c5a9962</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-15 11:40:05</sys_updated_on>
+        <sys_updated_on>2024-03-18 12:57:36</sys_updated_on>
     </sys_ux_data_broker_rest>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -124,10 +124,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-14 13:35:58</sys_created_on>
-        <sys_id>9d6352731b708294d9e4a755bd4bcbc1</sys_id>
+        <sys_created_on>2024-03-15 15:58:12</sys_created_on>
+        <sys_id>a68d33401b050ad4d9e4a755bd4bcb10</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-14 13:35:58</sys_updated_on>
+        <sys_updated_on>2024-03-15 15:58:12</sys_updated_on>
     </sys_claim>
 </record_update>

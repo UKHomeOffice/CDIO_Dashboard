@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="DELETE">
+        <api_name>sn_ciodashboard.getPAscoreTab1VCM1</api_name>
+        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:e6def6531bf5fc50550b97d0b24bcb21:{{sysid}}:587fad00eb31020065deac6aa206fea5&amp;sysparm_breakdown=b1616b8c4fe933002f3c71318110c743&amp;sysparm_include_scores=true&amp;sysparm_per_page=30&amp;sysparm_to=2023-10-31</api_url>
+        <description>Retrieves PA indicator score using PA Scorecard API, aggregation by month avg+ and breakdown for Portfolio 'Immigration' and PIS</description>
+        <http_method>GET</http_method>
+        <mutates_server_data>false</mutates_server_data>
+        <name>getPAscoreTab1VCM1</name>
+        <output_schema/>
+        <parameters/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "uuid",&#13;
+    "label": "PA Indicator",&#13;
+    "description": "PA Indicator UUID",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_indicators"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "sysid",&#13;
+    "label": "Portfolio breakdown element",&#13;
+    "description": "Portfolio breadown element sysId",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "u_cmdb_ci_portfolio"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props>
+        <request_body/>
+        <required_translations>[ {
+  "message" : "PA Indicator",
+  "comment" : ""
+}, {
+  "message" : "PA Indicator UUID",
+  "comment" : ""
+}, {
+  "message" : "Portfolio breadown element sysId",
+  "comment" : ""
+}, {
+  "message" : "Portfolio breakdown element",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-02-15 13:49:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>44d982761b5cc61464122144b24bcb7e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>getPAscoreTab1VCM1</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_44d982761b5cc61464122144b24bcb7e</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-03-14 14:47:58</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18dad12c6710000001</claim_timestamp>
+        <metadata_update_name>sys_ux_data_broker_rest_44d982761b5cc61464122144b24bcb7e</metadata_update_name>
+        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-02-15 14:01:45</sys_created_on>
+        <sys_id>c2cc02f61b500a1464122144b24bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-02-15 14:01:45</sys_updated_on>
+    </sys_claim>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ux_data_broker_rest_44d982761b5cc61464122144b24bcb7e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest"><sys_ux_data_broker_rest action="INSERT_OR_UPDATE"><api_name>sn_ciodashboard.getPAscoreTab1VCM1</api_name><api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:e6def6531bf5fc50550b97d0b24bcb21:{{sysid}}:587fad00eb31020065deac6aa206fea5&amp;sysparm_breakdown=b1616b8c4fe933002f3c71318110c743&amp;sysparm_include_scores=true&amp;sysparm_per_page=30&amp;sysparm_to=2023-10-31</api_url><description>Retrieves PA indicator score using PA Scorecard API, aggregation by month avg+ and breakdown for Portfolio 'Immigration' and PIS</description><http_method>GET</http_method><mutates_server_data>false</mutates_server_data><name>getPAscoreTab1VCM1</name><output_schema/><parameters/><private>false</private><props>[&#13;
+  {&#13;
+    "name": "uuid",&#13;
+    "label": "PA Indicator",&#13;
+    "description": "PA Indicator UUID",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_indicators"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "sysid",&#13;
+    "label": "Portfolio breakdown element",&#13;
+    "description": "Portfolio breadown element sysId",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "u_cmdb_ci_portfolio"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props><request_body/><required_translations>[ {
+  "message" : "PA Indicator",
+  "comment" : ""
+}, {
+  "message" : "PA Indicator UUID",
+  "comment" : ""
+}, {
+  "message" : "Portfolio breadown element sysId",
+  "comment" : ""
+}, {
+  "message" : "Portfolio breakdown element",
+  "comment" : ""
+} ]</required_translations><schema_version>1.0.0</schema_version><sys_class_name>sys_ux_data_broker_rest</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-02-15 13:49:18</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>44d982761b5cc61464122144b24bcb7e</sys_id><sys_mod_count>5</sys_mod_count><sys_name>getPAscoreTab1VCM1</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ux_data_broker_rest_44d982761b5cc61464122144b24bcb7e</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2024-03-14 14:47:58</sys_updated_on></sys_ux_data_broker_rest><sys_claim action="INSERT_OR_UPDATE"><claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope><claim_timestamp>18dad12c6710000001</claim_timestamp><metadata_update_name>sys_ux_data_broker_rest_44d982761b5cc61464122144b24bcb7e</metadata_update_name><previous_claim_app_version>1.0.2</previous_claim_app_version><previous_claim_name>CIO Dashboard</previous_claim_name><previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-02-15 14:01:45</sys_created_on><sys_id>c2cc02f61b500a1464122144b24bcb57</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2024-02-15 14:01:45</sys_updated_on></sys_claim></record_update>]]></payload>
+        <payload_hash>-2036563445</payload_hash>
+        <record_name>getPAscoreTab1VCM1</record_name>
+        <reverted_from/>
+        <source>fc5c00c71b27bd94dba1c3e5464bcb28</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-03-14 14:47:58</sys_created_on>
+        <sys_id>00e3627f1b30c294d9e4a755bd4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e3d6f27c00000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-03-14 14:47:58</sys_updated_on>
+        <type>REST Data Broker</type>
+        <update_guid>c4e3627f5c30c294e121d7468b3b8a53</update_guid>
+        <update_guid_history>c4e3627f5c30c294e121d7468b3b8a53:-2036563445,162366379e30c294446b1268f2057d7b:0,1de266337530c29440bd81082f61ac96:165775256,d0169cb01224069c004f193d7506d217:0,dced48f46368c29c936042b7b4c86707:493050849,e1dbdf87f850c294f2b260e1d7478892:0,9df897cb855c82944143edfaef11b329:-2036563445,02c1228f9f148e54ac1dff70b3f7270b:1553763893,62dec247f71c0e5479972531fdcc3d4e:0,d7be8a83ca1c0e5479c28278f5eb04a5:-43789567,e31cca7646100a140ea27ada55a749e7:-5813899,709acab2669cc614e17d16ea057ffffe:-1844548563,ad1a8e3a6f5cc614910c50400f45f29d:-2011530160,37e9c6bee91cc614095f062dc53b13fd:-1714337896</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-03-18 12:52:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_data_broker_rest">sys_ux_data_broker_rest</sys_db_object>
+        <sys_id>693e5eee25454e4ea4e0acb5dfb299a4</sys_id>
+        <sys_metadata>44d982761b5cc61464122144b24bcb7e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getPAscoreTab1VCM1</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_rest_44d982761b5cc61464122144b24bcb7e</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_rest_44d982761b5cc61464122144b24bcb7e">00e3627f1b30c294d9e4a755bd4bcb54</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-03-18 12:52:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

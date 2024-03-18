@@ -2464,11 +2464,9 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Lead Time for Changes",
-                    "comment" : ""
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "getVerticalDetails", "output", "verticalAName" ]
                   }
                 },
                 "tag" : {
@@ -2672,10 +2670,8 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalC_headlinemetric1", "output", "result", "0", "element_level2", "display_value" ]
-                  }
+                  "type" : "JSON_LITERAL",
+                  "value" : "Let's workflow it."
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
@@ -2707,10 +2703,8 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalC_headlinemetric1", "output", "result", "1", "element_level2", "display_value" ]
-                  }
+                  "type" : "JSON_LITERAL",
+                  "value" : "Let's workflow it."
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
@@ -2742,10 +2736,8 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalC_headlinemetric1", "output", "result", "2", "element_level2", "display_value" ]
-                  }
+                  "type" : "JSON_LITERAL",
+                  "value" : "Let's workflow it."
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
@@ -2777,10 +2769,8 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalC_headlinemetric1", "output", "result", "3", "element_level2", "display_value" ]
-                  }
+                  "type" : "JSON_LITERAL",
+                  "value" : "Let's workflow it."
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
@@ -2812,10 +2802,8 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalC_headlinemetric1", "output", "result", "4", "element_level2", "display_value" ]
-                  }
+                  "type" : "JSON_LITERAL",
+                  "value" : "Let's workflow it."
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
@@ -4189,8 +4177,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "8b0cea491b8582d8d9e4a755bd4bcb16",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -4220,14 +4214,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "e17c6a011bc582d8d9e4a755bd4bcb72",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_35",
               "elementLabel" : "Icon 35",
@@ -4249,14 +4251,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "09fc6a091bc582d8d9e4a755bd4bcb0f",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_36",
               "elementLabel" : "Icon 36",
@@ -4278,8 +4288,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "270cea491b8582d8d9e4a755bd4bcb71",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -4309,14 +4325,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "317caa011bc582d8d9e4a755bd4bcbd7",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_38",
               "elementLabel" : "Icon 38",
@@ -4338,14 +4362,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "51fcaa091bc582d8d9e4a755bd4bcba0",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_39",
               "elementLabel" : "Icon 39",
@@ -4367,8 +4399,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "7f0c6e491b8582d8d9e4a755bd4bcb02",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -4398,14 +4436,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "867c2e011bc582d8d9e4a755bd4bcb87",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_41",
               "elementLabel" : "Icon 41",
@@ -4427,14 +4473,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "35fcea091bc582d8d9e4a755bd4bcba8",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_42",
               "elementLabel" : "Icon 42",
@@ -4456,8 +4510,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "c41c6e491b8582d8d9e4a755bd4bcbe7",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -4487,14 +4547,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "227c6e011bc582d8d9e4a755bd4bcbc9",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_44",
               "elementLabel" : "Icon 44",
@@ -4516,14 +4584,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "c6fc2e091bc582d8d9e4a755bd4bcb73",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_45",
               "elementLabel" : "Icon 45",
@@ -4545,8 +4621,14 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "d41cee491b8582d8d9e4a755bd4bcb0b",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
@@ -4576,14 +4658,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "ba7cee011bc582d8d9e4a755bd4bcb94",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_47",
               "elementLabel" : "Icon 47",
@@ -4605,14 +4695,22 @@
               },
               "overrides" : null,
               "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "26fc6e091bc582d8d9e4a755bd4bcb4c",
+                  "target" : null
+                }
               },
               "isHero" : false,
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "stylized_text_233",
               "elementLabel" : "Stylized text 233",
@@ -6538,9 +6636,6 @@
   "message" : "Description",
   "comment" : ""
 }, {
-  "message" : "Lead Time for Changes",
-  "comment" : ""
-}, {
   "message" : "Loading",
   "comment" : ""
 }, {
@@ -6838,7 +6933,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>339</sys_mod_count>
+        <sys_mod_count>345</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -6846,7 +6941,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-18 11:55:45</sys_updated_on>
+        <sys_updated_on>2024-03-18 12:44:05</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
