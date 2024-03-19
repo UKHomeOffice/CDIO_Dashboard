@@ -3562,11 +3562,11 @@
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3584,18 +3584,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_19",
               "elementLabel" : "Icon 19",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3613,18 +3615,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_20",
               "elementLabel" : "Icon 20",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3642,18 +3646,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_21",
               "elementLabel" : "Icon 21",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3671,18 +3677,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_22",
               "elementLabel" : "Icon 22",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3700,18 +3708,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_23",
               "elementLabel" : "Icon 23",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3729,18 +3739,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_24",
               "elementLabel" : "Icon 24",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3758,18 +3770,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_25",
               "elementLabel" : "Icon 25",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3787,18 +3801,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_26",
               "elementLabel" : "Icon 26",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3816,18 +3832,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_27",
               "elementLabel" : "Icon 27",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3845,18 +3863,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_28",
               "elementLabel" : "Icon 28",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3874,18 +3894,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_29",
               "elementLabel" : "Icon 29",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3903,18 +3925,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "icon_30",
               "elementLabel" : "Icon 30",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3932,18 +3956,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#008000"
+              }
             }, {
               "elementId" : "icon_31",
               "elementLabel" : "Icon 31",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3961,18 +3987,20 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FFA500"
+              }
             }, {
               "elementId" : "icon_32",
               "elementLabel" : "Icon 32",
               "propertyValues" : {
                 "size" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "md"
+                  "value" : "lg"
                 },
                 "icon" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "circle-question-outline"
+                  "value" : "square-fill"
                 }
               },
               "eventMappings" : [ ],
@@ -3990,7 +4018,9 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : { }
+              "styles" : {
+                "color" : "#FF0000"
+              }
             }, {
               "elementId" : "stylized_text_227",
               "elementLabel" : "Stylized text 227",
@@ -7056,7 +7086,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>368</sys_mod_count>
+        <sys_mod_count>370</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -7064,7 +7094,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-18 17:40:37</sys_updated_on>
+        <sys_updated_on>2024-03-19 09:40:11</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
