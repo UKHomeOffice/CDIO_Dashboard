@@ -2670,9 +2670,13 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "0", "element_level2", "display_value" ]
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "2c1150b91b810a5cd9e4a755bd4bcb9c",
+                    "target" : null
                   }
                 },
                 "tag" : {
@@ -2705,9 +2709,13 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "1", "element_level2", "display_value" ]
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "e4bfd0f91bcd0a5cd9e4a755bd4bcb2e",
+                    "target" : null
                   }
                 },
                 "tag" : {
@@ -2740,9 +2748,13 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "2", "element_level2", "display_value" ]
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "1dbf94f91bcd0a5cd9e4a755bd4bcb07",
+                    "target" : null
                   }
                 },
                 "tag" : {
@@ -2775,9 +2787,13 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "3", "element_level2", "display_value" ]
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "f1bf58f91bcd0a5cd9e4a755bd4bcb2c",
+                    "target" : null
                   }
                 },
                 "tag" : {
@@ -2810,9 +2826,13 @@
                   "value" : "* { }"
                 },
                 "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "verticalA_headlinemetric1", "output", "result", "4", "element_level2", "display_value" ]
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "bebf5cf91bcd0a5cd9e4a755bd4bcb6f",
+                    "target" : null
                   }
                 },
                 "tag" : {
@@ -8616,7 +8636,7 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : "e6def6531bf5fc50550b97d0b24bcb21"
+    "value" : ""
   }
 }, {
   "name" : "Tab1PortfolioElement",
@@ -8712,7 +8732,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>415</sys_mod_count>
+        <sys_mod_count>417</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -8720,7 +8740,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-20 08:45:49</sys_updated_on>
+        <sys_updated_on>2024-03-20 10:18:30</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
