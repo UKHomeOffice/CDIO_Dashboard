@@ -3512,7 +3512,7 @@
         "width" : "100%"
       }
     }, {
-      "elementId" : "container_110",
+      "elementId" : "container_129",
       "elementLabel" : "Legend KPI1",
       "propertyValues" : {
         "ariaRegionHeadingLevel" : {
@@ -3565,7 +3565,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -3605,7 +3605,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -3645,7 +3645,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -3661,8 +3661,8 @@
           "items" : [ ],
           "styles" : { }
         }, {
-          "elementId" : "icon_72",
-          "elementLabel" : "Icon 72",
+          "elementId" : "icon_64",
+          "elementLabel" : "Icon 64",
           "propertyValues" : {
             "size" : {
               "type" : "JSON_LITERAL",
@@ -3674,7 +3674,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -3689,12 +3689,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#FF0000",
+            "color" : "#FFA500",
             "width" : "2rem"
           }
         }, {
-          "elementId" : "stylized_text_249",
-          "elementLabel" : "Stylized text 249",
+          "elementId" : "stylized_text_240",
+          "elementLabel" : "Stylized text 240",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -3704,7 +3704,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "Red:",
+                "message" : "Amber:",
                 "comment" : ""
               }
             },
@@ -3714,7 +3714,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -3729,12 +3729,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#FF0000",
-            "width" : "2.5rem"
+            "color" : "#FFA500",
+            "width" : "3.5rem"
           }
         }, {
-          "elementId" : "stylized_text_259",
-          "elementLabel" : "Stylized text 259",
+          "elementId" : "stylized_text_241",
+          "elementLabel" : "Stylized text 241",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -3744,7 +3744,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "Less than 95%",
+                "message" : "Between one day and one week",
                 "comment" : ""
               }
             },
@@ -3754,7 +3754,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -3770,8 +3770,8 @@
           "items" : [ ],
           "styles" : { }
         }, {
-          "elementId" : "icon_73",
-          "elementLabel" : "Icon 73",
+          "elementId" : "icon_63",
+          "elementLabel" : "Icon 63",
           "propertyValues" : {
             "size" : {
               "type" : "JSON_LITERAL",
@@ -3783,7 +3783,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -3798,12 +3798,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#FF0000",
+            "color" : "#008000",
             "width" : "2rem"
           }
         }, {
-          "elementId" : "stylized_text_250",
-          "elementLabel" : "Stylized text 250",
+          "elementId" : "stylized_text_238",
+          "elementLabel" : "Stylized text 238",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -3813,7 +3813,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "Red:",
+                "message" : "High:",
                 "comment" : ""
               }
             },
@@ -3823,7 +3823,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -3838,12 +3838,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#FF0000",
+            "color" : "#008000",
             "width" : "2.5rem"
           }
         }, {
-          "elementId" : "stylized_text_260",
-          "elementLabel" : "Stylized text 260",
+          "elementId" : "stylized_text_239",
+          "elementLabel" : "Stylized text 239",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -3853,7 +3853,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "More than one month",
+                "message" : "Less than one day",
                 "comment" : ""
               }
             },
@@ -3863,116 +3863,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : { }
-        }, {
-          "elementId" : "icon_74",
-          "elementLabel" : "Icon 74",
-          "propertyValues" : {
-            "size" : {
-              "type" : "JSON_LITERAL",
-              "value" : "lg"
-            },
-            "icon" : {
-              "type" : "JSON_LITERAL",
-              "value" : "square-fill"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
-          "definition" : {
-            "id" : "33eaddad37cf901283bbdc7a574773b9",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : {
-            "color" : "#FF0000",
-            "width" : "2rem"
-          }
-        }, {
-          "elementId" : "stylized_text_251",
-          "elementLabel" : "Stylized text 251",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Red:",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "span"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : {
-            "color" : "#FF0000",
-            "width" : "2.5rem"
-          }
-        }, {
-          "elementId" : "stylized_text_261",
-          "elementLabel" : "Stylized text 261",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Less than 10 per month",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "span"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -3992,11 +3883,11 @@
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 3","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 4","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}}],
+            "items" : [{"slotName":"Row 1","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}}],
             "root" : null,
-            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+            "rules" : {"flex-flow":"column nowrap","align-items":"stretch","height":"100%"},
             "styles" : null,
-            "templateId" : "2de5350153071010e6bcddeeff7b12b0",
+            "templateId" : "f348f94153071010e6bcddeeff7b12dd",
             "type" : "flex"
           },
           "version" : "2.0.0"
@@ -4011,8 +3902,7 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : {
-        "width" : "100%",
-        "padding-top" : "5rem"
+        "width" : "100%"
       }
     }, {
       "elementId" : "container_111",
@@ -5339,7 +5229,7 @@
         "width" : "100%"
       }
     }, {
-      "elementId" : "container_109",
+      "elementId" : "container_130",
       "elementLabel" : "Legend KPI2",
       "propertyValues" : {
         "ariaRegionHeadingLevel" : {
@@ -5379,8 +5269,8 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "icon_64",
-          "elementLabel" : "Icon 64",
+          "elementId" : "icon_72",
+          "elementLabel" : "Icon 72",
           "propertyValues" : {
             "size" : {
               "type" : "JSON_LITERAL",
@@ -5392,7 +5282,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -5407,12 +5297,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#FFA500",
+            "color" : "#FF0000",
             "width" : "2rem"
           }
         }, {
-          "elementId" : "stylized_text_240",
-          "elementLabel" : "Stylized text 240",
+          "elementId" : "stylized_text_249",
+          "elementLabel" : "Stylized text 249",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -5422,7 +5312,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "Amber:",
+                "message" : "Red:",
                 "comment" : ""
               }
             },
@@ -5432,7 +5322,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -5447,12 +5337,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#FFA500",
-            "width" : "3.5rem"
+            "color" : "#FF0000",
+            "width" : "2.5rem"
           }
         }, {
-          "elementId" : "stylized_text_241",
-          "elementLabel" : "Stylized text 241",
+          "elementId" : "stylized_text_259",
+          "elementLabel" : "Stylized text 259",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -5462,7 +5352,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "Between one day and one week",
+                "message" : "Less than 95%",
                 "comment" : ""
               }
             },
@@ -5472,7 +5362,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -5501,7 +5391,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -5541,7 +5431,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -5581,7 +5471,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -5597,8 +5487,8 @@
           "items" : [ ],
           "styles" : { }
         }, {
-          "elementId" : "icon_69",
-          "elementLabel" : "Icon 69",
+          "elementId" : "icon_65",
+          "elementLabel" : "Icon 65",
           "propertyValues" : {
             "size" : {
               "type" : "JSON_LITERAL",
@@ -5610,7 +5500,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -5625,12 +5515,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#FFA500",
+            "color" : "#008000",
             "width" : "2rem"
           }
         }, {
-          "elementId" : "stylized_text_246",
-          "elementLabel" : "Stylized text 246",
+          "elementId" : "stylized_text_242",
+          "elementLabel" : "Stylized text 242",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -5640,7 +5530,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "Amber:",
+                "message" : "High:",
                 "comment" : ""
               }
             },
@@ -5650,7 +5540,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -5665,12 +5555,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#FFA500",
-            "width" : "3.5rem"
+            "color" : "#008000",
+            "width" : "2.5rem"
           }
         }, {
-          "elementId" : "stylized_text_256",
-          "elementLabel" : "Stylized text 256",
+          "elementId" : "stylized_text_252",
+          "elementLabel" : "Stylized text 252",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -5680,7 +5570,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "Between one week and one month",
+                "message" : "97.5% - 100%",
                 "comment" : ""
               }
             },
@@ -5690,116 +5580,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : { }
-        }, {
-          "elementId" : "icon_70",
-          "elementLabel" : "Icon 70",
-          "propertyValues" : {
-            "size" : {
-              "type" : "JSON_LITERAL",
-              "value" : "lg"
-            },
-            "icon" : {
-              "type" : "JSON_LITERAL",
-              "value" : "square-fill"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
-          "definition" : {
-            "id" : "33eaddad37cf901283bbdc7a574773b9",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : {
-            "color" : "#FFA500",
-            "width" : "2rem"
-          }
-        }, {
-          "elementId" : "stylized_text_247",
-          "elementLabel" : "Stylized text 247",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Amber:",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "span"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : {
-            "color" : "#FFA500",
-            "width" : "3.5rem"
-          }
-        }, {
-          "elementId" : "stylized_text_257",
-          "elementLabel" : "Stylized text 257",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Between 10 and 20 per month",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "span"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -5819,11 +5600,11 @@
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 3","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 4","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}}],
+            "items" : [{"slotName":"Row 1","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}}],
             "root" : null,
-            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+            "rules" : {"flex-flow":"column nowrap","align-items":"stretch","height":"100%"},
             "styles" : null,
-            "templateId" : "2de5350153071010e6bcddeeff7b12b0",
+            "templateId" : "f348f94153071010e6bcddeeff7b12dd",
             "type" : "flex"
           },
           "version" : "2.0.0"
@@ -7165,7 +6946,7 @@
         "width" : "100%"
       }
     }, {
-      "elementId" : "container_108",
+      "elementId" : "container_131",
       "elementLabel" : "Legend KPI3",
       "propertyValues" : {
         "ariaRegionHeadingLevel" : {
@@ -7205,8 +6986,8 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "icon_63",
-          "elementLabel" : "Icon 63",
+          "elementId" : "icon_73",
+          "elementLabel" : "Icon 73",
           "propertyValues" : {
             "size" : {
               "type" : "JSON_LITERAL",
@@ -7218,7 +6999,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -7233,12 +7014,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#008000",
+            "color" : "#FF0000",
             "width" : "2rem"
           }
         }, {
-          "elementId" : "stylized_text_238",
-          "elementLabel" : "Stylized text 238",
+          "elementId" : "stylized_text_250",
+          "elementLabel" : "Stylized text 250",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -7248,7 +7029,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "High:",
+                "message" : "Red:",
                 "comment" : ""
               }
             },
@@ -7258,7 +7039,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -7273,12 +7054,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#008000",
+            "color" : "#FF0000",
             "width" : "2.5rem"
           }
         }, {
-          "elementId" : "stylized_text_239",
-          "elementLabel" : "Stylized text 239",
+          "elementId" : "stylized_text_260",
+          "elementLabel" : "Stylized text 260",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -7288,7 +7069,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "Less than one day",
+                "message" : "More than one month",
                 "comment" : ""
               }
             },
@@ -7298,7 +7079,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 1",
+          "slot" : "Row 1",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -7314,8 +7095,8 @@
           "items" : [ ],
           "styles" : { }
         }, {
-          "elementId" : "icon_65",
-          "elementLabel" : "Icon 65",
+          "elementId" : "icon_69",
+          "elementLabel" : "Icon 69",
           "propertyValues" : {
             "size" : {
               "type" : "JSON_LITERAL",
@@ -7327,7 +7108,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -7342,12 +7123,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#008000",
+            "color" : "#FFA500",
             "width" : "2rem"
           }
         }, {
-          "elementId" : "stylized_text_242",
-          "elementLabel" : "Stylized text 242",
+          "elementId" : "stylized_text_246",
+          "elementLabel" : "Stylized text 246",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -7357,7 +7138,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "High:",
+                "message" : "Amber:",
                 "comment" : ""
               }
             },
@@ -7367,7 +7148,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -7382,12 +7163,12 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "color" : "#008000",
-            "width" : "2.5rem"
+            "color" : "#FFA500",
+            "width" : "3.5rem"
           }
         }, {
-          "elementId" : "stylized_text_252",
-          "elementLabel" : "Stylized text 252",
+          "elementId" : "stylized_text_256",
+          "elementLabel" : "Stylized text 256",
           "propertyValues" : {
             "css" : {
               "type" : "JSON_LITERAL",
@@ -7397,7 +7178,7 @@
               "type" : "TRANSLATION_LITERAL",
               "value" : {
                 "code" : null,
-                "message" : "97.5% - 100%",
+                "message" : "Between one week and one month",
                 "comment" : ""
               }
             },
@@ -7407,7 +7188,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 2",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -7436,7 +7217,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "33eaddad37cf901283bbdc7a574773b9",
             "type" : "MACROPONENT"
@@ -7476,7 +7257,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -7516,116 +7297,7 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Column 3",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : { }
-        }, {
-          "elementId" : "icon_67",
-          "elementLabel" : "Icon 67",
-          "propertyValues" : {
-            "size" : {
-              "type" : "JSON_LITERAL",
-              "value" : "lg"
-            },
-            "icon" : {
-              "type" : "JSON_LITERAL",
-              "value" : "square-fill"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
-          "definition" : {
-            "id" : "33eaddad37cf901283bbdc7a574773b9",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : {
-            "color" : "#008000",
-            "width" : "2rem"
-          }
-        }, {
-          "elementId" : "stylized_text_244",
-          "elementLabel" : "Stylized text 244",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "High:",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "span"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : {
-            "color" : "#008000",
-            "width" : "2.5rem"
-          }
-        }, {
-          "elementId" : "stylized_text_254",
-          "elementLabel" : "Stylized text 254",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "More than 20 per month",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "span"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Column 4",
+          "slot" : "Row 3",
           "definition" : {
             "id" : "4335ba6dca80378f7ba7a67cd6667bec",
             "type" : "MACROPONENT"
@@ -7645,11 +7317,11 @@
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 3","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Column 4","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}}],
+            "items" : [{"slotName":"Row 1","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}}],
             "root" : null,
-            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+            "rules" : {"flex-flow":"column nowrap","align-items":"stretch","height":"100%"},
             "styles" : null,
-            "templateId" : "2de5350153071010e6bcddeeff7b12b0",
+            "templateId" : "f348f94153071010e6bcddeeff7b12dd",
             "type" : "flex"
           },
           "version" : "2.0.0"
@@ -8988,6 +8660,399 @@
       "styles" : {
         "background-color" : "rgb(var(--now-color--neutral-16))",
         "height" : "16px",
+        "width" : "100%"
+      }
+    }, {
+      "elementId" : "container_132",
+      "elementLabel" : "Legend KPI4",
+      "propertyValues" : {
+        "ariaRegionHeadingLevel" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "hideEmptyStateUi" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "ariaRegionName" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "",
+            "comment" : ""
+          }
+        },
+        "includeAriaHeading" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "type" : {
+          "type" : "JSON_LITERAL",
+          "value" : "section"
+        },
+        "ariaRole" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 4",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "icon_67",
+          "elementLabel" : "Icon 67",
+          "propertyValues" : {
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "lg"
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "square-fill"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 3",
+          "definition" : {
+            "id" : "33eaddad37cf901283bbdc7a574773b9",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "color" : "#008000",
+            "width" : "2rem"
+          }
+        }, {
+          "elementId" : "stylized_text_244",
+          "elementLabel" : "Stylized text 244",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            },
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "High:",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "span"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 3",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "color" : "#008000",
+            "width" : "2.5rem"
+          }
+        }, {
+          "elementId" : "stylized_text_254",
+          "elementLabel" : "Stylized text 254",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            },
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "More than 20 per month",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "span"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 3",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : { }
+        }, {
+          "elementId" : "icon_70",
+          "elementLabel" : "Icon 70",
+          "propertyValues" : {
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "lg"
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "square-fill"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 2",
+          "definition" : {
+            "id" : "33eaddad37cf901283bbdc7a574773b9",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "color" : "#FFA500",
+            "width" : "2rem"
+          }
+        }, {
+          "elementId" : "stylized_text_247",
+          "elementLabel" : "Stylized text 247",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            },
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Amber:",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "span"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 2",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "color" : "#FFA500",
+            "width" : "3.5rem"
+          }
+        }, {
+          "elementId" : "stylized_text_257",
+          "elementLabel" : "Stylized text 257",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            },
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Between 10 and 20 per month",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "span"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 2",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : { }
+        }, {
+          "elementId" : "icon_74",
+          "elementLabel" : "Icon 74",
+          "propertyValues" : {
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "lg"
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "square-fill"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "33eaddad37cf901283bbdc7a574773b9",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "color" : "#FF0000",
+            "width" : "2rem"
+          }
+        }, {
+          "elementId" : "stylized_text_251",
+          "elementLabel" : "Stylized text 251",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            },
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Red:",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "span"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "color" : "#FF0000",
+            "width" : "2.5rem"
+          }
+        }, {
+          "elementId" : "stylized_text_261",
+          "elementLabel" : "Stylized text 261",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            },
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Less than 10 per month",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "span"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "isInline" : null,
+            "items" : [{"slotName":"Row 1","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"row"}}],
+            "root" : null,
+            "rules" : {"flex-flow":"column nowrap","align-items":"stretch","height":"100%"},
+            "styles" : null,
+            "templateId" : "f348f94153071010e6bcddeeff7b12dd",
+            "type" : "flex"
+          },
+          "version" : "2.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : {
         "width" : "100%"
       }
     } ],
@@ -10561,7 +10626,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>503</sys_mod_count>
+        <sys_mod_count>517</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -10569,7 +10634,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-22 10:10:26</sys_updated_on>
+        <sys_updated_on>2024-03-22 11:15:59</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
