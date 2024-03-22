@@ -2221,11 +2221,9 @@
                   "value" : "* {font-size: 24px; font-weight: 500;\n   }"
                 },
                 "text" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Let's workflow it.",
-                    "comment" : ""
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "getVerticalDetails", "output", "verticalAName" ]
                   }
                 },
                 "tag" : {
@@ -2417,8 +2415,10 @@
               "value" : "*  {font-size: 16px;}"
             },
             "text" : {
-              "type" : "JSON_LITERAL",
-              "value" : "Let's workflow it."
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "getVerticalDetails", "output", "verticalAQuestion" ]
+              }
             },
             "tag" : {
               "type" : "JSON_LITERAL",
@@ -3902,7 +3902,9 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : {
-        "width" : "100%"
+        "width" : "100%",
+        "padding" : "16px",
+        "padding-top" : "8px"
       }
     }, {
       "elementId" : "container_111",
@@ -4004,7 +4006,7 @@
                 }
               },
               "eventMappings" : [ ],
-              "slot" : "Column 1",
+              "slot" : "default-slot",
               "definition" : {
                 "id" : "4335ba6dca80378f7ba7a67cd6667bec",
                 "type" : "MACROPONENT"
@@ -4022,89 +4024,16 @@
                 "color" : "rgb(var(--now-color--secondary-3))",
                 "padding-top" : "8px"
               }
-            }, {
-              "elementId" : "button_iconic_2",
-              "elementLabel" : "Button iconic 2",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "highContrast" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "open-link-right-outline"
-                },
-                "variant" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "tertiary"
-                },
-                "disabled" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : true
-                },
-                "tooltipContent" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Click here for drill down metrics",
-                    "comment" : ""
-                  }
-                },
-                "bare" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "configAria" : {
-                  "type" : "MAP_CONTAINER",
-                  "container" : {
-                    "aria-label" : {
-                      "type" : "TRANSLATION_LITERAL",
-                      "value" : {
-                        "code" : null,
-                        "message" : "Search",
-                        "comment" : ""
-                      }
-                    }
-                  }
-                },
-                "hidePadding" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
-              "definition" : {
-                "id" : "844d56291d91b330f2269558e3f47701",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "padding-left" : "100px",
-                "padding-top" : "0px"
-              }
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
                 "root" : null,
-                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
-                "styles" : null,
-                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "rules" : null,
+                "styles" : {"flex-direction":"column"},
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                 "type" : "flex"
               },
               "version" : "2.0.0"
@@ -4119,7 +4048,9 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "width" : "100%"
+            "border-bottom" : "1px solid",
+            "border-color" : "lightgray",
+            "padding" : "8px"
           }
         }, {
           "elementId" : "stylized_text_263",
@@ -4130,8 +4061,10 @@
               "value" : "*  {font-size: 16px;}"
             },
             "text" : {
-              "type" : "JSON_LITERAL",
-              "value" : "Let's workflow it."
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "getVerticalDetails", "output", "verticalBQuestion" ]
+              }
             },
             "tag" : {
               "type" : "JSON_LITERAL",
@@ -5619,7 +5552,9 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : {
-        "width" : "100%"
+        "width" : "100%",
+        "padding" : "16px",
+        "padding-top" : "8px"
       }
     }, {
       "elementId" : "container_119",
@@ -5721,7 +5656,7 @@
                 }
               },
               "eventMappings" : [ ],
-              "slot" : "Column 1",
+              "slot" : "default-slot",
               "definition" : {
                 "id" : "4335ba6dca80378f7ba7a67cd6667bec",
                 "type" : "MACROPONENT"
@@ -5739,89 +5674,16 @@
                 "color" : "rgb(var(--now-color--secondary-3))",
                 "padding-top" : "8px"
               }
-            }, {
-              "elementId" : "button_iconic_3",
-              "elementLabel" : "Button iconic 3",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "highContrast" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "open-link-right-outline"
-                },
-                "variant" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "tertiary"
-                },
-                "disabled" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : true
-                },
-                "tooltipContent" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Click here for drill down metrics",
-                    "comment" : ""
-                  }
-                },
-                "bare" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "configAria" : {
-                  "type" : "MAP_CONTAINER",
-                  "container" : {
-                    "aria-label" : {
-                      "type" : "TRANSLATION_LITERAL",
-                      "value" : {
-                        "code" : null,
-                        "message" : "Search",
-                        "comment" : ""
-                      }
-                    }
-                  }
-                },
-                "hidePadding" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
-              "definition" : {
-                "id" : "844d56291d91b330f2269558e3f47701",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "padding-left" : "100px",
-                "padding-top" : "0px"
-              }
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
                 "root" : null,
-                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
-                "styles" : null,
-                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "rules" : null,
+                "styles" : {"flex-direction":"column"},
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                 "type" : "flex"
               },
               "version" : "2.0.0"
@@ -5836,7 +5698,9 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "width" : "100%"
+            "border-bottom" : "1px solid",
+            "border-color" : "lightgray",
+            "padding" : "8px"
           }
         }, {
           "elementId" : "stylized_text_267",
@@ -5847,8 +5711,10 @@
               "value" : "*  {font-size: 16px;}"
             },
             "text" : {
-              "type" : "JSON_LITERAL",
-              "value" : "Let's workflow it."
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "getVerticalDetails", "output", "verticalCQuestion" ]
+              }
             },
             "tag" : {
               "type" : "JSON_LITERAL",
@@ -7336,7 +7202,9 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : {
-        "width" : "100%"
+        "width" : "100%",
+        "padding" : "16px",
+        "padding-top" : "8px"
       }
     }, {
       "elementId" : "container_122",
@@ -7438,7 +7306,7 @@
                 }
               },
               "eventMappings" : [ ],
-              "slot" : "Column 1",
+              "slot" : "default-slot",
               "definition" : {
                 "id" : "4335ba6dca80378f7ba7a67cd6667bec",
                 "type" : "MACROPONENT"
@@ -7456,89 +7324,16 @@
                 "color" : "rgb(var(--now-color--secondary-3))",
                 "padding-top" : "8px"
               }
-            }, {
-              "elementId" : "button_iconic_4",
-              "elementLabel" : "Button iconic 4",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "highContrast" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "open-link-right-outline"
-                },
-                "variant" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "tertiary"
-                },
-                "disabled" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : true
-                },
-                "tooltipContent" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "code" : null,
-                    "message" : "Click here for drill down metrics",
-                    "comment" : ""
-                  }
-                },
-                "bare" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "configAria" : {
-                  "type" : "MAP_CONTAINER",
-                  "container" : {
-                    "aria-label" : {
-                      "type" : "TRANSLATION_LITERAL",
-                      "value" : {
-                        "code" : null,
-                        "message" : "Search",
-                        "comment" : ""
-                      }
-                    }
-                  }
-                },
-                "hidePadding" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 2",
-              "definition" : {
-                "id" : "844d56291d91b330f2269558e3f47701",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "padding-left" : "100px",
-                "padding-top" : "0px"
-              }
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
                 "root" : null,
-                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
-                "styles" : null,
-                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "rules" : null,
+                "styles" : {"flex-direction":"column"},
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                 "type" : "flex"
               },
               "version" : "2.0.0"
@@ -7553,7 +7348,9 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : {
-            "width" : "100%"
+            "border-bottom" : "1px solid",
+            "border-color" : "lightgray",
+            "padding" : "8px"
           }
         }, {
           "elementId" : "stylized_text_271",
@@ -7564,8 +7361,10 @@
               "value" : "*  {font-size: 16px;}"
             },
             "text" : {
-              "type" : "JSON_LITERAL",
-              "value" : "Let's workflow it."
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "getVerticalDetails", "output", "verticalDQuestion" ]
+              }
             },
             "tag" : {
               "type" : "JSON_LITERAL",
@@ -9053,7 +8852,9 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : {
-        "width" : "100%"
+        "width" : "100%",
+        "padding" : "16px",
+        "padding-top" : "8px"
       }
     } ],
     "layout" : {
@@ -10300,9 +10101,6 @@
   "message" : "Less than one week",
   "comment" : ""
 }, {
-  "message" : "Let's workflow it.",
-  "comment" : ""
-}, {
   "message" : "Loading",
   "comment" : ""
 }, {
@@ -10626,7 +10424,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>517</sys_mod_count>
+        <sys_mod_count>524</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -10634,7 +10432,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-22 11:15:59</sys_updated_on>
+        <sys_updated_on>2024-03-22 12:45:08</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
