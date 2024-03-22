@@ -2621,42 +2621,7 @@
                 }
               },
               "eventMappings" : [ ],
-              "slot" : "Column 1",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "stylized_text_232",
-              "elementLabel" : "Stylized text 232",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* { }"
-                },
-                "text" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "getVerticalDetails", "output", "verticalDName" ]
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "h3"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 4",
+              "slot" : "default-slot",
               "definition" : {
                 "id" : "4335ba6dca80378f7ba7a67cd6667bec",
                 "type" : "MACROPONENT"
@@ -2676,11 +2641,11 @@
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 3","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 4","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
                 "root" : null,
-                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
-                "styles" : null,
-                "templateId" : "2de5350153071010e6bcddeeff7b12b0",
+                "rules" : null,
+                "styles" : {"flex-direction":"column"},
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                 "type" : "flex"
               },
               "version" : "2.0.0"
@@ -3477,756 +3442,6 @@
                   "controllerElementId" : null,
                   "inlineScript" : null,
                   "scriptSysId" : "04b62b8c1b4d86d4d9e4a755bd4bcbba",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FF0000"
-              }
-            }, {
-              "elementId" : "stylized_text_233",
-              "elementLabel" : "Stylized text 233",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* { }"
-                },
-                "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "dfdfac311bcd4a5cd9e4a755bd4bcbd1",
-                    "target" : null
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "span"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 7",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "stylized_text_234",
-              "elementLabel" : "Stylized text 234",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* { }"
-                },
-                "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "c4efa0711bcd4a5cd9e4a755bd4bcbb5",
-                    "target" : null
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "span"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 7",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "stylized_text_235",
-              "elementLabel" : "Stylized text 235",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* { }"
-                },
-                "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "34ef64711bcd4a5cd9e4a755bd4bcb88",
-                    "target" : null
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "span"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 7",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "stylized_text_236",
-              "elementLabel" : "Stylized text 236",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* { }"
-                },
-                "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "e9ef28711bcd4a5cd9e4a755bd4bcb68",
-                    "target" : null
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "span"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 7",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "stylized_text_237",
-              "elementLabel" : "Stylized text 237",
-              "propertyValues" : {
-                "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* { }"
-                },
-                "text" : {
-                  "type" : "CLIENT_TRANSFORM_SCRIPT",
-                  "script" : {
-                    "apiVersion" : "2.0.0",
-                    "controllerElementId" : null,
-                    "inlineScript" : null,
-                    "scriptSysId" : "9eef2c711bcd4a5cd9e4a755bd4bcbcb",
-                    "target" : null
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "span"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 7",
-              "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "JSON_LITERAL",
-                "value" : null
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : { }
-            }, {
-              "elementId" : "icon_48",
-              "elementLabel" : "Icon 48",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "084dd7851b8546d8d9e4a755bd4bcb97",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#008000"
-              }
-            }, {
-              "elementId" : "icon_49",
-              "elementLabel" : "Icon 49",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "796e9b491bc546d8d9e4a755bd4bcb8f",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FFA500"
-              }
-            }, {
-              "elementId" : "icon_50",
-              "elementLabel" : "Icon 50",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "5e6e9f491bc546d8d9e4a755bd4bcb42",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FF0000"
-              }
-            }, {
-              "elementId" : "icon_51",
-              "elementLabel" : "Icon 51",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "504d1b851b8546d8d9e4a755bd4bcb22",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#008000"
-              }
-            }, {
-              "elementId" : "icon_52",
-              "elementLabel" : "Icon 52",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "f26ed3891bc546d8d9e4a755bd4bcb5f",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FFA500"
-              }
-            }, {
-              "elementId" : "icon_53",
-              "elementLabel" : "Icon 53",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "976ed7891bc546d8d9e4a755bd4bcb39",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FF0000"
-              }
-            }, {
-              "elementId" : "icon_54",
-              "elementLabel" : "Icon 54",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "7c4d1b851b8546d8d9e4a755bd4bcbb3",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#008000"
-              }
-            }, {
-              "elementId" : "icon_55",
-              "elementLabel" : "Icon 55",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "f36e5b891bc546d8d9e4a755bd4bcb93",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FFA500"
-              }
-            }, {
-              "elementId" : "icon_56",
-              "elementLabel" : "Icon 56",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "947e9b891bc546d8d9e4a755bd4bcb9e",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FF0000"
-              }
-            }, {
-              "elementId" : "icon_57",
-              "elementLabel" : "Icon 57",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "1d4d5b851b8546d8d9e4a755bd4bcb46",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#008000"
-              }
-            }, {
-              "elementId" : "icon_58",
-              "elementLabel" : "Icon 58",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "f47edb891bc546d8d9e4a755bd4bcb85",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FFA500"
-              }
-            }, {
-              "elementId" : "icon_59",
-              "elementLabel" : "Icon 59",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "d97e1f891bc546d8d9e4a755bd4bcb6d",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FF0000"
-              }
-            }, {
-              "elementId" : "icon_60",
-              "elementLabel" : "Icon 60",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "f94d5b851b8546d8d9e4a755bd4bcb9c",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#008000"
-              }
-            }, {
-              "elementId" : "icon_61",
-              "elementLabel" : "Icon 61",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "bd7e5f891bc546d8d9e4a755bd4bcb88",
-                  "target" : null
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : {
-                "color" : "#FFA500"
-              }
-            }, {
-              "elementId" : "icon_62",
-              "elementLabel" : "Icon 62",
-              "propertyValues" : {
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "lg"
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "square-fill"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : "Column 8",
-              "definition" : {
-                "id" : "33eaddad37cf901283bbdc7a574773b9",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : null,
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM_SCRIPT",
-                "script" : {
-                  "apiVersion" : "2.0.0",
-                  "controllerElementId" : null,
-                  "inlineScript" : null,
-                  "scriptSysId" : "027edf891bc546d8d9e4a755bd4bcb9e",
                   "target" : null
                 }
               },
@@ -8306,10 +7521,15 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : {
-        "width" : "100%"
+        "background-color" : "white",
+        "display" : "grid",
+        "height" : "1000px",
+        "overflow" : "hidden",
+        "padding" : "16px",
+        "padding-top" : "8px"
       }
     }, {
-      "elementId" : "container_115",
+      "elementId" : "container_122",
       "elementLabel" : "Header KPI4",
       "propertyValues" : {
         "ariaRegionHeadingLevel" : {
@@ -8348,19 +7568,275 @@
         "type" : "MACROPONENT"
       },
       "overrides" : {
-        "composition" : [ ],
+        "composition" : [ {
+          "elementId" : "container_123",
+          "elementLabel" : "Container 123",
+          "propertyValues" : {
+            "ariaRegionHeadingLevel" : {
+              "type" : "JSON_LITERAL",
+              "value" : "1"
+            },
+            "hideEmptyStateUi" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "ariaRegionName" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "",
+                "comment" : ""
+              }
+            },
+            "includeAriaHeading" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "section"
+            },
+            "ariaRole" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "stylized_text_270",
+              "elementLabel" : "Stylized text 270",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* {font-size: 24px; font-weight: 500;\r\n   }"
+                },
+                "text" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "getVerticalDetails", "output", "verticalDName" ]
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "rgb(var(--now-color--secondary-3))",
+                "padding-top" : "8px"
+              }
+            }, {
+              "elementId" : "button_iconic_4",
+              "elementLabel" : "Button iconic 4",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "highContrast" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "open-link-right-outline"
+                },
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "tertiary"
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "tooltipContent" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "Click here for drill down metrics",
+                    "comment" : ""
+                  }
+                },
+                "bare" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "aria-label" : {
+                      "type" : "TRANSLATION_LITERAL",
+                      "value" : {
+                        "code" : null,
+                        "message" : "Search",
+                        "comment" : ""
+                      }
+                    }
+                  }
+                },
+                "hidePadding" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "844d56291d91b330f2269558e3f47701",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "padding-left" : "100px",
+                "padding-top" : "0px"
+              }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "isInline" : null,
+                "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "root" : null,
+                "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+                "styles" : null,
+                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "type" : "flex"
+              },
+              "version" : "2.0.0"
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "width" : "100%"
+          }
+        }, {
+          "elementId" : "stylized_text_271",
+          "elementLabel" : "Stylized text 271",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "*  {font-size: 16px;}"
+            },
+            "text" : {
+              "type" : "JSON_LITERAL",
+              "value" : "Let's workflow it."
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "span"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "padding" : "8px",
+            "color" : "rgb(var(--now-color--neutral-0))"
+          }
+        }, {
+          "elementId" : "stylized_text_272",
+          "elementLabel" : "Stylized text 272",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* {font-size: 12px;color: whitesmoke; text-align: right;}"
+            },
+            "text" : {
+              "type" : "CLIENT_TRANSFORM_SCRIPT",
+              "script" : {
+                "apiVersion" : "2.0.0",
+                "controllerElementId" : null,
+                "inlineScript" : null,
+                "scriptSysId" : "4c5435021b49c618db5a97d0b24bcbf0",
+                "target" : null
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "span"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "position" : "absolute",
+            "right" : "8px",
+            "bottom" : "8px",
+            "color" : "rgb(var(--now-color--neutral-0))"
+          }
+        } ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
             "root" : null,
-            "rules" : null,
-            "styles" : {"flex-direction":"column"},
+            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+            "styles" : null,
             "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-            "type" : "flex"
-          },
-          "version" : "2.0.0"
+            "type" : "grid"
+          }
         }
       },
       "isHidden" : {
@@ -8372,7 +7848,15 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : {
-        "width" : "100%"
+        "background-color" : "rgb(var(--now-color--primary-2))",
+        "border-top-left-radius" : "8px",
+        "border-top-right-radius" : "8px",
+        "max-height" : "130px",
+        "height" : "130px",
+        "overflow" : "hidden",
+        "padding-left" : "8px",
+        "padding-right" : "8px",
+        "position" : "relative"
       }
     }, {
       "elementId" : "container_116",
@@ -8414,12 +7898,867 @@
         "type" : "MACROPONENT"
       },
       "overrides" : {
-        "composition" : [ ],
+        "composition" : [ {
+          "elementId" : "stylized_text_273",
+          "elementLabel" : "KPI4 name text",
+          "propertyValues" : {
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { }"
+            },
+            "text" : {
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "getVerticalDetails", "output", "verticalDName" ]
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "h3"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "default-slot",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "font-size" : "16px",
+            "font-weight" : "600",
+            "padding-bottom" : "16px"
+          }
+        }, {
+          "elementId" : "container_124",
+          "elementLabel" : "KPI4 table container",
+          "propertyValues" : {
+            "ariaRegionHeadingLevel" : {
+              "type" : "JSON_LITERAL",
+              "value" : "1"
+            },
+            "hideEmptyStateUi" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "ariaRegionName" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "",
+                "comment" : ""
+              }
+            },
+            "includeAriaHeading" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "section"
+            },
+            "ariaRole" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "default-slot",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "stylized_text_233",
+              "elementLabel" : "Stylized text 233",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "dfdfac311bcd4a5cd9e4a755bd4bcbd1",
+                    "target" : null
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 1",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
+            }, {
+              "elementId" : "stylized_text_234",
+              "elementLabel" : "Stylized text 234",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "c4efa0711bcd4a5cd9e4a755bd4bcbb5",
+                    "target" : null
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 3",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
+            }, {
+              "elementId" : "stylized_text_235",
+              "elementLabel" : "Stylized text 235",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "34ef64711bcd4a5cd9e4a755bd4bcb88",
+                    "target" : null
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 5",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
+            }, {
+              "elementId" : "stylized_text_236",
+              "elementLabel" : "Stylized text 236",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "e9ef28711bcd4a5cd9e4a755bd4bcb68",
+                    "target" : null
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 7",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
+            }, {
+              "elementId" : "stylized_text_237",
+              "elementLabel" : "Stylized text 237",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "controllerElementId" : null,
+                    "inlineScript" : null,
+                    "scriptSysId" : "9eef2c711bcd4a5cd9e4a755bd4bcbcb",
+                    "target" : null
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "span"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 9",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : { }
+            }, {
+              "elementId" : "icon_48",
+              "elementLabel" : "Icon 48",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 2",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "084dd7851b8546d8d9e4a755bd4bcb97",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#008000"
+              }
+            }, {
+              "elementId" : "icon_49",
+              "elementLabel" : "Icon 49",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 2",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "796e9b491bc546d8d9e4a755bd4bcb8f",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FFA500"
+              }
+            }, {
+              "elementId" : "icon_50",
+              "elementLabel" : "Icon 50",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 2",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "5e6e9f491bc546d8d9e4a755bd4bcb42",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FF0000"
+              }
+            }, {
+              "elementId" : "icon_51",
+              "elementLabel" : "Icon 51",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 4",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "504d1b851b8546d8d9e4a755bd4bcb22",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#008000"
+              }
+            }, {
+              "elementId" : "icon_52",
+              "elementLabel" : "Icon 52",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 4",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "f26ed3891bc546d8d9e4a755bd4bcb5f",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FFA500"
+              }
+            }, {
+              "elementId" : "icon_53",
+              "elementLabel" : "Icon 53",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 4",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "976ed7891bc546d8d9e4a755bd4bcb39",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FF0000"
+              }
+            }, {
+              "elementId" : "icon_54",
+              "elementLabel" : "Icon 54",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 6",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "7c4d1b851b8546d8d9e4a755bd4bcbb3",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#008000"
+              }
+            }, {
+              "elementId" : "icon_55",
+              "elementLabel" : "Icon 55",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 6",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "f36e5b891bc546d8d9e4a755bd4bcb93",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FFA500"
+              }
+            }, {
+              "elementId" : "icon_56",
+              "elementLabel" : "Icon 56",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 6",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "947e9b891bc546d8d9e4a755bd4bcb9e",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FF0000"
+              }
+            }, {
+              "elementId" : "icon_57",
+              "elementLabel" : "Icon 57",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 8",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "1d4d5b851b8546d8d9e4a755bd4bcb46",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#008000"
+              }
+            }, {
+              "elementId" : "icon_58",
+              "elementLabel" : "Icon 58",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 8",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "f47edb891bc546d8d9e4a755bd4bcb85",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FFA500"
+              }
+            }, {
+              "elementId" : "icon_59",
+              "elementLabel" : "Icon 59",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 8",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "d97e1f891bc546d8d9e4a755bd4bcb6d",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FF0000"
+              }
+            }, {
+              "elementId" : "icon_60",
+              "elementLabel" : "Icon 60",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 10",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "f94d5b851b8546d8d9e4a755bd4bcb9c",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#008000"
+              }
+            }, {
+              "elementId" : "icon_61",
+              "elementLabel" : "Icon 61",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 10",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "bd7e5f891bc546d8d9e4a755bd4bcb88",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FFA500"
+              }
+            }, {
+              "elementId" : "icon_62",
+              "elementLabel" : "Icon 62",
+              "propertyValues" : {
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "square-fill"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Cell 10",
+              "definition" : {
+                "id" : "33eaddad37cf901283bbdc7a574773b9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "CLIENT_TRANSFORM_SCRIPT",
+                "script" : {
+                  "apiVersion" : "2.0.0",
+                  "controllerElementId" : null,
+                  "inlineScript" : null,
+                  "scriptSysId" : "027edf891bc546d8d9e4a755bd4bcb9e",
+                  "target" : null
+                }
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : {
+                "color" : "#FF0000"
+              }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "isInline" : null,
+                "items" : [{"slotName":"Cell 1","rules":{"grid-area":"cell1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Cell 2","rules":{"grid-area":"cell2"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Cell 3","rules":{"grid-area":"cell3"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Cell 4","rules":{"grid-area":"cell4"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Cell 5","rules":{"grid-area":"cell5"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Cell 6","rules":{"grid-area":"cell6"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Cell 7","rules":{"grid-area":"cell7"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Cell 8","rules":{"grid-area":"cell8"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Cell 9","rules":{"grid-area":"cell9"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Cell 10","rules":{"grid-area":"cell10"},"styles":{"display":"flex","flex-direction":"row"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"0.1fr 0.1fr 0.1fr 0.1fr 0.1fr","grid-template-columns":"1.5fr 0.5fr","grid-template-areas":"\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"","grid-gap":"0.1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "a7a8bd4153071010e6bcddeeff7b12b1",
+                "type" : "grid"
+              },
+              "version" : "2.0.0"
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "width" : "100%"
+          }
+        } ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column"}}],
+            "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column","display":"flex"}}],
             "root" : null,
             "rules" : null,
             "styles" : {"flex-direction":"column"},
@@ -8438,7 +8777,12 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : {
-        "width" : "100%"
+        "background-color" : "white",
+        "display" : "grid",
+        "height" : "1000px",
+        "overflow" : "hidden",
+        "padding" : "16px",
+        "padding-top" : "8px"
       }
     } ],
     "layout" : {
@@ -10011,7 +10355,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>470</sys_mod_count>
+        <sys_mod_count>482</sys_mod_count>
         <sys_name>HO Product Performance League Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -10019,7 +10363,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-21 14:46:00</sys_updated_on>
+        <sys_updated_on>2024-03-22 09:00:10</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -10029,10 +10373,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-13 11:15:51</sys_created_on>
-        <sys_id>cfb964671bb04e14d9e4a755bd4bcb1d</sys_id>
+        <sys_created_on>2024-03-22 07:55:13</sys_created_on>
+        <sys_id>7f1252d61bc58edcd9e4a755bd4bcb2c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-13 11:15:51</sys_updated_on>
+        <sys_updated_on>2024-03-22 07:55:13</sys_updated_on>
     </sys_claim>
 </record_update>
