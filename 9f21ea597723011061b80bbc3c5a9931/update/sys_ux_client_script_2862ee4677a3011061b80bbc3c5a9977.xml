@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
         <includes/>
         <macroponent display_value="HO Product Performance League Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
         <name>rich_text_12_html</name>
@@ -61,10 +62,10 @@ function evaluateProperty({
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-22 07:55:03</sys_created_on>
-        <sys_id>111256961bc58edcd9e4a755bd4bcbbb</sys_id>
+        <sys_created_on>2024-03-25 11:44:37</sys_created_on>
+        <sys_id>6163269f1bc58a50d9e4a755bd4bcbde</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-22 07:55:03</sys_updated_on>
+        <sys_updated_on>2024-03-25 11:44:37</sys_updated_on>
     </sys_claim>
 </record_update>

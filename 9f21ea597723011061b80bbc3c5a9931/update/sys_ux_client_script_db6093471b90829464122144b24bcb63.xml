@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
         <includes/>
         <macroponent display_value="HO Product Performance League Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
         <name>stylized_text_215/text</name>
         <preset/>
-        <required_translations>[ ]</required_translations>
+        <required_translations>[
+    
+]</required_translations>
         <script><![CDATA[/**
   * @param {params} params
   * @param {api} params.api
@@ -17,7 +20,7 @@ function evaluateProperty({api, helpers}) {
   "key3": [{ "red": 2 }]
 };
   // return JSON.stringify(Object.values(input)[1][0].red);
-  return JSON.stringify(input);
+  // return JSON.stringify(input);
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
@@ -25,7 +28,7 @@ function evaluateProperty({api, helpers}) {
         <sys_created_on>2024-02-16 13:35:46</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>db6093471b90829464122144b24bcb63</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>stylized_text_215/text</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -33,7 +36,7 @@ function evaluateProperty({api, helpers}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_db6093471b90829464122144b24bcb63</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-02-20 15:20:12</sys_updated_on>
+        <sys_updated_on>2024-03-25 12:47:07</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
