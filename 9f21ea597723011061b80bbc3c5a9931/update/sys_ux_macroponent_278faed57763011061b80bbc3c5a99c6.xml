@@ -20246,7 +20246,7 @@
             },
             "encodedQuery": {
                 "type": "JSON_LITERAL",
-                "value": "name=Immigration^ORname=Borders^ORname=HM Passport Office/ General Register Office"
+                "value": "name=Immigration^ORname=Borders^ORname=HM Passport Office/ General Register Office^ORname=End User Compute^ORname=Collaboration^ORname=Service Operations"
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
@@ -21090,7 +21090,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>558</sys_mod_count>
+        <sys_mod_count>559</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -21098,7 +21098,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-27 10:48:16</sys_updated_on>
+        <sys_updated_on>2024-03-27 11:39:19</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
