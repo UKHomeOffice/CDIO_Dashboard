@@ -3447,6 +3447,659 @@
                                                                                         "version": "3.0.0"
                                                                                     }
                                                                                 }
+                                                                            },
+                                                                            {
+                                                                                "definition": {
+                                                                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                                                                    "type": "MACROPONENT"
+                                                                                },
+                                                                                "elementLabel": "Container 133",
+                                                                                "elementId": "container_133",
+                                                                                "eventMappings": [
+                                                                                    
+                                                                                ],
+                                                                                "propertyValues": {
+                                                                                    "ariaRegionName": {
+                                                                                        "type": "TRANSLATION_LITERAL",
+                                                                                        "value": {
+                                                                                            "code": null,
+                                                                                            "message": "",
+                                                                                            "comment": ""
+                                                                                        }
+                                                                                    },
+                                                                                    "includeAriaHeading": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": false
+                                                                                    },
+                                                                                    "ariaRegionHeadingLevel": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "1"
+                                                                                    },
+                                                                                    "type": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "section"
+                                                                                    },
+                                                                                    "ariaRole": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": ""
+                                                                                    },
+                                                                                    "hideEmptyStateUi": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": true
+                                                                                    },
+                                                                                    "slotWrapperBehavior": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "fullheight"
+                                                                                    }
+                                                                                },
+                                                                                "isHidden": {
+                                                                                    "type": "JSON_LITERAL",
+                                                                                    "value": null
+                                                                                },
+                                                                                "preset": null,
+                                                                                "slot": null,
+                                                                                "styles": null,
+                                                                                "overrides": {
+                                                                                    "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 75",
+                                                                                            "elementId": "icon_75",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-up-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[0] === 'better');\n}",
+                                                                                                    "scriptSysId": "18cfde141b5d8290db5a97d0b24bcb91",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 80",
+                                                                                            "elementId": "icon_80",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-down-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[0] === 'worse');\n}",
+                                                                                                    "scriptSysId": "58cfde141b5d8290db5a97d0b24bcb91",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 81",
+                                                                                            "elementId": "icon_81",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-minus-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[0] === 'same');\n}",
+                                                                                                    "scriptSysId": "98cfde141b5d8290db5a97d0b24bcb91",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        }
+                                                                                    ],
+                                                                                    "layout": {
+                                                                                        "default": {
+                                                                                            "type": "flex",
+                                                                                            "root": null,
+                                                                                            "children": null,
+                                                                                            "rules": null,
+                                                                                            "styles": {
+                                                                                                "flex-direction": "row"
+                                                                                            },
+                                                                                            "items": [
+                                                                                                {
+                                                                                                    "element_id": "icon_75",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_80",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_81",
+                                                                                                    "styles": {}
+                                                                                                }
+                                                                                            ],
+                                                                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
+                                                                                        },
+                                                                                        "version": "3.0.0"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "definition": {
+                                                                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                                                                    "type": "MACROPONENT"
+                                                                                },
+                                                                                "elementLabel": "Container 134",
+                                                                                "elementId": "container_134",
+                                                                                "eventMappings": [
+                                                                                    
+                                                                                ],
+                                                                                "propertyValues": {
+                                                                                    "ariaRegionName": {
+                                                                                        "type": "TRANSLATION_LITERAL",
+                                                                                        "value": {
+                                                                                            "code": null,
+                                                                                            "message": "",
+                                                                                            "comment": ""
+                                                                                        }
+                                                                                    },
+                                                                                    "includeAriaHeading": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": false
+                                                                                    },
+                                                                                    "ariaRegionHeadingLevel": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "1"
+                                                                                    },
+                                                                                    "type": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "section"
+                                                                                    },
+                                                                                    "ariaRole": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": ""
+                                                                                    },
+                                                                                    "hideEmptyStateUi": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": true
+                                                                                    },
+                                                                                    "slotWrapperBehavior": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "fullheight"
+                                                                                    }
+                                                                                },
+                                                                                "isHidden": {
+                                                                                    "type": "JSON_LITERAL",
+                                                                                    "value": null
+                                                                                },
+                                                                                "preset": null,
+                                                                                "slot": null,
+                                                                                "styles": null,
+                                                                                "overrides": {
+                                                                                    "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 76",
+                                                                                            "elementId": "icon_76",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-up-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": null
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        }
+                                                                                    ],
+                                                                                    "layout": {
+                                                                                        "default": {
+                                                                                            "type": "flex",
+                                                                                            "root": null,
+                                                                                            "children": null,
+                                                                                            "rules": null,
+                                                                                            "styles": {
+                                                                                                "flex-direction": "row"
+                                                                                            },
+                                                                                            "items": [
+                                                                                                {
+                                                                                                    "element_id": "icon_76",
+                                                                                                    "styles": {}
+                                                                                                }
+                                                                                            ],
+                                                                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
+                                                                                        },
+                                                                                        "version": "3.0.0"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "definition": {
+                                                                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                                                                    "type": "MACROPONENT"
+                                                                                },
+                                                                                "elementLabel": "Container 135",
+                                                                                "elementId": "container_135",
+                                                                                "eventMappings": [
+                                                                                    
+                                                                                ],
+                                                                                "propertyValues": {
+                                                                                    "ariaRegionName": {
+                                                                                        "type": "TRANSLATION_LITERAL",
+                                                                                        "value": {
+                                                                                            "code": null,
+                                                                                            "message": "",
+                                                                                            "comment": ""
+                                                                                        }
+                                                                                    },
+                                                                                    "includeAriaHeading": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": false
+                                                                                    },
+                                                                                    "ariaRegionHeadingLevel": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "1"
+                                                                                    },
+                                                                                    "type": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "section"
+                                                                                    },
+                                                                                    "ariaRole": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": ""
+                                                                                    },
+                                                                                    "hideEmptyStateUi": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": true
+                                                                                    },
+                                                                                    "slotWrapperBehavior": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "fullheight"
+                                                                                    }
+                                                                                },
+                                                                                "isHidden": {
+                                                                                    "type": "JSON_LITERAL",
+                                                                                    "value": null
+                                                                                },
+                                                                                "preset": null,
+                                                                                "slot": null,
+                                                                                "styles": null,
+                                                                                "overrides": {
+                                                                                    "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 77",
+                                                                                            "elementId": "icon_77",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-up-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": null
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        }
+                                                                                    ],
+                                                                                    "layout": {
+                                                                                        "default": {
+                                                                                            "type": "flex",
+                                                                                            "root": null,
+                                                                                            "children": null,
+                                                                                            "rules": null,
+                                                                                            "styles": {
+                                                                                                "flex-direction": "row"
+                                                                                            },
+                                                                                            "items": [
+                                                                                                {
+                                                                                                    "element_id": "icon_77",
+                                                                                                    "styles": {}
+                                                                                                }
+                                                                                            ],
+                                                                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
+                                                                                        },
+                                                                                        "version": "3.0.0"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "definition": {
+                                                                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                                                                    "type": "MACROPONENT"
+                                                                                },
+                                                                                "elementLabel": "Container 136",
+                                                                                "elementId": "container_136",
+                                                                                "eventMappings": [
+                                                                                    
+                                                                                ],
+                                                                                "propertyValues": {
+                                                                                    "ariaRegionName": {
+                                                                                        "type": "TRANSLATION_LITERAL",
+                                                                                        "value": {
+                                                                                            "code": null,
+                                                                                            "message": "",
+                                                                                            "comment": ""
+                                                                                        }
+                                                                                    },
+                                                                                    "includeAriaHeading": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": false
+                                                                                    },
+                                                                                    "ariaRegionHeadingLevel": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "1"
+                                                                                    },
+                                                                                    "type": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "section"
+                                                                                    },
+                                                                                    "ariaRole": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": ""
+                                                                                    },
+                                                                                    "hideEmptyStateUi": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": true
+                                                                                    },
+                                                                                    "slotWrapperBehavior": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "fullheight"
+                                                                                    }
+                                                                                },
+                                                                                "isHidden": {
+                                                                                    "type": "JSON_LITERAL",
+                                                                                    "value": null
+                                                                                },
+                                                                                "preset": null,
+                                                                                "slot": null,
+                                                                                "styles": null,
+                                                                                "overrides": {
+                                                                                    "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 78",
+                                                                                            "elementId": "icon_78",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-up-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": null
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        }
+                                                                                    ],
+                                                                                    "layout": {
+                                                                                        "default": {
+                                                                                            "type": "flex",
+                                                                                            "root": null,
+                                                                                            "children": null,
+                                                                                            "rules": null,
+                                                                                            "styles": {
+                                                                                                "flex-direction": "row"
+                                                                                            },
+                                                                                            "items": [
+                                                                                                {
+                                                                                                    "element_id": "icon_78",
+                                                                                                    "styles": {}
+                                                                                                }
+                                                                                            ],
+                                                                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
+                                                                                        },
+                                                                                        "version": "3.0.0"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "definition": {
+                                                                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                                                                    "type": "MACROPONENT"
+                                                                                },
+                                                                                "elementLabel": "Container 137",
+                                                                                "elementId": "container_137",
+                                                                                "eventMappings": [
+                                                                                    
+                                                                                ],
+                                                                                "propertyValues": {
+                                                                                    "ariaRegionName": {
+                                                                                        "type": "TRANSLATION_LITERAL",
+                                                                                        "value": {
+                                                                                            "code": null,
+                                                                                            "message": "",
+                                                                                            "comment": ""
+                                                                                        }
+                                                                                    },
+                                                                                    "includeAriaHeading": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": false
+                                                                                    },
+                                                                                    "ariaRegionHeadingLevel": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "1"
+                                                                                    },
+                                                                                    "type": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "section"
+                                                                                    },
+                                                                                    "ariaRole": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": ""
+                                                                                    },
+                                                                                    "hideEmptyStateUi": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": true
+                                                                                    },
+                                                                                    "slotWrapperBehavior": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "fullheight"
+                                                                                    }
+                                                                                },
+                                                                                "isHidden": {
+                                                                                    "type": "JSON_LITERAL",
+                                                                                    "value": null
+                                                                                },
+                                                                                "preset": null,
+                                                                                "slot": null,
+                                                                                "styles": null,
+                                                                                "overrides": {
+                                                                                    "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 79",
+                                                                                            "elementId": "icon_79",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-up-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": null
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        }
+                                                                                    ],
+                                                                                    "layout": {
+                                                                                        "default": {
+                                                                                            "type": "flex",
+                                                                                            "root": null,
+                                                                                            "children": null,
+                                                                                            "rules": null,
+                                                                                            "styles": {
+                                                                                                "flex-direction": "row"
+                                                                                            },
+                                                                                            "items": [
+                                                                                                {
+                                                                                                    "element_id": "icon_79",
+                                                                                                    "styles": {}
+                                                                                                }
+                                                                                            ],
+                                                                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
+                                                                                        },
+                                                                                        "version": "3.0.0"
+                                                                                    }
+                                                                                }
                                                                             }
                                                                         ],
                                                                         "layout": {
@@ -3533,13 +4186,43 @@
                                                                                             "grid-area": "cell10"
                                                                                         },
                                                                                         "element_id": "container_107_Cell_10"
+                                                                                    },
+                                                                                    {
+                                                                                        "element_id": "container_133",
+                                                                                        "styles": {
+                                                                                            "width": "100%"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "element_id": "container_134",
+                                                                                        "styles": {
+                                                                                            "width": "100%"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "element_id": "container_135",
+                                                                                        "styles": {
+                                                                                            "width": "100%"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "element_id": "container_136",
+                                                                                        "styles": {
+                                                                                            "width": "100%"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "element_id": "container_137",
+                                                                                        "styles": {
+                                                                                            "width": "100%"
+                                                                                        }
                                                                                     }
                                                                                 ],
                                                                                 "root": null,
                                                                                 "rules": null,
                                                                                 "styles": {
                                                                                     "grid-template-rows": "auto auto auto auto auto",
-                                                                                    "grid-template-columns": "1.75fr 0.25fr",
+                                                                                    "grid-template-columns": "1.75fr 0.25fr 0.25fr",
                                                                                     "grid-template-areas": "\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"",
                                                                                     "grid-gap": "0.1rem",
                                                                                     "height": "100%",
@@ -20487,6 +21170,22 @@
                         "operation": null,
                         "targetId": "cltxiihhggkjaabbgglddjhhwrhoohhiircc",
                         "type": "CLIENT_SCRIPT"
+                    },
+                    {
+                        "targetId": "clubddccffpaaccjqddjhhnicxytcyhh",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "d8cfde141b5d8290db5a97d0b24bcb91",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
                     }
                 ]
             }
@@ -20975,7 +21674,7 @@
         "fieldType": "",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": ""
+            "value": "e6def6531bf5fc50550b97d0b24bcb21"
         },
         "label": "Tab1PortfolioBreakdown",
         "name": "Tab1PortfolioBreakdown",
@@ -20987,7 +21686,7 @@
         "fieldType": "",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": ""
+            "value": "76e6590e4f407f089e23e1128110c77d"
         },
         "label": "Tab1PortfolioElement",
         "name": "Tab1PortfolioElement",
@@ -21083,6 +21782,22 @@
         "name": "Tab1VAM2SortDirection",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "fieldType": "json",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": [
+                "better",
+                "worse",
+                "same",
+                "worse",
+                "better"
+            ]
+        },
+        "name": "verticalAMetric1ShowChange",
+        "shape": "",
+        "valueType": "json"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -21090,7 +21805,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>578</sys_mod_count>
+        <sys_mod_count>592</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -21098,7 +21813,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-28 11:44:26</sys_updated_on>
+        <sys_updated_on>2024-03-28 15:16:12</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
