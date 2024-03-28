@@ -302,7 +302,7 @@
                                         },
                                         {
                                             "elementId": "dropdown_1",
-                                            "elementLabel": "Dropdown 1",
+                                            "elementLabel": "Portfolio dropdown",
                                             "propertyValues": {
                                                 "select": {
                                                     "type": "JSON_LITERAL",
@@ -467,7 +467,7 @@
                                         },
                                         {
                                             "elementId": "dropdown_2",
-                                            "elementLabel": "Dropdown 2",
+                                            "elementLabel": "Performance dropdown",
                                             "propertyValues": {
                                                 "select": {
                                                     "type": "JSON_LITERAL",
@@ -3739,8 +3739,98 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[1] === 'better');\n}",
+                                                                                                    "scriptSysId": "eabf2e501b1dc290db5a97d0b24bcb8b",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 82",
+                                                                                            "elementId": "icon_82",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-down-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[1] === 'worse');\n}",
+                                                                                                    "scriptSysId": "eebf2e501b1dc290db5a97d0b24bcb8b",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 83",
+                                                                                            "elementId": "icon_83",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-minus-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[1] === 'same');\n}",
+                                                                                                    "scriptSysId": "e2bf2e501b1dc290db5a97d0b24bcb8c",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -3759,6 +3849,14 @@
                                                                                             "items": [
                                                                                                 {
                                                                                                     "element_id": "icon_76",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_82",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_83",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -3850,8 +3948,98 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[2] === 'better');\n}",
+                                                                                                    "scriptSysId": "2ebf2e501b1dc290db5a97d0b24bcb8b",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 84",
+                                                                                            "elementId": "icon_84",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-down-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[2] === 'worse');\n}",
+                                                                                                    "scriptSysId": "22bf2e501b1dc290db5a97d0b24bcb8c",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 85",
+                                                                                            "elementId": "icon_85",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-minus-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[2] === 'same');\n}",
+                                                                                                    "scriptSysId": "26bf2e501b1dc290db5a97d0b24bcb8c",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -3870,6 +4058,14 @@
                                                                                             "items": [
                                                                                                 {
                                                                                                     "element_id": "icon_77",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_84",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_85",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -3961,8 +4157,98 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[3] === 'better');\n}",
+                                                                                                    "scriptSysId": "6ebf2e501b1dc290db5a97d0b24bcb8b",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 86",
+                                                                                            "elementId": "icon_86",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-down-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[3] === 'worse');\n}",
+                                                                                                    "scriptSysId": "62bf2e501b1dc290db5a97d0b24bcb8c",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 87",
+                                                                                            "elementId": "icon_87",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-minus-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[3] === 'same');\n}",
+                                                                                                    "scriptSysId": "66bf2e501b1dc290db5a97d0b24bcb8c",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -3981,6 +4267,14 @@
                                                                                             "items": [
                                                                                                 {
                                                                                                     "element_id": "icon_78",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_86",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_87",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -4072,8 +4366,98 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[4] === 'better');\n}",
+                                                                                                    "scriptSysId": "aebf2e501b1dc290db5a97d0b24bcb8b",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 88",
+                                                                                            "elementId": "icon_88",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-arrow-down-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[4] === 'worse');\n}",
+                                                                                                    "scriptSysId": "a2bf2e501b1dc290db5a97d0b24bcb8c",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 89",
+                                                                                            "elementId": "icon_89",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "circle-minus-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric1ShowChange[4] === 'same');\n}",
+                                                                                                    "scriptSysId": "a6bf2e501b1dc290db5a97d0b24bcb8c",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -4092,6 +4476,14 @@
                                                                                             "items": [
                                                                                                 {
                                                                                                     "element_id": "icon_79",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_88",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "icon_89",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -21674,7 +22066,7 @@
         "fieldType": "",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "e6def6531bf5fc50550b97d0b24bcb21"
+            "value": ""
         },
         "label": "Tab1PortfolioBreakdown",
         "name": "Tab1PortfolioBreakdown",
@@ -21686,7 +22078,7 @@
         "fieldType": "",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "76e6590e4f407f089e23e1128110c77d"
+            "value": ""
         },
         "label": "Tab1PortfolioElement",
         "name": "Tab1PortfolioElement",
@@ -21805,7 +22197,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>592</sys_mod_count>
+        <sys_mod_count>598</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -21813,7 +22205,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-28 15:16:12</sys_updated_on>
+        <sys_updated_on>2024-03-28 15:31:33</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
