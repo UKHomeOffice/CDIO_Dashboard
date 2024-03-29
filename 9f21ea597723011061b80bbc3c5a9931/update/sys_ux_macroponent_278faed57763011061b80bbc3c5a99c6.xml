@@ -8204,8 +8204,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[0] === 'better');\n}",
+                                                                                                    "scriptSysId": "dff11a6c1b510e90d9e4a755bd4bcb97",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8240,8 +8246,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[0] === 'worse');\n}",
+                                                                                                    "scriptSysId": "17f11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8276,8 +8288,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[0] === 'same');\n}",
+                                                                                                    "scriptSysId": "5bf11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8395,8 +8413,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[1] === 'better');\n}",
+                                                                                                    "scriptSysId": "13f11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8431,8 +8455,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[1] === 'worse');\n}",
+                                                                                                    "scriptSysId": "57f11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8467,8 +8497,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[1] === 'same');\n}",
+                                                                                                    "scriptSysId": "9bf11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8587,8 +8623,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[2] === 'better');\n}",
+                                                                                                    "scriptSysId": "53f11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8623,8 +8665,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[2] === 'worse');\n}",
+                                                                                                    "scriptSysId": "97f11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8659,8 +8707,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[2] === 'same');\n}",
+                                                                                                    "scriptSysId": "dbf11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8778,8 +8832,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[3] === 'better');\n}",
+                                                                                                    "scriptSysId": "93f11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8814,8 +8874,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[3] === 'worse');\n}",
+                                                                                                    "scriptSysId": "d7f11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8850,8 +8916,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[3] === 'same');\n}",
+                                                                                                    "scriptSysId": "1ff11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -8969,8 +9041,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[4] === 'better');\n}",
+                                                                                                    "scriptSysId": "d3f11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -9005,8 +9083,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[4] === 'worse');\n}",
+                                                                                                    "scriptSysId": "1bf11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -9041,8 +9125,14 @@
                                                                                                 }
                                                                                             },
                                                                                             "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalAMetric2ShowChange[4] === 'same');\n}",
+                                                                                                    "scriptSysId": "5ff11a6c1b510e90d9e4a755bd4bcb98",
+                                                                                                    "target": null
+                                                                                                }
                                                                                             },
                                                                                             "preset": null,
                                                                                             "slot": null,
@@ -24831,6 +24921,22 @@
                         "operation": null,
                         "targetId": "cltyhhccxjaabbfaaddjhhwxreenpevm",
                         "type": "CLIENT_SCRIPT"
+                    },
+                    {
+                        "targetId": "clucczdovaaccpaddjhhnbbqjjbaiiga",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "9ff11a6c1b510e90d9e4a755bd4bcb97",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
                     }
                 ]
             }
@@ -25388,6 +25494,22 @@
         "name": "verticalCMetric2ShowChange",
         "shape": "",
         "valueType": "json"
+    },
+    {
+        "fieldType": "json",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": [
+                "better",
+                "worse",
+                "same",
+                "worse",
+                "better"
+            ]
+        },
+        "name": "verticalAMetric2ShowChange",
+        "shape": "",
+        "valueType": "json"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -25395,7 +25517,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>616</sys_mod_count>
+        <sys_mod_count>619</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -25403,7 +25525,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-28 20:09:18</sys_updated_on>
+        <sys_updated_on>2024-03-29 07:49:57</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
