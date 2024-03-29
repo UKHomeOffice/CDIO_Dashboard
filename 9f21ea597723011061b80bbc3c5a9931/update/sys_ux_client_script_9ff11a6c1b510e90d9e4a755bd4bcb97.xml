@@ -44,7 +44,8 @@ function handler({api, event, helpers, imports}) {
         } else if (current === last) {
             arr_change.push('same');
         } else if ((current === 'green' && last === 'amber') || 
-                   (current === 'amber' && last === 'red')) {
+                   (current === 'amber' && last === 'red') ||
+                   (current === 'green' && last === 'red')) {
             arr_change.push('better');
         } else {
             arr_change.push('worse');
@@ -59,7 +60,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2024-03-29 07:45:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ff11a6c1b510e90d9e4a755bd4bcb97</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>showVerticalAMetric2Change</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -67,7 +68,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_9ff11a6c1b510e90d9e4a755bd4bcb97</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-29 08:33:33</sys_updated_on>
+        <sys_updated_on>2024-03-29 09:25:19</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
