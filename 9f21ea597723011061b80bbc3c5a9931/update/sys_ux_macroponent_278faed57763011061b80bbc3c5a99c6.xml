@@ -3626,6 +3626,50 @@
                                                                                             "preset": null,
                                                                                             "slot": null,
                                                                                             "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "bb63b710d208796b7ceaab7812bddef1",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "GapVAPIS1",
+                                                                                            "elementId": "label_value_14",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "label": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "Gap: ",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "value": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "15",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "reversed": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                },
+                                                                                                "truncated": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": false
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
                                                                                         }
                                                                                     ],
                                                                                     "layout": {
@@ -3635,7 +3679,15 @@
                                                                                             "children": null,
                                                                                             "rules": null,
                                                                                             "styles": {
-                                                                                                "flex-direction": "row"
+                                                                                                "flex-direction": "row",
+                                                                                                "margin-right": "0",
+                                                                                                "margin": "0",
+                                                                                                "margin-top": "0",
+                                                                                                "margin-bottom": "0",
+                                                                                                "margin-left": "0",
+                                                                                                "gap": "var(--now-scalable-space--md)",
+                                                                                                "flex-wrap": "nowrap",
+                                                                                                "align-items": "center"
                                                                                             },
                                                                                             "items": [
                                                                                                 {
@@ -3648,6 +3700,10 @@
                                                                                                 },
                                                                                                 {
                                                                                                     "element_id": "icon_81",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "label_value_14",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -3835,6 +3891,50 @@
                                                                                             "preset": null,
                                                                                             "slot": null,
                                                                                             "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "bb63b710d208796b7ceaab7812bddef1",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Label value 15",
+                                                                                            "elementId": "label_value_15",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "label": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "Gap: ",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "value": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "20",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "reversed": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                },
+                                                                                                "truncated": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": null
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
                                                                                         }
                                                                                     ],
                                                                                     "layout": {
@@ -3844,7 +3944,8 @@
                                                                                             "children": null,
                                                                                             "rules": null,
                                                                                             "styles": {
-                                                                                                "flex-direction": "row"
+                                                                                                "flex-direction": "row",
+                                                                                                "align-items": "center"
                                                                                             },
                                                                                             "items": [
                                                                                                 {
@@ -3857,6 +3958,10 @@
                                                                                                 },
                                                                                                 {
                                                                                                     "element_id": "icon_83",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "label_value_15",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -4044,6 +4149,50 @@
                                                                                             "preset": null,
                                                                                             "slot": null,
                                                                                             "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "bb63b710d208796b7ceaab7812bddef1",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Label value 16",
+                                                                                            "elementId": "label_value_16",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "label": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "Gap: ",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "value": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "25",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "reversed": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                },
+                                                                                                "truncated": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": null
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
                                                                                         }
                                                                                     ],
                                                                                     "layout": {
@@ -4066,6 +4215,10 @@
                                                                                                 },
                                                                                                 {
                                                                                                     "element_id": "icon_85",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "label_value_16",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -4253,6 +4406,50 @@
                                                                                             "preset": null,
                                                                                             "slot": null,
                                                                                             "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "bb63b710d208796b7ceaab7812bddef1",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Label value 17",
+                                                                                            "elementId": "label_value_17",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "label": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "Gap: ",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "value": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "30",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "reversed": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                },
+                                                                                                "truncated": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": null
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
                                                                                         }
                                                                                     ],
                                                                                     "layout": {
@@ -4275,6 +4472,10 @@
                                                                                                 },
                                                                                                 {
                                                                                                     "element_id": "icon_87",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "label_value_17",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -4462,6 +4663,50 @@
                                                                                             "preset": null,
                                                                                             "slot": null,
                                                                                             "styles": null
+                                                                                        },
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "bb63b710d208796b7ceaab7812bddef1",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Label value 18",
+                                                                                            "elementId": "label_value_18",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "label": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "Gap: ",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "value": {
+                                                                                                    "type": "TRANSLATION_LITERAL",
+                                                                                                    "value": {
+                                                                                                        "code": null,
+                                                                                                        "message": "35",
+                                                                                                        "comment": ""
+                                                                                                    }
+                                                                                                },
+                                                                                                "reversed": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                },
+                                                                                                "truncated": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": null
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
                                                                                         }
                                                                                     ],
                                                                                     "layout": {
@@ -4484,6 +4729,10 @@
                                                                                                 },
                                                                                                 {
                                                                                                     "element_id": "icon_89",
+                                                                                                    "styles": {}
+                                                                                                },
+                                                                                                {
+                                                                                                    "element_id": "label_value_18",
                                                                                                     "styles": {}
                                                                                                 }
                                                                                             ],
@@ -4614,7 +4863,7 @@
                                                                                 "rules": null,
                                                                                 "styles": {
                                                                                     "grid-template-rows": "auto auto auto auto auto",
-                                                                                    "grid-template-columns": "1.75fr 0.25fr 0.25fr",
+                                                                                    "grid-template-columns": "1.75fr 0.25fr 0.5fr",
                                                                                     "grid-template-areas": "\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"",
                                                                                     "grid-gap": "0.1rem",
                                                                                     "height": "100%",
@@ -25037,6 +25286,21 @@
         <output_prop_mapping/>
         <props/>
         <required_translations>[ {
+  "message" : "15",
+  "comment" : ""
+}, {
+  "message" : "20",
+  "comment" : ""
+}, {
+  "message" : "25",
+  "comment" : ""
+}, {
+  "message" : "30",
+  "comment" : ""
+}, {
+  "message" : "35",
+  "comment" : ""
+}, {
   "message" : "95% - 97.5%",
   "comment" : ""
 }, {
@@ -25065,6 +25329,9 @@
   "comment" : ""
 }, {
   "message" : "Description",
+  "comment" : ""
+}, {
+  "message" : "Gap: ",
   "comment" : ""
 }, {
   "message" : "High:",
@@ -25517,7 +25784,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>633</sys_mod_count>
+        <sys_mod_count>640</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -25525,7 +25792,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-29 09:25:39</sys_updated_on>
+        <sys_updated_on>2024-04-02 11:59:10</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
