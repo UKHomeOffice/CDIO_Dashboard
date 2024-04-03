@@ -2412,7 +2412,9 @@
                                                                                             "items": [
                                                                                                 {
                                                                                                     "element_id": "label_value_14",
-                                                                                                    "styles": {}
+                                                                                                    "styles": {
+                                                                                                        "flex": "none"
+                                                                                                    }
                                                                                                 }
                                                                                             ],
                                                                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -3032,7 +3034,7 @@
                                                                                                 "id": "bb63b710d208796b7ceaab7812bddef1",
                                                                                                 "type": "MACROPONENT"
                                                                                             },
-                                                                                            "elementLabel": "Label value 15",
+                                                                                            "elementLabel": "GapVAPIS2",
                                                                                             "elementId": "label_value_15",
                                                                                             "eventMappings": [
                                                                                                 
@@ -3708,7 +3710,7 @@
                                                                                                 "id": "bb63b710d208796b7ceaab7812bddef1",
                                                                                                 "type": "MACROPONENT"
                                                                                             },
-                                                                                            "elementLabel": "Label value 16",
+                                                                                            "elementLabel": "GapVAPIS3",
                                                                                             "elementId": "label_value_16",
                                                                                             "eventMappings": [
                                                                                                 
@@ -4384,7 +4386,7 @@
                                                                                                 "id": "bb63b710d208796b7ceaab7812bddef1",
                                                                                                 "type": "MACROPONENT"
                                                                                             },
-                                                                                            "elementLabel": "Label value 17",
+                                                                                            "elementLabel": "GapVAPIS4",
                                                                                             "elementId": "label_value_17",
                                                                                             "eventMappings": [
                                                                                                 
@@ -5060,7 +5062,7 @@
                                                                                                 "id": "bb63b710d208796b7ceaab7812bddef1",
                                                                                                 "type": "MACROPONENT"
                                                                                             },
-                                                                                            "elementLabel": "Label value 18",
+                                                                                            "elementLabel": "GapVAPIS5",
                                                                                             "elementId": "label_value_18",
                                                                                             "eventMappings": [
                                                                                                 
@@ -5276,7 +5278,7 @@
                                                                                 "rules": null,
                                                                                 "styles": {
                                                                                     "grid-template-rows": "auto auto auto auto auto",
-                                                                                    "grid-template-columns": "1.75fr 0.25fr 0.25fr 0.25fr",
+                                                                                    "grid-template-columns": "1.4fr 0.2fr 0.2fr 0.5fr",
                                                                                     "grid-template-areas": "\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"",
                                                                                     "grid-gap": "0.1rem",
                                                                                     "height": "100%",
@@ -26182,7 +26184,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>647</sys_mod_count>
+        <sys_mod_count>650</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -26190,7 +26192,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-03 12:11:33</sys_updated_on>
+        <sys_updated_on>2024-04-03 12:29:06</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
