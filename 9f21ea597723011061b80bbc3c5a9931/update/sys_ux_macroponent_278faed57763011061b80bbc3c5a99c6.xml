@@ -2378,7 +2378,7 @@
                                                                                                             "output",
                                                                                                             "result",
                                                                                                             "0",
-                                                                                                            "gap"
+                                                                                                            "gap_formatted"
                                                                                                         ]
                                                                                                     }
                                                                                                 },
@@ -3054,7 +3054,7 @@
                                                                                                             "output",
                                                                                                             "result",
                                                                                                             "1",
-                                                                                                            "gap"
+                                                                                                            "gap_formatted"
                                                                                                         ]
                                                                                                     }
                                                                                                 },
@@ -3730,7 +3730,7 @@
                                                                                                             "output",
                                                                                                             "result",
                                                                                                             "2",
-                                                                                                            "gap"
+                                                                                                            "gap_formatted"
                                                                                                         ]
                                                                                                     }
                                                                                                 },
@@ -4406,7 +4406,7 @@
                                                                                                             "output",
                                                                                                             "result",
                                                                                                             "3",
-                                                                                                            "gap"
+                                                                                                            "gap_formatted"
                                                                                                         ]
                                                                                                     }
                                                                                                 },
@@ -5082,7 +5082,7 @@
                                                                                                             "output",
                                                                                                             "result",
                                                                                                             "4",
-                                                                                                            "gap"
+                                                                                                            "gap_formatted"
                                                                                                         ]
                                                                                                     }
                                                                                                 },
@@ -26182,7 +26182,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>646</sys_mod_count>
+        <sys_mod_count>647</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -26190,7 +26190,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-03 09:27:28</sys_updated_on>
+        <sys_updated_on>2024-04-03 12:11:33</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -26200,10 +26200,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-29 08:25:37</sys_created_on>
-        <sys_id>693c9e241b990e90d9e4a755bd4bcb86</sys_id>
+        <sys_created_on>2024-04-03 12:14:15</sys_created_on>
+        <sys_id>53708dd21bd18618d9e4a755bd4bcb27</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-29 08:25:37</sys_updated_on>
+        <sys_updated_on>2024-04-03 12:14:15</sys_updated_on>
     </sys_claim>
 </record_update>
