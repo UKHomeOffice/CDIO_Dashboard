@@ -1,104 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
     <sys_ux_macroponent action="INSERT_OR_UPDATE">
         <associated_types/>
+        <bundles/>
         <category>page</category>
         <component_dependencies/>
-        <composition>[ {
-  "elementId" : "viewport_trh",
-  "elementLabel" : "Tab set 1",
-  "propertyValues" : {
-    "tabStyles" : {
-      "type" : "JSON_LITERAL",
-      "value" : ".tabset-tabs{\n\n}\n.tabset-container{\n\n}"
-    },
-    "fixedWidth" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "defaultRoute" : {
-      "type" : "JSON_LITERAL",
-      "value" : null
-    },
-    "selectedTabIndex" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "currentTab" ],
-        "category" : "props"
-      }
-    },
-    "spaceBetweenItems" : {
-      "type" : "JSON_LITERAL",
-      "value" : "none"
-    },
-    "dynamicTabData" : {
-      "type" : "JSON_LITERAL",
-      "value" : null
-    },
-    "enableCollapsing" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "initiallyCollapsed" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "viewportConfiguration" : {
-      "type" : "JSON_LITERAL",
-      "value" : {
-        "validation" : {
-          "name" : {
-            "required" : true
-          },
-          "order" : {
-            "required" : false
-          },
-          "icon" : {
-            "required" : false
-          }
+        <composition>[
+    {
+        "elementId": "viewport_trh",
+        "elementLabel": "Tab set 1",
+        "propertyValues": {
+            "tabStyles": {
+                "type": "JSON_LITERAL",
+                "value": ".tabset-tabs{\n\n}\n.tabset-container{\n\n}"
+            },
+            "fixedWidth": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "defaultRoute": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "selectedTabIndex": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "currentTab"
+                    ],
+                    "category": "props"
+                }
+            },
+            "spaceBetweenItems": {
+                "type": "JSON_LITERAL",
+                "value": "none"
+            },
+            "dynamicTabData": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "enableCollapsing": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "initiallyCollapsed": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "viewportConfiguration": {
+                "type": "JSON_LITERAL",
+                "value": {
+                    "validation": {
+                        "name": {
+                            "required": true
+                        },
+                        "order": {
+                            "required": false
+                        },
+                        "icon": {
+                            "required": false
+                        }
+                    },
+                    "enableDataDrivenTabs": true
+                }
+            },
+            "size": {
+                "type": "JSON_LITERAL",
+                "value": "md"
+            },
+            "showInlinePadding": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "position": {
+                "type": "JSON_LITERAL",
+                "value": "top"
+            },
+            "maxWidth": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "hideLabel": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "context": {
+                "type": "JSON_LITERAL",
+                "value": "element"
+            }
         },
-        "enableDataDrivenTabs" : true
-      }
-    },
-    "size" : {
-      "type" : "JSON_LITERAL",
-      "value" : "md"
-    },
-    "showInlinePadding" : {
-      "type" : "JSON_LITERAL",
-      "value" : true
-    },
-    "position" : {
-      "type" : "JSON_LITERAL",
-      "value" : "top"
-    },
-    "maxWidth" : {
-      "type" : "JSON_LITERAL",
-      "value" : null
-    },
-    "hideLabel" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
+        "eventMappings": [
+            
+        ],
+        "slot": null,
+        "definition": {
+            "id": "b324da974cef96f2db1d484cfeda4e3e",
+            "type": "MACROPONENT_VIEWPORT"
+        },
+        "overrides": null,
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "isHero": false,
+        "extensionPoints": [
+            
+        ],
+        "isNonDestructive": false,
+        "items": [
+            
+        ],
+        "styles": null
     }
-  },
-  "eventMappings" : [ ],
-  "slot" : null,
-  "definition" : {
-    "id" : "b324da974cef96f2db1d484cfeda4e3e",
-    "type" : "MACROPONENT_VIEWPORT"
-  },
-  "overrides" : null,
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  },
-  "isHero" : false,
-  "extensionPoints" : [ ],
-  "isNonDestructive" : false,
-  "items" : [ ],
-  "styles" : null
-} ]</composition>
+]</composition>
         <da_relay_models/>
-        <data>[ ]</data>
+        <data/>
         <description/>
         <dispatched_events/>
         <events/>
@@ -108,48 +123,63 @@
         <handled_events/>
         <interactions/>
         <interfaces/>
-        <internal_event_mappings>{ }</internal_event_mappings>
+        <internal_event_mappings>{}</internal_event_mappings>
         <layout>{
-  "default" : {
-    "children" : null,
-    "isInline" : null,
-    "items" : [{"element_id":"viewport_trh","styles":{"height":"100%","background-color":"rgb(var(--now-tabs--background-color))","padding-top":"8px"}}],
-    "root" : null,
-    "rules" : null,
-    "styles" : {"flex-direction":"column"},
-    "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-    "type" : "flex"
-  },
-  "version" : "3.0.0"
+    "default": {
+        "children": null,
+        "isInline": null,
+        "items": [
+            {
+                "element_id": "viewport_trh",
+                "styles": {
+                    "height": "100%",
+                    "background-color": "rgb(var(--now-tabs--background-color))",
+                    "padding-top": "8px"
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "flex-direction": "column"
+        },
+        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+        "type": "flex"
+    },
+    "version": "3.0.0"
 }</layout>
         <macroponent_dependencies/>
         <name>Summary</name>
         <output_prop_mapping/>
-        <props>[ {
-  "name" : "currentTab",
-  "label" : "currentTab",
-  "fieldType" : "string",
-  "typeMetadata" : null,
-  "valueType" : "string",
-  "mandatory" : false,
-  "defaultValue" : null,
-  "description" : "",
-  "readOnly" : false,
-  "selectable" : false,
-  "disabled" : false
-} ]</props>
+        <props>[
+    {
+        "name": "currentTab",
+        "label": "currentTab",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "defaultValue": null,
+        "description": "",
+        "readOnly": false,
+        "selectable": false,
+        "disabled": false
+    }
+]</props>
         <required_translations>[ ]</required_translations>
         <root_component/>
-        <root_component_config>{ }</root_component_config>
+        <root_component_config>{}</root_component_config>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
-        <state_properties>[ ]</state_properties>
+        <state_properties>[
+    
+]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:19:02</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2cdeaad57763011061b80bbc3c5a9930</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Summary</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -157,7 +187,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_2cdeaad57763011061b80bbc3c5a9930</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-09-19 12:56:05</sys_updated_on>
+        <sys_updated_on>2024-04-08 09:26:19</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

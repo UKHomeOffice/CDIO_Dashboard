@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
     <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
-        <macroponent_config>{ }</macroponent_config>
+        <macroponent_config>{
+    "029f04e053610110ac9bddeeff7b1294": {
+        "inputTable": "task",
+        "inputSysId": "0002b30a1b984ad4dba1c3e5464bcb36",
+        "inputQuery": "",
+        "view": "",
+        "forcedViewName": "",
+        "detailsContext": null,
+        "activityLogs": null,
+        "inputExtraParams": "",
+        "screen": null,
+        "fields": "",
+        "userPrefs": null,
+        "selectedTabIndex": ""
+    }
+}</macroponent_config>
         <screen display_value="Overview default">e8deaad57763011061b80bbc3c5a9932</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-18 05:21:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a64f62197763011061b80bbc3c5a999d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -15,7 +30,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_uib_screen_test_values_a64f62197763011061b80bbc3c5a999d</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-09-19 12:56:05</sys_updated_on>
+        <sys_updated_on>2024-04-08 09:26:19</sys_updated_on>
     </sys_uib_screen_test_values>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

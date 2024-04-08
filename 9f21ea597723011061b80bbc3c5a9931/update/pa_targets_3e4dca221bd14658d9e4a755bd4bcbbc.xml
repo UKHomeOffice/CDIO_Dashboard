@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_targets">
+    <pa_targets action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <aggregate display_value="By month AVG +">587fad00eb31020065deac6aa206fea5</aggregate>
+        <any_element>true</any_element>
+        <breakdown display_value="Portfolio">e6def6531bf5fc50550b97d0b24bcb21</breakdown>
+        <breakdown_level2 display_value="Primary Impacted Service">b1616b8c4fe933002f3c71318110c743</breakdown_level2>
+        <color_scheme/>
+        <display_name>Portfolio: Borders, By month AVG +</display_name>
+        <element>76e6590e4f407f089e23e1128110c77d</element>
+        <element_level2/>
+        <indicator display_value="Average Time to Implement Standard Changes (Days)">1061dada1b2e111057842144b24bcbf7</indicator>
+        <owner/>
+        <responsible_users/>
+        <sys_class_name>pa_targets</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-04-04 12:28:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3e4dca221bd14658d9e4a755bd4bcbbc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>1061dada1b2e111057842144b24bcbf7</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_targets_3e4dca221bd14658d9e4a755bd4bcbbc</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-04-08 10:21:10</sys_updated_on>
+        <values_modified_at>2024-04-04 12:28:41</values_modified_at>
+    </pa_targets>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18ea9213c670000001</claim_timestamp>
+        <metadata_update_name>pa_targets_3e4dca221bd14658d9e4a755bd4bcbbc</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-04-04 12:41:51</sys_created_on>
+        <sys_id>25605ee61b554658d9e4a755bd4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-04-04 12:41:51</sys_updated_on>
+    </sys_claim>
+</record_update>
