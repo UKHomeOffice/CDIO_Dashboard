@@ -2363,23 +2363,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n\tif (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "da9a2ef71b5182dcdb5a97d0b24bcbff",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "0",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n  if (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "de9a2ef71b5182dcdb5a97d0b24bcbff",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -3041,23 +3041,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n\tif (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "1e9a2ef71b5182dcdb5a97d0b24bcbff",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "1",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n  if (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "129a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -3717,23 +3717,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n\tif (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "5e9a2ef71b5182dcdb5a97d0b24bcbff",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "2",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n  if (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "529a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -4393,23 +4393,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n\tif (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "9e9a2ef71b5182dcdb5a97d0b24bcbff",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "3",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n  if (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "929a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -5069,23 +5069,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n\tif (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "9a9a2ef71b5182dcdb5a97d0b24bcbff",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "4",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n  if (api.data.verticalA_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "5a9a2ef71b5182dcdb5a97d0b24bcbff",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -5278,7 +5278,7 @@
                                                                                 "rules": null,
                                                                                 "styles": {
                                                                                     "grid-template-rows": "auto auto auto auto auto",
-                                                                                    "grid-template-columns": "1.4fr 0.2fr 0.2fr 0.5fr",
+                                                                                    "grid-template-columns": "0.9fr 0.2fr 0.2fr 0.5fr",
                                                                                     "grid-template-areas": "\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"",
                                                                                     "grid-gap": "0.1rem",
                                                                                     "height": "100%",
@@ -7692,23 +7692,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "d29a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "0",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "1a9a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -8367,23 +8367,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "169a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "1",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "5a9a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -9041,23 +9041,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "569a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "2",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "9a9a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -9715,23 +9715,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "969a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "3",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "da9a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -10389,23 +10389,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "d69a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalA_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "4",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "1e9a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -10596,7 +10596,7 @@
                                                                                 "rules": null,
                                                                                 "styles": {
                                                                                     "grid-template-rows": "auto auto auto auto auto",
-                                                                                    "grid-template-columns": "1.4fr 0.2fr 0.2fr 0.5fr",
+                                                                                    "grid-template-columns": "0.9fr 0.2fr 0.2fr 0.5fr",
                                                                                     "grid-template-areas": "\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"",
                                                                                     "grid-gap": "0.1rem",
                                                                                     "height": "100%"
@@ -14380,23 +14380,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n\tif (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "5e9a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "0",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n  if (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalC_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "929a6ef71b5182dcdb5a97d0b24bcb01",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -14712,23 +14712,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n\tif (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "9e9a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "1",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n  if (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalC_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "d29a6ef71b5182dcdb5a97d0b24bcb01",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -15044,23 +15044,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n\tif (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "de9a6ef71b5182dcdb5a97d0b24bcb00",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "2",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n  if (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalC_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "169a6ef71b5182dcdb5a97d0b24bcb01",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -15376,23 +15376,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n\tif (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "129a6ef71b5182dcdb5a97d0b24bcb01",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "3",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n  if (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalC_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "569a6ef71b5182dcdb5a97d0b24bcb01",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -15708,23 +15708,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n\tif (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "529a6ef71b5182dcdb5a97d0b24bcb01",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric1",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "4",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n  if (api.data.verticalC_headlinemetric1.output.result[i].value&gt;0) {\n    return api.data.verticalC_headlinemetric1.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "969a6ef71b5182dcdb5a97d0b24bcb01",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -15917,7 +15917,7 @@
                                                                                 "rules": null,
                                                                                 "styles": {
                                                                                     "grid-template-rows": "auto auto auto auto auto",
-                                                                                    "grid-template-columns": "1.4fr 0.2fr 0.2fr 0.5fr",
+                                                                                    "grid-template-columns": "0.9fr 0.2fr 0.2fr 0.5fr",
                                                                                     "grid-template-areas": "\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"",
                                                                                     "grid-gap": "0.1rem",
                                                                                     "height": "100%"
@@ -19701,23 +19701,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n\tif (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "479836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "0",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n  if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return api.data.verticalC_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "8b9836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -20033,23 +20033,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n\tif (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "879836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "1",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n  if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return api.data.verticalC_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "cb9836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -20365,23 +20365,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n\tif (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "c79836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "2",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n  if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return api.data.verticalC_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "0f9836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -20697,23 +20697,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n\tif (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "0b9836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "3",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n  if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return api.data.verticalC_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "4f9836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -21029,23 +21029,23 @@
                                                                                             ],
                                                                                             "propertyValues": {
                                                                                                 "label": {
-                                                                                                    "type": "TRANSLATION_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "code": null,
-                                                                                                        "message": "Gap: ",
-                                                                                                        "comment": ""
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n\tif (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "scriptSysId": "4b9836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "value": {
-                                                                                                    "type": "DATA_OUTPUT_BINDING",
-                                                                                                    "binding": {
-                                                                                                        "address": [
-                                                                                                            "verticalC_headlinemetric2",
-                                                                                                            "output",
-                                                                                                            "result",
-                                                                                                            "4",
-                                                                                                            "gap_formatted"
-                                                                                                        ]
+                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                    "script": {
+                                                                                                        "apiVersion": "2.0.0",
+                                                                                                        "controllerElementId": null,
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n  if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0) {\n    return api.data.verticalC_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "scriptSysId": "8f9836331b5d82dcdb5a97d0b24bcb2a",
+                                                                                                        "target": null
                                                                                                     }
                                                                                                 },
                                                                                                 "reversed": {
@@ -21238,7 +21238,7 @@
                                                                                 "rules": null,
                                                                                 "styles": {
                                                                                     "grid-template-rows": "auto auto auto auto auto",
-                                                                                    "grid-template-columns": "1.4fr 0.2fr 0.2fr 0.5fr",
+                                                                                    "grid-template-columns": "0.9fr 0.2fr 0.2fr 0.5fr",
                                                                                     "grid-template-areas": "\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"",
                                                                                     "grid-gap": "0.1rem",
                                                                                     "height": "100%"
@@ -27666,9 +27666,6 @@
   "message" : "Description",
   "comment" : ""
 }, {
-  "message" : "Gap: ",
-  "comment" : ""
-}, {
   "message" : "High:",
   "comment" : ""
 }, {
@@ -28119,7 +28116,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>658</sys_mod_count>
+        <sys_mod_count>668</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -28127,7 +28124,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-04 10:33:56</sys_updated_on>
+        <sys_updated_on>2024-04-08 13:03:50</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -28137,10 +28134,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-04-03 13:18:41</sys_created_on>
-        <sys_id>d33f09de1b5d8618d9e4a755bd4bcb3c</sys_id>
+        <sys_created_on>2024-04-08 12:12:53</sys_created_on>
+        <sys_id>1820baf31b9582dcdb5a97d0b24bcbfa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-03 13:18:41</sys_updated_on>
+        <sys_updated_on>2024-04-08 12:12:53</sys_updated_on>
     </sys_claim>
 </record_update>
