@@ -5303,6 +5303,178 @@
                                                                         
                                                                     ],
                                                                     "styles": null
+                                                                },
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "KPI1 Scroll up",
+                                                                    "elementId": "button_1",
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "clusegeeybbaaccpuddjhhoeebbsuqfffj",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "targetId": "clusegeeybbaaccpvddjhhogaobbhhsoi",
+                                                                                    "type": "CLIENT_SCRIPT",
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": null,
+                                                                                    "clientScript": {
+                                                                                        "sysId": "e60673401b2106188f629939b04bcbba",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "conditional": null,
+                                                                                    "broker": null
+                                                                                }
+                                                                            ],
+                                                                            "sourceEventDefinition": {
+                                                                                "id": null,
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "type": "UXEVENT"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "label": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "caret-up-fill"
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "Enter a label",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {}
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": null
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
+                                                                },
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "KPI1 Scroll down",
+                                                                    "elementId": "button_2",
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "clusdnzygaaccepddjhhojjccbbsofs",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "targetId": "clusdnzygaacceqddjhhoccshqphhffn",
+                                                                                    "type": "CLIENT_SCRIPT",
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": null,
+                                                                                    "clientScript": {
+                                                                                        "sysId": "a60673401b2106188f629939b04bcbba",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "conditional": null,
+                                                                                    "broker": null
+                                                                                }
+                                                                            ],
+                                                                            "sourceEventDefinition": {
+                                                                                "id": null,
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "type": "UXEVENT"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "label": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "caret-down-fill"
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "Enter a label",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {}
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": null
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
                                                                 }
                                                             ],
                                                             "layout": {
@@ -5328,6 +5500,18 @@
                                                                                 "width": "100%"
                                                                             },
                                                                             "element_id": "container_107"
+                                                                        },
+                                                                        {
+                                                                            "element_id": "button_1",
+                                                                            "styles": {
+                                                                                "align-self": "flex-end"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "element_id": "button_2",
+                                                                            "styles": {
+                                                                                "align-self": "flex-end"
+                                                                            }
                                                                         }
                                                                     ]
                                                                 },
@@ -10620,6 +10804,178 @@
                                                                         
                                                                     ],
                                                                     "styles": null
+                                                                },
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "KPI2 Scroll up",
+                                                                    "elementId": "button_3",
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "clusgdbbazaaddhmddjhhosdatddggtr",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "targetId": "clusgdbbazaaddhnddjhhojjwsmbboct",
+                                                                                    "type": "CLIENT_SCRIPT",
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": null,
+                                                                                    "clientScript": {
+                                                                                        "sysId": "aa0673401b2106188f629939b04bcbba",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "conditional": null,
+                                                                                    "broker": null
+                                                                                }
+                                                                            ],
+                                                                            "sourceEventDefinition": {
+                                                                                "id": null,
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "type": "UXEVENT"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "label": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "caret-up-fill"
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "Enter a label",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {}
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": null
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
+                                                                },
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "KPI2 Scroll down",
+                                                                    "elementId": "button_4",
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "clusgdlccqaaddhwddjhhoqdiiibbjggr",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "targetId": "clusgdlccqaaddhxddjhhoqcnaacwffs",
+                                                                                    "type": "CLIENT_SCRIPT",
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": null,
+                                                                                    "clientScript": {
+                                                                                        "sysId": "6a0673401b2106188f629939b04bcbba",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "conditional": null,
+                                                                                    "broker": null
+                                                                                }
+                                                                            ],
+                                                                            "sourceEventDefinition": {
+                                                                                "id": null,
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "type": "UXEVENT"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "label": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "caret-down-fill"
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "Enter a label",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {}
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": null
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
                                                                 }
                                                             ],
                                                             "layout": {
@@ -10648,6 +11004,18 @@
                                                                                 "width": "100%"
                                                                             },
                                                                             "element_id": "container_118"
+                                                                        },
+                                                                        {
+                                                                            "element_id": "button_3",
+                                                                            "styles": {
+                                                                                "align-self": "flex-end"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "element_id": "button_4",
+                                                                            "styles": {
+                                                                                "align-self": "flex-end"
+                                                                            }
                                                                         }
                                                                     ]
                                                                 },
@@ -15941,6 +16309,178 @@
                                                                         
                                                                     ],
                                                                     "styles": null
+                                                                },
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "KPI3 Scroll up",
+                                                                    "elementId": "button_5",
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "clusgxqmjaaddtkddjhhocckdnyxihh",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "targetId": "clusgxqmjaaddtlddjhhonnkaezux",
+                                                                                    "type": "CLIENT_SCRIPT",
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": null,
+                                                                                    "clientScript": {
+                                                                                        "sysId": "2e0673401b2106188f629939b04bcbba",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "conditional": null,
+                                                                                    "broker": null
+                                                                                }
+                                                                            ],
+                                                                            "sourceEventDefinition": {
+                                                                                "id": null,
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "type": "UXEVENT"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "label": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "caret-up-fill"
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "Enter a label",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {}
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": null
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
+                                                                },
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "KPI3 Scroll down",
+                                                                    "elementId": "button_6",
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "clusgyffliiaaddtuddjhhohhnltfvugg",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "targetId": "clusgyffliiaaddtvddjhhojjqaaviiddc",
+                                                                                    "type": "CLIENT_SCRIPT",
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": null,
+                                                                                    "clientScript": {
+                                                                                        "sysId": "ea0673401b2106188f629939b04bcbba",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "conditional": null,
+                                                                                    "broker": null
+                                                                                }
+                                                                            ],
+                                                                            "sourceEventDefinition": {
+                                                                                "id": null,
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "type": "UXEVENT"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "label": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "caret-down-fill"
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "Enter a label",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {}
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": null
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
                                                                 }
                                                             ],
                                                             "layout": {
@@ -15969,6 +16509,18 @@
                                                                                 "width": "100%"
                                                                             },
                                                                             "element_id": "container_121"
+                                                                        },
+                                                                        {
+                                                                            "element_id": "button_5",
+                                                                            "styles": {
+                                                                                "align-self": "flex-end"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "element_id": "button_6",
+                                                                            "styles": {
+                                                                                "align-self": "flex-end"
+                                                                            }
                                                                         }
                                                                     ]
                                                                 },
@@ -21262,6 +21814,178 @@
                                                                         
                                                                     ],
                                                                     "styles": null
+                                                                },
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "KPI4 Scroll up",
+                                                                    "elementId": "button_7",
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "clushaqphaaeeddtddjhhoaalktogjn",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "targetId": "clushaqphaaeedduddjhhoaxudccfcs",
+                                                                                    "type": "CLIENT_SCRIPT",
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": null,
+                                                                                    "clientScript": {
+                                                                                        "sysId": "ae0673401b2106188f629939b04bcbba",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "conditional": null,
+                                                                                    "broker": null
+                                                                                }
+                                                                            ],
+                                                                            "sourceEventDefinition": {
+                                                                                "id": null,
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "type": "UXEVENT"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "label": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "caret-up-fill"
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "Enter a label",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {}
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": null
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
+                                                                },
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "KPI4 Scroll down",
+                                                                    "elementId": "button_8",
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "clushbddshaaeeeeddddjhhojiieejjlaaccjj",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "targetId": "clushbddshaaeeeeeeddjhhownaacynree",
+                                                                                    "type": "CLIENT_SCRIPT",
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": null,
+                                                                                    "clientScript": {
+                                                                                        "sysId": "6e0673401b2106188f629939b04bcbba",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "conditional": null,
+                                                                                    "broker": null
+                                                                                }
+                                                                            ],
+                                                                            "sourceEventDefinition": {
+                                                                                "id": null,
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "type": "UXEVENT"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "label": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "caret-down-fill"
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "TRANSLATION_LITERAL",
+                                                                            "value": {
+                                                                                "code": null,
+                                                                                "message": "Enter a label",
+                                                                                "comment": ""
+                                                                            }
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {}
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": null
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
                                                                 }
                                                             ],
                                                             "layout": {
@@ -21290,6 +22014,18 @@
                                                                                 "width": "100%"
                                                                             },
                                                                             "element_id": "container_124"
+                                                                        },
+                                                                        {
+                                                                            "element_id": "button_7",
+                                                                            "styles": {
+                                                                                "align-self": "flex-end"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "element_id": "button_8",
+                                                                            "styles": {
+                                                                                "align-self": "flex-end"
+                                                                            }
                                                                         }
                                                                     ]
                                                                 },
@@ -27276,6 +28012,14 @@
                         "Tab1VCM2SortDirection"
                     ]
                 }
+            },
+            "pagenumber": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1VCM2PageNumber"
+                    ]
+                }
             }
         },
         "readEvaluationMode": "EAGER"
@@ -27377,6 +28121,14 @@
                 "binding": {
                     "address": [
                         "Tab1VCM1SortDirection"
+                    ]
+                }
+            },
+            "pagenumber": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1VCM1PageNumber"
                     ]
                 }
             }
@@ -27482,6 +28234,14 @@
                         "Tab1VAM1SortDirection"
                     ]
                 }
+            },
+            "pagenumber": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1VAM1PageNumber"
+                    ]
+                }
             }
         },
         "readEvaluationMode": "EAGER"
@@ -27585,6 +28345,14 @@
                         "Tab1VAM2SortDirection"
                     ]
                 }
+            },
+            "pagenumber": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1VAM2PageNumber"
+                    ]
+                }
             }
         },
         "readEvaluationMode": "EAGER"
@@ -27664,6 +28432,9 @@
   "comment" : ""
 }, {
   "message" : "Description",
+  "comment" : ""
+}, {
+  "message" : "Enter a label",
   "comment" : ""
 }, {
   "message" : "High:",
@@ -28109,6 +28880,46 @@
         "name": "verticalAMetric2ShowChange",
         "shape": "",
         "valueType": "json"
+    },
+    {
+        "fieldType": "number",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": 1
+        },
+        "name": "Tab1VAM1PageNumber",
+        "shape": "",
+        "valueType": "number"
+    },
+    {
+        "fieldType": "number",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": 1
+        },
+        "name": "Tab1VAM2PageNumber",
+        "shape": "",
+        "valueType": "number"
+    },
+    {
+        "fieldType": "number",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": 1
+        },
+        "name": "Tab1VCM1PageNumber",
+        "shape": "",
+        "valueType": "number"
+    },
+    {
+        "fieldType": "number",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": 1
+        },
+        "name": "Tab1VCM2PageNumber",
+        "shape": "",
+        "valueType": "number"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -28116,7 +28927,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>668</sys_mod_count>
+        <sys_mod_count>702</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -28124,7 +28935,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-08 13:03:50</sys_updated_on>
+        <sys_updated_on>2024-04-09 14:30:51</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -28134,10 +28945,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-04-08 12:12:53</sys_created_on>
-        <sys_id>1820baf31b9582dcdb5a97d0b24bcbfa</sys_id>
+        <sys_created_on>2024-04-09 10:11:05</sys_created_on>
+        <sys_id>e1dd538c1b6582188f629939b04bcba0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-08 12:12:53</sys_updated_on>
+        <sys_updated_on>2024-04-09 10:11:05</sys_updated_on>
     </sys_claim>
 </record_update>
