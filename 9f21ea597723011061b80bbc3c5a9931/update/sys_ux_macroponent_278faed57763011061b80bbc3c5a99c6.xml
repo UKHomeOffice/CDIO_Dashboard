@@ -155,58 +155,187 @@
                                 "overrides": {
                                     "composition": [
                                         {
-                                            "elementId": "dropdown_3",
-                                            "elementLabel": "Dropdown 3",
+                                            "definition": {
+                                                "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementLabel": "Reset button",
+                                            "elementId": "button_9",
+                                            "eventMappings": [
+                                                {
+                                                    "eventMappingId": "clutktddiieeaabbeccddjhhoccjccdyfcii",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "targetId": "clutktddiieeaabbeddddjhhovxyjjztvw",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {
+                                                                        "propName": "Tab1PortfolioBreakdown",
+                                                                        "value": ""
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clutktohhaaabbekddjhhoffmkobbaajj",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {
+                                                                        "propName": "Tab1PortfolioElement",
+                                                                        "value": ""
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clutkxdabbaabbfgddjhhocceeffbihhjjff",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {
+                                                                        "propName": "Tab1VAM1PageNumber",
+                                                                        "value": 1
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clutkxmxpaabbfxddjhhojjwaaiiffiiex",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {
+                                                                        "propName": "Tab1VAM2PageNumber",
+                                                                        "value": 1
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clutkxuddgaabbgeddjhhogmdaagydx",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {
+                                                                        "propName": "Tab1VCM1PageNumber",
+                                                                        "value": 1
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clutkybbsbbaabbgvddjhhoqdqdkxeeq",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {
+                                                                        "propName": "Tab1VCM2PageNumber",
+                                                                        "value": 1
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clutmjfsaaabboiiddjhhohpksnkkt",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {
+                                                                        "propName": "Tab1PerformanceSelection",
+                                                                        "value": "worst"
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clutmkcwccaabbopddjhhokwqggeejcii",
+                                                            "type": "CLIENT_SCRIPT",
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "clientScript": {
+                                                                "sysId": "1f76bfc81bc9c6d4d9e4a755bd4bcb0e",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {}
+                                                                }
+                                                            },
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        }
+                                                    ],
+                                                    "sourceEventDefinition": {
+                                                        "id": null,
+                                                        "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                        "type": "UXEVENT"
+                                                    }
+                                                }
+                                            ],
                                             "propertyValues": {
-                                                "select": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "single"
-                                                },
-                                                "showPadding": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "icon": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "opened": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "tooltipContent": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "panelFitProps": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": {}
-                                                },
-                                                "configAria": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "hideCaret": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "search": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "none"
-                                                },
-                                                "size": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "md"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "secondary"
-                                                },
-                                                "disabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": true
-                                                },
-                                                "placeholder": {
+                                                "label": {
                                                     "type": "TRANSLATION_LITERAL",
                                                     "value": {
                                                         "code": null,
@@ -214,90 +343,41 @@
                                                         "comment": ""
                                                     }
                                                 },
-                                                "bare": {
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "secondary"
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "disabled": {
                                                     "type": "JSON_LITERAL",
                                                     "value": false
                                                 },
-                                                "items": {
-                                                    "type": "LIST_CONTAINER",
-                                                    "container": [
-                                                        {
-                                                            "type": "MAP_CONTAINER",
-                                                            "container": {
-                                                                "id": {
-                                                                    "type": "JSON_LITERAL",
-                                                                    "value": "l1"
-                                                                },
-                                                                "label": {
-                                                                    "type": "TRANSLATION_LITERAL",
-                                                                    "value": {
-                                                                        "code": null,
-                                                                        "message": "Reset",
-                                                                        "comment": ""
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    ]
-                                                },
-                                                "selectedItems": {
+                                                "icon": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": [
-                                                        
-                                                    ]
+                                                    "value": null
                                                 },
-                                                "hideLabel": {
+                                                "tooltipContent": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Enter a label",
+                                                        "comment": ""
+                                                    }
+                                                },
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 }
                                             },
-                                            "eventMappings": [
-                                                {
-                                                    "eventMappingId": "cltztkwclaaaalfddjhhwjjiiicclcva",
-                                                    "isConfiguration": false,
-                                                    "offRowStorageId": null,
-                                                    "sourceEventApiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
-                                                    "sourceEventCorrelationId": null,
-                                                    "sourceEventDefinition": {
-                                                        "apiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
-                                                        "id": null,
-                                                        "type": "UXEVENT"
-                                                    },
-                                                    "sourceEventSysId": null,
-                                                    "targets": [
-                                                        {
-                                                            "broker": null,
-                                                            "clientScript": {
-                                                                "sysId": "5b5649b11b81ca5cd9e4a755bd4bcb84"
-                                                            },
-                                                            "conditional": null,
-                                                            "declarativeAction": null,
-                                                            "event": null,
-                                                            "operation": null,
-                                                            "targetId": "cltztkwclaaaalgddjhhwajggggrwj",
-                                                            "type": "CLIENT_SCRIPT"
-                                                        }
-                                                    ]
-                                                }
-                                            ],
-                                            "slot": null,
-                                            "definition": {
-                                                "id": "22c67d9a1e515fef66442e1469bed3a2",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "overrides": null,
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
-                                            "isHero": false,
-                                            "extensionPoints": [
-                                                
-                                            ],
-                                            "isNonDestructive": false,
-                                            "items": [
-                                                
-                                            ],
+                                            "preset": null,
+                                            "slot": null,
                                             "styles": null
                                         },
                                         {
@@ -833,11 +913,10 @@
                                             "rules": {},
                                             "items": [
                                                 {
-                                                    "rules": {},
+                                                    "element_id": "button_9",
                                                     "styles": {
-                                                        "padding-top": "8px"
-                                                    },
-                                                    "element_id": "dropdown_3"
+                                                        "padding-top": "var(--now-scalable-space--sm)"
+                                                    }
                                                 },
                                                 {
                                                     "rules": {},
@@ -29087,7 +29166,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>709</sys_mod_count>
+        <sys_mod_count>716</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -29095,7 +29174,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-10 08:37:24</sys_updated_on>
+        <sys_updated_on>2024-04-10 09:50:32</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

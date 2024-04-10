@@ -19,7 +19,7 @@ function handler({api, event, helpers, imports}) {
     var clientStateParameter = 'Tab1VCM2PageNumber';
     var last_value = api.data.verticalC_headlinemetric2.output.result[4].value;
     var page_number = api.state.Tab1VCM2PageNumber;
-    if (last_value>0){
+    if (last_value>=0){
         page_number++;
     }
     api.setState(clientStateParameter, page_number);     
@@ -30,7 +30,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2024-04-09 14:29:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6e0673401b2106188f629939b04bcbba</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>increasePageNumberVCM2</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -38,7 +38,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_6e0673401b2106188f629939b04bcbba</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-10 08:11:11</sys_updated_on>
+        <sys_updated_on>2024-04-10 09:50:43</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
