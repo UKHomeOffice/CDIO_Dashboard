@@ -7926,7 +7926,7 @@
                                                                                                                 "payload": {
                                                                                                                     "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                                     "script": {
-                                                                                                                        "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Incidents for this PIS', 'query':'business_service=6f6a196c4ffdfb80925471318110c77a'},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                                        "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar element_sysid = api.data.verticalA_headlinemetric2.output.result[0].element.value;\n\tvar element_display = api.data.verticalA_headlinemetric2.output.result[0].element.display_value;\n\tvar current_month = api.data.verticalA_headlinemetric2.output.result[0].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric2.output.result[0].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric2.output.result[0].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                                         "apiVersion": "1.0.0",
                                                                                                                         "controllerElementId": null,
                                                                                                                         "scriptSysId": null,
@@ -29365,7 +29365,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>736</sys_mod_count>
+        <sys_mod_count>761</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -29373,7 +29373,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-28 15:40:21</sys_updated_on>
+        <sys_updated_on>2024-04-28 19:13:51</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -29383,10 +29383,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-04-09 10:11:05</sys_created_on>
-        <sys_id>e1dd538c1b6582188f629939b04bcba0</sys_id>
+        <sys_created_on>2024-04-28 17:36:52</sys_created_on>
+        <sys_id>451ab6961bfd4694db5a97d0b24bcbeb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-09 10:11:05</sys_updated_on>
+        <sys_updated_on>2024-04-28 17:36:52</sys_updated_on>
     </sys_claim>
 </record_update>
