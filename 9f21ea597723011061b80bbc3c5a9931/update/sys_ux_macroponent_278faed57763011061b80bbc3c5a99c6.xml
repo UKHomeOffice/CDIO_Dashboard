@@ -2345,7 +2345,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 0;\n\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 0;\n\tvar clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (clientStateParameter === '') {\n\t\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n    \tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n        } else {\n        var element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element_level2.value;\n\t\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element_level2.display_value;\n        }\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -2408,8 +2408,14 @@
                                                                                     }
                                                                                 },
                                                                                 "isHidden": {
-                                                                                    "type": "JSON_LITERAL",
-                                                                                    "value": null
+                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                    "script": {
+                                                                                        "apiVersion": "2.0.0",
+                                                                                        "controllerElementId": null,
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric1.output.result[0].value &gt; 0);\n}",
+                                                                                        "scriptSysId": "e270626a1bb58a108f629939b04bcb09",
+                                                                                        "target": null
+                                                                                    }
                                                                                 },
                                                                                 "preset": null,
                                                                                 "slot": null,
@@ -3125,7 +3131,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 1;\n\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 1;\n\tvar clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (clientStateParameter === '') {\n\t\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n    \tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n        } else {\n        var element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element_level2.value;\n\t\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element_level2.display_value;\n        }\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -3188,8 +3194,14 @@
                                                                                     }
                                                                                 },
                                                                                 "isHidden": {
-                                                                                    "type": "JSON_LITERAL",
-                                                                                    "value": null
+                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                    "script": {
+                                                                                        "apiVersion": "2.0.0",
+                                                                                        "controllerElementId": null,
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric1.output.result[1].value &gt; 0);\n}",
+                                                                                        "scriptSysId": "2670626a1bb58a108f629939b04bcb09",
+                                                                                        "target": null
+                                                                                    }
                                                                                 },
                                                                                 "preset": null,
                                                                                 "slot": null,
@@ -3896,7 +3908,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 2;\n\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 2;\n\tvar clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (clientStateParameter === '') {\n\t\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n    \tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n        } else {\n        var element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element_level2.value;\n\t\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element_level2.display_value;\n        }\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -3959,8 +3971,14 @@
                                                                                     }
                                                                                 },
                                                                                 "isHidden": {
-                                                                                    "type": "JSON_LITERAL",
-                                                                                    "value": null
+                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                    "script": {
+                                                                                        "apiVersion": "2.0.0",
+                                                                                        "controllerElementId": null,
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric1.output.result[2].value &gt; 0);\n}",
+                                                                                        "scriptSysId": "6670626a1bb58a108f629939b04bcb09",
+                                                                                        "target": null
+                                                                                    }
                                                                                 },
                                                                                 "preset": null,
                                                                                 "slot": null,
@@ -4667,7 +4685,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 3;\n\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 3;\n\tvar clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (clientStateParameter === '') {\n\t\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n    \tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n        } else {\n        var element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element_level2.value;\n\t\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element_level2.display_value;\n        }\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -4730,8 +4748,14 @@
                                                                                     }
                                                                                 },
                                                                                 "isHidden": {
-                                                                                    "type": "JSON_LITERAL",
-                                                                                    "value": null
+                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                    "script": {
+                                                                                        "apiVersion": "2.0.0",
+                                                                                        "controllerElementId": null,
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric1.output.result[3].value &gt; 0);\n}",
+                                                                                        "scriptSysId": "a670626a1bb58a108f629939b04bcb09",
+                                                                                        "target": null
+                                                                                    }
                                                                                 },
                                                                                 "preset": null,
                                                                                 "slot": null,
@@ -5438,7 +5462,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 4;\n\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar i = 4;\n\tvar clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (clientStateParameter === '') {\n\t\tvar element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element.value;\n    \tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element.display_value;\n        } else {\n        var element_sysid = api.data.verticalA_headlinemetric1.output.result[i].element_level2.value;\n\t\tvar element_display = api.data.verticalA_headlinemetric1.output.result[i].element_level2.display_value;\n        }\n\tvar current_month = api.data.verticalA_headlinemetric1.output.result[i].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric1.output.result[i].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -5501,8 +5525,14 @@
                                                                                     }
                                                                                 },
                                                                                 "isHidden": {
-                                                                                    "type": "JSON_LITERAL",
-                                                                                    "value": null
+                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                    "script": {
+                                                                                        "apiVersion": "2.0.0",
+                                                                                        "controllerElementId": null,
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric1.output.result[4].value &gt; 0);\n}",
+                                                                                        "scriptSysId": "a270626a1bb58a108f629939b04bcb09",
+                                                                                        "target": null
+                                                                                    }
                                                                                 },
                                                                                 "preset": null,
                                                                                 "slot": null,
@@ -6013,7 +6043,7 @@
                                                                                 "rules": null,
                                                                                 "styles": {
                                                                                     "grid-template-rows": "auto auto auto auto auto",
-                                                                                    "grid-template-columns": "0.9fr 0.12fr 0.12fr 0.12fr 0.5fr",
+                                                                                    "grid-template-columns": "0.9fr 0.15fr 0.15fr 0.15fr 0.5fr",
                                                                                     "grid-template-areas": "\"cell1 cell2\" \"cell3 cell4\" \"cell5 cell6\" \"cell7 cell8\" \"cell9 cell10\"",
                                                                                     "grid-gap": "0.1rem",
                                                                                     "height": "100%",
@@ -8296,101 +8326,6 @@
                                                                                                 
                                                                                             ],
                                                                                             "styles": null
-                                                                                        },
-                                                                                        {
-                                                                                            "definition": {
-                                                                                                "id": "844d56291d91b330f2269558e3f47701",
-                                                                                                "type": "MACROPONENT"
-                                                                                            },
-                                                                                            "elementLabel": "Button iconic 3",
-                                                                                            "elementId": "button_iconic_3",
-                                                                                            "eventMappings": [
-                                                                                                {
-                                                                                                    "eventMappingId": "clvjosiiccddaaddpuddjhhoiijjbzgmddf",
-                                                                                                    "isConfiguration": false,
-                                                                                                    "offRowStorageId": null,
-                                                                                                    "sourceEventApiName": "sn_button.NOW_BUTTON_ICONIC#CLICKED",
-                                                                                                    "sourceEventCorrelationId": null,
-                                                                                                    "sourceEventSysId": null,
-                                                                                                    "targets": [
-                                                                                                        {
-                                                                                                            "targetId": "clvjosiiccddaaddpvddjhhoonxotljx",
-                                                                                                            "type": "EVENT",
-                                                                                                            "declarativeAction": null,
-                                                                                                            "event": {
-                                                                                                                "sysId": "48756a4e7723011061b80bbc3c5a996c",
-                                                                                                                "payload": {
-                                                                                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
-                                                                                                                    "script": {
-                                                                                                                        "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event}) {\n\tvar element_sysid = api.data.verticalA_headlinemetric2.output.result[0].element.value;\n\tvar element_display = api.data.verticalA_headlinemetric2.output.result[0].element.display_value;\n\tvar current_month = api.data.verticalA_headlinemetric2.output.result[0].period_title;\n\tvar start_date = api.data.verticalA_headlinemetric2.output.result[0].scores[0].start_at;\n\tvar end_date = api.data.verticalA_headlinemetric2.output.result[0].scores[0].end_at;\n\treturn {\n\t\troute: \"simple-list\",\n\t\tfields: {\"table\":'incident'},\n\t\tparams: {'listTitle':'Biggest Failures in ' + current_month + ' for PIS: '+ element_display, 'query':'business_service='+ element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_date+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_date +\"','23:59:59')\"},\n\t\tredirect: null,\n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
-                                                                                                                        "apiVersion": "1.0.0",
-                                                                                                                        "controllerElementId": null,
-                                                                                                                        "scriptSysId": null,
-                                                                                                                        "target": null
-                                                                                                                    }
-                                                                                                                },
-                                                                                                                "apiName": "sn_ciodashboard.NAV_ITEM_SELECTED_RELAY_278faed57763011061b80bbc3c5a99c6"
-                                                                                                            },
-                                                                                                            "operation": null,
-                                                                                                            "clientScript": null,
-                                                                                                            "conditional": null,
-                                                                                                            "broker": null
-                                                                                                        }
-                                                                                                    ],
-                                                                                                    "sourceEventDefinition": {
-                                                                                                        "id": null,
-                                                                                                        "apiName": "sn_button.NOW_BUTTON_ICONIC#CLICKED",
-                                                                                                        "type": "UXEVENT"
-                                                                                                    }
-                                                                                                }
-                                                                                            ],
-                                                                                            "propertyValues": {
-                                                                                                "icon": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": "link-fill"
-                                                                                                },
-                                                                                                "variant": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": "secondary"
-                                                                                                },
-                                                                                                "bare": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": false
-                                                                                                },
-                                                                                                "size": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": "sm"
-                                                                                                },
-                                                                                                "disabled": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": false
-                                                                                                },
-                                                                                                "hidePadding": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": false
-                                                                                                },
-                                                                                                "tooltipContent": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": "Enter a label"
-                                                                                                },
-                                                                                                "configAria": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": {
-                                                                                                        "aria-label": "Search"
-                                                                                                    }
-                                                                                                },
-                                                                                                "highContrast": {
-                                                                                                    "type": "JSON_LITERAL",
-                                                                                                    "value": false
-                                                                                                }
-                                                                                            },
-                                                                                            "isHidden": {
-                                                                                                "type": "JSON_LITERAL",
-                                                                                                "value": null
-                                                                                            },
-                                                                                            "preset": null,
-                                                                                            "slot": null,
-                                                                                            "styles": null
                                                                                         }
                                                                                     ],
                                                                                     "layout": {
@@ -8425,10 +8360,6 @@
                                                                                                         "color": "#FF0000"
                                                                                                     },
                                                                                                     "element_id": "icon_20"
-                                                                                                },
-                                                                                                {
-                                                                                                    "element_id": "button_iconic_3",
-                                                                                                    "styles": {}
                                                                                                 }
                                                                                             ]
                                                                                         },
@@ -29761,7 +29692,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>768</sys_mod_count>
+        <sys_mod_count>777</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -29769,7 +29700,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-29 10:25:01</sys_updated_on>
+        <sys_updated_on>2024-04-29 11:21:48</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
