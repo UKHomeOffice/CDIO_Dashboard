@@ -28766,7 +28766,7 @@
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab1PISBreakdown"
+                        "Tab12ndBreakdown"
                     ]
                 }
             },
@@ -28877,7 +28877,7 @@
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab1PISBreakdown"
+                        "Tab12ndBreakdown"
                     ]
                 }
             },
@@ -28988,7 +28988,7 @@
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab1PISBreakdown"
+                        "Tab12ndBreakdown"
                     ]
                 }
             },
@@ -29005,6 +29005,14 @@
                 "binding": {
                     "address": [
                         "Tab1VAM1PageNumber"
+                    ]
+                }
+            },
+            "2nd_breakdown": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab12ndBreakdown"
                     ]
                 }
             }
@@ -29099,7 +29107,7 @@
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab1PISBreakdown"
+                        "Tab12ndBreakdown"
                     ]
                 }
             },
@@ -29116,6 +29124,14 @@
                 "binding": {
                     "address": [
                         "Tab1VAM2PageNumber"
+                    ]
+                }
+            },
+            "2nd_breakdown": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab12ndBreakdown"
                     ]
                 }
             }
@@ -29494,15 +29510,15 @@
     },
     {
         "description": "",
-        "fieldType": "",
+        "fieldType": "string",
         "initialValue": {
             "type": "JSON_LITERAL",
             "value": "b1616b8c4fe933002f3c71318110c743"
         },
         "label": "Tab1PISBreakdown",
-        "name": "Tab1PISBreakdown",
+        "name": "Tab12ndBreakdown",
         "shape": "",
-        "valueType": ""
+        "valueType": "string"
     },
     {
         "description": "",
@@ -29692,7 +29708,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>777</sys_mod_count>
+        <sys_mod_count>779</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -29700,7 +29716,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-29 11:21:48</sys_updated_on>
+        <sys_updated_on>2024-05-03 15:42:35</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
