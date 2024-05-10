@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="CIO Summary">909baa157763011061b80bbc3c5a9918</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>HO Product Performance Table</name>
+        <optional_parameters/>
+        <order>100</order>
+        <parent_macroponent display_value="">cdcd1f421bce8654619697d0b24bcb37</parent_macroponent>
+        <parent_macroponent_composition_element_id>viewport_trh</parent_macroponent_composition_element_id>
+        <route_type>ho-product-performance-table</route_type>
+        <screen_type display_value="Overview">51fddf821bce8654619697d0b24bcb2f</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-05-10 11:50:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>19fddf821bce8654619697d0b24bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HO Product Performance Table</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_app_route_19fddf821bce8654619697d0b24bcb31</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-10 11:50:51</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18f62a0af8e0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_app_route_19fddf821bce8654619697d0b24bcb31</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-05-10 13:10:48</sys_created_on>
+        <sys_id>a040fb8e1b42c654619697d0b24bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-05-10 13:10:48</sys_updated_on>
+    </sys_claim>
+</record_update>
