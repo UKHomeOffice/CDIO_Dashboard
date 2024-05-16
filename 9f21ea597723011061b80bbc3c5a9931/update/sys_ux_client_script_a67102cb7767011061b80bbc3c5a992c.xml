@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
         <includes/>
         <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
         <name>tab3showVerticalBMetric1Health</name>
@@ -61,14 +62,14 @@ function handler({api, event, helpers, imports}) {
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
         <claim_timestamp>00000000</claim_timestamp>
         <metadata_update_name>sys_ux_client_script_a67102cb7767011061b80bbc3c5a992c</metadata_update_name>
-        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
-        <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-18 12:42:11</sys_created_on>
-        <sys_id>1b0e6df51bb735d4dba1c3e5464bcbc2</sys_id>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-05-16 13:02:31</sys_created_on>
+        <sys_id>25e722481bda8e18619697d0b24bcba7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-18 12:42:11</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-16 13:02:31</sys_updated_on>
     </sys_claim>
 </record_update>

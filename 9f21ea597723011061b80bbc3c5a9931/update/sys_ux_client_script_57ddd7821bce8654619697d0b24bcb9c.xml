@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="HO Product Performance Table default">abcd93821bce8654619697d0b24bcb27</macroponent>
+        <name>increasePageNumberVAM1</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    var clientStateParameter = 'Tab1VAM1PageNumber';
+    var last_value = api.data.verticalA_headlinemetric1.output.result[4].value;
+    var page_number = api.state.Tab1VAM1PageNumber;
+    if (last_value>0){
+        page_number++;
+    }
+    api.setState(clientStateParameter, page_number);     
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-05-10 11:50:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>57ddd7821bce8654619697d0b24bcb9c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>increasePageNumberVAM1</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_57ddd7821bce8654619697d0b24bcb9c</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-10 11:50:27</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18f62a0ad000000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_57ddd7821bce8654619697d0b24bcb9c</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-05-10 13:10:48</sys_created_on>
+        <sys_id>ec40fb8e1b42c654619697d0b24bcb6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-05-10 13:10:48</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
         <includes/>
         <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
         <name>icon_23___isHidden__</name>
@@ -35,14 +36,14 @@ function evaluateProperty({api, helpers}) {
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
         <claim_timestamp>00000000</claim_timestamp>
         <metadata_update_name>sys_ux_client_script_d8afddd77723011061b80bbc3c5a99e8</metadata_update_name>
-        <previous_claim_app_version>1.0.2</previous_claim_app_version>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
-        <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-01-24 10:41:28</sys_created_on>
-        <sys_id>6dfb8c7f1bb77d9464122144b24bcb95</sys_id>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-05-16 13:02:32</sys_created_on>
+        <sys_id>46e762481bda8e18619697d0b24bcb41</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-01-24 10:41:28</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-16 13:02:32</sys_updated_on>
     </sys_claim>
 </record_update>

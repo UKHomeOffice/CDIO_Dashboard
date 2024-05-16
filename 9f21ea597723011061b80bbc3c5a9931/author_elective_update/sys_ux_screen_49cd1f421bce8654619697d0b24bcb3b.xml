@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="CIO Summary">909baa157763011061b80bbc3c5a9918</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <event_mappings>[
+    
+]</event_mappings>
+        <macroponent display_value="Summary">cdcd1f421bce8654619697d0b24bcb37</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "TRANSLATION_LITERAL",
+        "value": {
+            "code": null,
+            "comment": "",
+            "message": ""
+        }
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Insights</name>
+        <order>0</order>
+        <parent_macroponent display_value="CIO Dashboard Appshell">727aaad17763011061b80bbc3c5a9955</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Overview">9cdea6d57763011061b80bbc3c5a9961</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-05-10 11:50:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>49cd1f421bce8654619697d0b24bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Insights</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_screen_49cd1f421bce8654619697d0b24bcb3b</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-05-10 11:50:01</sys_updated_on>
+    </sys_ux_screen>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>90dde31c6fcd8a804c327b2f5d3ee4d6</instance_id>
+        <instance_name>lssidev</instance_name>
+        <name>sys_ux_screen_49cd1f421bce8654619697d0b24bcb3b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="CIO Summary">909baa157763011061b80bbc3c5a9918</app_config><description/><disable_auto_reflow>false</disable_auto_reflow><event_mappings>[
+    
+]</event_mappings><macroponent display_value="Summary">cdcd1f421bce8654619697d0b24bcb37</macroponent><macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "TRANSLATION_LITERAL",
+        "value": {
+            "code": null,
+            "comment": "",
+            "message": ""
+        }
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config><name>Insights</name><order>0</order><parent_macroponent display_value="CIO Dashboard Appshell">727aaad17763011061b80bbc3c5a9955</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Overview">9cdea6d57763011061b80bbc3c5a9961</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-05-10 11:50:01</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>49cd1f421bce8654619697d0b24bcb3b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Insights</sys_name><sys_overrides/><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ux_screen_49cd1f421bce8654619697d0b24bcb3b</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2024-05-10 11:50:01</sys_updated_on></sys_ux_screen></record_update>]]></payload>
+        <payload_hash>599332982</payload_hash>
+        <record_name>Insights</record_name>
+        <reverted_from/>
+        <source>5772c0801b4686101fa49939b04bcbc9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-05-10 11:50:01</sys_created_on>
+        <sys_id>0dcd1f421bce8654619697d0b24bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f6256b6aa0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-05-10 11:50:01</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>01cd1f423cce8654e0fff2f61f8f8b3e</update_guid>
+        <update_guid_history>01cd1f423cce8654e0fff2f61f8f8b3e:599332982</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-05-10 11:50:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>282e72e49f95415087478471b5d71f24</sys_id>
+        <sys_metadata>49cd1f421bce8654619697d0b24bcb3b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Insights</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_49cd1f421bce8654619697d0b24bcb3b</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_49cd1f421bce8654619697d0b24bcb3b">0dcd1f421bce8654619697d0b24bcb3e</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-05-10 11:50:38</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18f62a0abcc0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_screen_49cd1f421bce8654619697d0b24bcb3b</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-05-10 13:10:48</sys_created_on>
+        <sys_id>d440fb8e1b42c654619697d0b24bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-05-10 13:10:48</sys_updated_on>
+    </sys_claim>
+</record_update>

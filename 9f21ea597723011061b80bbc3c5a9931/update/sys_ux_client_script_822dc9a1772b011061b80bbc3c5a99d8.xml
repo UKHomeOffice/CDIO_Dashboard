@@ -56,11 +56,11 @@ function handler({api, event, helpers, imports}) {
         <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
-        <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-04-28 17:36:48</sys_created_on>
-        <sys_id>881abe561bfd4694db5a97d0b24bcb9b</sys_id>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-05-14 10:48:55</sys_created_on>
+        <sys_id>1d267fdb1b8282d41fa49939b04bcb04</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-04-28 17:36:48</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-14 10:48:55</sys_updated_on>
     </sys_claim>
 </record_update>
