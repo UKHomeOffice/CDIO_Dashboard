@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+    "029f04e053610110ac9bddeeff7b1294": {
+        "inputTable": "task",
+        "inputSysId": "0002b30a1b984ad4dba1c3e5464bcb36",
+        "inputQuery": "",
+        "view": "",
+        "forcedViewName": "",
+        "detailsContext": null,
+        "activityLogs": null,
+        "inputExtraParams": "",
+        "screen": null,
+        "fields": "",
+        "userPrefs": null,
+        "selectedTabIndex": ""
+    }
+}</macroponent_config>
+        <screen display_value="Product Performance default">13e3bed97763011061b80bbc3c5a9920</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 11:50:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>196839c37767011061b80bbc3c5a99ed</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_196839c37767011061b80bbc3c5a99ed</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-05-16 12:54:28</sys_updated_on>
+    </sys_uib_screen_test_values>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18f818f174c0000001</claim_timestamp>
+        <metadata_update_name>sys_uib_screen_test_values_196839c37767011061b80bbc3c5a99ed</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-05-16 13:19:49</sys_created_on>
+        <sys_id>cbdb6a401b1e8e18619697d0b24bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-05-16 13:19:49</sys_updated_on>
+    </sys_claim>
+</record_update>
