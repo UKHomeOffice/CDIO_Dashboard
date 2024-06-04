@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
     <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
-        <api_name>sn_ciodashboard.InsightsgetPAscoreVAM1M2</api_name>
+        <api_name>sn_ciodashboard.InsightsgetPAscore</api_name>
         <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:{{portfolio_breakdown}}:{{portfolio_element}}:{{2nd_breakdown}}:{{2nd_element}}&amp;sysparm_include_scores=true&amp;sysparm_to=2023-06-30&amp;sysparm_limit=1</api_url>
         <description>Retrieves PA indicator score using PA Scorecard API and breakdown for PIS for selected Portfolio (from the front-end). Scorecard returns one score for the first 5 PIS elements in chosen order (asc or desc) of score (nulls excluded)</description>
         <http_method>GET</http_method>
         <mutates_server_data>false</mutates_server_data>
-        <name>InsightsgetPAscoreVAM1M2</name>
+        <name>InsightsgetPAscore</name>
         <output_schema/>
         <parameters/>
         <private>false</private>
@@ -106,15 +106,15 @@
         <sys_created_on>2024-06-04 10:26:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>146aff421be2ce108f629939b04bcbfa</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>InsightsgetPAscoreVAM1M2</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>InsightsgetPAscore</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_data_broker_rest_146aff421be2ce108f629939b04bcbfa</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-04 10:45:25</sys_updated_on>
+        <sys_updated_on>2024-06-04 13:01:31</sys_updated_on>
     </sys_ux_data_broker_rest>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
