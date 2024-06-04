@@ -995,7 +995,7 @@
                                                                                         "type": "DATA_OUTPUT_BINDING",
                                                                                         "binding": {
                                                                                             "address": [
-                                                                                                "elementa1kpi1",
+                                                                                                "elementa1kpi2",
                                                                                                 "output",
                                                                                                 "result",
                                                                                                 "0",
@@ -2414,6 +2414,70 @@
             
         ],
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "elementId": "elementa1kpi2",
+        "elementLabel": "Element A1 KPI2",
+        "definition": {
+            "id": "146aff421be2ce108f629939b04bcbfa",
+            "type": "REST"
+        },
+        "dependencies": {},
+        "inputValues": {
+            "uuid": {
+                "type": "DATA_OUTPUT_BINDING",
+                "binding": {
+                    "address": [
+                        "getmetricsofciodashboard_1",
+                        "output",
+                        "VerticalA",
+                        "headlineMetrics",
+                        "1",
+                        "metricSysid"
+                    ]
+                }
+            },
+            "portfolio_breakdown": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "portfolio_breakdown"
+                    ],
+                    "category": "props"
+                }
+            },
+            "portfolio_element": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "portfolio_element"
+                    ],
+                    "category": "props"
+                }
+            },
+            "2nd_breakdown": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "second_breakdown"
+                    ],
+                    "category": "props"
+                }
+            },
+            "2nd_element": {
+                "type": "CONTEXT_BINDING",
+                "binding": {
+                    "address": [
+                        "second_element"
+                    ],
+                    "category": "props"
+                }
+            }
+        },
+        "eventMappings": [
+            
+        ],
+        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -2600,7 +2664,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -2608,7 +2672,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-04 12:59:54</sys_updated_on>
+        <sys_updated_on>2024-06-04 13:11:16</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
