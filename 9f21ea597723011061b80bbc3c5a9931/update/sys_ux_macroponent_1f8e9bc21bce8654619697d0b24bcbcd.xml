@@ -177,8 +177,98 @@
                                     }
                                 },
                                 "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
+                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                    "script": {
+                                        "apiVersion": "2.0.0",
+                                        "controllerElementId": null,
+                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.ElementHealth === 'green');\n}",
+                                        "scriptSysId": "44ae11f21baa0210db5a97d0b24bcbb0",
+                                        "target": null
+                                    }
+                                },
+                                "preset": null,
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "33eaddad37cf901283bbdc7a574773b9",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementLabel": "Icon 2",
+                                "elementId": "icon_2",
+                                "eventMappings": [
+                                    
+                                ],
+                                "propertyValues": {
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "square-fill"
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "xl"
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "supportRtl": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                },
+                                "isHidden": {
+                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                    "script": {
+                                        "apiVersion": "2.0.0",
+                                        "controllerElementId": null,
+                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.ElementHealth === 'amber');\n}",
+                                        "scriptSysId": "84ae11f21baa0210db5a97d0b24bcbb0",
+                                        "target": null
+                                    }
+                                },
+                                "preset": null,
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "33eaddad37cf901283bbdc7a574773b9",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementLabel": "Icon 3",
+                                "elementId": "icon_3",
+                                "eventMappings": [
+                                    
+                                ],
+                                "propertyValues": {
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "square-fill"
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "xl"
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "supportRtl": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                },
+                                "isHidden": {
+                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                    "script": {
+                                        "apiVersion": "2.0.0",
+                                        "controllerElementId": null,
+                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.ElementHealth === 'red');\n}",
+                                        "scriptSysId": "c4ae11f21baa0210db5a97d0b24bcbb0",
+                                        "target": null
+                                    }
                                 },
                                 "preset": null,
                                 "slot": null,
@@ -210,7 +300,21 @@
                                     },
                                     {
                                         "element_id": "icon_1",
-                                        "styles": {}
+                                        "styles": {
+                                            "color": "#008000"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "icon_2",
+                                        "styles": {
+                                            "color": "#FFA500"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "icon_3",
+                                        "styles": {
+                                            "color": "#FF0000"
+                                        }
                                     }
                                 ],
                                 "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -558,7 +662,7 @@
                                                                             "type": "DATA_OUTPUT_BINDING",
                                                                             "binding": {
                                                                                 "address": [
-                                                                                    "elementa1kpi1",
+                                                                                    "elementkpi1",
                                                                                     "output",
                                                                                     "result",
                                                                                     "0",
@@ -1054,7 +1158,7 @@
                                                                             "type": "DATA_OUTPUT_BINDING",
                                                                             "binding": {
                                                                                 "address": [
-                                                                                    "elementa1kpi2",
+                                                                                    "elementkpi2",
                                                                                     "output",
                                                                                     "result",
                                                                                     "0",
@@ -1465,7 +1569,7 @@
                                                                             "type": "DATA_OUTPUT_BINDING",
                                                                             "binding": {
                                                                                 "address": [
-                                                                                    "elementa1kpi3",
+                                                                                    "elementkpi3",
                                                                                     "output",
                                                                                     "result",
                                                                                     "0",
@@ -1876,7 +1980,7 @@
                                                                             "type": "DATA_OUTPUT_BINDING",
                                                                             "binding": {
                                                                                 "address": [
-                                                                                    "elementa1kpi4",
+                                                                                    "elementkpi4",
                                                                                     "output",
                                                                                     "result",
                                                                                     "0",
@@ -2352,8 +2456,8 @@
         "readEvaluationMode": "EAGER"
     },
     {
-        "elementId": "elementa1kpi1",
-        "elementLabel": "Element A1 KPI1",
+        "elementId": "elementkpi1",
+        "elementLabel": "Element KPI1",
         "definition": {
             "id": "146aff421be2ce108f629939b04bcbfa",
             "type": "REST"
@@ -2424,8 +2528,8 @@
         "readEvaluationMode": "EAGER"
     },
     {
-        "elementId": "elementa1kpi2",
-        "elementLabel": "Element A1 KPI2",
+        "elementId": "elementkpi2",
+        "elementLabel": "Element KPI2",
         "definition": {
             "id": "146aff421be2ce108f629939b04bcbfa",
             "type": "REST"
@@ -2488,8 +2592,8 @@
         "readEvaluationMode": "EAGER"
     },
     {
-        "elementId": "elementa1kpi3",
-        "elementLabel": "Element A1 KPI3",
+        "elementId": "elementkpi3",
+        "elementLabel": "Element KPI3",
         "definition": {
             "id": "146aff421be2ce108f629939b04bcbfa",
             "type": "REST"
@@ -2552,8 +2656,8 @@
         "readEvaluationMode": "EAGER"
     },
     {
-        "elementId": "elementa1kpi4",
-        "elementLabel": "Element A1 KPI4",
+        "elementId": "elementkpi4",
+        "elementLabel": "Element KPI4",
         "definition": {
             "id": "146aff421be2ce108f629939b04bcbfa",
             "type": "REST"
@@ -2610,20 +2714,6 @@
                 }
             }
         },
-        "eventMappings": [
-            
-        ],
-        "readEvaluationMode": "EAGER"
-    },
-    {
-        "elementId": "testapi_1",
-        "elementLabel": "TestAPI 1",
-        "definition": {
-            "id": "6c7630ea1ba682508f629939b04bcbc3",
-            "type": "REST"
-        },
-        "dependencies": {},
-        "inputValues": {},
         "eventMappings": [
             
         ],
@@ -2811,13 +2901,23 @@
         <root_component_config/>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
-        <state_properties/>
+        <state_properties>[
+    {
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "green"
+        },
+        "name": "ElementHealth",
+        "shape": "",
+        "valueType": "string"
+    }
+]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>68</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -2825,7 +2925,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-05 09:31:25</sys_updated_on>
+        <sys_updated_on>2024-06-06 07:31:34</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
