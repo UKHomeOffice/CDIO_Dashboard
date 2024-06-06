@@ -659,16 +659,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "DATA_OUTPUT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "elementkpi1",
-                                                                                    "output",
-                                                                                    "result",
-                                                                                    "0",
-                                                                                    "value"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1155,16 +1147,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "DATA_OUTPUT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "elementkpi2",
-                                                                                    "output",
-                                                                                    "result",
-                                                                                    "0",
-                                                                                    "value"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1507,11 +1491,11 @@
                                                                                 ],
                                                                                 "propertyValues": {
                                                                                     "text": {
-                                                                                        "type": "STATE_BINDING",
-                                                                                        "binding": {
-                                                                                            "address": [
-                                                                                                "ElementHealthList"
-                                                                                            ]
+                                                                                        "type": "TRANSLATION_LITERAL",
+                                                                                        "value": {
+                                                                                            "code": null,
+                                                                                            "message": "Customer Experience",
+                                                                                            "comment": ""
                                                                                         }
                                                                                     },
                                                                                     "tag": {
@@ -1566,16 +1550,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "DATA_OUTPUT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "elementkpi3",
-                                                                                    "output",
-                                                                                    "result",
-                                                                                    "0",
-                                                                                    "value"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1918,11 +1894,11 @@
                                                                                 ],
                                                                                 "propertyValues": {
                                                                                     "text": {
-                                                                                        "type": "STATE_BINDING",
-                                                                                        "binding": {
-                                                                                            "address": [
-                                                                                                "ElementOverallHealth"
-                                                                                            ]
+                                                                                        "type": "TRANSLATION_LITERAL",
+                                                                                        "value": {
+                                                                                            "code": null,
+                                                                                            "message": "Spotlight",
+                                                                                            "comment": ""
                                                                                         }
                                                                                     },
                                                                                     "tag": {
@@ -1977,16 +1953,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "DATA_OUTPUT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "elementkpi4",
-                                                                                    "output",
-                                                                                    "result",
-                                                                                    "0",
-                                                                                    "value"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -3069,7 +3037,13 @@
     }
 ]</props>
         <required_translations>[ {
+  "message" : "Customer Experience",
+  "comment" : ""
+}, {
   "message" : "Operational Performance",
+  "comment" : ""
+}, {
+  "message" : "Spotlight",
   "comment" : ""
 }, {
   "message" : "Stability",
@@ -3110,7 +3084,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>119</sys_mod_count>
+        <sys_mod_count>120</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3118,7 +3092,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-06 09:48:41</sys_updated_on>
+        <sys_updated_on>2024-06-06 13:32:34</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
