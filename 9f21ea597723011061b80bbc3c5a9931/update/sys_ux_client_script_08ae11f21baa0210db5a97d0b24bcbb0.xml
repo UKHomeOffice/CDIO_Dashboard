@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Insights Default">1f8e9bc21bce8654619697d0b24bcbcd</macroponent>
+        <name>showElementHealthList</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, clientStateParameter = 'ElementHealthList', 
+                    ekpi1health = '', ekpi2health = '', ekpi3health = '', ekpi4health = '',
+                    health_list = []}) {
+    
+    // Define element's health for KPI1 
+    var valuekpi1 = api.data.elementkpi1.output.result[0].value;
+    if (valuekpi1 < 24 && valuekpi1 > 0) {
+        ekpi1health = 'green';
+    } else if (valuekpi1 >= 24 && valuekpi1 < 24*7) {
+        ekpi1health = 'amber';
+    } else if (valuekpi1 > 24*7) {
+        ekpi1health = 'red';
+    }
+
+    // Define element's health for KPI2 
+    var valuekpi2 = api.data.elementkpi2.output.result[0].value;
+    if(valuekpi2 > 97.5){
+        ekpi2health = 'green';
+    } else if (valuekpi2 >= 95 && valuekpi2 <= 97.5 ){
+        ekpi2health = 'amber';
+    } else if (valuekpi2 < 95 && valuekpi2 > 0 ) {
+        ekpi2health = 'red';
+    }
+
+    // Define element's health for KPI3 
+    var valuekpi3 = api.data.elementkpi3.output.result[0].value;
+    if(valuekpi3 < 7 && valuekpi3 > 0){
+        ekpi3health = 'green';
+    } else if (valuekpi3 >= 7 && valuekpi3 <= 30 ){
+        ekpi3health = 'amber';
+    } else if (valuekpi3 > 30 ) {
+        ekpi3health = 'red';
+    }
+    
+    // Define element's health for KPI4
+    var valuekpi4 = api.data.elementkpi4.output.result[0].value;
+    if(valuekpi4 > 20 ){
+        ekpi4health = 'green';
+    } else if (valuekpi4 >= 10 && valuekpi4 <= 20 ){
+        ekpi4health = 'amber';
+    } else if (valuekpi4 < 10 && valuekpi4 > 0 ) {
+        ekpi4health = 'red';
+    }
+
+    // Create a health list for the element
+    health_list.push(ekpi1health, ekpi2health, ekpi3health, ekpi4health);
+    api.setState(clientStateParameter, health_list);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-06 07:35:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>08ae11f21baa0210db5a97d0b24bcbb0</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_name>showElementHealthList</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_08ae11f21baa0210db5a97d0b24bcbb0</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-06 09:28:03</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18feccbf1e90000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_08ae11f21baa0210db5a97d0b24bcbb0</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-06 09:05:39</sys_created_on>
+        <sys_id>b81b393a1bae0210db5a97d0b24bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-06 09:05:39</sys_updated_on>
+    </sys_claim>
+</record_update>
