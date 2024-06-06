@@ -2523,7 +2523,37 @@
             }
         },
         "eventMappings": [
-            
+            {
+                "eventMappingId": "clxccyhnvffaacchnddjhhpijtejkgggg",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "targetId": "clxccyhnvffaacchoddjhhpddroddbfji",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "08ae11f21baa0210db5a97d0b24bcbb0",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
+                    }
+                ],
+                "sourceEventDefinition": {
+                    "id": null,
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "type": "UXEVENT"
+                }
+            }
         ],
         "readEvaluationMode": "EAGER"
     },
@@ -2587,7 +2617,37 @@
             }
         },
         "eventMappings": [
-            
+            {
+                "eventMappingId": "clxccyibbteeaaccibbddjhhpxdsjhccrb",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "targetId": "clxccyibbteeaacciccddjhhpgporlhhrdd",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "08ae11f21baa0210db5a97d0b24bcbb0",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
+                    }
+                ],
+                "sourceEventDefinition": {
+                    "id": null,
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "type": "UXEVENT"
+                }
+            }
         ],
         "readEvaluationMode": "EAGER"
     },
@@ -2651,7 +2711,37 @@
             }
         },
         "eventMappings": [
-            
+            {
+                "eventMappingId": "clxccyiajsaaccifddjhhpggywvggwak",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "targetId": "clxccyiajsaaccigddjhhpdtggrykdr",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "08ae11f21baa0210db5a97d0b24bcbb0",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
+                    }
+                ],
+                "sourceEventDefinition": {
+                    "id": null,
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "type": "UXEVENT"
+                }
+            }
         ],
         "readEvaluationMode": "EAGER"
     },
@@ -2715,7 +2805,37 @@
             }
         },
         "eventMappings": [
-            
+            {
+                "eventMappingId": "clxccyigilaaccisddjhhpiitohgbns",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "targetId": "clxccyigilaaccitddjhhpyggeeteeggde",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "08ae11f21baa0210db5a97d0b24bcbb0",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
+                    }
+                ],
+                "sourceEventDefinition": {
+                    "id": null,
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "type": "UXEVENT"
+                }
+            }
         ],
         "readEvaluationMode": "EAGER"
     }
@@ -2917,7 +3037,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>74</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -2925,7 +3045,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-06 07:31:34</sys_updated_on>
+        <sys_updated_on>2024-06-06 08:56:54</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
