@@ -3520,7 +3520,7 @@
                                                     "script": {
                                                         "apiVersion": "2.0.0",
                                                         "controllerElementId": null,
-                                                        "inlineScript": null,
+                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n//  */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var val = api.data.verticalA_headlinemetric1v.output.result[0].value;\n    \n    if (val &lt; 24) {\n        return '* { font-size: 24px; font-weight: 600; color:#008000}';\n    } else if (val &gt;= 24 &amp;&amp; val &lt;= 24*7) {\n        return '* { font-size: 24px; font-weight: 600; color:#FFA500}';\n    } else {\n        return '* { font-size: 24px; font-weight: 600; color:#FF0000}';\n    }\n} ",
                                                         "scriptSysId": "1c6276d37727011061b80bbc3c5a99f1",
                                                         "target": null
                                                     }
@@ -13514,7 +13514,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>661</sys_mod_count>
+        <sys_mod_count>663</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13522,7 +13522,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-06 17:06:02</sys_updated_on>
+        <sys_updated_on>2024-06-11 13:48:30</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
