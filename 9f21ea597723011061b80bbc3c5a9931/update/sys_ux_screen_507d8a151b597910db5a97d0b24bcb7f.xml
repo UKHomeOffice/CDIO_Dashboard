@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="CIO Summary">909baa157763011061b80bbc3c5a9918</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Usage">fc5d8ed11b597910db5a97d0b24bcbe9</macroponent>
         <macroponent_config>{

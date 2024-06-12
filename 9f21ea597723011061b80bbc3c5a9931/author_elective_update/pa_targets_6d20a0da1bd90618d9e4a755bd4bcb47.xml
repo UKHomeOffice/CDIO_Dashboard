@@ -57,7 +57,7 @@
         <update_guid_history>9f38bc12245d4618b5fac85cd91c8c43:492463021,f4383416e95d46189764864c353c5bfb:-1409897587,c92830169f5d461869434d9647411e61:-562018064,76d7fcdaa81d4618a62475c008d8d7da:1154784045,9e67389ab61d4618584a55f8b5dd5358:-616630478,77c6f096601d4618fb387ebc77da5568:1874062229,6e96f016f71d46185dd24e0b29f2e497:2085384374,03a068d6681d0618f230d618fd059205:-1945822082,35202c52311d0618ae3fd50e0f8f023a:2083210655,6920a0dac5d90618555653675a278d4a:-122263989</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 03/04/2024 12:43:01">b959fcde1b5d4618d9e4a755bd4bcb8b</sys_audit_delete>
+        <sys_audit_delete display_value="">b959fcde1b5d4618d9e4a755bd4bcb8b</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2024-04-03 11:43:01</sys_created_on>

@@ -51,7 +51,7 @@ function evaluateProperty({api, helpers}) {
         <reverted_from/>
         <source>a5f00d721bcdf994db5a97d0b24bcbf7</source>
         <source_table>sys_update_set</source_table>
-        <state>current</state>
+        <state>previous</state>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2023-09-06 21:11:38</sys_created_on>
         <sys_id>7b9d99b21b453d94db5a97d0b24bcb51</sys_id>

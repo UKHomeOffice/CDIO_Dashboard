@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
         <includes/>
         <macroponent display_value="Usage">fc5d8ed11b597910db5a97d0b24bcbe9</macroponent>
         <name>highlighted_value_3/color</name>

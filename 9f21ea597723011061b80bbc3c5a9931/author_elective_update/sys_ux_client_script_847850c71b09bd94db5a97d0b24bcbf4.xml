@@ -37,7 +37,7 @@
         <reverted_from/>
         <source>a5f00d721bcdf994db5a97d0b24bcbf7</source>
         <source_table>sys_update_set</source_table>
-        <state>current</state>
+        <state>previous</state>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2023-09-07 10:47:54</sys_created_on>
         <sys_id>a47890c71b09bd94db5a97d0b24bcb99</sys_id>

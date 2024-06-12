@@ -107,16 +107,16 @@
     </sys_ux_event>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18e758208ec0000001</claim_timestamp>
+        <claim_timestamp>00000000</claim_timestamp>
         <metadata_update_name>sys_ux_event_48756a4e7723011061b80bbc3c5a996c</metadata_update_name>
         <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
-        <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-25 12:07:20</sys_created_on>
-        <sys_id>0698ae1b1b0d8a50d9e4a755bd4bcb9b</sys_id>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-06-11 11:10:26</sys_created_on>
+        <sys_id>159708ec1b7e0650db5a97d0b24bcbbc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-25 12:07:20</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-06-11 11:10:26</sys_updated_on>
     </sys_claim>
 </record_update>

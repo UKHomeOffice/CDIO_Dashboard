@@ -20,7 +20,7 @@
     "query": "business_serviceISNOTEMPTY",
     "listView": null
 }</macroponent_config>
-        <screen display_value="Simple List Default">da6436e91b39025c8f629939b04bcb71</screen>
+        <screen/>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2024-04-26 09:16:40</sys_created_on>

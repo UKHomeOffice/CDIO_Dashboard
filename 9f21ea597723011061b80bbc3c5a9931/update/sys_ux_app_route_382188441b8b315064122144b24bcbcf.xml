@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
     <sys_ux_app_route action="INSERT_OR_UPDATE">
-        <app_config display_value="CDIO Test Dashboard">3d50c8401b8b315064122144b24bcb51</app_config>
+        <app_config/>
         <description/>
         <extension_point/>
         <fields/>

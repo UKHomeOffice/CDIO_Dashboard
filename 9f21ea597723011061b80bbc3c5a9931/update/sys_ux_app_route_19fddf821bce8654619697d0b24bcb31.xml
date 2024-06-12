@@ -8,7 +8,7 @@
         <name>HO Product Performance Table</name>
         <optional_parameters/>
         <order>100</order>
-        <parent_macroponent display_value="">cdcd1f421bce8654619697d0b24bcb37</parent_macroponent>
+        <parent_macroponent/>
         <parent_macroponent_composition_element_id>viewport_trh</parent_macroponent_composition_element_id>
         <route_type>ho-product-performance-table</route_type>
         <screen_type display_value="Overview">51fddf821bce8654619697d0b24bcb2f</screen_type>

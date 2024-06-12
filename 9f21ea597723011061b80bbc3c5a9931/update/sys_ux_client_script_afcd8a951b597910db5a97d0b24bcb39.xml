@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
         <includes/>
         <macroponent display_value="Sentiment">09cd86951b597910db5a97d0b24bcbbe</macroponent>
         <name>tab6showVerticalBSupportingMetric2Chart</name>

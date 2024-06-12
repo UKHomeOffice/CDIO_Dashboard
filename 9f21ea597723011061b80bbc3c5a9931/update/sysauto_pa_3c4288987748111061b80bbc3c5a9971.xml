@@ -48,16 +48,16 @@
     </sysauto_pa>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18afa86435d0000001</claim_timestamp>
+        <claim_timestamp>00000000</claim_timestamp>
         <metadata_update_name>sysauto_pa_3c4288987748111061b80bbc3c5a9971</metadata_update_name>
-        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
-        <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2023-10-04 11:50:17</sys_created_on>
-        <sys_id>b5a9ef2b1b217590d9e4a755bd4bcb39</sys_id>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-06-11 11:10:28</sys_created_on>
+        <sys_id>759748ec1b7e0650db5a97d0b24bcbc6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2023-10-04 11:50:17</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-06-11 11:10:28</sys_updated_on>
     </sys_claim>
 </record_update>

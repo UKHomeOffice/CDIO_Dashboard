@@ -48,7 +48,7 @@
         <update_guid_history>31202c52f01d06181674307f1fd9783d:581136654</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 03/04/2024 10:55:15">43a068961b1d0618d9e4a755bd4bcb74</sys_audit_delete>
+        <sys_audit_delete display_value="">43a068961b1d0618d9e4a755bd4bcb74</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2024-04-03 09:55:15</sys_created_on>

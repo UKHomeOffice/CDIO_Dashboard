@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
         <active>true</active>
-        <app_config display_value="CDIO Test Dashboard">3d50c8401b8b315064122144b24bcb51</app_config>
+        <app_config/>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
         <macroponent display_value="Default">7421c8c01b8b315064122144b24bcb36</macroponent>
         <macroponent_config>{ }</macroponent_config>

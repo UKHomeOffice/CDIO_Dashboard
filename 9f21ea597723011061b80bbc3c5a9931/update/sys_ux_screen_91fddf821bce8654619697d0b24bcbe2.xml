@@ -148,7 +148,7 @@
 }</macroponent_config>
         <name>HO Product Performance Table default</name>
         <order>0</order>
-        <parent_macroponent display_value="">cdcd1f421bce8654619697d0b24bcb37</parent_macroponent>
+        <parent_macroponent/>
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
         <screen_condition/>
