@@ -2003,7 +2003,8 @@
                                     "height": "100%",
                                     "display": "grid",
                                     "grid-auto-rows": "1fr",
-                                    "grid-auto-columns": "1fr"
+                                    "grid-auto-columns": "1fr",
+                                    "padding-bottom": "var(--now-scalable-space--md)"
                                 },
                                 "items": [
                                     {
@@ -2036,106 +2037,7 @@
                             "version": "3.0.0"
                         }
                     }
-                }
-            ],
-            "layout": {
-                "default": {
-                    "type": "flex",
-                    "root": null,
-                    "children": null,
-                    "rules": null,
-                    "styles": {
-                        "height": "100%",
-                        "flex-direction": "column",
-                        "display": "flex",
-                        "grid-template-columns": "1fr 1fr",
-                        "grid-template-rows": "1fr 1fr",
-                        "grid-auto-rows": "1fr",
-                        "grid-auto-columns": "1fr",
-                        "margin-left": "var(--now-scalable-space--md)",
-                        "margin-right": "var(--now-scalable-space--md)",
-                        "margin-bottom": "0"
-                    },
-                    "items": [
-                        {
-                            "element_id": "container_9",
-                            "styles": {
-                                "flex-direction": "column",
-                                "display": "flex",
-                                "background-color": "#E4E6E7",
-                                "width": "24%",
-                                "height": "",
-                                "background": "#DBDBDB"
-                            }
-                        },
-                        {
-                            "element_id": "container_10",
-                            "styles": {
-                                "width": "100%",
-                                "font-size": "16px",
-                                "background-color": "#DBDBDB"
-                            }
-                        }
-                    ],
-                    "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
                 },
-                "version": "3.0.0"
-            }
-        }
-    },
-    {
-        "definition": {
-            "id": "d356d14b6e293a3020a244b63d278d8f",
-            "type": "MACROPONENT"
-        },
-        "elementLabel": "List container",
-        "elementId": "container_8",
-        "eventMappings": [
-            
-        ],
-        "propertyValues": {
-            "ariaRegionName": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "message": "",
-                    "comment": ""
-                }
-            },
-            "includeAriaHeading": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "ariaRegionHeadingLevel": {
-                "type": "JSON_LITERAL",
-                "value": "1"
-            },
-            "type": {
-                "type": "JSON_LITERAL",
-                "value": "section"
-            },
-            "ariaRole": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "hideEmptyStateUi": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "slotWrapperBehavior": {
-                "type": "JSON_LITERAL",
-                "value": "fullheight"
-            }
-        },
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "preset": null,
-        "slot": null,
-        "styles": null,
-        "overrides": {
-            "composition": [
                 {
                     "definition": {
                         "id": "2b1c080881e05dc63b917044290b233f",
@@ -2307,19 +2209,44 @@
                     "children": null,
                     "rules": null,
                     "styles": {
+                        "height": "100%",
                         "flex-direction": "column",
-                        "margin-right": "var(--now-scalable-space--md)",
+                        "display": "flex",
+                        "grid-template-columns": "1fr 1fr",
+                        "grid-template-rows": "1fr 1fr",
+                        "grid-auto-rows": "1fr",
+                        "grid-auto-columns": "1fr",
                         "margin-left": "var(--now-scalable-space--md)",
-                        "margin-top": "var(--now-scalable-space--md)",
-                        "margin-bottom": "var(--now-scalable-space--md)"
+                        "margin-right": "var(--now-scalable-space--md)",
+                        "margin-bottom": "0"
                     },
                     "items": [
+                        {
+                            "element_id": "container_9",
+                            "styles": {
+                                "flex-direction": "column",
+                                "display": "flex",
+                                "background-color": "#E4E6E7",
+                                "width": "24%",
+                                "height": "",
+                                "background": "#DBDBDB"
+                            }
+                        },
+                        {
+                            "element_id": "container_10",
+                            "styles": {
+                                "width": "100%",
+                                "font-size": "16px",
+                                "background-color": "#DBDBDB"
+                            }
+                        },
                         {
                             "element_id": "list___simple_1",
                             "styles": {
                                 "margin-left": "0",
                                 "margin-right": "0",
-                                "background": "rgb(var(--now-color_background--primary))"
+                                "background": "rgb(var(--now-color_background--primary))",
+                                "margin-bottom": "var(--now-scalable-space--md)"
                             }
                         }
                     ],
@@ -2828,15 +2755,6 @@
                     "color": "rgb(var(--now-color--neutral-21))",
                     "grid-area": "main"
                 }
-            },
-            {
-                "element_id": "container_8",
-                "styles": {
-                    "display": "grid",
-                    "background-color": "white",
-                    "width": "100%",
-                    "background": "#DBDBDB"
-                }
             }
         ],
         "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -3013,7 +2931,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>133</sys_mod_count>
+        <sys_mod_count>134</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3021,7 +2939,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-13 12:56:48</sys_updated_on>
+        <sys_updated_on>2024-06-13 13:05:27</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
