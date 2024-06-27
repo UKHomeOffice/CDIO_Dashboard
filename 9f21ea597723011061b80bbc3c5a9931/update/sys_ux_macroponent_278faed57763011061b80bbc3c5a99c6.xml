@@ -2251,7 +2251,7 @@
                                                                                 },
                                                                                 "isHidden": {
                                                                                     "type": "JSON_LITERAL",
-                                                                                    "value": null
+                                                                                    "value": false
                                                                                 },
                                                                                 "preset": null,
                                                                                 "slot": null,
@@ -2497,8 +2497,12 @@
                                                                                         "value": false
                                                                                     },
                                                                                     "tooltipContent": {
-                                                                                        "type": "JSON_LITERAL",
-                                                                                        "value": "Enter a label"
+                                                                                        "type": "TRANSLATION_LITERAL",
+                                                                                        "value": {
+                                                                                            "code": null,
+                                                                                            "message": "Link",
+                                                                                            "comment": ""
+                                                                                        }
                                                                                     },
                                                                                     "configAria": {
                                                                                         "type": "JSON_LITERAL",
@@ -30909,6 +30913,9 @@
   "message" : "Less than one week",
   "comment" : ""
 }, {
+  "message" : "Link",
+  "comment" : ""
+}, {
   "message" : "Loading",
   "comment" : ""
 }, {
@@ -31007,11 +31014,11 @@
         "initialValue": {
             "type": "JSON_LITERAL",
             "value": [
-                "red",
-                "amber",
-                "green",
-                "red",
-                "green"
+                "colour1",
+                "colour2",
+                "colour3",
+                "colour4",
+                "colour5"
             ]
         },
         "label": "verticalAMetric1ShowHealth",
@@ -31025,11 +31032,11 @@
         "initialValue": {
             "type": "JSON_LITERAL",
             "value": [
-                "red",
-                "red",
-                "amber",
-                "amber",
-                "green"
+                "colour1",
+                "colour2",
+                "colour3",
+                "colour4",
+                "colour5"
             ]
         },
         "label": "verticalCMetric1ShowHealth",
@@ -31042,7 +31049,13 @@
         "fieldType": "string",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "amber"
+            "value": [
+                "colour1",
+                "colour2",
+                "colour3",
+                "colour4",
+                "colour5"
+            ]
         },
         "label": "verticalCMetric2ShowHealth",
         "name": "verticalCMetric2ShowHealth",
@@ -31079,11 +31092,11 @@
         "initialValue": {
             "type": "JSON_LITERAL",
             "value": [
-                "red",
-                "green",
-                "red",
-                "green",
-                "amber"
+                "colour1",
+                "colour2",
+                "colour3",
+                "colour4",
+                "colour5"
             ]
         },
         "label": "verticalAMetric2ShowHealth",
@@ -31232,11 +31245,11 @@
         "initialValue": {
             "type": "JSON_LITERAL",
             "value": [
-                "green",
-                "amber",
-                "red",
-                "amber",
-                "green"
+                "colour1",
+                "colour2",
+                "colour3",
+                "colour4",
+                "colour5"
             ]
         },
         "label": "verticalCMetric2ShowHealth",
@@ -31399,7 +31412,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>884</sys_mod_count>
+        <sys_mod_count>888</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31407,7 +31420,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-27 15:38:53</sys_updated_on>
+        <sys_updated_on>2024-06-27 16:12:32</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
