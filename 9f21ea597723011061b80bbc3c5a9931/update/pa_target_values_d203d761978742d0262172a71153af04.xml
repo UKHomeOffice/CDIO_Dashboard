@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_target_values">
+    <pa_target_values action="INSERT_OR_UPDATE">
+        <next_target>00000000</next_target>
+        <sys_class_name>pa_target_values</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-27 14:49:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d203d761978742d0262172a71153af04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>96</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_target_values_d203d761978742d0262172a71153af04</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-27 14:49:04</sys_updated_on>
+        <target display_value="Number of Closed Changes (DDaT)">e3429321978742d0262172a71153afe6</target>
+        <target_at>20240301</target_at>
+        <target_name>Portfolio: HM Passport Office/ General Register Office, By month SUM +</target_name>
+        <target_review>00000000</target_review>
+        <value>96</value>
+    </pa_target_values>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>1905a30715c0000001</claim_timestamp>
+        <metadata_update_name>pa_target_values_d203d761978742d0262172a71153af04</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-27 14:54:02</sys_created_on>
+        <sys_id>30349f25978742d0262172a71153af34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-27 14:54:02</sys_updated_on>
+    </sys_claim>
+</record_update>
