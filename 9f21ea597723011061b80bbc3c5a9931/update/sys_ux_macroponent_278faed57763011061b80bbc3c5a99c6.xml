@@ -1122,7 +1122,7 @@
                                                         "container": {
                                                             "propName": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "Tab12ndBreakdown"
+                                                                "value": "RadioButtonSelection"
                                                             },
                                                             "value": {
                                                                 "type": "EVENT_PAYLOAD_BINDING",
@@ -1138,6 +1138,22 @@
                                                 },
                                                 "operation": null,
                                                 "clientScript": null,
+                                                "conditional": null,
+                                                "broker": null
+                                            },
+                                            {
+                                                "targetId": "clxxeegjjxmaabbthhddjhhrrhhurccqvgg",
+                                                "type": "CLIENT_SCRIPT",
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "clientScript": {
+                                                    "sysId": "a01db1a11b478a9064122144b24bcb08",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {}
+                                                    }
+                                                },
                                                 "conditional": null,
                                                 "broker": null
                                             }
@@ -30375,7 +30391,8 @@
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab12ndBreakdown"
+                        "Tab12ndBreakdown",
+                        "1"
                     ]
                 }
             },
@@ -30486,7 +30503,8 @@
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab12ndBreakdown"
+                        "Tab12ndBreakdown",
+                        "0"
                     ]
                 }
             },
@@ -30621,7 +30639,8 @@
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab12ndBreakdown"
+                        "Tab12ndBreakdown",
+                        "0"
                     ]
                 }
             }
@@ -30740,7 +30759,8 @@
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab12ndBreakdown"
+                        "Tab12ndBreakdown",
+                        "1"
                     ]
                 }
             }
@@ -31122,15 +31142,18 @@
     },
     {
         "description": "",
-        "fieldType": "string",
+        "fieldType": "json",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "b1616b8c4fe933002f3c71318110c743"
+            "value": [
+                "b1616b8c4fe933002f3c71318110c743",
+                "b1616b8c4fe933002f3c71318110c743"
+            ]
         },
         "label": "Tab1PISBreakdown",
         "name": "Tab12ndBreakdown",
         "shape": "",
-        "valueType": "string"
+        "valueType": "json"
     },
     {
         "description": "",
@@ -31313,6 +31336,15 @@
         "name": "Tab1VCM2PageNumber",
         "shape": "",
         "valueType": "number"
+    },
+    {
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "b1616b8c4fe933002f3c71318110c743"
+        },
+        "name": "RadioButtonSelection",
+        "shape": "",
+        "valueType": "string"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -31320,7 +31352,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>870</sys_mod_count>
+        <sys_mod_count>879</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31328,7 +31360,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-26 08:27:06</sys_updated_on>
+        <sys_updated_on>2024-06-27 11:43:27</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

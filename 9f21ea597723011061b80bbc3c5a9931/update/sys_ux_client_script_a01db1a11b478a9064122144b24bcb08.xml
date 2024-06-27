@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="HO Product Performance Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
+        <name>defineTab12ndBreakdown</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, clientStateParameter = 'Tab12ndBreakdown'}) {
+    var RadioButtonSelection = api.state.RadioButtonSelection;
+    const list = RadioButtonSelection === 'b1616b8c4fe933002f3c71318110c743' ? 
+            ['b1616b8c4fe933002f3c71318110c743','b1616b8c4fe933002f3c71318110c743']:
+            ['baec0752bf130100b96dac808c0739ed', '17bc0d771b414d50a1bc5946464bcb4c'];
+
+    api.setState(clientStateParameter, list);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-27 08:58:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a01db1a11b478a9064122144b24bcb08</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>defineTab12ndBreakdown</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_a01db1a11b478a9064122144b24bcb08</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-27 11:43:41</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>190598e2a2d0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_a01db1a11b478a9064122144b24bcb08</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-27 11:56:47</sys_created_on>
+        <sys_id>58ab262d1bcf8a9064122144b24bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-27 11:56:47</sys_updated_on>
+    </sys_claim>
+</record_update>
