@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_target_values">
+    <pa_target_values action="DELETE">
+        <next_target>00000000</next_target>
+        <sys_class_name>pa_target_values</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-27 13:39:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>8b13cb6997c342d0262172a71153af7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>24</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_target_values_8b13cb6997c342d0262172a71153af7c</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-27 13:39:33</sys_updated_on>
+        <target display_value="MTTR - High Priority Incidents (P1 &amp; P2)">53f243a997c342d0262172a71153afa6</target>
+        <target_at>20240301</target_at>
+        <target_name>MTTR - High Priority Incidents (P1 &amp; P2)</target_name>
+        <target_review>00000000</target_review>
+        <value>24</value>
+    </pa_target_values>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>pa_target_values_8b13cb6997c342d0262172a71153af7c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_target_values"><pa_target_values action="INSERT_OR_UPDATE"><next_target>00000000</next_target><sys_class_name>pa_target_values</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-06-27 13:39:33</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>8b13cb6997c342d0262172a71153af7c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>24</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>pa_target_values_8b13cb6997c342d0262172a71153af7c</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2024-06-27 13:39:33</sys_updated_on><target display_value="MTTR - High Priority Incidents (P1 &amp; P2)">53f243a997c342d0262172a71153afa6</target><target_at>20240301</target_at><target_name>MTTR - High Priority Incidents (P1 &amp; P2)</target_name><target_review>00000000</target_review><value>24</value></pa_target_values></record_update>]]></payload>
+        <payload_hash>1843823941</payload_hash>
+        <record_name>24</record_name>
+        <reverted_from/>
+        <source>7e1b81831bfa8e1064122144b24bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-27 13:39:33</sys_created_on>
+        <sys_id>e9238ba997c342d0262172a71153af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19059ec3e7c0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-27 13:39:33</sys_updated_on>
+        <type>Target value</type>
+        <update_guid>ed238ba95ec342d0fc91a33400aa2f68</update_guid>
+        <update_guid_history>ed238ba95ec342d0fc91a33400aa2f68:1843823941</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 27/06/2024 14:42:48">55e3432d97c342d0262172a71153af36</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-27 13:42:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="pa_target_values">pa_target_values</sys_db_object>
+        <sys_id>1e0358bbfaa24e7c8915ffd3e31a0651</sys_id>
+        <sys_metadata>8b13cb6997c342d0262172a71153af7c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>24</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>pa_target_values_8b13cb6997c342d0262172a71153af7c</sys_update_name>
+        <sys_update_version display_value="pa_target_values_8b13cb6997c342d0262172a71153af7c">e9238ba997c342d0262172a71153af69</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-27 13:42:48</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>19059f915a70000001</claim_timestamp>
+        <metadata_update_name>pa_target_values_8b13cb6997c342d0262172a71153af7c</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-27 13:53:34</sys_created_on>
+        <sys_id>c35603a1970742d0262172a71153af15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-27 13:53:34</sys_updated_on>
+    </sys_claim>
+</record_update>
