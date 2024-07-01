@@ -8649,6 +8649,8 @@
                         
                     ],
                     "styles": {
+                        "display": "grid",
+                        "background-color": "white",
                         "width": "100%"
                     }
                 },
@@ -8688,7 +8690,7 @@
                     "eventMappings": [
                         
                     ],
-                    "slot": "Column 4",
+                    "slot": "Column 1",
                     "definition": {
                         "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
@@ -8917,7 +8919,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": ""
+                        "value": true
                     },
                     "isHero": false,
                     "extensionPoints": [
@@ -8975,7 +8977,7 @@
                     "eventMappings": [
                         
                     ],
-                    "slot": "Column 4",
+                    "slot": "Column 1",
                     "definition": {
                         "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
@@ -9674,7 +9676,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": ""
+                        "value": true
                     },
                     "isHero": false,
                     "extensionPoints": [
@@ -9729,7 +9731,7 @@
                     "eventMappings": [
                         
                     ],
-                    "slot": "Column 4",
+                    "slot": "Column 1",
                     "definition": {
                         "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
@@ -9770,7 +9772,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": ""
+                        "value": true
                     },
                     "isHero": false,
                     "extensionPoints": [
@@ -9823,7 +9825,7 @@
                     "eventMappings": [
                         
                     ],
-                    "slot": "Column 4",
+                    "slot": "Column 1",
                     "definition": {
                         "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
@@ -10393,7 +10395,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": ""
+                        "value": true
                     },
                     "isHero": false,
                     "extensionPoints": [
@@ -10410,75 +10412,52 @@
                 }
             ],
             "layout": {
+                "version": "2.0.0",
                 "default": {
                     "children": null,
-                    "isInline": null,
                     "items": [
                         {
-                            "rules": {
-                                "grid-area": "column1"
-                            },
                             "slotName": "Column 1",
+                            "rules": {
+                                "flex": "1",
+                                "margin-right": "1rem"
+                            },
                             "styles": {
-                                "background-color": "#FFFFFF",
-                                "border-radius": "10px",
                                 "display": "flex",
-                                "flex-direction": "column",
-                                "margin-left": "16px",
-                                "margin-top": "16px"
+                                "flex-direction": "column"
                             }
                         },
                         {
-                            "rules": {
-                                "grid-area": "column2"
-                            },
                             "slotName": "Column 2",
+                            "rules": {
+                                "flex": "1",
+                                "margin-right": "1rem"
+                            },
                             "styles": {
-                                "background-color": "#FFFFFF",
-                                "border-radius": "10px",
                                 "display": "flex",
-                                "flex-direction": "column",
-                                "margin-top": "16px"
+                                "flex-direction": "column"
                             }
                         },
                         {
-                            "rules": {
-                                "grid-area": "column3"
-                            },
                             "slotName": "Column 3",
-                            "styles": {
-                                "background-color": "#FFFFFF",
-                                "border-radius": "10px",
-                                "display": "flex",
-                                "flex-direction": "column",
-                                "margin-top": "16px"
-                            }
-                        },
-                        {
                             "rules": {
-                                "grid-area": "column4"
+                                "flex": "1"
                             },
-                            "slotName": "Column 4",
                             "styles": {
-                                "background-color": "#FFFFFF",
-                                "border-radius": "10px",
                                 "display": "flex",
-                                "flex-direction": "column",
-                                "margin-top": "16px"
+                                "flex-direction": "column"
                             }
                         }
                     ],
                     "root": null,
                     "rules": {
-                        "grid-gap": "1rem",
-                        "grid-template-areas": "\"column1 column2 column3 column4\"",
-                        "grid-template-columns": "1fr 1fr 1fr 1fr",
-                        "grid-template-rows": "auto",
+                        "flex-flow": "row nowrap",
+                        "align-items": "stretch",
                         "height": "100%"
                     },
                     "styles": null,
-                    "templateId": "b0b6fd0153071010e6bcddeeff7b12a8",
-                    "type": "grid"
+                    "type": "flex",
+                    "templateId": "4105f10153071010e6bcddeeff7b121e"
                 }
             }
         },
@@ -13584,7 +13563,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>675</sys_mod_count>
+        <sys_mod_count>678</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13592,7 +13571,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-26 08:31:07</sys_updated_on>
+        <sys_updated_on>2024-07-01 10:36:40</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
