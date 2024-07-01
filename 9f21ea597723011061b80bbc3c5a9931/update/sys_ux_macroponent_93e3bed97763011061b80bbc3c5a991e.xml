@@ -8754,7 +8754,7 @@
                                                         "address": [
                                                             "getVerticalDetails",
                                                             "output",
-                                                            "verticalDName"
+                                                            "verticalCName"
                                                         ]
                                                     }
                                                 },
@@ -8821,7 +8821,7 @@
                                 },
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
-                                    "value": ""
+                                    "value": false
                                 },
                                 "isHero": false,
                                 "extensionPoints": [
@@ -8851,7 +8851,7 @@
                                             "address": [
                                                 "getVerticalDetails",
                                                 "output",
-                                                "verticalDQuestion"
+                                                "verticalCQuestion"
                                             ]
                                         }
                                     },
@@ -9000,7 +9000,7 @@
                                                 "output",
                                                 "VerticalC",
                                                 "headlineMetrics",
-                                                "1",
+                                                "0",
                                                 "metricLabel"
                                             ]
                                         }
@@ -9098,7 +9098,7 @@
                                                     "type": "DATA_OUTPUT_BINDING",
                                                     "binding": {
                                                         "address": [
-                                                            "verticalC_headlinemetric2v",
+                                                            "verticalC_headlinemetric1v",
                                                             "output",
                                                             "result",
                                                             "0",
@@ -9148,7 +9148,7 @@
                                                     "type": "DATA_OUTPUT_BINDING",
                                                     "binding": {
                                                         "address": [
-                                                            "verticalC_headlinemetric2v",
+                                                            "verticalC_headlinemetric1v",
                                                             "output",
                                                             "result",
                                                             "0",
@@ -9212,7 +9212,7 @@
                                                     "type": "DATA_OUTPUT_BINDING",
                                                     "binding": {
                                                         "address": [
-                                                            "verticalC_headlinemetric2v",
+                                                            "verticalC_headlinemetric1v",
                                                             "output",
                                                             "result",
                                                             "0",
@@ -9268,7 +9268,7 @@
                                                     "type": "DATA_OUTPUT_BINDING",
                                                     "binding": {
                                                         "address": [
-                                                            "verticalC_headlinemetric2v",
+                                                            "verticalC_headlinemetric1v",
                                                             "output",
                                                             "result",
                                                             "0",
@@ -9331,7 +9331,7 @@
                                                 "script": {
                                                     "apiVersion": "2.0.0",
                                                     "controllerElementId": null,
-                                                    "inlineScript": null,
+                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.tab3verticalCMetric1ShowHealth === 'green');\n}",
                                                     "scriptSysId": "d8afddd77723011061b80bbc3c5a99e8",
                                                     "target": null
                                                 }
@@ -9375,7 +9375,7 @@
                                                 "script": {
                                                     "apiVersion": "2.0.0",
                                                     "controllerElementId": null,
-                                                    "inlineScript": null,
+                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.tab3verticalCMetric1ShowHealth === 'amber');\n}",
                                                     "scriptSysId": "0ecf511b7723011061b80bbc3c5a99fa",
                                                     "target": null
                                                 }
@@ -9419,7 +9419,7 @@
                                                 "script": {
                                                     "apiVersion": "2.0.0",
                                                     "controllerElementId": null,
-                                                    "inlineScript": null,
+                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.tab3verticalCMetric1ShowHealth === 'red');\n}",
                                                     "scriptSysId": "1913ea471b7371dcdba1c3e5464bcb69",
                                                     "target": null
                                                 }
@@ -9448,7 +9448,7 @@
                                                     "type": "DATA_OUTPUT_BINDING",
                                                     "binding": {
                                                         "address": [
-                                                            "verticalC_headlinemetric2v",
+                                                            "verticalC_headlinemetric1v",
                                                             "output",
                                                             "result",
                                                             "0",
@@ -9493,7 +9493,7 @@
                                                     "script": {
                                                         "apiVersion": "2.0.0",
                                                         "controllerElementId": null,
-                                                        "inlineScript": null,
+                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n   */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var val = api.state.tab3verticalCMetric1ShowHealth;\n    \n    if (val === 'green') {\n        return '* { font-size: 24px; font-weight: 600; color:#008000}';\n    } else if (val === 'amber') {\n        return '* { font-size: 24px; font-weight: 600; color:#FFA500}';\n    } else if (val === 'red') {\n        return '* { font-size: 24px; font-weight: 600; color:#FF0000}';\n    }\n} ",
                                                         "scriptSysId": "b82583431bbc4ad0d9e4a755bd4bcb69",
                                                         "target": null
                                                     }
@@ -9503,7 +9503,7 @@
                                                     "script": {
                                                         "apiVersion": "2.0.0",
                                                         "controllerElementId": null,
-                                                        "inlineScript": null,
+                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n   */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var val = api.state.tab3verticalCMetric1ShowHealth;\n    \n    if (val === 'green') {\n        return 'High';\n    } else if (val === 'amber') {\n        return 'Medium';\n    } else if (val === 'red') {\n        return 'Low';\n    }\n} ",
                                                         "scriptSysId": "5825cf031bbc4ad0d9e4a755bd4bcbee",
                                                         "target": null
                                                     }
@@ -9549,7 +9549,7 @@
                                                     "script": {
                                                         "apiVersion": "2.0.0",
                                                         "controllerElementId": null,
-                                                        "inlineScript": null,
+                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.imports\n   */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var val = api.state.tab3verticalCMetric1ShowHealth;\n    \n    if (val === 'green') {\n        return 'Less than one week';\n    } else if (val === 'amber') {\n        return 'Between one week and one month';\n    } else if (val === 'red') {\n        return 'More than one month';\n    }\n} ",
                                                         "scriptSysId": "34954b871bbc4ad0d9e4a755bd4bcba5",
                                                         "target": null
                                                     }
@@ -9848,7 +9848,7 @@
                                                 "output",
                                                 "VerticalC",
                                                 "supportingMetrics",
-                                                "1",
+                                                "0",
                                                 "metricLabel"
                                             ]
                                         }
@@ -10000,7 +10000,7 @@
                                         "type": "STATE_BINDING",
                                         "binding": {
                                             "address": [
-                                                "tab3verticalCSupportingMetric2",
+                                                "tab3verticalCSupportingMetric1",
                                                 "0",
                                                 "metrics"
                                             ]
@@ -10042,7 +10042,7 @@
                                         "type": "STATE_BINDING",
                                         "binding": {
                                             "address": [
-                                                "tab3verticalCSupportingMetric2",
+                                                "tab3verticalCSupportingMetric1",
                                                 "0",
                                                 "trendBy"
                                             ]
@@ -10182,7 +10182,7 @@
                                         "type": "STATE_BINDING",
                                         "binding": {
                                             "address": [
-                                                "tab3verticalCSupportingMetric2",
+                                                "tab3verticalCSupportingMetric1",
                                                 "0",
                                                 "datasources"
                                             ]
@@ -13563,7 +13563,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>684</sys_mod_count>
+        <sys_mod_count>691</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13571,7 +13571,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-07-01 11:00:13</sys_updated_on>
+        <sys_updated_on>2024-07-01 12:11:58</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
