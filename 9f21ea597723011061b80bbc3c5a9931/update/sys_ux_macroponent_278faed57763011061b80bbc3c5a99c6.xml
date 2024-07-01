@@ -13508,7 +13508,7 @@
                                 },
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
-                                    "value": null
+                                    "value": true
                                 },
                                 "preset": null,
                                 "slot": null,
@@ -25538,10 +25538,13 @@
                                 "rules": null,
                                 "styles": {
                                     "grid-gap": "1rem",
-                                    "grid-template-areas": "\"column1 column2 column3 column4\"",
-                                    "grid-template-columns": "1fr 1fr 1fr 1fr",
+                                    "grid-template-areas": "\"column1 column2 column4\"",
+                                    "grid-template-columns": "1fr 1fr 1fr",
                                     "grid-template-rows": "auto",
-                                    "height": "100%"
+                                    "height": "100%",
+                                    "display": "grid",
+                                    "grid-auto-rows": "1fr",
+                                    "grid-auto-columns": "1fr"
                                 },
                                 "templateId": "b0b6fd0153071010e6bcddeeff7b12a8",
                                 "type": "grid"
@@ -31412,7 +31415,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>889</sys_mod_count>
+        <sys_mod_count>891</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31420,7 +31423,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-06-27 16:22:33</sys_updated_on>
+        <sys_updated_on>2024-07-01 10:18:25</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
