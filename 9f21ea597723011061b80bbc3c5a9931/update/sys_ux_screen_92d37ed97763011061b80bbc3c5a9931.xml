@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <app_config display_value="CIO Summary">909baa157763011061b80bbc3c5a9918</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <event_mappings>[
+    
+]</event_mappings>
+        <macroponent display_value="Value">16d37ed97763011061b80bbc3c5a992f</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "0"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "TRANSLATION_LITERAL",
+        "value": {
+            "code": null,
+            "comment": "",
+            "message": ""
+        }
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Value default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Summary">2cdeaad57763011061b80bbc3c5a9930</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Value">9ed3ba197763011061b80bbc3c5a9959</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-18 05:41:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>92d37ed97763011061b80bbc3c5a9931</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Value default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_screen_92d37ed97763011061b80bbc3c5a9931</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-07-01 09:41:16</sys_updated_on>
+    </sys_ux_screen>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>1906db0e5a90000001</claim_timestamp>
+        <metadata_update_name>sys_ux_screen_92d37ed97763011061b80bbc3c5a9931</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-07-01 09:47:08</sys_created_on>
+        <sys_id>ff4436361b0b4a1064122144b24bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-07-01 09:47:08</sys_updated_on>
+    </sys_claim>
+</record_update>
