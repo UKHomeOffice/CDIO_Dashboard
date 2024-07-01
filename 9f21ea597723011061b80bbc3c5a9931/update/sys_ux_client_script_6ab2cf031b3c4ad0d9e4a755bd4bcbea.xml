@@ -5,8 +5,30 @@
         <macroponent display_value="Product Performance default">93e3bed97763011061b80bbc3c5a991e</macroponent>
         <name>stylized_text_267/text</name>
         <preset/>
-        <required_translations>[ ]</required_translations>
-        <script><![CDATA[/**
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[// /**
+//  * @param {params} params
+//  * @param {api} params.api
+//  * @param {any} params.imports
+//    */
+// function evaluateProperty({
+//     api,
+//     helpers
+// }) {
+//     var val = api.state.tab3verticalCMetric1ShowHealth;
+//     
+//     if (val === 'green') {
+//         return 'Less than one week';
+//     } else if (val === 'amber') {
+//         return 'Between one week and one month';
+//     } else if (val === 'red') {
+//         return 'More than one month';
+//     }
+// } 
+
+/**
  * @param {params} params
  * @param {api} params.api
  * @param {any} params.imports
@@ -15,14 +37,14 @@ function evaluateProperty({
     api,
     helpers
 }) {
-    var val = api.state.tab3verticalCMetric1ShowHealth;
+    var val = api.state.tab3verticalCMetric2ShowHealth;
     
     if (val === 'green') {
-        return 'Less than one week';
+        return 'More than 20 per month';
     } else if (val === 'amber') {
-        return 'Between one week and one month';
+        return 'Between 10 and 20 per month';
     } else if (val === 'red') {
-        return 'More than one month';
+        return 'Fewer than 10 per month';
     }
 } ]]></script>
         <script_api_version>2.0.0</script_api_version>
@@ -31,7 +53,7 @@ function evaluateProperty({
         <sys_created_on>2024-03-12 09:07:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ab2cf031b3c4ad0d9e4a755bd4bcbea</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>stylized_text_267/text</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -39,7 +61,7 @@ function evaluateProperty({
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_6ab2cf031b3c4ad0d9e4a755bd4bcbea</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-12 09:59:43</sys_updated_on>
+        <sys_updated_on>2024-07-01 10:56:18</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
