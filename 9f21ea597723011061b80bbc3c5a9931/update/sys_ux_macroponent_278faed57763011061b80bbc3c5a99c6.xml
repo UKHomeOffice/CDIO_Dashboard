@@ -6544,7 +6544,64 @@
                                                         "styles": null,
                                                         "overrides": {
                                                             "composition": [
-                                                                
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "844d56291d91b330f2269558e3f47701",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "FakeComponent1",
+                                                                    "elementId": "button_iconic_23",
+                                                                    "eventMappings": [
+                                                                        
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": ""
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "bare": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "hidePadding": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Enter a label"
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {
+                                                                                "aria-label": "Search"
+                                                                            }
+                                                                        },
+                                                                        "highContrast": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": true
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
+                                                                }
                                                             ],
                                                             "layout": {
                                                                 "default": {
@@ -6556,7 +6613,10 @@
                                                                         "flex-direction": "column"
                                                                     },
                                                                     "items": [
-                                                                        
+                                                                        {
+                                                                            "element_id": "button_iconic_23",
+                                                                            "styles": {}
+                                                                        }
                                                                     ],
                                                                     "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
                                                                 },
@@ -12583,7 +12643,64 @@
                                                         "styles": null,
                                                         "overrides": {
                                                             "composition": [
-                                                                
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "844d56291d91b330f2269558e3f47701",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "FakeComponent2",
+                                                                    "elementId": "button_iconic_24",
+                                                                    "eventMappings": [
+                                                                        
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": ""
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "bare": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "hidePadding": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Enter a label"
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {
+                                                                                "aria-label": "Search"
+                                                                            }
+                                                                        },
+                                                                        "highContrast": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": true
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
+                                                                }
                                                             ],
                                                             "layout": {
                                                                 "default": {
@@ -12595,7 +12712,10 @@
                                                                         "flex-direction": "column"
                                                                     },
                                                                     "items": [
-                                                                        
+                                                                        {
+                                                                            "element_id": "button_iconic_24",
+                                                                            "styles": {}
+                                                                        }
                                                                     ],
                                                                     "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
                                                                 },
@@ -24603,7 +24723,64 @@
                                                         "styles": null,
                                                         "overrides": {
                                                             "composition": [
-                                                                
+                                                                {
+                                                                    "definition": {
+                                                                        "id": "844d56291d91b330f2269558e3f47701",
+                                                                        "type": "MACROPONENT"
+                                                                    },
+                                                                    "elementLabel": "FakeComponent4",
+                                                                    "elementId": "button_iconic_25",
+                                                                    "eventMappings": [
+                                                                        
+                                                                    ],
+                                                                    "propertyValues": {
+                                                                        "icon": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": ""
+                                                                        },
+                                                                        "variant": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "secondary"
+                                                                        },
+                                                                        "bare": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "size": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "md"
+                                                                        },
+                                                                        "disabled": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "hidePadding": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "tooltipContent": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Enter a label"
+                                                                        },
+                                                                        "configAria": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": {
+                                                                                "aria-label": "Search"
+                                                                            }
+                                                                        },
+                                                                        "highContrast": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        }
+                                                                    },
+                                                                    "isHidden": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": true
+                                                                    },
+                                                                    "preset": null,
+                                                                    "slot": null,
+                                                                    "styles": null
+                                                                }
                                                             ],
                                                             "layout": {
                                                                 "default": {
@@ -24615,7 +24792,10 @@
                                                                         "flex-direction": "column"
                                                                     },
                                                                     "items": [
-                                                                        
+                                                                        {
+                                                                            "element_id": "button_iconic_25",
+                                                                            "styles": {}
+                                                                        }
                                                                     ],
                                                                     "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
                                                                 },
@@ -31415,7 +31595,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>891</sys_mod_count>
+        <sys_mod_count>892</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31423,7 +31603,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-07-01 10:18:25</sys_updated_on>
+        <sys_updated_on>2024-07-02 09:41:08</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
