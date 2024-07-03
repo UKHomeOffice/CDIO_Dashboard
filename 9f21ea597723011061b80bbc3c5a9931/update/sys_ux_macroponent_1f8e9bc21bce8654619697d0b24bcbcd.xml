@@ -603,7 +603,7 @@
                                                                                         "type": "TRANSLATION_LITERAL",
                                                                                         "value": {
                                                                                             "code": null,
-                                                                                            "message": "Mean Time to Repair",
+                                                                                            "message": "Operational Performance",
                                                                                             "comment": ""
                                                                                         }
                                                                                     },
@@ -659,13 +659,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "STATE_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "ElementHealthList",
-                                                                                    "0"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1011,7 +1006,7 @@
                                                                                         "type": "TRANSLATION_LITERAL",
                                                                                         "value": {
                                                                                             "code": null,
-                                                                                            "message": "% Changes Successful",
+                                                                                            "message": "Stability",
                                                                                             "comment": ""
                                                                                         }
                                                                                     },
@@ -1067,13 +1062,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "STATE_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "ElementHealthList",
-                                                                                    "1"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1419,7 +1409,7 @@
                                                                                         "type": "TRANSLATION_LITERAL",
                                                                                         "value": {
                                                                                             "code": null,
-                                                                                            "message": "Deployment Frequency",
+                                                                                            "message": "Customer Experience",
                                                                                             "comment": ""
                                                                                         }
                                                                                     },
@@ -1475,13 +1465,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "STATE_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "ElementHealthList",
-                                                                                    "2"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1883,12 +1868,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "STATE_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "ElementHealthList"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -2585,7 +2566,53 @@
             }
         },
         "eventMappings": [
-            
+            {
+                "eventMappingId": "clyfftqaadhhaabbbpddjhhqcffteeeehhaa",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "targetId": "clyfftqaadhhaabbbqddjhhqqqlecccki",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "08ae11f21baa0210db5a97d0b24bcbb0",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
+                    },
+                    {
+                        "targetId": "clyfftqggffgaabbbzddjhhqeyyiiobbhhii",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "48ae11f21baa0210db5a97d0b24bcbb0",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
+                    }
+                ],
+                "sourceEventDefinition": {
+                    "id": null,
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "type": "UXEVENT"
+                }
+            }
         ],
         "readEvaluationMode": "EAGER"
     }
@@ -2747,16 +2774,16 @@
     }
 ]</props>
         <required_translations>[ {
-  "message" : "% Changes Successful",
+  "message" : "Customer Experience",
   "comment" : ""
 }, {
-  "message" : "Deployment Frequency",
-  "comment" : ""
-}, {
-  "message" : "Mean Time to Repair",
+  "message" : "Operational Performance",
   "comment" : ""
 }, {
   "message" : "Spotlight",
+  "comment" : ""
+}, {
+  "message" : "Stability",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -2793,7 +2820,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>145</sys_mod_count>
+        <sys_mod_count>147</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -2801,7 +2828,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-07-03 10:48:37</sys_updated_on>
+        <sys_updated_on>2024-07-03 13:23:58</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
