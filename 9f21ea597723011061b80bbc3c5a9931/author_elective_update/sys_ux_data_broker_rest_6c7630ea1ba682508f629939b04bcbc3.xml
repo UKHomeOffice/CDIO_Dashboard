@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="DELETE">
+        <api_name>sn_ciodashboard.TestAPI</api_name>
+        <api_url>/api/now/pa/scorecards?</api_url>
+        <description/>
+        <http_method>GET</http_method>
+        <mutates_server_data>false</mutates_server_data>
+        <name>TestAPI</name>
+        <output_schema/>
+        <parameters/>
+        <private>false</private>
+        <props/>
+        <request_body/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-05 09:28:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6c7630ea1ba682508f629939b04bcbc3</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>TestAPI</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_6c7630ea1ba682508f629939b04bcbc3</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-05 10:21:37</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>18fe862dbff0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_data_broker_rest_6c7630ea1ba682508f629939b04bcbc3</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-06-05 12:32:24</sys_created_on>
+        <sys_id>dbc0ede21b2e82508f629939b04bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-06-05 12:32:24</sys_updated_on>
+    </sys_claim>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>b2b98cc2db2bae00cbf6d5b0cf96197f</instance_id>
+        <instance_name>lssidev3</instance_name>
+        <name>sys_ux_data_broker_rest_6c7630ea1ba682508f629939b04bcbc3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest"><sys_ux_data_broker_rest action="INSERT_OR_UPDATE"><api_name>sn_ciodashboard.TestAPI</api_name><api_url>/api/now/pa/scorecards?</api_url><description/><http_method>GET</http_method><mutates_server_data>false</mutates_server_data><name>TestAPI</name><output_schema/><parameters/><private>false</private><props/><request_body/><required_translations>[ ]</required_translations><schema_version>1.0.0</schema_version><sys_class_name>sys_ux_data_broker_rest</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-06-05 09:28:25</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>6c7630ea1ba682508f629939b04bcbc3</sys_id><sys_mod_count>19</sys_mod_count><sys_name>TestAPI</sys_name><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>sys_ux_data_broker_rest_6c7630ea1ba682508f629939b04bcbc3</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2024-06-05 10:21:37</sys_updated_on></sys_ux_data_broker_rest><sys_claim action="INSERT_OR_UPDATE"><claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope><claim_timestamp>18fe862dbff0000001</claim_timestamp><metadata_update_name>sys_ux_data_broker_rest_6c7630ea1ba682508f629939b04bcbc3</metadata_update_name><previous_claim_app_version>1.0.5</previous_claim_app_version><previous_claim_name>CIO Dashboard</previous_claim_name><previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope><sys_created_by>VelentL</sys_created_by><sys_created_on>2024-06-05 12:32:24</sys_created_on><sys_id>dbc0ede21b2e82508f629939b04bcb8d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2024-06-05 12:32:24</sys_updated_on></sys_claim></record_update>]]></payload>
+        <payload_hash>487992162</payload_hash>
+        <record_name>TestAPI</record_name>
+        <reverted_from/>
+        <source>9f21ea597723011061b80bbc3c5a9931</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-06-05 09:28:25</sys_created_on>
+        <sys_id>ffdd54db974b0690262172a71153afc5</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18fe7ba6aa80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>REST Data Broker</type>
+        <update_guid>bfdd54db654b069046b9c79ac80e80c5</update_guid>
+        <update_guid_history>bfdd54db654b069046b9c79ac80e80c5:487992162</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-07-02 12:06:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_data_broker_rest">sys_ux_data_broker_rest</sys_db_object>
+        <sys_id>340539532f6d401a9834a77d9f4bc499</sys_id>
+        <sys_metadata>6c7630ea1ba682508f629939b04bcbc3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TestAPI</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_rest_6c7630ea1ba682508f629939b04bcbc3</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_rest_6c7630ea1ba682508f629939b04bcbc3">ffdd54db974b0690262172a71153afc5</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:06:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
