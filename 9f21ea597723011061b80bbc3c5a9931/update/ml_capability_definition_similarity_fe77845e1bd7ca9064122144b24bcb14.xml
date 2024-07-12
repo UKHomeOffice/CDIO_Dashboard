@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_similarity">
+    <ml_capability_definition_similarity action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="Similarity">15ab7f3c53873300d1dcddeeff7b12ce</capability>
+        <current_solution_version>1</current_solution_version>
+        <dataset_language>en</dataset_language>
+        <fields>short_description,description</fields>
+        <filter table="incident">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <pretrained>false</pretrained>
+        <request_source>ui</request_source>
+        <solution_label>Open Incidents SIM</solution_label>
+        <solution_name>ml_x_hoo_sn_ciodashboard_global_open_incidents_sim</solution_name>
+        <solution_parameters/>
+        <solution_properties/>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_similarity</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-07-11 18:13:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>fe77845e1bd7ca9064122144b24bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Incidents SIM</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>ml_capability_definition_similarity_fe77845e1bd7ca9064122144b24bcb14</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-07-11 18:13:07</sys_updated_on>
+        <table>incident</table>
+        <test_fields>short_description,description</test_fields>
+        <test_table>incident</test_table>
+        <threshold>80</threshold>
+        <training_frequency>every_30_days</training_frequency>
+        <triggered_source>UI</triggered_source>
+        <update_frequency>every_1_hour</update_frequency>
+        <word_vector_corpus display_value="Incident SIM">ee53801a1bd7ca9064122144b24bcbc1</word_vector_corpus>
+    </ml_capability_definition_similarity>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>190a67152530000001</claim_timestamp>
+        <metadata_update_name>ml_capability_definition_similarity_fe77845e1bd7ca9064122144b24bcb14</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-07-12 10:16:02</sys_created_on>
+        <sys_id>6264e756971f0a14262172a71153af11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-07-12 10:16:02</sys_updated_on>
+    </sys_claim>
+</record_update>
