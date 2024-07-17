@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_dimensions">
+    <pa_dimensions action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="pa_manual_breakdowns">breakdown=9a83990c972f0e54262172a71153af9d<item display_table="pa_breakdowns" display_value="Test_PIS_delete" endquery="false" field="breakdown" goto="false" newquery="false" operator="=" or="false" value="9a83990c972f0e54262172a71153af9d"/>
+        </conditions>
+        <description/>
+        <empty_value/>
+        <facts_table>pa_manual_breakdowns</facts_table>
+        <field>sys_id</field>
+        <manual_breakdown>9a83990c972f0e54262172a71153af9d</manual_breakdown>
+        <name>Test_PIS_delete</name>
+        <security_type>1</security_type>
+        <sys_class_name>pa_dimensions</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-07-17 10:13:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d4b3114c972f0e54262172a71153afcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test_PIS_delete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_dimensions_d4b3114c972f0e54262172a71153afcf</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-07-17 10:13:06</sys_updated_on>
+    </pa_dimensions>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>190c0ecd50f0000001</claim_timestamp>
+        <metadata_update_name>pa_dimensions_d4b3114c972f0e54262172a71153afcf</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-07-17 13:41:04</sys_created_on>
+        <sys_id>f643cec097674e54262172a71153af75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-07-17 13:41:04</sys_updated_on>
+    </sys_claim>
+</record_update>
