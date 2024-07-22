@@ -8276,7 +8276,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 0;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;0) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 0;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;=0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "aa8a60711b894a5cd9e4a755bd4bcb4f",
                                                                                                         "target": null
                                                                                                     }
@@ -8644,7 +8644,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[0].value &gt; 0);\n}",
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[0].value &gt;= 0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[0].value !== null);\n}",
                                                                                         "scriptSysId": "b17749e11b460614619697d0b24bcbf2",
                                                                                         "target": null
                                                                                     }
@@ -8931,7 +8931,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return 'Gap: ';\n  }\n}",
                                                                                                         "scriptSysId": "d29a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -8941,7 +8941,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=0;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
                                                                                                         "scriptSysId": "1a9a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -9053,7 +9053,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 1;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;0) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 1;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;=0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "5f8a24711b894a5cd9e4a755bd4bcbac",
                                                                                                         "target": null
                                                                                                     }
@@ -9421,7 +9421,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[1].value &gt; 0);\n}",
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[1].value &gt;= 0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[1].value !== null);\n}",
                                                                                         "scriptSysId": "f17749e11b460614619697d0b24bcbf2",
                                                                                         "target": null
                                                                                     }
@@ -9709,7 +9709,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return 'Gap: ';\n  }\n}",
                                                                                                         "scriptSysId": "169a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -9719,7 +9719,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=1;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
                                                                                                         "scriptSysId": "5a9a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -9831,7 +9831,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 2;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;0) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 2;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;=0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "bb8ae4711b894a5cd9e4a755bd4bcb1c",
                                                                                                         "target": null
                                                                                                     }
@@ -10199,7 +10199,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[2].value &gt; 0);\n}",
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[2].value &gt;= 0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[2].value !== null);\n}",
                                                                                         "scriptSysId": "357749e11b460614619697d0b24bcbf2",
                                                                                         "target": null
                                                                                     }
@@ -10486,7 +10486,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return 'Gap: ';\n  }\n}",
                                                                                                         "scriptSysId": "569a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -10496,7 +10496,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=2;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
                                                                                                         "scriptSysId": "9a9a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -10608,7 +10608,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 3;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;0) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 3;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;=0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "a09a28711b894a5cd9e4a755bd4bcb63",
                                                                                                         "target": null
                                                                                                     }
@@ -10976,7 +10976,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[3].value &gt; 0);\n}",
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[3].value &gt;= 0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[3].value !== null);\n}",
                                                                                         "scriptSysId": "757749e11b460614619697d0b24bcbf2",
                                                                                         "target": null
                                                                                     }
@@ -11263,7 +11263,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return 'Gap: ';\n  }\n}",
                                                                                                         "scriptSysId": "969a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -11273,7 +11273,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=3;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
                                                                                                         "scriptSysId": "da9a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -11385,7 +11385,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 4;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;0) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 4;\n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    if (api.data.verticalA_headlinemetric2.output.result[i].value &gt;=0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalA_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalA_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "159aa8711b894a5cd9e4a755bd4bcb7e",
                                                                                                         "target": null
                                                                                                     }
@@ -11753,7 +11753,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[4].value &gt; 0);\n}",
+                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalA_headlinemetric2.output.result[4].value &gt;= 0\n        &amp;&amp; api.data.verticalA_headlinemetric2.output.result[4].value !== null);\n}",
                                                                                         "scriptSysId": "b57749e11b460614619697d0b24bcbf2",
                                                                                         "target": null
                                                                                     }
@@ -12040,7 +12040,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return 'Gap: ';\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n\tif (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return 'Gap: ';\n  }\n}",
                                                                                                         "scriptSysId": "d69a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -12050,7 +12050,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;0) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
+                                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var i=4;\n  if (api.data.verticalA_headlinemetric2.output.result[i].value&gt;=0\n    &amp;&amp; api.data.verticalA_headlinemetric2.output.result[i].value !== null) {\n    return api.data.verticalA_headlinemetric2.output.result[i].gap_formatted;\n  }\n}",
                                                                                                         "scriptSysId": "1e9a6ef71b5182dcdb5a97d0b24bcb00",
                                                                                                         "target": null
                                                                                                     }
@@ -31596,7 +31596,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>913</sys_mod_count>
+        <sys_mod_count>923</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31604,7 +31604,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-07-18 15:29:56</sys_updated_on>
+        <sys_updated_on>2024-07-22 13:48:21</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
