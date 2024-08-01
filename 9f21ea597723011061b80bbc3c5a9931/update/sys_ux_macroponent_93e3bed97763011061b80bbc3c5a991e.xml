@@ -2541,65 +2541,6 @@
                     }
                 },
                 {
-                    "definition": {
-                        "id": "d37ce8abca89d02905fed903c8e34d8e",
-                        "type": "MACROPONENT"
-                    },
-                    "elementLabel": "Product button",
-                    "elementId": "button_1",
-                    "eventMappings": [
-                        
-                    ],
-                    "propertyValues": {
-                        "label": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "message": "Product",
-                                "comment": ""
-                            }
-                        },
-                        "variant": {
-                            "type": "JSON_LITERAL",
-                            "value": "secondary"
-                        },
-                        "size": {
-                            "type": "JSON_LITERAL",
-                            "value": "md"
-                        },
-                        "disabled": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "icon": {
-                            "type": "JSON_LITERAL",
-                            "value": null
-                        },
-                        "tooltipContent": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "message": "Enter a label",
-                                "comment": ""
-                            }
-                        },
-                        "configAria": {
-                            "type": "JSON_LITERAL",
-                            "value": {}
-                        }
-                    },
-                    "isHidden": {
-                        "type": "JSON_LITERAL",
-                        "value": null
-                    },
-                    "preset": null,
-                    "slot": "default-slot",
-                    "styles": {
-                        "padding-top": "8px",
-                        "padding-bottom": "8px"
-                    }
-                },
-                {
                     "elementId": "pis_dropdown",
                     "elementLabel": "PIS dropdown",
                     "propertyValues": {
@@ -12812,9 +12753,6 @@
   "message" : "Description",
   "comment" : ""
 }, {
-  "message" : "Enter a label",
-  "comment" : ""
-}, {
   "message" : "Gap: ",
   "comment" : ""
 }, {
@@ -12834,9 +12772,6 @@
   "comment" : ""
 }, {
   "message" : "Primary Impacted Service",
-  "comment" : ""
-}, {
-  "message" : "Product",
   "comment" : ""
 }, {
   "message" : "Project",
@@ -13566,7 +13501,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>700</sys_mod_count>
+        <sys_mod_count>701</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13574,7 +13509,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-07-25 12:56:02</sys_updated_on>
+        <sys_updated_on>2024-08-01 13:08:19</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -13584,10 +13519,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>system</sys_created_by>
-        <sys_created_on>2024-06-14 12:08:03</sys_created_on>
-        <sys_id>e2817fd51b324a508f629939b04bcbbb</sys_id>
+        <sys_created_on>2024-07-31 10:43:00</sys_created_on>
+        <sys_id>bec0ede097738250262172a71153af29</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-06-14 12:08:03</sys_updated_on>
+        <sys_updated_on>2024-07-31 10:43:00</sys_updated_on>
     </sys_claim>
 </record_update>
