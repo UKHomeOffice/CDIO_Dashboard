@@ -66,10 +66,10 @@ function handler({api, event, helpers, imports}) {
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>system</sys_created_by>
-        <sys_created_on>2024-07-31 10:42:53</sys_created_on>
-        <sys_id>55c0e9e097738250262172a71153af1c</sys_id>
+        <sys_created_on>2024-08-01 15:26:13</sys_created_on>
+        <sys_id>553be3741b77c25064122144b24bcbab</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-07-31 10:42:53</sys_updated_on>
+        <sys_updated_on>2024-08-01 15:26:13</sys_updated_on>
     </sys_claim>
 </record_update>
