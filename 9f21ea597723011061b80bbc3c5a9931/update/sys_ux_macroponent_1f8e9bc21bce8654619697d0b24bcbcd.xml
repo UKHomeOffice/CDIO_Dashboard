@@ -126,7 +126,7 @@
                                         "type": "CONTEXT_BINDING",
                                         "binding": {
                                             "address": [
-                                                "pis"
+                                                "element"
                                             ],
                                             "category": "props"
                                         }
@@ -659,8 +659,13 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "Let's workflow it."
+                                                                            "type": "CONTEXT_BINDING",
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "breakdown2"
+                                                                                ],
+                                                                                "category": "props"
+                                                                            }
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1062,8 +1067,13 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "Let's workflow it."
+                                                                            "type": "CONTEXT_BINDING",
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "element2"
+                                                                                ],
+                                                                                "category": "props"
+                                                                            }
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -2947,6 +2957,58 @@
         "readOnly": false,
         "selectable": false,
         "inherited": false
+    },
+    {
+        "id": "clzsffmtjjjjaaddguddjiiddpddggvaujq",
+        "name": "element",
+        "label": "Element",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "description": "",
+        "readOnly": false,
+        "selectable": false,
+        "inherited": false
+    },
+    {
+        "id": "clzsggccnhhjaaeeraddjiiddcbhaacczffl",
+        "name": "sec_breakdown",
+        "label": "sec_breakdown",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "description": "",
+        "readOnly": false,
+        "selectable": false,
+        "inherited": false
+    },
+    {
+        "id": "clzsgglnwtaahhclddjiiddqgnjtfcw",
+        "name": "breakdown2",
+        "label": "breakdown2",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "description": "",
+        "readOnly": false,
+        "selectable": false,
+        "inherited": false
+    },
+    {
+        "id": "clzsggqhrmaaiikffddjiiddefqjccxax",
+        "name": "element2",
+        "label": "element2",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "description": "",
+        "readOnly": false,
+        "selectable": false,
+        "inherited": false
     }
 ]</props>
         <required_translations>[ {
@@ -2996,7 +3058,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>154</sys_mod_count>
+        <sys_mod_count>165</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3004,7 +3066,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-07-08 12:45:51</sys_updated_on>
+        <sys_updated_on>2024-08-13 08:54:05</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
