@@ -659,13 +659,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "CONTEXT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "breakdown2"
-                                                                                ],
-                                                                                "category": "props"
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -750,83 +745,6 @@
                                                     "version": "3.0.0"
                                                 }
                                             }
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Stylized text 10",
-                                            "elementId": "stylized_text_10",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "text": {
-                                                    "type": "DATA_OUTPUT_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "elementkpi1",
-                                                            "output",
-                                                            "result",
-                                                            "0",
-                                                            "value"
-                                                        ]
-                                                    }
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "span"
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Stylized text 13",
-                                            "elementId": "stylized_text_13",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "text": {
-                                                    "type": "STATE_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "ElementHealthList",
-                                                            "0"
-                                                        ]
-                                                    }
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "span"
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -853,14 +771,6 @@
                                                         "padding-right": "8px",
                                                         "position": "relative"
                                                     }
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_10",
-                                                    "styles": {}
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_13",
-                                                    "styles": {}
                                                 }
                                             ],
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -1152,13 +1062,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "CONTEXT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "element2"
-                                                                                ],
-                                                                                "category": "props"
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1243,83 +1148,6 @@
                                                     "version": "3.0.0"
                                                 }
                                             }
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Stylized text 11",
-                                            "elementId": "stylized_text_11",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "text": {
-                                                    "type": "DATA_OUTPUT_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "elementkpi2",
-                                                            "output",
-                                                            "result",
-                                                            "0",
-                                                            "value"
-                                                        ]
-                                                    }
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "span"
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Stylized text 14",
-                                            "elementId": "stylized_text_14",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "text": {
-                                                    "type": "STATE_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "ElementHealthList",
-                                                            "1"
-                                                        ]
-                                                    }
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "span"
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -1346,14 +1174,6 @@
                                                         "padding-right": "8px",
                                                         "position": "relative"
                                                     }
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_11",
-                                                    "styles": {}
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_14",
-                                                    "styles": {}
                                                 }
                                             ],
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -1731,83 +1551,6 @@
                                                     "version": "3.0.0"
                                                 }
                                             }
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Stylized text 12",
-                                            "elementId": "stylized_text_12",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "text": {
-                                                    "type": "DATA_OUTPUT_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "elementkpi3",
-                                                            "output",
-                                                            "result",
-                                                            "0",
-                                                            "value"
-                                                        ]
-                                                    }
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "span"
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Stylized text 15",
-                                            "elementId": "stylized_text_15",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "text": {
-                                                    "type": "STATE_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "ElementHealthList",
-                                                            "2"
-                                                        ]
-                                                    }
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "span"
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -1834,14 +1577,6 @@
                                                         "padding-right": "8px",
                                                         "position": "relative"
                                                     }
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_12",
-                                                    "styles": {}
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_15",
-                                                    "styles": {}
                                                 }
                                             ],
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -2219,42 +1954,6 @@
                                                     "version": "3.0.0"
                                                 }
                                             }
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Stylized text 16",
-                                            "elementId": "stylized_text_16",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "text": {
-                                                    "type": "STATE_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "ElementOverallHealth"
-                                                        ]
-                                                    }
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "h2"
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -2281,10 +1980,6 @@
                                                         "padding-right": "8px",
                                                         "position": "relative"
                                                     }
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_16",
-                                                    "styles": {}
                                                 }
                                             ],
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -2504,170 +2199,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
-                    },
-                    "preset": null,
-                    "slot": null,
-                    "styles": null
-                },
-                {
-                    "definition": {
-                        "id": "2b1c080881e05dc63b917044290b233f",
-                        "type": "MACROPONENT"
-                    },
-                    "elementLabel": "List - Simple 1",
-                    "elementId": "list___simple_1",
-                    "eventMappings": [
-                        
-                    ],
-                    "propertyValues": {
-                        "table": {
-                            "type": "CONTEXT_BINDING",
-                            "binding": {
-                                "address": [
-                                    "table"
-                                ],
-                                "category": "props"
-                            }
-                        },
-                        "fixedQuery": {
-                            "type": "CONTEXT_BINDING",
-                            "binding": {
-                                "address": [
-                                    "query"
-                                ],
-                                "category": "props"
-                            }
-                        },
-                        "listTitle": {
-                            "type": "CONTEXT_BINDING",
-                            "binding": {
-                                "address": [
-                                    "listTitle"
-                                ],
-                                "category": "props"
-                            }
-                        },
-                        "columns": null,
-                        "maxColumns": {
-                            "type": "JSON_LITERAL",
-                            "value": 7
-                        },
-                        "query": null,
-                        "groupByField": null,
-                        "limit": {
-                            "type": "JSON_LITERAL",
-                            "value": null
-                        },
-                        "hideViewAll": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideHighlightedValues": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "highlightedValueConfigId": {
-                            "type": "JSON_LITERAL",
-                            "value": ""
-                        },
-                        "hideHighlightContent": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "highlightContent": {
-                            "type": "JSON_LITERAL",
-                            "value": {
-                                "patterns": [
-                                    
-                                ],
-                                "color": ""
-                            }
-                        },
-                        "hideLinks": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "wordWrap": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "overrideWordWrapUserPref": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "maxCharLimit": {
-                            "type": "JSON_LITERAL",
-                            "value": 4000
-                        },
-                        "hideEmptyStateImage": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hidePersonalization": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideDotwalk": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideColumnReorder": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideRowSelector": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideColumnGrouping": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideColumnResizing": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideColumnFiltering": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideColumnSorting": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideHeader": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideTitle": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideTitleRowCount": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideLastRefreshedText": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideRefreshButton": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "hideInlineEditing": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "refreshRequested": {
-                            "type": "JSON_LITERAL",
-                            "value": null
-                        }
-                    },
-                    "isHidden": {
-                        "type": "JSON_LITERAL",
-                        "value": true
+                        "value": false
                     },
                     "preset": null,
                     "slot": null,
@@ -2714,15 +2246,6 @@
                         },
                         {
                             "element_id": "list___simple_2",
-                            "styles": {
-                                "margin-left": "0",
-                                "margin-right": "0",
-                                "background": "rgb(var(--now-color_background--primary))",
-                                "margin-bottom": "var(--now-scalable-space--md)"
-                            }
-                        },
-                        {
-                            "element_id": "list___simple_1",
                             "styles": {
                                 "margin-left": "0",
                                 "margin-right": "0",
@@ -3323,7 +2846,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>184</sys_mod_count>
+        <sys_mod_count>186</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3331,7 +2854,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-13 09:53:05</sys_updated_on>
+        <sys_updated_on>2024-08-14 08:45:11</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
