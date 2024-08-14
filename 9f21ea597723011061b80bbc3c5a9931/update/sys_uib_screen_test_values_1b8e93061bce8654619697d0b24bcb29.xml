@@ -23,7 +23,11 @@
     "second_breakdown": "17bc0d771b414d50a1bc5946464bcb4c",
     "second_element": "b41b32d44fa873880900e1128110c73c",
     "portfolio_breakdown": " ",
-    "portfolio_element": " "
+    "portfolio_element": " ",
+    "element": "Element placeholder",
+    "sec_breakdown": "baec0752bf130100b96dac808c0739ed",
+    "breakdown2": "b1616b8c4fe933002f3c71318110c743",
+    "element2": "a72b89881b1e9450342441d7bd4bcb3f"
 }</macroponent_config>
         <screen display_value="Insights Default">1b8e93061bce8654619697d0b24bcb26</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
@@ -31,7 +35,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1b8e93061bce8654619697d0b24bcb29</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -39,7 +43,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_uib_screen_test_values_1b8e93061bce8654619697d0b24bcb29</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-07-04 11:50:23</sys_updated_on>
+        <sys_updated_on>2024-08-13 09:11:34</sys_updated_on>
     </sys_uib_screen_test_values>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
