@@ -1017,6 +1017,38 @@
                                                             },
                                                             "conditional": null,
                                                             "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clzwubddlnaabbghhddjiiggtfvoeefffz",
+                                                            "type": "CLIENT_SCRIPT",
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "clientScript": {
+                                                                "sysId": "bea598f977a3011061b80bbc3c5a99fb",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {}
+                                                                }
+                                                            },
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clzwubnieeaabbggddjiiggokkxaaaccz",
+                                                            "type": "CLIENT_SCRIPT",
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "clientScript": {
+                                                                "sysId": "fbd1583977a3011061b80bbc3c5a99a4",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {}
+                                                                }
+                                                            },
+                                                            "conditional": null,
+                                                            "broker": null
                                                         }
                                                     ],
                                                     "sourceEventDefinition": {
@@ -31806,7 +31838,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>988</sys_mod_count>
+        <sys_mod_count>992</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31814,7 +31846,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-16 14:35:13</sys_updated_on>
+        <sys_updated_on>2024-08-16 15:07:18</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
