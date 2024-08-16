@@ -954,6 +954,167 @@
                                                 
                                             ],
                                             "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "22c67d9a1e515fef66442e1469bed3a2",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementLabel": "Dropdown 3",
+                                            "elementId": "dropdown_3",
+                                            "eventMappings": [
+                                                {
+                                                    "eventMappingId": "clzwsjjjskaabbhhtddjhhtjbbcxyzgy",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "targetId": "clzwsjjjskaabbhhuddjhhtvtaylvxr",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "MAP_CONTAINER",
+                                                                    "container": {
+                                                                        "propName": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Month"
+                                                                        },
+                                                                        "value": {
+                                                                            "type": "EVENT_PAYLOAD_BINDING",
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "value",
+                                                                                    "0"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clzwsnhhlgaabbabddjhhteddurbbaaahh",
+                                                            "type": "CLIENT_SCRIPT",
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "clientScript": {
+                                                                "sysId": "48cef7297763011061b80bbc3c5a996e",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {}
+                                                                }
+                                                            },
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        }
+                                                    ],
+                                                    "sourceEventDefinition": {
+                                                        "id": null,
+                                                        "apiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+                                                        "type": "UXEVENT"
+                                                    }
+                                                }
+                                            ],
+                                            "propertyValues": {
+                                                "placeholder": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Month",
+                                                        "comment": ""
+                                                    }
+                                                },
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "secondary"
+                                                },
+                                                "bare": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "search": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "none"
+                                                },
+                                                "disabled": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "icon": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "hideCaret": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "showPadding": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "items": {
+                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                    "script": {
+                                                        "apiVersion": "2.0.0",
+                                                        "controllerElementId": null,
+                                                        "inlineScript": "/**api.data.verticalA_headlinemetric1.output.result[0].scores.length\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  var scores = api.data.verticalA_headlinemetric1.output.result[0].scores;\n  for(var i = 0; i&lt;scores.length; i++)\n  {\n  var myObj = {};\n    myObj.id = i;\n    myObj.label = scores[i].period;\n    arr.push(myObj);\n  }\nreturn arr;\n}\n",
+                                                        "scriptSysId": "01dd40f51b449a9064122144b24bcb7b",
+                                                        "target": null
+                                                    }
+                                                },
+                                                "select": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "single"
+                                                },
+                                                "selectedItems": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": [
+                                                        
+                                                    ]
+                                                },
+                                                "hideLabel": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "panelFitProps": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {}
+                                                },
+                                                "opened": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "tooltipContent": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "configAria": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                }
+                                            },
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "slot": null,
+                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -995,6 +1156,12 @@
                                                         "padding-top": "8px"
                                                     },
                                                     "element_id": "dropdown_2"
+                                                },
+                                                {
+                                                    "element_id": "dropdown_3",
+                                                    "styles": {
+                                                        "padding-top": "8px"
+                                                    }
                                                 }
                                             ]
                                         },
@@ -31136,6 +31303,9 @@
   "message" : "Metrics definitions",
   "comment" : ""
 }, {
+  "message" : "Month",
+  "comment" : ""
+}, {
   "message" : "More than 20 per month",
   "comment" : ""
 }, {
@@ -31619,6 +31789,16 @@
         "name": "RadioButtonSelection",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "fieldType": "number",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": 0
+        },
+        "name": "Month",
+        "shape": "",
+        "valueType": "number"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -31626,7 +31806,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>973</sys_mod_count>
+        <sys_mod_count>985</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31634,7 +31814,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-16 10:47:52</sys_updated_on>
+        <sys_updated_on>2024-08-16 14:26:53</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
