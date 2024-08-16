@@ -76,10 +76,10 @@ var min_translated = helpers.translateSync("Minimize");
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>system</sys_created_by>
-        <sys_created_on>2024-08-14 08:01:21</sys_created_on>
-        <sys_id>ab02c18997489650262172a71153af58</sys_id>
+        <sys_created_on>2024-08-16 10:40:50</sys_created_on>
+        <sys_id>17b9fba197cc5e50262172a71153af7e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-14 08:01:21</sys_updated_on>
+        <sys_updated_on>2024-08-16 10:40:50</sys_updated_on>
     </sys_claim>
 </record_update>
