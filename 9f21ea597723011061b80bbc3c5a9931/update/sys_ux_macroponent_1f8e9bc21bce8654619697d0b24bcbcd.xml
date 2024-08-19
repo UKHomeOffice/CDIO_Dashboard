@@ -291,7 +291,8 @@
                                     "grid-auto-flow": "row",
                                     "margin-top": "var(--now-scalable-space--sm)",
                                     "margin-left": "var(--now-scalable-space--lg)",
-                                    "margin-bottom": "var(--now-scalable-space--sm)"
+                                    "margin-bottom": "var(--now-scalable-space--sm)",
+                                    "align-items": "center"
                                 },
                                 "items": [
                                     {
@@ -2846,7 +2847,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>186</sys_mod_count>
+        <sys_mod_count>187</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -2854,7 +2855,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-14 08:45:11</sys_updated_on>
+        <sys_updated_on>2024-08-19 08:14:58</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
