@@ -106,7 +106,7 @@
                                     "id": "d356d14b6e293a3020a244b63d278d8f",
                                     "type": "MACROPONENT"
                                 },
-                                "elementLabel": "default-slot",
+                                "elementLabel": "Main components container",
                                 "elementId": "container_105_default_slot",
                                 "eventMappings": [
                                     
@@ -353,7 +353,7 @@
                                                 },
                                                 "disabled": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": true
                                                 },
                                                 "icon": {
                                                     "type": "JSON_LITERAL",
@@ -954,7 +954,107 @@
                                                 
                                             ],
                                             "styles": null
+                                        }
+                                    ],
+                                    "layout": {
+                                        "default": {
+                                            "type": "flex",
+                                            "root": null,
+                                            "children": null,
+                                            "styles": {
+                                                "height": "100%",
+                                                "flex-direction": "row",
+                                                "display": "flex",
+                                                "grid-template-columns": "1fr 1fr",
+                                                "grid-template-rows": "1fr 1fr",
+                                                "grid-auto-rows": "1fr",
+                                                "grid-auto-columns": "1fr"
+                                            },
+                                            "rules": {},
+                                            "items": [
+                                                {
+                                                    "element_id": "button_9",
+                                                    "styles": {
+                                                        "padding-top": "var(--now-scalable-space--sm)"
+                                                    }
+                                                },
+                                                {
+                                                    "rules": {},
+                                                    "styles": {
+                                                        "color": "#85ED78",
+                                                        "padding-top": "8px"
+                                                    },
+                                                    "element_id": "dropdown_1"
+                                                },
+                                                {
+                                                    "element_id": "button_10",
+                                                    "styles": {
+                                                        "padding-top": "8px"
+                                                    }
+                                                },
+                                                {
+                                                    "rules": {},
+                                                    "styles": {
+                                                        "color": "rgb(var(--now-color--secondary-3))",
+                                                        "padding-top": "8px"
+                                                    },
+                                                    "element_id": "dropdown_2"
+                                                }
+                                            ]
                                         },
+                                        "version": "3.0.0"
+                                    }
+                                }
+                            },
+                            {
+                                "definition": {
+                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementLabel": "Month container",
+                                "elementId": "container_174",
+                                "eventMappings": [
+                                    
+                                ],
+                                "propertyValues": {
+                                    "ariaRegionName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "includeAriaHeading": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "ariaRegionHeadingLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "1"
+                                    },
+                                    "type": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "section"
+                                    },
+                                    "ariaRole": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "hideEmptyStateUi": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    "slotWrapperBehavior": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "fullheight"
+                                    }
+                                },
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "slot": null,
+                                "styles": null,
+                                "overrides": {
+                                    "composition": [
                                         {
                                             "definition": {
                                                 "id": "22c67d9a1e515fef66442e1469bed3a2",
@@ -1154,54 +1254,22 @@
                                             "type": "flex",
                                             "root": null,
                                             "children": null,
+                                            "rules": null,
                                             "styles": {
-                                                "height": "100%",
-                                                "flex-direction": "row",
-                                                "display": "flex",
-                                                "grid-template-columns": "1fr 1fr",
-                                                "grid-template-rows": "1fr 1fr",
-                                                "grid-auto-rows": "1fr",
-                                                "grid-auto-columns": "1fr"
+                                                "flex-direction": "row-reverse"
                                             },
-                                            "rules": {},
                                             "items": [
-                                                {
-                                                    "element_id": "button_9",
-                                                    "styles": {
-                                                        "padding-top": "var(--now-scalable-space--sm)"
-                                                    }
-                                                },
-                                                {
-                                                    "rules": {},
-                                                    "styles": {
-                                                        "color": "#85ED78",
-                                                        "padding-top": "8px"
-                                                    },
-                                                    "element_id": "dropdown_1"
-                                                },
-                                                {
-                                                    "element_id": "button_10",
-                                                    "styles": {
-                                                        "padding-top": "8px"
-                                                    }
-                                                },
-                                                {
-                                                    "rules": {},
-                                                    "styles": {
-                                                        "color": "rgb(var(--now-color--secondary-3))",
-                                                        "padding-top": "8px"
-                                                    },
-                                                    "element_id": "dropdown_2"
-                                                },
                                                 {
                                                     "element_id": "dropdown_3",
                                                     "styles": {
                                                         "padding-top": "8px",
                                                         "padding-left": "0",
-                                                        "margin-left": "0"
+                                                        "margin-left": "0",
+                                                        "padding-right": "16px"
                                                     }
                                                 }
-                                            ]
+                                            ],
+                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
                                         },
                                         "version": "3.0.0"
                                     }
@@ -1220,15 +1288,28 @@
                                         },
                                         "rules": {},
                                         "element_id": "container_105_default_slot"
+                                    },
+                                    {
+                                        "element_id": "container_174",
+                                        "styles": {
+                                            "width": "100%",
+                                            "background-color": "#DBDBDB"
+                                        }
                                     }
                                 ],
                                 "root": null,
                                 "rules": null,
                                 "styles": {
-                                    "flex-direction": "column"
+                                    "flex-direction": "column",
+                                    "display": "grid",
+                                    "grid-template-columns": "1fr 1fr",
+                                    "grid-template-rows": "1fr",
+                                    "grid-auto-rows": "1fr",
+                                    "grid-auto-columns": "1fr",
+                                    "grid-auto-flow": "row"
                                 },
                                 "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                                "type": "flex"
+                                "type": "grid"
                             },
                             "version": "3.0.0"
                         }
@@ -31844,7 +31925,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>994</sys_mod_count>
+        <sys_mod_count>1001</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31852,7 +31933,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-16 15:23:32</sys_updated_on>
+        <sys_updated_on>2024-08-19 07:45:35</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
