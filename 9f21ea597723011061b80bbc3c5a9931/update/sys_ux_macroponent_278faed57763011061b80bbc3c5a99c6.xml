@@ -401,8 +401,12 @@
                                                     "value": false
                                                 },
                                                 "tooltipContent": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Select portfolio of interest",
+                                                        "comment": ""
+                                                    }
                                                 },
                                                 "panelFitProps": {
                                                     "type": "JSON_LITERAL",
@@ -702,8 +706,12 @@
                                                     "value": false
                                                 },
                                                 "tooltipContent": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Select sorting order",
+                                                        "comment": ""
+                                                    }
                                                 },
                                                 "panelFitProps": {
                                                     "type": "JSON_LITERAL",
@@ -1518,12 +1526,16 @@
                                                     "value": false
                                                 },
                                                 "tooltipContent": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Select month of interest",
+                                                        "comment": ""
+                                                    }
                                                 },
                                                 "configAria": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "type": "MAP_CONTAINER",
+                                                    "container": {}
                                                 }
                                             },
                                             "isHidden": {
@@ -31472,6 +31484,15 @@
   "message" : "Scope",
   "comment" : ""
 }, {
+  "message" : "Select month of interest",
+  "comment" : ""
+}, {
+  "message" : "Select portfolio of interest",
+  "comment" : ""
+}, {
+  "message" : "Select sorting order",
+  "comment" : ""
+}, {
   "message" : "Status Date",
   "comment" : ""
 }, {
@@ -31930,7 +31951,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1004</sys_mod_count>
+        <sys_mod_count>1007</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31938,7 +31959,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-19 07:52:36</sys_updated_on>
+        <sys_updated_on>2024-08-19 08:03:12</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
