@@ -106,7 +106,7 @@
                                     "id": "d356d14b6e293a3020a244b63d278d8f",
                                     "type": "MACROPONENT"
                                 },
-                                "elementLabel": "default-slot",
+                                "elementLabel": "Main components container",
                                 "elementId": "container_105_default_slot",
                                 "eventMappings": [
                                     
@@ -353,7 +353,7 @@
                                                 },
                                                 "disabled": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": true
                                                 },
                                                 "icon": {
                                                     "type": "JSON_LITERAL",
@@ -401,8 +401,12 @@
                                                     "value": false
                                                 },
                                                 "tooltipContent": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Select portfolio of interest",
+                                                        "comment": ""
+                                                    }
                                                 },
                                                 "panelFitProps": {
                                                     "type": "JSON_LITERAL",
@@ -702,8 +706,12 @@
                                                     "value": false
                                                 },
                                                 "tooltipContent": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Select sorting order",
+                                                        "comment": ""
+                                                    }
                                                 },
                                                 "panelFitProps": {
                                                     "type": "JSON_LITERAL",
@@ -954,199 +962,6 @@
                                                 
                                             ],
                                             "styles": null
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "22c67d9a1e515fef66442e1469bed3a2",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Month dropdown",
-                                            "elementId": "dropdown_3",
-                                            "eventMappings": [
-                                                {
-                                                    "eventMappingId": "clzwsjjjskaabbhhtddjhhtjbbcxyzgy",
-                                                    "isConfiguration": false,
-                                                    "offRowStorageId": null,
-                                                    "sourceEventApiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
-                                                    "sourceEventCorrelationId": null,
-                                                    "sourceEventSysId": null,
-                                                    "targets": [
-                                                        {
-                                                            "targetId": "clzwsjjjskaabbhhuddjhhtvtaylvxr",
-                                                            "type": "EVENT",
-                                                            "declarativeAction": null,
-                                                            "event": {
-                                                                "sysId": "32408b42ff7a10109046e490703bf176",
-                                                                "payload": {
-                                                                    "type": "MAP_CONTAINER",
-                                                                    "container": {
-                                                                        "propName": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "Month"
-                                                                        },
-                                                                        "value": {
-                                                                            "type": "EVENT_PAYLOAD_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "value",
-                                                                                    "0"
-                                                                                ]
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                },
-                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
-                                                            },
-                                                            "operation": null,
-                                                            "clientScript": null,
-                                                            "conditional": null,
-                                                            "broker": null
-                                                        },
-                                                        {
-                                                            "targetId": "clzwsnhhlgaabbabddjhhteddurbbaaahh",
-                                                            "type": "CLIENT_SCRIPT",
-                                                            "declarativeAction": null,
-                                                            "event": null,
-                                                            "operation": null,
-                                                            "clientScript": {
-                                                                "sysId": "48cef7297763011061b80bbc3c5a996e",
-                                                                "payload": {
-                                                                    "type": "JSON_LITERAL",
-                                                                    "value": {}
-                                                                }
-                                                            },
-                                                            "conditional": null,
-                                                            "broker": null
-                                                        },
-                                                        {
-                                                            "targetId": "clzwubddlnaabbghhddjiiggtfvoeefffz",
-                                                            "type": "CLIENT_SCRIPT",
-                                                            "declarativeAction": null,
-                                                            "event": null,
-                                                            "operation": null,
-                                                            "clientScript": {
-                                                                "sysId": "bea598f977a3011061b80bbc3c5a99fb",
-                                                                "payload": {
-                                                                    "type": "JSON_LITERAL",
-                                                                    "value": {}
-                                                                }
-                                                            },
-                                                            "conditional": null,
-                                                            "broker": null
-                                                        },
-                                                        {
-                                                            "targetId": "clzwubnieeaabbggddjiiggokkxaaaccz",
-                                                            "type": "CLIENT_SCRIPT",
-                                                            "declarativeAction": null,
-                                                            "event": null,
-                                                            "operation": null,
-                                                            "clientScript": {
-                                                                "sysId": "fbd1583977a3011061b80bbc3c5a99a4",
-                                                                "payload": {
-                                                                    "type": "JSON_LITERAL",
-                                                                    "value": {}
-                                                                }
-                                                            },
-                                                            "conditional": null,
-                                                            "broker": null
-                                                        }
-                                                    ],
-                                                    "sourceEventDefinition": {
-                                                        "id": null,
-                                                        "apiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
-                                                        "type": "UXEVENT"
-                                                    }
-                                                }
-                                            ],
-                                            "propertyValues": {
-                                                "placeholder": {
-                                                    "type": "TRANSLATION_LITERAL",
-                                                    "value": {
-                                                        "code": null,
-                                                        "message": "Month",
-                                                        "comment": ""
-                                                    }
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "secondary"
-                                                },
-                                                "bare": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "size": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "md"
-                                                },
-                                                "search": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "none"
-                                                },
-                                                "disabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "icon": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "hideCaret": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "showPadding": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "items": {
-                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
-                                                    "script": {
-                                                        "apiVersion": "2.0.0",
-                                                        "controllerElementId": null,
-                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  var scores = api.data.verticalA_headlinemetric1.output.result[0].scores;\n  for(var i = 0; i&lt;scores.length; i++)\n  {\n  var myObj = {};\n    myObj.id = i;\n    myObj.label = scores[i].period;\n    arr.push(myObj);\n  }\nreturn arr;\n}\n",
-                                                        "scriptSysId": "01dd40f51b449a9064122144b24bcb7b",
-                                                        "target": null
-                                                    }
-                                                },
-                                                "select": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "single"
-                                                },
-                                                "selectedItems": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": [
-                                                        0
-                                                    ]
-                                                },
-                                                "hideLabel": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "panelFitProps": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": {}
-                                                },
-                                                "opened": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "tooltipContent": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "configAria": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -1192,14 +1007,6 @@
                                                         "padding-top": "8px"
                                                     },
                                                     "element_id": "dropdown_2"
-                                                },
-                                                {
-                                                    "element_id": "dropdown_3",
-                                                    "styles": {
-                                                        "padding-top": "8px",
-                                                        "padding-left": "0",
-                                                        "margin-left": "0"
-                                                    }
                                                 }
                                             ]
                                         },
@@ -1225,7 +1032,13 @@
                                 "root": null,
                                 "rules": null,
                                 "styles": {
-                                    "flex-direction": "column"
+                                    "flex-direction": "column",
+                                    "display": "flex",
+                                    "grid-template-columns": "1fr 1fr",
+                                    "grid-template-rows": "1fr",
+                                    "grid-auto-rows": "1fr",
+                                    "grid-auto-columns": "1fr",
+                                    "grid-auto-flow": "row"
                                 },
                                 "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                 "type": "flex"
@@ -1486,16 +1299,294 @@
                                 "preset": null,
                                 "slot": null,
                                 "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "d356d14b6e293a3020a244b63d278d8f",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementLabel": "Month container",
+                                "elementId": "container_174",
+                                "eventMappings": [
+                                    
+                                ],
+                                "propertyValues": {
+                                    "ariaRegionName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "includeAriaHeading": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "ariaRegionHeadingLevel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "1"
+                                    },
+                                    "type": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "section"
+                                    },
+                                    "ariaRole": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "hideEmptyStateUi": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    "slotWrapperBehavior": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "fullheight"
+                                    }
+                                },
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "slot": null,
+                                "styles": null,
+                                "overrides": {
+                                    "composition": [
+                                        {
+                                            "definition": {
+                                                "id": "22c67d9a1e515fef66442e1469bed3a2",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementLabel": "Month dropdown",
+                                            "elementId": "dropdown_3",
+                                            "eventMappings": [
+                                                {
+                                                    "eventMappingId": "clzwsjjjskaabbhhtddjhhtjbbcxyzgy",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "targetId": "clzwsjjjskaabbhhuddjhhtvtaylvxr",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "MAP_CONTAINER",
+                                                                    "container": {
+                                                                        "propName": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Month"
+                                                                        },
+                                                                        "value": {
+                                                                            "type": "EVENT_PAYLOAD_BINDING",
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "value",
+                                                                                    "0"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clzwsnhhlgaabbabddjhhteddurbbaaahh",
+                                                            "type": "CLIENT_SCRIPT",
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "clientScript": {
+                                                                "sysId": "48cef7297763011061b80bbc3c5a996e",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {}
+                                                                }
+                                                            },
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clzwubddlnaabbghhddjiiggtfvoeefffz",
+                                                            "type": "CLIENT_SCRIPT",
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "clientScript": {
+                                                                "sysId": "bea598f977a3011061b80bbc3c5a99fb",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {}
+                                                                }
+                                                            },
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "clzwubnieeaabbggddjiiggokkxaaaccz",
+                                                            "type": "CLIENT_SCRIPT",
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "clientScript": {
+                                                                "sysId": "fbd1583977a3011061b80bbc3c5a99a4",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {}
+                                                                }
+                                                            },
+                                                            "conditional": null,
+                                                            "broker": null
+                                                        }
+                                                    ],
+                                                    "sourceEventDefinition": {
+                                                        "id": null,
+                                                        "apiName": "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+                                                        "type": "UXEVENT"
+                                                    }
+                                                }
+                                            ],
+                                            "propertyValues": {
+                                                "placeholder": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Month",
+                                                        "comment": ""
+                                                    }
+                                                },
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "secondary"
+                                                },
+                                                "bare": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "search": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "none"
+                                                },
+                                                "disabled": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "icon": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "hideCaret": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "showPadding": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "items": {
+                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                    "script": {
+                                                        "apiVersion": "2.0.0",
+                                                        "controllerElementId": null,
+                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  var scores = api.data.verticalA_headlinemetric1.output.result[0].scores;\n  for(var i = 0; i&lt;scores.length; i++)\n  {\n  var myObj = {};\n    myObj.id = i;\n    myObj.label = scores[i].period;\n    arr.push(myObj);\n  }\nreturn arr;\n}\n",
+                                                        "scriptSysId": "01dd40f51b449a9064122144b24bcb7b",
+                                                        "target": null
+                                                    }
+                                                },
+                                                "select": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "single"
+                                                },
+                                                "selectedItems": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": [
+                                                        0
+                                                    ]
+                                                },
+                                                "hideLabel": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "panelFitProps": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {}
+                                                },
+                                                "opened": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "tooltipContent": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "message": "Select month of interest",
+                                                        "comment": ""
+                                                    }
+                                                },
+                                                "configAria": {
+                                                    "type": "MAP_CONTAINER",
+                                                    "container": {}
+                                                }
+                                            },
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "slot": null,
+                                            "styles": null
+                                        }
+                                    ],
+                                    "layout": {
+                                        "default": {
+                                            "type": "flex",
+                                            "root": null,
+                                            "children": null,
+                                            "rules": null,
+                                            "styles": {
+                                                "flex-direction": "row-reverse"
+                                            },
+                                            "items": [
+                                                {
+                                                    "element_id": "dropdown_3",
+                                                    "styles": {
+                                                        "padding-top": "8px",
+                                                        "padding-left": "0",
+                                                        "margin-left": "0",
+                                                        "padding-right": "16px"
+                                                    }
+                                                }
+                                            ],
+                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
+                                        },
+                                        "version": "3.0.0"
+                                    }
+                                }
                             }
                         ],
                         "layout": {
                             "default": {
-                                "type": "flex",
+                                "type": "grid",
                                 "root": null,
                                 "children": null,
                                 "rules": null,
                                 "styles": {
-                                    "flex-direction": "column"
+                                    "flex-direction": "column",
+                                    "display": "grid",
+                                    "grid-template-columns": "1fr 1fr",
+                                    "grid-template-rows": "1fr",
+                                    "grid-auto-rows": "1fr",
+                                    "grid-auto-columns": "1fr"
                                 },
                                 "items": [
                                     {
@@ -1504,6 +1595,13 @@
                                             "align-self": "flex-start",
                                             "margin-left": "0",
                                             "padding-left": "var(--now-scalable-space--md)"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "container_174",
+                                        "styles": {
+                                            "width": "100%",
+                                            "background-color": "#DBDBDB"
                                         }
                                     }
                                 ],
@@ -31386,6 +31484,15 @@
   "message" : "Scope",
   "comment" : ""
 }, {
+  "message" : "Select month of interest",
+  "comment" : ""
+}, {
+  "message" : "Select portfolio of interest",
+  "comment" : ""
+}, {
+  "message" : "Select sorting order",
+  "comment" : ""
+}, {
   "message" : "Status Date",
   "comment" : ""
 }, {
@@ -31844,7 +31951,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>994</sys_mod_count>
+        <sys_mod_count>1007</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31852,7 +31959,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-16 15:23:32</sys_updated_on>
+        <sys_updated_on>2024-08-19 08:03:12</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
