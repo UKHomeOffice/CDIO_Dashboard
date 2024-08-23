@@ -20,6 +20,7 @@ function handler({api, clientStateParameter = 'ElementHealthList',
                     health_list = []}) {
     
     var m = api.state.Month;
+    var breakdown2 = api.context.props.breakdown2;
 
     // Define element's health for KPI1 
     var valuekpi1 = api.data.elementkpi1.output.result[0].scores[m].value;
@@ -52,7 +53,14 @@ function handler({api, clientStateParameter = 'ElementHealthList',
     }
 
     // Create a health list for the element
-    health_list.push(ekpi1health, ekpi2health, ekpi3health);
+    if (breakdown2 === 'b1616b8c4fe933002f3c71318110c743') {
+        health_list.push(ekpi1health, ekpi2health, ekpi3health);
+    } else if (breakdown2 === 'baec0752bf130100b96dac808c0739ed') {
+        health_list.push(ekpi1health);
+    } else if (breakdown2 === '17bc0d771b414d50a1bc5946464bcb4c') {
+        health_list.push(ekpi2health, ekpi3health);
+    }
+
     api.setState(clientStateParameter, health_list);
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
@@ -61,7 +69,7 @@ function handler({api, clientStateParameter = 'ElementHealthList',
         <sys_created_on>2024-06-06 07:35:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>08ae11f21baa0210db5a97d0b24bcbb0</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>showElementHealthList</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -69,7 +77,7 @@ function handler({api, clientStateParameter = 'ElementHealthList',
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_08ae11f21baa0210db5a97d0b24bcbb0</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-19 08:36:29</sys_updated_on>
+        <sys_updated_on>2024-08-23 14:27:19</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
