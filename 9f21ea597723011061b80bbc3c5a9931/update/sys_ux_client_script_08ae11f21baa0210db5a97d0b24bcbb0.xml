@@ -15,41 +15,63 @@
  * @param {any} params.imports
  * @param {ApiHelpers} params.helpers
  */
-function handler({api, clientStateParameter = 'ElementHealthList', 
-                    ekpi1health = '', ekpi2health = '', ekpi3health = '', 
-                    health_list = []}) {
-    
-    // Define element's health for KPI1 
-    var valuekpi1 = api.data.elementkpi1.output.result[0].value;
-    if (valuekpi1 < 24 && valuekpi1 > 0) {
-        ekpi1health = 'green';
-    } else if (valuekpi1 >= 24 && valuekpi1 < 24*7) {
-        ekpi1health = 'amber';
-    } else if (valuekpi1 > 24*7) {
-        ekpi1health = 'red';
+function handler({
+    api,
+    clientStateParameter = 'ElementHealthList',
+    ekpi1health = '',
+    ekpi2health = '',
+    ekpi3health = '',
+    health_list = []
+}) {
+
+    var m = api.state.Month;
+    var breakdown2 = api.context.props.breakdown2;
+
+    if (breakdown2 === 'b1616b8c4fe933002f3c71318110c743' || breakdown2 === 'baec0752bf130100b96dac808c0739ed') {
+
+        // Define element's health for KPI1 
+        var valuekpi1 = api.data.elementkpi1.output.result[0].scores[m].value;
+        if (valuekpi1 < 24 && valuekpi1 > 0) {
+            ekpi1health = 'green';
+        } else if (valuekpi1 >= 24 && valuekpi1 < 24 * 7) {
+            ekpi1health = 'amber';
+        } else if (valuekpi1 > 24 * 7) {
+            ekpi1health = 'red';
+        }
     }
 
-    // Define element's health for KPI2 
-    var valuekpi2 = api.data.elementkpi2.output.result[0].value;
-    if(valuekpi2 > 97.5){
-        ekpi2health = 'green';
-    } else if (valuekpi2 >= 95 && valuekpi2 <= 97.5 ){
-        ekpi2health = 'amber';
-    } else if (valuekpi2 < 95 && valuekpi2 > 0 ) {
-        ekpi2health = 'red';
-    }
-    
-    // Define element's health for KPI3
-    var valuekpi3 = api.data.elementkpi3.output.result[0].value;
-    if(valuekpi3 > 20 ){
-        ekpi3health = 'green';
-    } else if (valuekpi3 >= 10 && valuekpi3 <= 20 ){
-        ekpi3health = 'amber';
-    } else if (valuekpi3 < 10 && valuekpi3 > 0 ) {
-        ekpi3health = 'red';
+    if (breakdown2 === 'b1616b8c4fe933002f3c71318110c743' || breakdown2 === '17bc0d771b414d50a1bc5946464bcb4c') {
+
+        // Define element's health for KPI2 
+        var valuekpi2 = api.data.elementkpi2.output.result[0].scores[m].value;
+        if (valuekpi2 > 97.5) {
+            ekpi2health = 'green';
+        } else if (valuekpi2 >= 95 && valuekpi2 <= 97.5) {
+            ekpi2health = 'amber';
+        } else if (valuekpi2 < 95 && valuekpi2 > 0) {
+            ekpi2health = 'red';
+        }
+
+        // Define element's health for KPI3
+        var valuekpi3 = api.data.elementkpi3.output.result[0].scores[m].value;
+        if (valuekpi3 > 20) {
+            ekpi3health = 'green';
+        } else if (valuekpi3 >= 10 && valuekpi3 <= 20) {
+            ekpi3health = 'amber';
+        } else if (valuekpi3 < 10 && valuekpi3 > 0) {
+            ekpi3health = 'red';
+        }
     }
 
-    // Create a health list for the element
+    // // Create a health list for the element
+    // if (breakdown2 === 'b1616b8c4fe933002f3c71318110c743') {
+    //     health_list.push(ekpi1health, ekpi2health, ekpi3health);
+    // } else if (breakdown2 === 'baec0752bf130100b96dac808c0739ed') {
+    //     health_list.push(ekpi1health);
+    // } else if (breakdown2 === '17bc0d771b414d50a1bc5946464bcb4c') {
+    //     health_list.push(ekpi2health, ekpi3health);
+    // }
+
     health_list.push(ekpi1health, ekpi2health, ekpi3health);
     api.setState(clientStateParameter, health_list);
 }]]></script>
@@ -59,7 +81,7 @@ function handler({api, clientStateParameter = 'ElementHealthList',
         <sys_created_on>2024-06-06 07:35:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>08ae11f21baa0210db5a97d0b24bcbb0</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>showElementHealthList</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -67,7 +89,7 @@ function handler({api, clientStateParameter = 'ElementHealthList',
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_08ae11f21baa0210db5a97d0b24bcbb0</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-07-02 13:34:38</sys_updated_on>
+        <sys_updated_on>2024-08-23 14:58:27</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
