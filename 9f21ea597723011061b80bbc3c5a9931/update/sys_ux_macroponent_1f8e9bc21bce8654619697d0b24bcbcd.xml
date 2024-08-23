@@ -1000,12 +1000,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "STATE_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "ElementHealthList"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1090,43 +1086,6 @@
                                                     "version": "3.0.0"
                                                 }
                                             }
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Stylized text 10",
-                                            "elementId": "stylized_text_10",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "text": {
-                                                    "type": "CONTEXT_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "breakdown2"
-                                                        ],
-                                                        "category": "props"
-                                                    }
-                                                },
-                                                "tag": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "span"
-                                                },
-                                                "css": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "* { }"
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -1153,10 +1112,6 @@
                                                         "padding-right": "8px",
                                                         "position": "relative"
                                                     }
-                                                },
-                                                {
-                                                    "element_id": "stylized_text_10",
-                                                    "styles": {}
                                                 }
                                             ],
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -1448,18 +1403,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "DATA_OUTPUT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "elementkpi1",
-                                                                                    "output",
-                                                                                    "result",
-                                                                                    "0",
-                                                                                    "scores",
-                                                                                    "0",
-                                                                                    "value"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -1861,18 +1806,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "DATA_OUTPUT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "elementkpi2",
-                                                                                    "output",
-                                                                                    "result",
-                                                                                    "0",
-                                                                                    "scores",
-                                                                                    "0",
-                                                                                    "value"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -2274,18 +2209,8 @@
                                                                     ],
                                                                     "propertyValues": {
                                                                         "text": {
-                                                                            "type": "DATA_OUTPUT_BINDING",
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "elementkpi3",
-                                                                                    "output",
-                                                                                    "result",
-                                                                                    "0",
-                                                                                    "scores",
-                                                                                    "0",
-                                                                                    "value"
-                                                                                ]
-                                                                            }
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Let's workflow it."
                                                                         },
                                                                         "tag": {
                                                                             "type": "JSON_LITERAL",
@@ -3273,7 +3198,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>211</sys_mod_count>
+        <sys_mod_count>213</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3281,7 +3206,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-23 15:10:10</sys_updated_on>
+        <sys_updated_on>2024-08-23 16:15:43</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
