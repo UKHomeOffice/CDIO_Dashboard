@@ -12069,6 +12069,7 @@
             "encodedQuery": {
                 "type": "CLIENT_TRANSFORM",
                 "transform": {
+                    "operator": "CONCAT",
                     "operands": {
                         "type": "LIST_CONTAINER",
                         "container": [
@@ -12086,11 +12087,10 @@
                             },
                             {
                                 "type": "JSON_LITERAL",
-                                "value": "^name=BX eGates^ORname=HMPO Digital Application Processing^ORnameLIKEAtlas"
+                                "value": "^name=CTB eGates^ORname=HMPO Digital Application Processing^ORnameLIKEAtlas"
                             }
                         ]
-                    },
-                    "operator": "CONCAT"
+                    }
                 }
             },
             "returnFields": {
@@ -13507,7 +13507,7 @@
         <sys_created_on>2022-05-18 05:41:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>93e3bed97763011061b80bbc3c5a991e</sys_id>
-        <sys_mod_count>703</sys_mod_count>
+        <sys_mod_count>704</sys_mod_count>
         <sys_name>Product Performance default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -13515,7 +13515,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_93e3bed97763011061b80bbc3c5a991e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-14 08:55:46</sys_updated_on>
+        <sys_updated_on>2024-09-09 13:29:40</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -13525,10 +13525,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>system</sys_created_by>
-        <sys_created_on>2024-08-01 15:26:20</sys_created_on>
-        <sys_id>8b3be7741b77c25064122144b24bcbe7</sys_id>
+        <sys_created_on>2024-09-09 06:17:50</sys_created_on>
+        <sys_id>a4b3e2d11bac1a1064122144b24bcbc8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-01 15:26:20</sys_updated_on>
+        <sys_updated_on>2024-09-09 06:17:50</sys_updated_on>
     </sys_claim>
 </record_update>
