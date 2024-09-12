@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_filter">
+    <sys_filter action="INSERT_OR_UPDATE">
+        <filter table="pa_indicators">sys_idSTARTSWITH2a2563501b0c061060cf2144b24bcb70^ORsys_idSTARTSWITHd5f1067b1b9fc1d0225097d0b24bcbd8^ORsys_idSTARTSWITH3fef79bb1b5fc1d0225097d0b24bcb13^ORsys_idSTARTSWITH163016599780d29065c672a71153afa9^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="STARTSWITH" or="false" value="2a2563501b0c061060cf2144b24bcb70"/>
+            <item endquery="false" field="sys_id" goto="false" newquery="false" operator="STARTSWITH" or="true" value="d5f1067b1b9fc1d0225097d0b24bcbd8"/>
+            <item endquery="false" field="sys_id" goto="false" newquery="false" operator="STARTSWITH" or="true" value="3fef79bb1b5fc1d0225097d0b24bcb13"/>
+            <item endquery="false" field="sys_id" goto="false" newquery="false" operator="STARTSWITH" or="true" value="163016599780d29065c672a71153afa9"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <group/>
+        <last_used/>
+        <mobile>false</mobile>
+        <roles/>
+        <sys_class_name>sys_filter</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-09-12 13:56:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ec696f9a97601650262172a71153af4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CDIO KPIs</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_filter_ec696f9a97601650262172a71153af4a</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-09-12 13:56:14</sys_updated_on>
+        <table>pa_indicators</table>
+        <title>CDIO KPIs</title>
+        <user/>
+    </sys_filter>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>191e6ad9cbf0000001</claim_timestamp>
+        <metadata_update_name>sys_filter_ec696f9a97601650262172a71153af4a</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-09-12 14:40:23</sys_created_on>
+        <sys_id>1373b71297e01650262172a71153af2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-09-12 14:40:23</sys_updated_on>
+    </sys_claim>
+</record_update>
