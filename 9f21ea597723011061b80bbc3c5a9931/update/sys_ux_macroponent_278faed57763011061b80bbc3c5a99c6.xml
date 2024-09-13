@@ -1048,7 +1048,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
+                        "value": false
                     },
                     "isHero": false,
                     "extensionPoints": [
@@ -1106,7 +1106,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
+                        "value": false
                     },
                     "preset": null,
                     "slot": null,
@@ -2793,7 +2793,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -3592,7 +3592,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -4371,7 +4371,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -5150,7 +5150,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -5929,7 +5929,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -8921,7 +8921,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -9698,7 +9698,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -10476,7 +10476,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -11253,7 +11253,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -12030,7 +12030,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -21030,7 +21030,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -21807,7 +21807,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -22584,7 +22584,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -23361,7 +23361,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -24138,7 +24138,7 @@
                                                                                     },
                                                                                     "disabled": {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": true
+                                                                                        "value": false
                                                                                     },
                                                                                     "hidePadding": {
                                                                                         "type": "JSON_LITERAL",
@@ -31951,7 +31951,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1009</sys_mod_count>
+        <sys_mod_count>1010</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31959,7 +31959,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-09-09 11:49:54</sys_updated_on>
+        <sys_updated_on>2024-09-13 13:00:16</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -31969,10 +31969,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>system</sys_created_by>
-        <sys_created_on>2024-09-09 06:17:50</sys_created_on>
-        <sys_id>acb3e2d11bac1a1064122144b24bcbbe</sys_id>
+        <sys_created_on>2024-09-13 12:49:47</sys_created_on>
+        <sys_id>78c3acbe97a01a50262172a71153af1c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-09-09 06:17:50</sys_updated_on>
+        <sys_updated_on>2024-09-13 12:49:47</sys_updated_on>
     </sys_claim>
 </record_update>
