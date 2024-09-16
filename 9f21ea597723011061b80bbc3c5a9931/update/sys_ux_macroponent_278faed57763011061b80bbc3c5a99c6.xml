@@ -21056,7 +21056,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[0].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[0].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=0;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "2ac4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -21833,7 +21833,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[1].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[1].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=1;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "6ac4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -22610,7 +22610,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[2].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[2].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=2;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "aac4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -23387,7 +23387,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[3].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[3].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=3;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "eac4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -24164,7 +24164,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[4].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[4].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=4;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "2ec4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -31951,7 +31951,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1010</sys_mod_count>
+        <sys_mod_count>1012</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31959,7 +31959,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-09-13 13:00:16</sys_updated_on>
+        <sys_updated_on>2024-09-16 12:45:30</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
