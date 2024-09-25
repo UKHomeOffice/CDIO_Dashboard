@@ -631,16 +631,16 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                "id": "22c67d9a1e515fef66442e1469bed3a2",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementLabel": "Product journey button",
-                                            "elementId": "button_10",
+                                            "elementLabel": "Product journey dropdown",
+                                            "elementId": "dropdown_4",
                                             "eventMappings": [
                                                 
                                             ],
                                             "propertyValues": {
-                                                "label": {
+                                                "placeholder": {
                                                     "type": "TRANSLATION_LITERAL",
                                                     "value": {
                                                         "code": null,
@@ -652,9 +652,17 @@
                                                     "type": "JSON_LITERAL",
                                                     "value": "secondary"
                                                 },
+                                                "bare": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
                                                 "size": {
                                                     "type": "JSON_LITERAL",
                                                     "value": "md"
+                                                },
+                                                "search": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "none"
                                                 },
                                                 "disabled": {
                                                     "type": "JSON_LITERAL",
@@ -664,17 +672,53 @@
                                                     "type": "JSON_LITERAL",
                                                     "value": null
                                                 },
-                                                "tooltipContent": {
-                                                    "type": "TRANSLATION_LITERAL",
-                                                    "value": {
-                                                        "code": null,
-                                                        "message": "Enter a label",
-                                                        "comment": ""
+                                                "hideCaret": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "showPadding": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "items": {
+                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                    "script": {
+                                                        "apiVersion": "2.0.0",
+                                                        "controllerElementId": null,
+                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  for(var i = 0; i&lt;api.data.breakdown_businessservicefamily.results.length; i++)\n  {\n  var myObj = {};\n    myObj.id = api.data.breakdown_businessservicefamily.results[i]._row_data.uniqueValue;\n    myObj.label = api.data.breakdown_businessservicefamily.results[i].name.value;\n    arr.push(myObj);\n  }\nreturn arr;\n}",
+                                                        "scriptSysId": "8d258d5e1b74de1064122144b24bcb6f",
+                                                        "target": null
                                                     }
+                                                },
+                                                "select": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "single"
+                                                },
+                                                "selectedItems": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": [
+                                                        
+                                                    ]
+                                                },
+                                                "hideLabel": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "panelFitProps": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {}
+                                                },
+                                                "opened": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "tooltipContent": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
                                                 },
                                                 "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": {}
+                                                    "value": null
                                                 }
                                             },
                                             "isHidden": {
@@ -995,8 +1039,9 @@
                                                     "element_id": "dropdown_1"
                                                 },
                                                 {
-                                                    "element_id": "button_10",
+                                                    "element_id": "dropdown_4",
                                                     "styles": {
+                                                        "min-width": "",
                                                         "padding-top": "8px"
                                                     }
                                                 },
@@ -31334,6 +31379,55 @@
             }
         },
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "elementId": "breakdown_businessservicefamily",
+        "elementLabel": "Breakdown BusinessServiceFamily",
+        "definition": {
+            "id": "b997a84053021010cbc2ddeeff7b1228",
+            "type": "COMPOSITE"
+        },
+        "dependencies": {},
+        "inputValues": {
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "pa_buckets"
+            },
+            "encodedQuery": {
+                "type": "JSON_LITERAL",
+                "value": "bucket_group=325751cf97c89214f42972a71153af5d"
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL"
+            },
+            "orderBy": {
+                "type": "JSON_LITERAL"
+            },
+            "sortType": {
+                "type": "JSON_LITERAL",
+                "value": "asc"
+            },
+            "limit": {
+                "type": "JSON_LITERAL",
+                "value": "1000"
+            },
+            "offset": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "queryCategory": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "returnFieldMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            }
+        },
+        "eventMappings": [
+            
+        ],
+        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -31951,7 +32045,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1012</sys_mod_count>
+        <sys_mod_count>1021</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31959,7 +32053,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-09-16 12:45:30</sys_updated_on>
+        <sys_updated_on>2024-09-24 13:19:19</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
