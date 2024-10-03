@@ -2399,12 +2399,13 @@
                             "value": ""
                         },
                         "listTitle": {
-                            "type": "CONTEXT_BINDING",
-                            "binding": {
-                                "address": [
-                                    "listTitle"
-                                ],
-                                "category": "props"
+                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                            "script": {
+                                "apiVersion": "2.0.0",
+                                "controllerElementId": null,
+                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  if (api.state.Month !== null) {\n    var m = api.state.Month;\n    var start_of_month = api.data.tab1getmonth.output.result[0].scores[m].start_at;\n    var end_of_month = api.data.tab1getmonth.output.result[0].scores[m].end_at;\n    var selected_month = api.data.tab1getmonth.output.result[0].scores[m].period;\n    return 'Failures in ' + selected_month+ ' for PIS: ' + api.context.props.element;\n  }\n\treturn api.context.props.listTitle;\n}\n",
+                                "scriptSysId": "d0e61e811b851a9064122144b24bcb11",
+                                "target": null
                             }
                         },
                         "columns": {
@@ -2416,12 +2417,13 @@
                             "value": null
                         },
                         "query": {
-                            "type": "CONTEXT_BINDING",
-                            "binding": {
-                                "address": [
-                                    "query"
-                                ],
-                                "category": "props"
+                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                            "script": {
+                                "apiVersion": "2.0.0",
+                                "controllerElementId": null,
+                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  if (api.state.Month !== null) {\n    var m = api.state.Month;\n    var payload = api.data.tab1getmonth.output.result[0];\n    var start_of_month = payload.scores[m].start_at;\n    var end_of_month = payload.scores[m].end_at;\n    return 'business_service=' + api.context.props.element2 + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" +end_of_month+ \"','23:59:59')\";\n  }\n\treturn api.context.props.query;\n}",
+                                "scriptSysId": "90e61e811b851a9064122144b24bcb11",
+                                "target": null
                             }
                         },
                         "groupByField": {
@@ -3173,6 +3175,19 @@
         "readOnly": false,
         "selectable": false,
         "inherited": false
+    },
+    {
+        "id": "cmbbtcceeyqaaaddggxddjhhsaarccwuxccj",
+        "name": "attribute",
+        "label": "attribute",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "description": "",
+        "readOnly": false,
+        "selectable": false,
+        "inherited": false
     }
 ]</props>
         <required_translations>[ {
@@ -3235,7 +3250,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>221</sys_mod_count>
+        <sys_mod_count>238</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3243,7 +3258,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-10-02 08:58:33</sys_updated_on>
+        <sys_updated_on>2024-10-03 09:12:43</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
