@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="HO Product Performance Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
+        <name>identifySelectedMonth</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    var scores = api.data.tab1getmonth.output.result[0].scores;
+    for (let i = 0; i < scores.length; i++) {
+        if (api.state.Month === scores[i].end_at) {
+            api.setState('Month_n', i);
+        }
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-10-08 12:19:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b5fa4d7a1b411ad064122144b24bcb39</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>identifySelectedMonth</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_b5fa4d7a1b411ad064122144b24bcb39</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-10-08 12:57:47</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>1926c3b01120000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_b5fa4d7a1b411ad064122144b24bcb39</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-10-08 13:04:19</sys_created_on>
+        <sys_id>e5d6ddf61bc11ad064122144b24bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-10-08 13:04:19</sys_updated_on>
+    </sys_claim>
+</record_update>
