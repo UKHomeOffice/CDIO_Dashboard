@@ -557,7 +557,7 @@
                                                     "script": {
                                                         "apiVersion": "2.0.0",
                                                         "controllerElementId": null,
-                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  var breakdown2 = api.context.props.breakdown2;\n\n  if (breakdown2 === 'b1616b8c4fe933002f3c71318110c743' || breakdown2 === 'baec0752bf130100b96dac808c0739ed') {\n    var scores = api.data.elementkpi1.output.result[0].scores;\n  } else if (breakdown2 === '17bc0d771b414d50a1bc5946464bcb4c') {\n    var scores = api.data.elementkpi2.output.result[0].scores;\n  }\n\n  for(var i = 0; i&lt;scores.length; i++)\n  {\n  var myObj = {};\n    myObj.id = i;\n    myObj.label = scores[i].period;\n    arr.push(myObj);\n  }\nreturn arr;\n}\n",
+                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\n\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  var scores = api.data.tab1getmonth.output.result[0].scores;\n  for(var i = 0; i&lt;scores.length; i++)\n  {\n  var myObj = {};\n    myObj.id = i;\n    myObj.label = scores[i].period;\n    arr.push(myObj);\n  }\nreturn arr;\n}\n",
                                                         "scriptSysId": "f057bea697c05a90262172a71153aff9",
                                                         "target": null
                                                     }
@@ -2399,12 +2399,13 @@
                             "value": ""
                         },
                         "listTitle": {
-                            "type": "CONTEXT_BINDING",
-                            "binding": {
-                                "address": [
-                                    "listTitle"
-                                ],
-                                "category": "props"
+                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                            "script": {
+                                "apiVersion": "2.0.0",
+                                "controllerElementId": null,
+                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  if (api.state.Month != null) {\n    var m = api.state.Month;\n    var start_of_month = api.data.tab1getmonth.output.result[0].scores[m].start_at;\n    var end_of_month = api.data.tab1getmonth.output.result[0].scores[m].end_at;\n    var selected_month = api.data.tab1getmonth.output.result[0].scores[m].period;\n    return 'Failures in ' + selected_month+ ' for ' + api.context.props.attributelabel + ': ' + api.context.props.element;\n  }\n\treturn api.context.props.listTitle;\n}\n",
+                                "scriptSysId": "d0e61e811b851a9064122144b24bcb11",
+                                "target": null
                             }
                         },
                         "columns": {
@@ -2416,12 +2417,13 @@
                             "value": null
                         },
                         "query": {
-                            "type": "CONTEXT_BINDING",
-                            "binding": {
-                                "address": [
-                                    "query"
-                                ],
-                                "category": "props"
+                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                            "script": {
+                                "apiVersion": "2.0.0",
+                                "controllerElementId": null,
+                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  if (api.state.Month != null) {\n    var m = api.state.Month;\n    var payload = api.data.tab1getmonth.output.result[0];\n    var start_of_month = payload.scores[m].start_at;\n    var end_of_month = payload.scores[m].end_at;\n    return api.context.props.attribute + '=' + api.context.props.element2 + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" +end_of_month+ \"','23:59:59')\";\n  }\n\treturn api.context.props.query;\n}",
+                                "scriptSysId": "90e61e811b851a9064122144b24bcb11",
+                                "target": null
                             }
                         },
                         "groupByField": {
@@ -2925,6 +2927,46 @@
             }
         ],
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "elementId": "tab1getmonth",
+        "elementLabel": "Tab1getMonth",
+        "definition": {
+            "id": "885b32be973052d0262172a71153afeb",
+            "type": "REST"
+        },
+        "dependencies": {},
+        "inputValues": {
+            "uuid": {
+                "type": "DATA_OUTPUT_BINDING",
+                "binding": {
+                    "address": [
+                        "getmetricsofciodashboard_1",
+                        "output",
+                        "VerticalA",
+                        "headlineMetrics",
+                        "0",
+                        "metricSysid"
+                    ]
+                }
+            },
+            "portfolio_breakdown": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "portfolio_element": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "2nd_breakdown": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            }
+        },
+        "eventMappings": [
+            
+        ],
+        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -3133,6 +3175,32 @@
         "readOnly": false,
         "selectable": false,
         "inherited": false
+    },
+    {
+        "id": "cmbbtcceeyqaaaddggxddjhhsaarccwuxccj",
+        "name": "attribute",
+        "label": "attribute",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "description": "",
+        "readOnly": false,
+        "selectable": false,
+        "inherited": false
+    },
+    {
+        "id": "cmbbtfffpecaaccffddjhhtvoufikje",
+        "name": "attributelabel",
+        "label": "attributelabel",
+        "fieldType": "string",
+        "typeMetadata": null,
+        "valueType": "string",
+        "mandatory": false,
+        "description": "",
+        "readOnly": false,
+        "selectable": false,
+        "inherited": false
     }
 ]</props>
         <required_translations>[ {
@@ -3184,10 +3252,7 @@
     },
     {
         "fieldType": "number",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": 0
-        },
+        "initialValue": null,
         "name": "Month",
         "shape": "",
         "valueType": "number"
@@ -3198,7 +3263,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>213</sys_mod_count>
+        <sys_mod_count>250</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3206,7 +3271,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-23 16:15:43</sys_updated_on>
+        <sys_updated_on>2024-10-07 12:12:39</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
