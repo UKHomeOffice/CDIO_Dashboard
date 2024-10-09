@@ -14,38 +14,38 @@
   * @param {TransformApiHelpers} params.helpers
   */
 function evaluateProperty({api, helpers}) {
-  return [Number(api.context.props.selectedmonth)];
+  return [api.state.Month != null ? Number(api.state.Month) : Number(api.context.props.selectedmonth)];
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-10-08 13:26:41</sys_created_on>
+        <sys_created_on>2024-10-08 14:23:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>8b6bd1b21b051ad064122144b24bcbf6</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_id>60ecd1f21b051ad064122144b24bcb21</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>dropdown_1/selectedItems</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
-        <sys_update_name>sys_ux_client_script_8b6bd1b21b051ad064122144b24bcbf6</sys_update_name>
+        <sys_update_name>sys_ux_client_script_60ecd1f21b051ad064122144b24bcb21</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-10-08 13:43:28</sys_updated_on>
+        <sys_updated_on>2024-10-09 10:36:38</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>1926c5fc3bc0000001</claim_timestamp>
-        <metadata_update_name>sys_ux_client_script_8b6bd1b21b051ad064122144b24bcbf6</metadata_update_name>
+        <claim_timestamp>19270e0258a0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_60ecd1f21b051ad064122144b24bcb21</metadata_update_name>
         <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-10-08 13:44:28</sys_created_on>
-        <sys_id>79006d3e1b051ad064122144b24bcb4d</sys_id>
+        <sys_created_on>2024-10-09 10:43:10</sys_created_on>
+        <sys_id>88208ecb974d1a94262172a71153afb0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-10-08 13:44:28</sys_updated_on>
+        <sys_updated_on>2024-10-09 10:43:10</sys_updated_on>
     </sys_claim>
 </record_update>
