@@ -608,50 +608,6 @@
                                             "preset": null,
                                             "slot": null,
                                             "styles": null
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "bb63b710d208796b7ceaab7812bddef1",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementLabel": "Label value 1",
-                                            "elementId": "label_value_1",
-                                            "eventMappings": [
-                                                
-                                            ],
-                                            "propertyValues": {
-                                                "label": {
-                                                    "type": "TRANSLATION_LITERAL",
-                                                    "value": {
-                                                        "code": null,
-                                                        "message": "testingmonth: ",
-                                                        "comment": ""
-                                                    }
-                                                },
-                                                "value": {
-                                                    "type": "STATE_BINDING",
-                                                    "binding": {
-                                                        "address": [
-                                                            "testingmonth"
-                                                        ]
-                                                    }
-                                                },
-                                                "reversed": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "truncated": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                }
-                                            },
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": null,
-                                            "slot": null,
-                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -667,10 +623,6 @@
                                             "items": [
                                                 {
                                                     "element_id": "dropdown_1",
-                                                    "styles": {}
-                                                },
-                                                {
-                                                    "element_id": "label_value_1",
                                                     "styles": {}
                                                 }
                                             ],
@@ -3286,9 +3238,6 @@
 }, {
   "message" : "Stability",
   "comment" : ""
-}, {
-  "message" : "testingmonth: ",
-  "comment" : ""
 } ]</required_translations>
         <root_component/>
         <root_component_config/>
@@ -3324,12 +3273,6 @@
         "name": "Month",
         "shape": "",
         "valueType": "number"
-    },
-    {
-        "initialValue": null,
-        "name": "testingmonth",
-        "shape": "",
-        "valueType": "string"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -3337,7 +3280,7 @@
         <sys_created_on>2024-05-10 11:53:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1f8e9bc21bce8654619697d0b24bcbcd</sys_id>
-        <sys_mod_count>272</sys_mod_count>
+        <sys_mod_count>273</sys_mod_count>
         <sys_name>Insights Default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -3345,7 +3288,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_1f8e9bc21bce8654619697d0b24bcbcd</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-10-09 10:48:33</sys_updated_on>
+        <sys_updated_on>2024-10-09 11:55:30</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
