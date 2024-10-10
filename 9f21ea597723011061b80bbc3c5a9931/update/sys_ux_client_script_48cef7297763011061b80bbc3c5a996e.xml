@@ -19,10 +19,9 @@ function handler({api, event, helpers, imports}) {
     var arr = [];
     var results = api.data.verticalA_headlinemetric1.output.result;
     var clientStateParameter = 'verticalAMetric1ShowHealth';
-    var m = api.state.Month;
 
     for (let i = 0; i < results.length; i++) {
-        var value = results[i].scores[m].value;
+        var value = results[i].value;
         if (value<24 && value>0) {
             arr.push('green');
         } else if (value>=24 && value<=24*7) {
@@ -42,7 +41,7 @@ function handler({api, event, helpers, imports}) {
         <sys_created_on>2022-05-19 05:46:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>48cef7297763011061b80bbc3c5a996e</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>showVerticalAMetric1Health</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -50,7 +49,7 @@ function handler({api, event, helpers, imports}) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_48cef7297763011061b80bbc3c5a996e</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-08-16 13:05:43</sys_updated_on>
+        <sys_updated_on>2024-09-26 09:34:29</sys_updated_on>
         <target/>
         <type>default</type>
     </sys_ux_client_script>
@@ -62,10 +61,10 @@ function handler({api, event, helpers, imports}) {
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>system</sys_created_by>
-        <sys_created_on>2024-09-09 06:17:43</sys_created_on>
-        <sys_id>f2a3ae911bac1a1064122144b24bcb16</sys_id>
+        <sys_created_on>2024-09-26 14:07:38</sys_created_on>
+        <sys_id>4c42fb7e973852d0262172a71153afd1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-09-09 06:17:43</sys_updated_on>
+        <sys_updated_on>2024-09-26 14:07:38</sys_updated_on>
     </sys_claim>
 </record_update>

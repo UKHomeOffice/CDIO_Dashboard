@@ -434,7 +434,7 @@
                                                 },
                                                 "disabled": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": true
                                                 },
                                                 "placeholder": {
                                                     "type": "TRANSLATION_LITERAL",
@@ -631,16 +631,16 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                "id": "22c67d9a1e515fef66442e1469bed3a2",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementLabel": "Product journey button",
-                                            "elementId": "button_10",
+                                            "elementLabel": "Product journey dropdown",
+                                            "elementId": "dropdown_4",
                                             "eventMappings": [
                                                 
                                             ],
                                             "propertyValues": {
-                                                "label": {
+                                                "placeholder": {
                                                     "type": "TRANSLATION_LITERAL",
                                                     "value": {
                                                         "code": null,
@@ -652,29 +652,73 @@
                                                     "type": "JSON_LITERAL",
                                                     "value": "secondary"
                                                 },
+                                                "bare": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
                                                 "size": {
                                                     "type": "JSON_LITERAL",
                                                     "value": "md"
                                                 },
+                                                "search": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "none"
+                                                },
                                                 "disabled": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": true
                                                 },
                                                 "icon": {
                                                     "type": "JSON_LITERAL",
                                                     "value": null
                                                 },
-                                                "tooltipContent": {
-                                                    "type": "TRANSLATION_LITERAL",
-                                                    "value": {
-                                                        "code": null,
-                                                        "message": "Enter a label",
-                                                        "comment": ""
+                                                "hideCaret": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "showPadding": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "items": {
+                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                    "script": {
+                                                        "apiVersion": "2.0.0",
+                                                        "controllerElementId": null,
+                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  for(var i = 0; i&lt;api.data.breakdown_businessservicefamily.results.length; i++)\n  {\n  var myObj = {};\n    myObj.id = api.data.breakdown_businessservicefamily.results[i]._row_data.uniqueValue;\n    myObj.label = api.data.breakdown_businessservicefamily.results[i].name.value;\n    arr.push(myObj);\n  }\nreturn arr;\n}",
+                                                        "scriptSysId": "8d258d5e1b74de1064122144b24bcb6f",
+                                                        "target": null
                                                     }
+                                                },
+                                                "select": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "single"
+                                                },
+                                                "selectedItems": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": [
+                                                        
+                                                    ]
+                                                },
+                                                "hideLabel": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "panelFitProps": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {}
+                                                },
+                                                "opened": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "tooltipContent": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
                                                 },
                                                 "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": {}
+                                                    "value": null
                                                 }
                                             },
                                             "isHidden": {
@@ -995,8 +1039,9 @@
                                                     "element_id": "dropdown_1"
                                                 },
                                                 {
-                                                    "element_id": "button_10",
+                                                    "element_id": "dropdown_4",
                                                     "styles": {
+                                                        "min-width": "",
                                                         "padding-top": "8px"
                                                     }
                                                 },
@@ -1048,7 +1093,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
+                        "value": false
                     },
                     "isHero": false,
                     "extensionPoints": [
@@ -1106,7 +1151,7 @@
                     },
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
+                        "value": false
                     },
                     "preset": null,
                     "slot": null,
@@ -1443,6 +1488,22 @@
                                                             },
                                                             "conditional": null,
                                                             "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "cmccaafgobbjaacceetddjiiccftacchgjjii",
+                                                            "type": "CLIENT_SCRIPT",
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": null,
+                                                            "clientScript": {
+                                                                "sysId": "b5fa4d7a1b411ad064122144b24bcb39",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {}
+                                                                }
+                                                            },
+                                                            "conditional": null,
+                                                            "broker": null
                                                         }
                                                     ],
                                                     "sourceEventDefinition": {
@@ -1479,7 +1540,7 @@
                                                 },
                                                 "disabled": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": true
                                                 },
                                                 "icon": {
                                                     "type": "JSON_LITERAL",
@@ -1498,7 +1559,7 @@
                                                     "script": {
                                                         "apiVersion": "2.0.0",
                                                         "controllerElementId": null,
-                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  var scores = api.data.verticalA_headlinemetric1.output.result[0].scores;\n  for(var i = 0; i&lt;scores.length; i++)\n  {\n  var myObj = {};\n    myObj.id = i;\n    myObj.label = scores[i].period;\n    arr.push(myObj);\n  }\nreturn arr;\n}\n",
+                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\n\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  var scores = api.data.tab1getmonth.output.result[0].scores;\n  for(var i = 0; i&lt;scores.length; i++)\n  {\n  var myObj = {};\n    myObj.id = scores[i].end_at;\n    myObj.label = scores[i].period;\n    arr.push(myObj);\n  }\nreturn arr;\n}\n",
                                                         "scriptSysId": "01dd40f51b449a9064122144b24bcb7b",
                                                         "target": null
                                                     }
@@ -1508,10 +1569,14 @@
                                                     "value": "single"
                                                 },
                                                 "selectedItems": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": [
-                                                        0
-                                                    ]
+                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                    "script": {
+                                                        "apiVersion": "2.0.0",
+                                                        "controllerElementId": null,
+                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  var init_month = api.data.tab1getmonth.output.result[0].scores[0].end_at;\n  var sel_month = api.state.Month;\n  arr.push(sel_month === ''? init_month : sel_month);\n  return arr;\n}\n",
+                                                        "scriptSysId": "0096bff6977852d0262172a71153af2e",
+                                                        "target": null
+                                                    }
                                                 },
                                                 "hideLabel": {
                                                     "type": "JSON_LITERAL",
@@ -2752,7 +2817,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=0, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=0, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -3551,7 +3616,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=1, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=1, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -4330,7 +4395,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=2, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=2, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -5109,7 +5174,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=3, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=3, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -5888,7 +5953,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=4, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=4, j=0}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric1.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -8880,7 +8945,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=0, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=0, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -9657,7 +9722,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=1, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=1, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -10435,7 +10500,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=2, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=2, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -11212,7 +11277,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=3, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=3, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -11989,7 +12054,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=4, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=4, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalA_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -20989,7 +21054,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=0, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=0, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -21056,7 +21121,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[0].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[0].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=0;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "2ac4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -21766,7 +21831,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=1, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=1, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -21833,7 +21898,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[1].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[1].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=1;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "6ac4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -22543,7 +22608,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=2, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=2, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -22610,7 +22675,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[2].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[2].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=2;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "aac4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -23320,7 +23385,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=3, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=3, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -23387,7 +23452,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[3].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[3].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=3;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "eac4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -24097,7 +24162,7 @@
                                                                                                     "payload": {
                                                                                                         "type": "CLIENT_TRANSFORM_SCRIPT",
                                                                                                         "script": {
-                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=4, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
+                                                                                                            "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n*/\nfunction evaluateEvent({api, event, i=4, j=1}) {\n    \n    var clientStateParameter = api.state.Tab1PortfolioBreakdown;\n    var clientStateParameter2 = api.state.Tab12ndBreakdown[j];\n    var payload = api.data.verticalC_headlinemetric2.output.result[i];     \n\n    if (clientStateParameter === '') {\n        var portfolio_element = '';\n        var element_sysid = payload.element.value;\n        var element_display = payload.element.display_value;\n        } else {\n        var portfolio_element = payload.element.value\n        var element_sysid = payload.element_level2.value;\n        var element_display = payload.element_level2.display_value;\n        }\n    var current_month = payload.period_title;\n    var start_of_month = payload.scores[0].start_at;\n    var end_of_month = payload.scores[0].end_at;\n    if (clientStateParameter2 === 'b1616b8c4fe933002f3c71318110c743'){\n        var attribute = 'business_service';\n        var attribute_label = 'PIS';\n    } else if (clientStateParameter2 === 'baec0752bf130100b96dac808c0739ed'){\n        var attribute = 'assignment_group';\n        var attribute_label = 'Assignment group';\n    } else if (clientStateParameter2 === '17bc0d771b414d50a1bc5946464bcb4c'){\n        var attribute = 'u_viewing_company';\n        var attribute_label = 'Supplier';\n    }\n    return {\n        route: \"insights\",\n        fields: {\"element\":element_display, \"breakdown2\":clientStateParameter2, \"element2\":element_sysid, \"attribute\":attribute, \"attributelabel\":attribute_label, \"selectedmonth\":api.state.Month_n  },\n        params: {'listTitle':'Failures in ' + current_month + ' for ' + attribute_label + ': ' + element_display, 'query': attribute + '=' + element_sysid + \"^resolved_atBETWEENjavascript:gs.dateGenerate('\" +start_of_month+ \"','00:00:00')@javascript:gs.dateGenerate('\" + end_of_month +\"','23:59:59')\"},\n\t\tredirect: null, \n\t\tpassiveNavigation: null,\n\t\ttitle: null,\n\t\tmultiInstField: null,\n\t\ttargetRoute: null,\n\t\texternal: null,\n\t\tnavigationOptions: null\n\t};\n}",
                                                                                                             "apiVersion": "1.0.0",
                                                                                                             "controllerElementId": null,
                                                                                                             "scriptSysId": null,
@@ -24164,7 +24229,7 @@
                                                                                     "script": {
                                                                                         "apiVersion": "2.0.0",
                                                                                         "controllerElementId": null,
-                                                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.data.verticalC_headlinemetric2.output.result[4].value &gt;= 0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[4].value !== null);\n}",
+                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    /* The code below checks whether there the length of the JSON payload from the API\n    is the same as the row for which the link is implemented. If there is dictionary\n    in the payload for the corrsponding link then the link is hidden. Additionally,\n    if there is a dictionary in the payload but the value is not &gt;=0 and not null\n    then the link is also hidden \n    */\n    var i=4;\n    var result = api.data.verticalC_headlinemetric2.output.result;\n    if (result.length &gt;= i+1) {\n        var value = result[i].value;\n        return !(value &gt;= 0 &amp;&amp; value !== null);\n    }\n    return true;\n}\n",
                                                                                         "scriptSysId": "2ec4d0f91b6bc25464122144b24bcb15",
                                                                                         "target": null
                                                                                     }
@@ -30513,315 +30578,6 @@
     {
         "cachePolicy": null,
         "definition": {
-            "id": "3c1c7e9177a3011061b80bbc3c5a9962",
-            "type": "REST"
-        },
-        "dependencies": {},
-        "elementId": "verticalB_headlinemetric1",
-        "elementLabel": "VerticalB Headline Metric1",
-        "eventMappings": [
-            {
-                "eventMappingId": "clddbuddaafiaaaageddfhhbbpbbqeehfaa",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "822dc9a1772b011061b80bbc3c5a99d8"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clddbuddaafiaaaagfddfhhbbjbbgggyic",
-                        "type": "CLIENT_SCRIPT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "23adaef81bd80a90dba1c3e5464bcb99"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clsekbbcdnaaggbbbddjhhweddggcclub",
-                        "type": "CLIENT_SCRIPT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "86212b381bdcca90dba1c3e5464bcbb2"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clsesjjhhddaaaaaaqccddjhhwsuhccaaaeea",
-                        "type": "CLIENT_SCRIPT"
-                    }
-                ]
-            }
-        ],
-        "inputValues": {
-            "uuid": {
-                "type": "DATA_OUTPUT_BINDING",
-                "binding": {
-                    "address": [
-                        "getmetricsofciodashboard",
-                        "output",
-                        "VerticalC",
-                        "headlineMetrics",
-                        "0",
-                        "metricSysid"
-                    ]
-                }
-            },
-            "portfolio_breakdown": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1PortfolioBreakdown"
-                    ]
-                }
-            },
-            "portfolio_element": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1PortfolioElement"
-                    ]
-                }
-            },
-            "pis_breakdown": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "sortdir": {
-                "type": "JSON_LITERAL",
-                "value": "desc"
-            }
-        },
-        "readEvaluationMode": "EAGER"
-    },
-    {
-        "cachePolicy": null,
-        "definition": {
-            "id": "3c1c7e9177a3011061b80bbc3c5a9962",
-            "type": "REST"
-        },
-        "dependencies": {},
-        "elementId": "verticalD_headlinemetric1",
-        "elementLabel": "verticalD Headlinemetric1",
-        "eventMappings": [
-            {
-                "eventMappingId": "clddcoypshhaaaaljjddfhhbbuamkrixk",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "b81590f977a3011061b80bbc3c5a99ec"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clddcoypshhaaaaladdfhhbblrkthhlaa",
-                        "type": "CLIENT_SCRIPT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "34cda6b01b1c0a90dba1c3e5464bcb00"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clsekccsbyaaggccuddjhhwoilpxccky",
-                        "type": "CLIENT_SCRIPT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "86212b381bdcca90dba1c3e5464bcbb2"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clsesjjujjqaaaaqhddjhhwnaasfffzq",
-                        "type": "CLIENT_SCRIPT"
-                    }
-                ]
-            }
-        ],
-        "inputValues": {
-            "uuid": {
-                "type": "DATA_OUTPUT_BINDING",
-                "binding": {
-                    "address": [
-                        "getmetricsofciodashboard",
-                        "output",
-                        "VerticalC",
-                        "headlineMetrics",
-                        "0",
-                        "metricSysid"
-                    ]
-                }
-            },
-            "portfolio_breakdown": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1PortfolioBreakdown"
-                    ]
-                }
-            },
-            "portfolio_element": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1PortfolioElement"
-                    ]
-                }
-            },
-            "pis_breakdown": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "sortdir": {
-                "type": "JSON_LITERAL",
-                "value": "desc"
-            }
-        },
-        "readEvaluationMode": "EAGER"
-    },
-    {
-        "cachePolicy": null,
-        "definition": {
-            "id": "3c1c7e9177a3011061b80bbc3c5a9962",
-            "type": "REST"
-        },
-        "dependencies": {},
-        "elementId": "verticalD_headlinemetric2",
-        "elementLabel": "verticalD Headlinemetric2",
-        "eventMappings": [
-            {
-                "eventMappingId": "clddcozgglggaaaalgddfhhbbxqeezgaawii",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "754554f977a3011061b80bbc3c5a99c3"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clddcozgglggaaaalhddfhhbbsjjccoaaapv",
-                        "type": "CLIENT_SCRIPT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "34cda6b01b1c0a90dba1c3e5464bcb00"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clsekddccajjaaggcczddjhhwfddhhthhsxp",
-                        "type": "CLIENT_SCRIPT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "86212b381bdcca90dba1c3e5464bcbb2"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "clsesjjzddaaaaqmddjhhwgddbbyeehwl",
-                        "type": "CLIENT_SCRIPT"
-                    }
-                ]
-            }
-        ],
-        "inputValues": {
-            "uuid": {
-                "type": "DATA_OUTPUT_BINDING",
-                "binding": {
-                    "address": [
-                        "getmetricsofciodashboard",
-                        "output",
-                        "VerticalC",
-                        "headlineMetrics",
-                        "0",
-                        "metricSysid"
-                    ]
-                }
-            },
-            "portfolio_breakdown": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1PortfolioBreakdown"
-                    ]
-                }
-            },
-            "portfolio_element": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1PortfolioElement"
-                    ]
-                }
-            },
-            "pis_breakdown": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "sortdir": {
-                "type": "JSON_LITERAL",
-                "value": "desc"
-            }
-        },
-        "readEvaluationMode": "EAGER"
-    },
-    {
-        "cachePolicy": null,
-        "definition": {
             "id": "b997a84053021010cbc2ddeeff7b1228",
             "type": "COMPOSITE"
         },
@@ -30979,116 +30735,12 @@
                         "Tab1VCM2PageNumber"
                     ]
                 }
-            }
-        },
-        "readEvaluationMode": "EAGER"
-    },
-    {
-        "cachePolicy": null,
-        "definition": {
-            "id": "3c1c7e9177a3011061b80bbc3c5a9962",
-            "type": "REST"
-        },
-        "dependencies": {},
-        "elementId": "verticalC_headlinemetric1",
-        "elementLabel": "verticalC Headlinemetric1",
-        "eventMappings": [
-            {
-                "eventMappingId": "cltsseexaaxaacceaaddjhhwaahhuffhoiq",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "c697403177a3011061b80bbc3c5a99df"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "cltsseexaaxaaccebbddjhhwlggapiileeii",
-                        "type": "CLIENT_SCRIPT"
-                    },
-                    {
-                        "targetId": "clubmaagjjccaabbfyddjhhqbccrwdsau",
-                        "type": "CLIENT_SCRIPT",
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "clientScript": {
-                            "sysId": "acc4ef5c1b5d8690db5a97d0b24bcb81",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "conditional": null,
-                        "broker": null
-                    }
-                ]
-            }
-        ],
-        "inputValues": {
-            "uuid": {
-                "type": "DATA_OUTPUT_BINDING",
-                "binding": {
-                    "address": [
-                        "getmetricsofciodashboard",
-                        "output",
-                        "VerticalC",
-                        "headlineMetrics",
-                        "0",
-                        "metricSysid"
-                    ]
-                }
             },
-            "portfolio_breakdown": {
+            "month": {
                 "type": "STATE_BINDING",
                 "binding": {
                     "address": [
-                        "Tab1PortfolioBreakdown"
-                    ]
-                }
-            },
-            "portfolio_element": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1PortfolioElement"
-                    ]
-                }
-            },
-            "pis_breakdown": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab12ndBreakdown",
-                        "1"
-                    ]
-                }
-            },
-            "sortdir": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1VCM1SortDirection"
-                    ]
-                }
-            },
-            "pagenumber": {
-                "type": "STATE_BINDING",
-                "binding": {
-                    "address": [
-                        "Tab1VCM1PageNumber"
+                        "Month"
                     ]
                 }
             }
@@ -31211,6 +30863,14 @@
                         "0"
                     ]
                 }
+            },
+            "month": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Month"
+                    ]
+                }
             }
         },
         "readEvaluationMode": "EAGER"
@@ -31331,8 +30991,134 @@
                         "1"
                     ]
                 }
+            },
+            "month": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Month"
+                    ]
+                }
             }
         },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "elementId": "breakdown_businessservicefamily",
+        "elementLabel": "Breakdown BusinessServiceFamily",
+        "definition": {
+            "id": "b997a84053021010cbc2ddeeff7b1228",
+            "type": "COMPOSITE"
+        },
+        "dependencies": {},
+        "inputValues": {
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "pa_buckets"
+            },
+            "encodedQuery": {
+                "type": "JSON_LITERAL",
+                "value": "bucket_group=325751cf97c89214f42972a71153af5d"
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL"
+            },
+            "orderBy": {
+                "type": "JSON_LITERAL"
+            },
+            "sortType": {
+                "type": "JSON_LITERAL",
+                "value": "asc"
+            },
+            "limit": {
+                "type": "JSON_LITERAL",
+                "value": "1000"
+            },
+            "offset": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "queryCategory": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "returnFieldMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            }
+        },
+        "eventMappings": [
+            
+        ],
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "elementId": "tab1getmonth",
+        "elementLabel": "Tab1getMonth",
+        "definition": {
+            "id": "885b32be973052d0262172a71153afeb",
+            "type": "REST"
+        },
+        "dependencies": {},
+        "inputValues": {
+            "uuid": {
+                "type": "DATA_OUTPUT_BINDING",
+                "binding": {
+                    "address": [
+                        "getmetricsofciodashboard",
+                        "output",
+                        "VerticalA",
+                        "headlineMetrics",
+                        "0",
+                        "metricSysid"
+                    ]
+                }
+            },
+            "portfolio_breakdown": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1PortfolioBreakdown"
+                    ]
+                }
+            },
+            "portfolio_element": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1PortfolioElement"
+                    ]
+                }
+            },
+            "2nd_breakdown": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab12ndBreakdown",
+                        "0"
+                    ]
+                }
+            },
+            "sortdir": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1VAM1SortDirection"
+                    ]
+                }
+            },
+            "pagenumber": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1VAM1PageNumber"
+                    ]
+                }
+            }
+        },
+        "eventMappings": [
+            
+        ],
         "readEvaluationMode": "EAGER"
     }
 ]</data>
@@ -31936,12 +31722,22 @@
         "valueType": "string"
     },
     {
+        "fieldType": "string",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": ""
+        },
+        "name": "Month",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
         "fieldType": "number",
         "initialValue": {
             "type": "JSON_LITERAL",
             "value": 0
         },
-        "name": "Month",
+        "name": "Month_n",
         "shape": "",
         "valueType": "number"
     }
@@ -31951,7 +31747,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1009</sys_mod_count>
+        <sys_mod_count>1078</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -31959,7 +31755,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-09-09 11:49:54</sys_updated_on>
+        <sys_updated_on>2024-10-10 11:16:02</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -31969,10 +31765,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>system</sys_created_by>
-        <sys_created_on>2024-09-09 06:17:50</sys_created_on>
-        <sys_id>acb3e2d11bac1a1064122144b24bcbbe</sys_id>
+        <sys_created_on>2024-09-26 14:07:45</sys_created_on>
+        <sys_id>3142ff7e973852d0262172a71153af58</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-09-09 06:17:50</sys_updated_on>
+        <sys_updated_on>2024-09-26 14:07:45</sys_updated_on>
     </sys_claim>
 </record_update>
