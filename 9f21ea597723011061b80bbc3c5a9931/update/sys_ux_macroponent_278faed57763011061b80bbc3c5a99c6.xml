@@ -6824,11 +6824,13 @@
                                                                             "value": "caret-up-fill"
                                                                         },
                                                                         "tooltipContent": {
-                                                                            "type": "TRANSLATION_LITERAL",
-                                                                            "value": {
-                                                                                "code": null,
-                                                                                "message": "Enter a label",
-                                                                                "comment": ""
+                                                                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                            "script": {
+                                                                                "apiVersion": "2.0.0",
+                                                                                "controllerElementId": null,
+                                                                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\n\nfunction evaluateProperty({api, helpers}) {\n    const currentPage = api.state.Tab1VAM1PageNumber;\n\n    return currentPage === 1 \n    ? `Current page:${currentPage}`\n    : `Current page:${currentPage}, scroll up to page:${currentPage - 1}`;\n}",
+                                                                                "scriptSysId": "e2507cd4fb615a102d50fcacbeefdca8",
+                                                                                "target": null
                                                                             }
                                                                         },
                                                                         "configAria": {
@@ -6910,11 +6912,13 @@
                                                                             "value": "caret-down-fill"
                                                                         },
                                                                         "tooltipContent": {
-                                                                            "type": "TRANSLATION_LITERAL",
-                                                                            "value": {
-                                                                                "code": null,
-                                                                                "message": "Enter a label",
-                                                                                "comment": ""
+                                                                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                            "script": {
+                                                                                "apiVersion": "2.0.0",
+                                                                                "controllerElementId": null,
+                                                                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\n\nfunction evaluateProperty({api, helpers}) {\n    const currentPage = api.state.Tab1VAM1PageNumber;\n    const last_value = api.data.verticalA_headlinemetric1.output.result[4].value;\n    \n    return last_value &gt; 0\n    ? `Current page:${currentPage}, scroll down to page:${currentPage + 1}`\n    : `Current page:${currentPage}`;\n}",
+                                                                                "scriptSysId": "45f8fc1cfba55a102d50fcacbeefdcc7",
+                                                                                "target": null
                                                                             }
                                                                         },
                                                                         "configAria": {
@@ -12960,11 +12964,13 @@
                                                                             "value": "caret-up-fill"
                                                                         },
                                                                         "tooltipContent": {
-                                                                            "type": "TRANSLATION_LITERAL",
-                                                                            "value": {
-                                                                                "code": null,
-                                                                                "message": "Enter a label",
-                                                                                "comment": ""
+                                                                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                            "script": {
+                                                                                "apiVersion": "2.0.0",
+                                                                                "controllerElementId": null,
+                                                                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\n\nfunction evaluateProperty({api, helpers}) {\n    const currentPage = api.state.Tab1VAM2PageNumber;\n\n    return currentPage === 1 \n    ? `Current page:${currentPage}`\n    : `Current page:${currentPage}, scroll up to page:${currentPage - 1}`;\n}",
+                                                                                "scriptSysId": "c1f8fc1cfba55a102d50fcacbeefdcc7",
+                                                                                "target": null
                                                                             }
                                                                         },
                                                                         "configAria": {
@@ -13046,11 +13052,13 @@
                                                                             "value": "caret-down-fill"
                                                                         },
                                                                         "tooltipContent": {
-                                                                            "type": "TRANSLATION_LITERAL",
-                                                                            "value": {
-                                                                                "code": null,
-                                                                                "message": "Enter a label",
-                                                                                "comment": ""
+                                                                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                            "script": {
+                                                                                "apiVersion": "2.0.0",
+                                                                                "controllerElementId": null,
+                                                                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\n\nfunction evaluateProperty({api, helpers}) {\n    const currentPage = api.state.Tab1VAM2PageNumber;\n    const last_value = api.data.verticalA_headlinemetric2.output.result[4].value;\n    \n    return last_value &gt; 0\n    ? `Current page:${currentPage}, scroll down to page:${currentPage + 1}`\n    : `Current page:${currentPage}`;\n}",
+                                                                                "scriptSysId": "85f8fc1cfba55a102d50fcacbeefdcc7",
+                                                                                "target": null
                                                                             }
                                                                         },
                                                                         "configAria": {
@@ -25110,11 +25118,13 @@
                                                                             "value": "caret-up-fill"
                                                                         },
                                                                         "tooltipContent": {
-                                                                            "type": "TRANSLATION_LITERAL",
-                                                                            "value": {
-                                                                                "code": null,
-                                                                                "message": "Enter a label",
-                                                                                "comment": ""
+                                                                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                            "script": {
+                                                                                "apiVersion": "2.0.0",
+                                                                                "controllerElementId": null,
+                                                                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\n\nfunction evaluateProperty({api, helpers}) {\n    const currentPage = api.state.Tab1VCM2PageNumber;\n\n    return currentPage === 1 \n    ? `Current page:${currentPage}`\n    : `Current page:${currentPage}, scroll up to page:${currentPage - 1}`;\n}",
+                                                                                "scriptSysId": "05f8fc1cfba55a102d50fcacbeefdcc7",
+                                                                                "target": null
                                                                             }
                                                                         },
                                                                         "configAria": {
@@ -25196,11 +25206,13 @@
                                                                             "value": "caret-down-fill"
                                                                         },
                                                                         "tooltipContent": {
-                                                                            "type": "TRANSLATION_LITERAL",
-                                                                            "value": {
-                                                                                "code": null,
-                                                                                "message": "Enter a label",
-                                                                                "comment": ""
+                                                                            "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                            "script": {
+                                                                                "apiVersion": "2.0.0",
+                                                                                "controllerElementId": null,
+                                                                                "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\n\nfunction evaluateProperty({api, helpers}) {\n    const currentPage = api.state.Tab1VCM2PageNumber;\n    const last_value = api.data.verticalC_headlinemetric2.output.result[4].value;\n    \n    return last_value &gt;= 0\n    ? `Current page:${currentPage}, scroll down to page:${currentPage + 1}`\n    : `Current page:${currentPage}`;\n}",
+                                                                                "scriptSysId": "c5f8fc1cfba55a102d50fcacbeefdcc7",
+                                                                                "target": null
                                                                             }
                                                                         },
                                                                         "configAria": {
@@ -32020,7 +32032,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1087</sys_mod_count>
+        <sys_mod_count>1104</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32028,7 +32040,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-10-25 12:25:36</sys_updated_on>
+        <sys_updated_on>2024-10-25 13:34:35</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
