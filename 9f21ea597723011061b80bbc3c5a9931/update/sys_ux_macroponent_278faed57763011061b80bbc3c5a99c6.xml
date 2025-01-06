@@ -665,8 +665,14 @@
                                                     "value": "none"
                                                 },
                                                 "disabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": true
+                                                    "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                    "script": {
+                                                        "apiVersion": "2.0.0",
+                                                        "controllerElementId": null,
+                                                        "inlineScript": "/**\n  * This function allows the component to be visible only when either 'Border'\n  * or 'Immigration' or 'HMPO' portfolio is selected\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n\treturn !(api.state.Tab1PortfolioElement === '76e6590e4f407f089e23e1128110c77d' ||\n           api.state.Tab1PortfolioElement === 'b6e6590e4f407f089e23e1128110c77e' ||\n           api.state.Tab1PortfolioElement === '3ee6590e4f407f089e23e1128110c77e');\n}",
+                                                        "scriptSysId": "6d1697bdfb62da506b4efcacbeefdceb",
+                                                        "target": null
+                                                    }
                                                 },
                                                 "icon": {
                                                     "type": "JSON_LITERAL",
@@ -685,7 +691,7 @@
                                                     "script": {
                                                         "apiVersion": "2.0.0",
                                                         "controllerElementId": null,
-                                                        "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  for(var i = 0; i&lt;api.data.breakdown_businessservicefamily.results.length; i++)\n  {\n  var myObj = {};\n    myObj.id = api.data.breakdown_businessservicefamily.results[i]._row_data.uniqueValue;\n    myObj.label = api.data.breakdown_businessservicefamily.results[i].name.value;\n    arr.push(myObj);\n  }\nreturn arr;\n}",
+                                                        "inlineScript": "/**\n * Evaluates a property and returns an array of objects based on specific conditions.\n * The conditions for inclusion are determined by the portfolio element defined in the client state parameter.\n * Only items that pass the defined conditions are included in the returned array.\n *\n * @param {Object} params - The parameters object provided by the caller.\n * @param {Object} params.api - API object containing data and state parameters.\n * @param {Object} params.helpers - Helper functions (not used in this function).\n *\n * @returns {Array&lt;Object&gt;} An array of objects, each containing:\n *   - `id` (string): The unique identifier of the item.\n *   - `label` (string): The display label of the item.\n *\n * @example\n * // Sample input:\n * api.state.Tab1PortfolioElement = '76e6590e4f407f089e23e1128110c77d';\n * api.data.breakdown_businessservicefamily.results = [\n *   { _row_data: { uniqueValue: '123' }, name: { displayValue: 'Hosting dependancies', value: 'Hosting dependancies' } },\n *   { _row_data: { uniqueValue: '456' }, name: { displayValue: 'Other service', value: 'Other service' } }\n * ];\n *\n * // Output:\n * [\n *   { id: '123', label: 'Hosting dependancies' }\n * ]\n */\n\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  const portfolioElement = api.state.Tab1PortfolioElement; // State parameter from the client\n\n  // Define rules for skipping items based on portfolioElement\n  const skipConditions = {\n    '76e6590e4f407f089e23e1128110c77d': (item) =&gt; {\n      const includeValues = ['Hosting dependancies', 'Crossing the Border'];\n      return !includeValues.includes(item.name.displayValue);\n    },\n    'b6e6590e4f407f089e23e1128110c77e': (item) =&gt; {\n      const includeValues = ['Asylum processing', 'Hosting dependancies', 'Applying for things', 'Person, identity and status management', 'Check and decide'];\n      return !includeValues.includes(item.name.displayValue);\n    },\n    '3ee6590e4f407f089e23e1128110c77e': (item) =&gt; item.name.displayValue !== 'Passports and civil registration',\n  };\n\n  for(var i = 0; i&lt;api.data.breakdown_businessservicefamily.results.length; i++) {\n    const currentItem = api.data.breakdown_businessservicefamily.results[i];\n    \n    // Check skip conditions based on the current portfolioElement\n    if (skipConditions[portfolioElement] &amp;&amp; skipConditions[portfolioElement](currentItem)) {\n      continue; // Skip if condition is met\n    }\n\n    var myObj = {\n      id: currentItem._row_data.uniqueValue,\n      label: currentItem.name.value\n    };\n    arr.push(myObj);\n  }\nreturn arr;\n}",
                                                         "scriptSysId": "8d258d5e1b74de1064122144b24bcb6f",
                                                         "target": null
                                                     }
@@ -31306,7 +31312,7 @@
             },
             "encodedQuery": {
                 "type": "JSON_LITERAL",
-                "value": "bucket_group=325751cf97c89214f42972a71153af5d"
+                "value": "bucket_group=325751cf97c89214f42972a71153af5d^start!=7^start!=8^start!=11^start!=5"
             },
             "returnFields": {
                 "type": "JSON_LITERAL"
@@ -32032,7 +32038,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1126</sys_mod_count>
+        <sys_mod_count>1151</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32040,7 +32046,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-12-04 13:48:11</sys_updated_on>
+        <sys_updated_on>2024-12-20 15:15:00</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -32049,11 +32055,11 @@
         <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
-        <sys_created_by>system</sys_created_by>
-        <sys_created_on>2024-10-16 08:43:28</sys_created_on>
-        <sys_id>aed7e51d1bd1de1064122144b24bcbff</sys_id>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2024-12-19 09:26:01</sys_created_on>
+        <sys_id>3557db75fbaa16905ebef52cbeefdc1a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-10-16 08:43:28</sys_updated_on>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:26:01</sys_updated_on>
     </sys_claim>
 </record_update>
