@@ -817,7 +817,7 @@
                                                                     "type": "TRANSLATION_LITERAL",
                                                                     "value": {
                                                                         "code": null,
-                                                                        "message": "now Low Performing",
+                                                                        "message": "Low Performing",
                                                                         "comment": ""
                                                                     }
                                                                 }
@@ -834,7 +834,7 @@
                                                                     "type": "TRANSLATION_LITERAL",
                                                                     "value": {
                                                                         "code": null,
-                                                                        "message": "now High Performing",
+                                                                        "message": "High Performing",
                                                                         "comment": ""
                                                                     }
                                                                 }
@@ -31492,6 +31492,9 @@
   "message" : "Enter a label",
   "comment" : ""
 }, {
+  "message" : "High Performing",
+  "comment" : ""
+}, {
   "message" : "High:",
   "comment" : ""
 }, {
@@ -31508,6 +31511,9 @@
   "comment" : ""
 }, {
   "message" : "Loading",
+  "comment" : ""
+}, {
+  "message" : "Low Performing",
   "comment" : ""
 }, {
   "message" : "Metrics definitions",
@@ -31577,12 +31583,6 @@
   "comment" : ""
 }, {
   "message" : "Worst performing / Best performing",
-  "comment" : ""
-}, {
-  "message" : "now High Performing",
-  "comment" : ""
-}, {
-  "message" : "now Low Performing",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -32038,7 +32038,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1152</sys_mod_count>
+        <sys_mod_count>1153</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32046,7 +32046,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-01-07 15:28:47</sys_updated_on>
+        <sys_updated_on>2025-01-09 16:36:52</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
