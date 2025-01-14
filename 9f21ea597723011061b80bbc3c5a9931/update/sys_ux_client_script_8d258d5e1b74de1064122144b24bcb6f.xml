@@ -10,7 +10,7 @@
 ]</required_translations>
         <script><![CDATA[/**
  * Evaluates a property and returns an array of objects based on specific conditions.
- * The conditions for inclusion are determined by the portfolio element defined in the client state parameter.
+ * The conditions for inclusion are determined by the selected element defined in the client state parameter.
  * Only items that pass the defined conditions are included in the returned array.
  *
  * @param {Object} params - The parameters object provided by the caller.
@@ -23,7 +23,7 @@
  *
  * @example
  * // Sample input:
- * api.state.Tab1PortfolioElement = '76e6590e4f407f089e23e1128110c77d';
+ * api.state.Tab11stElement = '76e6590e4f407f089e23e1128110c77d';
  * api.data.breakdown_businessservicefamily.results = [
  *   { _row_data: { uniqueValue: '123' }, name: { displayValue: 'Hosting dependancies', value: 'Hosting dependancies' } },
  *   { _row_data: { uniqueValue: '456' }, name: { displayValue: 'Other service', value: 'Other service' } }
@@ -37,9 +37,9 @@
 
 function evaluateProperty({api, helpers}) {
   var arr = [];
-  const portfolioElement = api.state.Tab11stElement; // State parameter from the client
+  const selectedElement = api.state.Tab11stElement; // State parameter from the client
 
-  // Define rules for skipping items based on portfolioElement
+  // Define rules for skipping items based on selectedElement
   const skipConditions = {
     '76e6590e4f407f089e23e1128110c77d': (item) => {
       const includeValues = ['Hosting dependancies', 'Crossing the Border'];
@@ -55,8 +55,8 @@ function evaluateProperty({api, helpers}) {
   for(var i = 0; i<api.data.breakdown_businessservicefamily.results.length; i++) {
     const currentItem = api.data.breakdown_businessservicefamily.results[i];
     
-    // Check skip conditions based on the current portfolioElement
-    if (skipConditions[portfolioElement] && skipConditions[portfolioElement](currentItem)) {
+    // Check skip conditions based on the current selectedElement
+    if (skipConditions[selectedElement] && skipConditions[selectedElement](currentItem)) {
       continue; // Skip if condition is met
     }
 
@@ -74,7 +74,7 @@ return arr;
         <sys_created_on>2024-09-24 12:50:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8d258d5e1b74de1064122144b24bcb6f</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>dropdown_4/items</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -82,7 +82,7 @@ return arr;
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_8d258d5e1b74de1064122144b24bcb6f</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-01-13 16:11:58</sys_updated_on>
+        <sys_updated_on>2025-01-14 14:40:25</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
