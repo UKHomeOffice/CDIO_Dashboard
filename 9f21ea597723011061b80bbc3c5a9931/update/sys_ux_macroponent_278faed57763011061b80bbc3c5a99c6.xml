@@ -585,6 +585,37 @@
                                                             "clientScript": null,
                                                             "conditional": null,
                                                             "broker": null
+                                                        },
+                                                        {
+                                                            "targetId": "cmffxnwwlfaabbvuddjhhuggejjcczffc",
+                                                            "type": "EVENT",
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "sysId": "32408b42ff7a10109046e490703bf176",
+                                                                "payload": {
+                                                                    "type": "MAP_CONTAINER",
+                                                                    "container": {
+                                                                        "propName": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "Tab1PortfolioElement"
+                                                                        },
+                                                                        "value": {
+                                                                            "type": "EVENT_PAYLOAD_BINDING",
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "value",
+                                                                                    "0"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED"
+                                                            },
+                                                            "operation": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "broker": null
                                                         }
                                                     ]
                                                 }
@@ -745,7 +776,7 @@
                                                     "type": "TRANSLATION_LITERAL",
                                                     "value": {
                                                         "code": null,
-                                                        "message": "Product journeytest",
+                                                        "message": "Product journey",
                                                         "comment": ""
                                                     }
                                                 },
@@ -792,7 +823,7 @@
                                                     "script": {
                                                         "apiVersion": "2.0.0",
                                                         "controllerElementId": null,
-                                                        "inlineScript": "/**\n * Evaluates a property and returns an array of objects based on specific conditions.\n * The conditions for inclusion are determined by the selected element defined in the client state parameter.\n * Only items that pass the defined conditions are included in the returned array.\n *\n * @param {Object} params - The parameters object provided by the caller.\n * @param {Object} params.api - API object containing data and state parameters.\n * @param {Object} params.helpers - Helper functions (not used in this function).\n *\n * @returns {Array&lt;Object&gt;} An array of objects, each containing:\n *   - `id` (string): The unique identifier of the item.\n *   - `label` (string): The display label of the item.\n *\n * @example\n * // Sample input:\n * api.state.Tab11stElement = '76e6590e4f407f089e23e1128110c77d';\n * api.data.breakdown_businessservicefamily.results = [\n *   { _row_data: { uniqueValue: '123' }, name: { displayValue: 'Hosting dependancies', value: 'Hosting dependancies' } },\n *   { _row_data: { uniqueValue: '456' }, name: { displayValue: 'Other service', value: 'Other service' } }\n * ];\n *\n * // Output:\n * [\n *   { id: '123', label: 'Hosting dependancies' }\n * ]\n */\n\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  const selectedElement = api.state.Tab11stElement; // State parameter from the client\n\n  // Define rules for skipping items based on selectedElement\n  const skipConditions = {\n    '76e6590e4f407f089e23e1128110c77d': (item) =&gt; {\n      const includeValues = ['Hosting dependancies', 'Crossing the Border'];\n      return !includeValues.includes(item.name.displayValue);\n    },\n    'b6e6590e4f407f089e23e1128110c77e': (item) =&gt; {\n      const includeValues = ['Asylum processing', 'Hosting dependancies', 'Applying for things', 'Person, identity and status management', 'Check and decide'];\n      return !includeValues.includes(item.name.displayValue);\n    },\n    '3ee6590e4f407f089e23e1128110c77e': (item) =&gt; item.name.displayValue !== 'Passports and civil registration',\n  };\n\n  for(var i = 0; i&lt;api.data.breakdown_businessservicefamily.results.length; i++) {\n    const currentItem = api.data.breakdown_businessservicefamily.results[i];\n    \n    // Check skip conditions based on the current selectedElement\n    if (skipConditions[selectedElement] &amp;&amp; skipConditions[selectedElement](currentItem)) {\n      continue; // Skip if condition is met\n    }\n\n    var myObj = {\n      id: currentItem._row_data.uniqueValue,\n      label: currentItem.name.value\n    };\n    arr.push(myObj);\n  }\nreturn arr;\n}",
+                                                        "inlineScript": "/**\n * Evaluates a property and returns an array of objects based on specific conditions.\n * The conditions for inclusion are determined by the selected element defined in the client state parameter.\n * Only items that pass the defined conditions are included in the returned array.\n *\n * @param {Object} params - The parameters object provided by the caller.\n * @param {Object} params.api - API object containing data and state parameters.\n * @param {Object} params.helpers - Helper functions (not used in this function).\n *\n * @returns {Array&lt;Object&gt;} An array of objects, each containing:\n *   - `id` (string): The unique identifier of the item.\n *   - `label` (string): The display label of the item.\n *\n * @example\n * // Sample input:\n * api.state.Tab1PortfolioElement = '76e6590e4f407f089e23e1128110c77d';\n * api.data.breakdown_businessservicefamily.results = [\n *   { _row_data: { uniqueValue: '123' }, name: { displayValue: 'Hosting dependancies', value: 'Hosting dependancies' } },\n *   { _row_data: { uniqueValue: '456' }, name: { displayValue: 'Other service', value: 'Other service' } }\n * ];\n *\n * // Output:\n * [\n *   { id: '123', label: 'Hosting dependancies' }\n * ]\n */\n\nfunction evaluateProperty({api, helpers}) {\n  var arr = [];\n  const selectedElement = api.state.Tab1PortfolioElement; // State parameter from the client\n\n  // Define rules for skipping items based on selectedElement\n  const skipConditions = {\n    '76e6590e4f407f089e23e1128110c77d': (item) =&gt; {\n      const includeValues = ['Hosting dependancies', 'Crossing the Border'];\n      return !includeValues.includes(item.name.displayValue);\n    },\n    'b6e6590e4f407f089e23e1128110c77e': (item) =&gt; {\n      const includeValues = ['Asylum processing', 'Hosting dependancies', 'Applying for things', 'Person, identity and status management', 'Check and decide'];\n      return !includeValues.includes(item.name.displayValue);\n    },\n    '3ee6590e4f407f089e23e1128110c77e': (item) =&gt; item.name.displayValue !== 'Passports and civil registration',\n  };\n\n  for(var i = 0; i&lt;api.data.breakdown_businessservicefamily.results.length; i++) {\n    const currentItem = api.data.breakdown_businessservicefamily.results[i];\n    \n    // Check skip conditions based on the current selectedElement\n    if (skipConditions[selectedElement] &amp;&amp; skipConditions[selectedElement](currentItem)) {\n      continue; // Skip if condition is met\n    }\n\n    var myObj = {\n      id: currentItem._row_data.uniqueValue,\n      label: currentItem.name.value\n    };\n    arr.push(myObj);\n  }\nreturn arr;\n}",
                                                         "scriptSysId": "8d258d5e1b74de1064122144b24bcb6f",
                                                         "target": null
                                                     }
@@ -31698,7 +31729,7 @@
   "message" : "Primary Impacted Service",
   "comment" : ""
 }, {
-  "message" : "Product journeytest",
+  "message" : "Product journey",
   "comment" : ""
 }, {
   "message" : "Project",
@@ -32189,6 +32220,15 @@
         "name": "Month_n",
         "shape": "",
         "valueType": "number"
+    },
+    {
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": ""
+        },
+        "name": "Tab1PortfolioElement",
+        "shape": "",
+        "valueType": "string"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -32196,7 +32236,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1184</sys_mod_count>
+        <sys_mod_count>1189</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32204,7 +32244,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-01-14 14:40:50</sys_updated_on>
+        <sys_updated_on>2025-01-15 08:56:02</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
