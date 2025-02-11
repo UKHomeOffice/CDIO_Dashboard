@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_target_values">
+    <pa_target_values action="INSERT_OR_UPDATE">
+        <next_target>00000000</next_target>
+        <sys_class_name>pa_target_values</sys_class_name>
+        <sys_created_by>LitchfE</sys_created_by>
+        <sys_created_on>2025-01-16 09:25:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>aab3a332fbcb1a10049af650beefdc8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>97.5</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_target_values_aab3a332fbcb1a10049af650beefdc8a</sys_update_name>
+        <sys_updated_by>LitchfE</sys_updated_by>
+        <sys_updated_on>2025-01-16 09:25:41</sys_updated_on>
+        <target display_value="% Changes Successful (DDaT)">d57323fefb8b1a10049af650beefdc7a</target>
+        <target_at>20231101</target_at>
+        <target_name>Business Service Family: Hosting dependancies</target_name>
+        <target_review>00000000</target_review>
+        <value>97.5</value>
+    </pa_target_values>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>19473d4d8d50000001</claim_timestamp>
+        <metadata_update_name>pa_target_values_aab3a332fbcb1a10049af650beefdc8a</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>LitchfE</sys_created_by>
+        <sys_created_on>2025-01-17 10:35:16</sys_created_on>
+        <sys_id>1b4d3c97fb0f1210568ff650beefdc0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>LitchfE</sys_updated_by>
+        <sys_updated_on>2025-01-17 10:35:16</sys_updated_on>
+    </sys_claim>
+</record_update>
