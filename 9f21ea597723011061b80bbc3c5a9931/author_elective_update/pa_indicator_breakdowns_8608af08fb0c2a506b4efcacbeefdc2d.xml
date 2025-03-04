@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_indicator_breakdowns">
+    <pa_indicator_breakdowns action="DELETE">
+        <breakdown display_value="Primary Impacted Service">b1616b8c4fe933002f3c71318110c743</breakdown>
+        <display>true</display>
+        <indicator display_value="Deployment Frequency 6m running total">d1086bc4fb0c2a506b4efcacbeefdcb5</indicator>
+        <order/>
+        <sql_statement/>
+        <sys_class_name>pa_indicator_breakdowns</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-26 13:43:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>8608af08fb0c2a506b4efcacbeefdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Primary Impacted Service.Deployment Frequency 6m running total</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_indicator_breakdowns_8608af08fb0c2a506b4efcacbeefdc2d</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-26 13:43:45</sys_updated_on>
+    </pa_indicator_breakdowns>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>cf8ab9b36faf020056007b2f5d3ee46c</instance_id>
+        <instance_name>lssidev2</instance_name>
+        <name>pa_indicator_breakdowns_8608af08fb0c2a506b4efcacbeefdc2d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_indicator_breakdowns"><pa_indicator_breakdowns action="INSERT_OR_UPDATE"><breakdown display_value="Primary Impacted Service">b1616b8c4fe933002f3c71318110c743</breakdown><display>true</display><indicator display_value="Deployment Frequency 6m running total">d1086bc4fb0c2a506b4efcacbeefdcb5</indicator><order/><sql_statement/><sys_class_name>pa_indicator_breakdowns</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2025-02-26 13:43:45</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>8608af08fb0c2a506b4efcacbeefdc2d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Primary Impacted Service.Deployment Frequency 6m running total</sys_name><sys_overrides/><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>pa_indicator_breakdowns_8608af08fb0c2a506b4efcacbeefdc2d</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2025-02-26 13:43:45</sys_updated_on></pa_indicator_breakdowns></record_update>]]></payload>
+        <payload_hash>1056859880</payload_hash>
+        <record_name>d1086bc4fb0c2a506b4efcacbeefdcb5</record_name>
+        <reverted_from/>
+        <source>a38f4078fbbf5210a2c6fcacbeefdc52</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-26 13:43:46</sys_created_on>
+        <sys_id>9208af08fb0c2a506b4efcacbeefdc44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195427fcd040000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-26 13:43:46</sys_updated_on>
+        <type>Indicator Breakdown</type>
+        <update_guid>5608af088c0c2a5042145be7855ac743</update_guid>
+        <update_guid_history>5608af088c0c2a5042145be7855ac743:1056859880</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 27/02/2025 13:17:51">24bb6ca8fb446250c687f650beefdc88</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-27 13:17:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="pa_indicator_breakdowns">pa_indicator_breakdowns</sys_db_object>
+        <sys_id>11073239f12945e494cbb44294d76124</sys_id>
+        <sys_metadata>8608af08fb0c2a506b4efcacbeefdc2d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Primary Impacted Service.Deployment Frequency 6m running total</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>pa_indicator_breakdowns_8608af08fb0c2a506b4efcacbeefdc2d</sys_update_name>
+        <sys_update_version display_value="pa_indicator_breakdowns_8608af08fb0c2a506b4efcacbeefdc2d">9208af08fb0c2a506b4efcacbeefdc44</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-27 13:17:51</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>195614755570000001</claim_timestamp>
+        <metadata_update_name>pa_indicator_breakdowns_8608af08fb0c2a506b4efcacbeefdc2d</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-04 13:10:19</sys_created_on>
+        <sys_id>7ee99e06fbc02a10568ff650beefdce1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-04 13:10:19</sys_updated_on>
+    </sys_claim>
+</record_update>

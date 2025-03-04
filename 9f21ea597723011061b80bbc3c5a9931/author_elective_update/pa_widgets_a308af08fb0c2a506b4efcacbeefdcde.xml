@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_widgets">
+    <pa_widgets action="DELETE">
+        <aggregate display_value="30d running SUM">3e409011d7001100ba986f14ce610319</aggregate>
+        <alignment>left</alignment>
+        <breakdown/>
+        <breakdown_level2/>
+        <breakdown_page_size>10</breakdown_page_size>
+        <chart_color/>
+        <color_scheme/>
+        <coloring_method>score</coloring_method>
+        <column_bulletchart>false</column_bulletchart>
+        <column_change>false</column_change>
+        <column_change_perc>false</column_change_perc>
+        <column_current>true</column_current>
+        <column_gap>false</column_gap>
+        <column_gap_perc>false</column_gap_perc>
+        <column_multiple>false</column_multiple>
+        <column_steps>3</column_steps>
+        <column_stepsize>1</column_stepsize>
+        <column_target>false</column_target>
+        <column_trend>true</column_trend>
+        <compare_main_label/>
+        <compare_number_of_periods>2</compare_number_of_periods>
+        <compare_period>year</compare_period>
+        <cube_facts_table/>
+        <cutoff>1</cutoff>
+        <cutoff_condition>GTE</cutoff_condition>
+        <cutoff_type>VAL</cutoff_type>
+        <date_from>00000000</date_from>
+        <date_to>00000000</date_to>
+        <default_indicator/>
+        <description/>
+        <element/>
+        <element_level2/>
+        <elements_filter/>
+        <field/>
+        <filter/>
+        <flip_axes>false</flip_axes>
+        <follow_element>false</follow_element>
+        <follow_managed_element>false</follow_managed_element>
+        <followed_breakdown/>
+        <followed_breakdown_relation/>
+        <gauge_autoscale>true</gauge_autoscale>
+        <gauge_from/>
+        <gauge_to/>
+        <include_comments>false</include_comments>
+        <include_confidence>false</include_confidence>
+        <include_forecast>false</include_forecast>
+        <include_prediction_interval>false</include_prediction_interval>
+        <include_target>false</include_target>
+        <include_thresholds>false</include_thresholds>
+        <include_trend>false</include_trend>
+        <indicator display_value="Deployment Frequency 6m running total">d1086bc4fb0c2a506b4efcacbeefdcb5</indicator>
+        <is_compare_chart>false</is_compare_chart>
+        <lastscore_compare>previous_score</lastscore_compare>
+        <lastscore_periods_back>1</lastscore_periods_back>
+        <limit>50</limit>
+        <lookup_name/>
+        <manual_elements>false</manual_elements>
+        <max_color display_value="BluePalette_5">3f804840d7333100b4964ebfae610329</max_color>
+        <multiple_elements_view/>
+        <name>Deployment Frequency 6m running total</name>
+        <no_bulk_migration>false</no_bulk_migration>
+        <number_of_records>10</number_of_records>
+        <overlap_data_labels>false</overlap_data_labels>
+        <percentages>no_percentages</percentages>
+        <period>3m</period>
+        <pivot_breakdown/>
+        <pivot_elements_filter/>
+        <related_dashboards>0</related_dashboards>
+        <score_font_size>responsive</score_font_size>
+        <scorecard_options>all</scorecard_options>
+        <show_bar>true</show_bar>
+        <show_breakdown_selector>true</show_breakdown_selector>
+        <show_change>true</show_change>
+        <show_change_perc>true</show_change_perc>
+        <show_comparison_date>true</show_comparison_date>
+        <show_data_labels>false</show_data_labels>
+        <show_empty_elements>true</show_empty_elements>
+        <show_gap>false</show_gap>
+        <show_gap_perc>false</show_gap_perc>
+        <show_legend>true</show_legend>
+        <show_on_click_link_label>true</show_on_click_link_label>
+        <show_range_selector>false</show_range_selector>
+        <show_target>false</show_target>
+        <show_top_x>10</show_top_x>
+        <show_total>false</show_total>
+        <show_trend>true</show_trend>
+        <show_visualization_selector>true</show_visualization_selector>
+        <sort_direction>desc</sort_direction>
+        <sort_on>value</sort_on>
+        <subtitle/>
+        <sys_class_name>pa_widgets</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-26 13:43:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>a308af08fb0c2a506b4efcacbeefdcde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deployment Frequency 6m running total</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_widgets_a308af08fb0c2a506b4efcacbeefdcde</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-26 13:43:51</sys_updated_on>
+        <tag/>
+        <template>template2</template>
+        <treemap_max_color display_value="Green">005401317767011061b80bbc3c5a99a5</treemap_max_color>
+        <treemap_min_color display_value="Red">65b30395a9fe3dba003277a7b660b5db</treemap_min_color>
+        <type>time</type>
+        <visualization>line</visualization>
+        <words_in_trendline>5</words_in_trendline>
+        <yaxis2_from/>
+        <yaxis2_title/>
+        <yaxis2_to/>
+        <yaxis_from/>
+        <yaxis_title/>
+        <yaxis_to/>
+    </pa_widgets>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>cf8ab9b36faf020056007b2f5d3ee46c</instance_id>
+        <instance_name>lssidev2</instance_name>
+        <name>pa_widgets_a308af08fb0c2a506b4efcacbeefdcde</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_widgets"><pa_widgets action="INSERT_OR_UPDATE"><aggregate display_value="30d running SUM">3e409011d7001100ba986f14ce610319</aggregate><alignment>left</alignment><breakdown/><breakdown_level2/><breakdown_page_size>10</breakdown_page_size><chart_color/><color_scheme/><coloring_method>score</coloring_method><column_bulletchart>false</column_bulletchart><column_change>false</column_change><column_change_perc>false</column_change_perc><column_current>true</column_current><column_gap>false</column_gap><column_gap_perc>false</column_gap_perc><column_multiple>false</column_multiple><column_steps>3</column_steps><column_stepsize>1</column_stepsize><column_target>false</column_target><column_trend>true</column_trend><compare_main_label/><compare_number_of_periods>2</compare_number_of_periods><compare_period>year</compare_period><cube_facts_table/><cutoff>1</cutoff><cutoff_condition>GTE</cutoff_condition><cutoff_type>VAL</cutoff_type><date_from>00000000</date_from><date_to>00000000</date_to><default_indicator/><description/><element/><element_level2/><elements_filter/><field/><filter/><flip_axes>false</flip_axes><follow_element>false</follow_element><follow_managed_element>false</follow_managed_element><followed_breakdown/><followed_breakdown_relation/><gauge_autoscale>true</gauge_autoscale><gauge_from/><gauge_to/><include_comments>false</include_comments><include_confidence>false</include_confidence><include_forecast>false</include_forecast><include_prediction_interval>false</include_prediction_interval><include_target>false</include_target><include_thresholds>false</include_thresholds><include_trend>false</include_trend><indicator display_value="Deployment Frequency 6m running total">d1086bc4fb0c2a506b4efcacbeefdcb5</indicator><is_compare_chart>false</is_compare_chart><lastscore_compare>previous_score</lastscore_compare><lastscore_periods_back>1</lastscore_periods_back><limit>50</limit><lookup_name/><manual_elements>false</manual_elements><max_color display_value="BluePalette_5">3f804840d7333100b4964ebfae610329</max_color><multiple_elements_view/><name>Deployment Frequency 6m running total</name><no_bulk_migration>false</no_bulk_migration><number_of_records>10</number_of_records><overlap_data_labels>false</overlap_data_labels><percentages>no_percentages</percentages><period>3m</period><pivot_breakdown/><pivot_elements_filter/><related_dashboards>0</related_dashboards><score_font_size>responsive</score_font_size><scorecard_options>all</scorecard_options><show_bar>true</show_bar><show_breakdown_selector>true</show_breakdown_selector><show_change>true</show_change><show_change_perc>true</show_change_perc><show_comparison_date>true</show_comparison_date><show_data_labels>false</show_data_labels><show_empty_elements>true</show_empty_elements><show_gap>false</show_gap><show_gap_perc>false</show_gap_perc><show_legend>true</show_legend><show_on_click_link_label>true</show_on_click_link_label><show_range_selector>false</show_range_selector><show_target>false</show_target><show_top_x>10</show_top_x><show_total>false</show_total><show_trend>true</show_trend><show_visualization_selector>true</show_visualization_selector><sort_direction>desc</sort_direction><sort_on>value</sort_on><subtitle/><sys_class_name>pa_widgets</sys_class_name><sys_created_by>VelentL</sys_created_by><sys_created_on>2025-02-26 13:43:51</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>a308af08fb0c2a506b4efcacbeefdcde</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Deployment Frequency 6m running total</sys_name><sys_overrides/><sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope><sys_update_name>pa_widgets_a308af08fb0c2a506b4efcacbeefdcde</sys_update_name><sys_updated_by>VelentL</sys_updated_by><sys_updated_on>2025-02-26 13:43:51</sys_updated_on><tag/><template>template2</template><treemap_max_color display_value="Green">005401317767011061b80bbc3c5a99a5</treemap_max_color><treemap_min_color display_value="Red">65b30395a9fe3dba003277a7b660b5db</treemap_min_color><type>time</type><visualization>line</visualization><words_in_trendline>5</words_in_trendline><yaxis2_from/><yaxis2_title/><yaxis2_to/><yaxis_from/><yaxis_title/><yaxis_to/></pa_widgets></record_update>]]></payload>
+        <payload_hash>-279341380</payload_hash>
+        <record_name>Deployment Frequency 6m running total</record_name>
+        <reverted_from/>
+        <source>a38f4078fbbf5210a2c6fcacbeefdc52</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-26 13:43:52</sys_created_on>
+        <sys_id>7308af08fb0c2a506b4efcacbeefdce8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195427fe3b30000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-26 13:43:52</sys_updated_on>
+        <type>Widgets</type>
+        <update_guid>3708af08980c2a5094c85d7a3a97ade7</update_guid>
+        <update_guid_history>3708af08980c2a5094c85d7a3a97ade7:-279341380</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 27/02/2025 13:17:53">f0bb6ca8fb446250c687f650beefdcd2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-27 13:17:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="pa_widgets">pa_widgets</sys_db_object>
+        <sys_id>80c23108f41e4590a809419a9af5a244</sys_id>
+        <sys_metadata>a308af08fb0c2a506b4efcacbeefdcde</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deployment Frequency 6m running total</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>pa_widgets_a308af08fb0c2a506b4efcacbeefdcde</sys_update_name>
+        <sys_update_version display_value="pa_widgets_a308af08fb0c2a506b4efcacbeefdcde">7308af08fb0c2a506b4efcacbeefdce8</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-27 13:17:53</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>195614755510000001</claim_timestamp>
+        <metadata_update_name>pa_widgets_a308af08fb0c2a506b4efcacbeefdcde</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-04 13:10:19</sys_created_on>
+        <sys_id>b2e99e06fbc02a10568ff650beefdce1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-04 13:10:19</sys_updated_on>
+    </sys_claim>
+</record_update>
