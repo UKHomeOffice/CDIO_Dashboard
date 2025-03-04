@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_scripts">
+    <pa_scripts action="INSERT_OR_UPDATE">
+        <arguments/>
+        <description>To be added to the 'Deployment Frequency 6m running total' indicator to aggregate the running daily sum to 6m running total</description>
+        <name>6mrunningtotal</name>
+        <script><![CDATA[(function executeIndicator() {
+    var indicatorSysId = 'd1086bc4fb0c2a506b4efcacbeefdcb5';  // Replace with your original KPI's sys_id
+    var total = 0;
+
+    gs.info("Executing Scripted KPI for Indicator: " + indicatorSysId);
+
+    var scoreGR = new GlideRecord('pa_scores');
+    scoreGR.addQuery('indicator', indicatorSysId);
+    scoreGR.orderByDesc('start_date');  // Get the most recent scores
+    scoreGR.setLimit(1);
+    scoreGR.query();
+
+    if (scoreGR.next()) {
+        var latestScore = parseFloat(scoreGR.getValue('score') || 0);
+        gs.info("Found Score: " + latestScore);
+        total = latestScore + 1; // Sanity check: add 1 to the score
+    } else {
+        gs.warn("No scores found in pa_scores for Indicator: " + indicatorSysId);
+    }
+
+    gs.info("Returning Score: " + total);
+    return total;
+})();]]></script>
+        <sys_class_name>pa_scripts</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-26 14:08:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>02cc638cfb0c2a506b4efcacbeefdc53</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>6mrunningtotal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_scripts_02cc638cfb0c2a506b4efcacbeefdc53</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-27 14:04:51</sys_updated_on>
+        <table>change_request</table>
+    </pa_scripts>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>1956147557d0000001</claim_timestamp>
+        <metadata_update_name>pa_scripts_02cc638cfb0c2a506b4efcacbeefdc53</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-04 13:10:19</sys_created_on>
+        <sys_id>36e99e06fbc02a10568ff650beefdce5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-04 13:10:19</sys_updated_on>
+    </sys_claim>
+</record_update>
