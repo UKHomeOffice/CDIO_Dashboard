@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_job_indicators">
+    <pa_job_indicators action="DELETE">
+        <active>true</active>
+        <collect>1</collect>
+        <collect_indicator>true</collect_indicator>
+        <display>temporary job for collecting Deployment Frequency 6m running total - Deployment Frequency 6m running total</display>
+        <indicator display_value="Deployment Frequency 6m running total">080fa020fb846250c687f650beefdc8b</indicator>
+        <job display_value="temporary job for collecting Deployment Frequency 6m running total">580fa020fb846250c687f650beefdc83</job>
+        <sys_class_name>pa_job_indicators</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-27 13:32:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc0fa020fb846250c687f650beefdc84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deployment Frequency 6m running total.temporary job for collecting Deployment Frequency 6m running total</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_job_indicators_dc0fa020fb846250c687f650beefdc84</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-27 13:32:18</sys_updated_on>
+    </pa_job_indicators>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>195614755460000001</claim_timestamp>
+        <metadata_update_name>pa_job_indicators_dc0fa020fb846250c687f650beefdc84</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-04 13:10:19</sys_created_on>
+        <sys_id>3ee99e06fbc02a10568ff650beefdcdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-04 13:10:19</sys_updated_on>
+    </sys_claim>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>cf8ab9b36faf020056007b2f5d3ee46c</instance_id>
+        <instance_name>lssidev2</instance_name>
+        <name>pa_job_indicators_dc0fa020fb846250c687f650beefdc84</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_job_indicators">
+    <pa_job_indicators action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <collect>1</collect>
+        <collect_indicator>true</collect_indicator>
+        <display>temporary job for collecting Deployment Frequency 6m running total - Deployment Frequency 6m running total</display>
+        <indicator display_value="Deployment Frequency 6m running total">080fa020fb846250c687f650beefdc8b</indicator>
+        <job display_value="temporary job for collecting Deployment Frequency 6m running total">580fa020fb846250c687f650beefdc83</job>
+        <sys_class_name>pa_job_indicators</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-02-27 13:32:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc0fa020fb846250c687f650beefdc84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deployment Frequency 6m running total.temporary job for collecting Deployment Frequency 6m running total</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>pa_job_indicators_dc0fa020fb846250c687f650beefdc84</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-02-27 13:32:18</sys_updated_on>
+    </pa_job_indicators>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>195614755460000001</claim_timestamp>
+        <metadata_update_name>pa_job_indicators_dc0fa020fb846250c687f650beefdc84</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-04 13:10:19</sys_created_on>
+        <sys_id>3ee99e06fbc02a10568ff650beefdcdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-04 13:10:19</sys_updated_on>
+    </sys_claim>
+</record_update>]]></payload>
+        <payload_hash>-1601602160</payload_hash>
+        <record_name>temporary job for collecting Deployment Frequency 6m running total - Deployment Frequency 6m running</record_name>
+        <reverted_from/>
+        <source>ce992b2b1b217590d9e4a755bd4bcba2</source>
+        <source_table>sys_app_customization</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-18 13:39:57</sys_created_on>
+        <sys_id>d9f6eea2fbd4ae10c514f65caeefdc4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195a97b7dec0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-18 13:39:57</sys_updated_on>
+        <type>Job Indicator</type>
+        <update_guid>95f6eea269d4ae10372c39f89206b04c</update_guid>
+        <update_guid_history>95f6eea269d4ae10372c39f89206b04c:0,9e820c01ba502a108bcf212cb37b4548:-86247342,217184cd1e102a10aecac54cbeffe40f:0,deb0c885a55ca61091e713081e4f5b95:-86247342,63b339c08f94e210d9afefbe5b17e7b8:0,ac83b1c0ed94e21069dc7a919e705343:-86247342,1c0fa8205f8462509581b5d6b0816dc2:-637026795</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 18/03/2025 14:14:23">a9de662efb5c6e108592f65caeefdc3c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-18 14:14:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="pa_job_indicators">pa_job_indicators</sys_db_object>
+        <sys_id>c10e1efeced3432a8c94e649d52371d9</sys_id>
+        <sys_metadata>dc0fa020fb846250c687f650beefdc84</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deployment Frequency 6m running total.temporary job for collecting Deployment Frequency 6m running total</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent display_value="temporary job for collecting Deployment Frequency 6m running total">580fa020fb846250c687f650beefdc83</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>pa_job_indicators_dc0fa020fb846250c687f650beefdc84</sys_update_name>
+        <sys_update_version display_value="pa_job_indicators_dc0fa020fb846250c687f650beefdc84">d9f6eea2fbd4ae10c514f65caeefdc4c</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-18 14:14:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

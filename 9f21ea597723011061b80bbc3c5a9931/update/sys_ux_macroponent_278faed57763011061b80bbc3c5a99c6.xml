@@ -1838,7 +1838,7 @@
                                                 },
                                                 "disabled": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": true
                                                 },
                                                 "icon": {
                                                     "type": "JSON_LITERAL",
@@ -21135,7 +21135,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 0;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 0;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "dfdfac311bcd4a5cd9e4a755bd4bcbd1",
                                                                                                         "target": null
                                                                                                     }
@@ -21245,6 +21245,48 @@
                                                                                 "styles": null,
                                                                                 "overrides": {
                                                                                     "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 135",
+                                                                                            "elementId": "icon_135",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "square-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalCMetric2ShowHealth[0] === 'platinum');\n}",
+                                                                                                    "scriptSysId": "201fa62efb5c6e108592f65caeefdcde",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
                                                                                         {
                                                                                             "elementId": "icon_48",
                                                                                             "elementLabel": "Icon 48",
@@ -21385,6 +21427,12 @@
                                                                                             "rules": {},
                                                                                             "items": [
                                                                                                 {
+                                                                                                    "element_id": "icon_135",
+                                                                                                    "styles": {
+                                                                                                        "color": "#C0C0C0"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
                                                                                                     "rules": {},
                                                                                                     "styles": {
                                                                                                         "color": "#008000"
@@ -21487,7 +21535,7 @@
                                                                                         "type": "DATA_OUTPUT_BINDING",
                                                                                         "binding": {
                                                                                             "address": [
-                                                                                                "verticalC_headlinemetric2",
+                                                                                                "verticalC_headlinemetric2_daily",
                                                                                                 "output",
                                                                                                 "result",
                                                                                                 "0",
@@ -21920,7 +21968,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 1;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 1;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "c4efa0711bcd4a5cd9e4a755bd4bcbb5",
                                                                                                         "target": null
                                                                                                     }
@@ -22030,6 +22078,48 @@
                                                                                 "styles": null,
                                                                                 "overrides": {
                                                                                     "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 136",
+                                                                                            "elementId": "icon_136",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "square-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalCMetric2ShowHealth[1] === 'platinum');\n}",
+                                                                                                    "scriptSysId": "601fa62efb5c6e108592f65caeefdcde",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
                                                                                         {
                                                                                             "elementId": "icon_51",
                                                                                             "elementLabel": "Icon 51",
@@ -22170,6 +22260,12 @@
                                                                                             "rules": {},
                                                                                             "items": [
                                                                                                 {
+                                                                                                    "element_id": "icon_136",
+                                                                                                    "styles": {
+                                                                                                        "color": "#C0C0C0"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
                                                                                                     "rules": {},
                                                                                                     "styles": {
                                                                                                         "color": "#008000"
@@ -22272,7 +22368,7 @@
                                                                                         "type": "DATA_OUTPUT_BINDING",
                                                                                         "binding": {
                                                                                             "address": [
-                                                                                                "verticalC_headlinemetric2",
+                                                                                                "verticalC_headlinemetric2_daily",
                                                                                                 "output",
                                                                                                 "result",
                                                                                                 "1",
@@ -22705,7 +22801,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 2;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 2;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "34ef64711bcd4a5cd9e4a755bd4bcb88",
                                                                                                         "target": null
                                                                                                     }
@@ -22815,6 +22911,48 @@
                                                                                 "styles": null,
                                                                                 "overrides": {
                                                                                     "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 137",
+                                                                                            "elementId": "icon_137",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "square-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalCMetric2ShowHealth[2] === 'platinum');\n}",
+                                                                                                    "scriptSysId": "a01fa62efb5c6e108592f65caeefdcde",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
                                                                                         {
                                                                                             "elementId": "icon_54",
                                                                                             "elementLabel": "Icon 54",
@@ -22955,6 +23093,12 @@
                                                                                             "rules": {},
                                                                                             "items": [
                                                                                                 {
+                                                                                                    "element_id": "icon_137",
+                                                                                                    "styles": {
+                                                                                                        "color": "#C0C0C0"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
                                                                                                     "rules": {},
                                                                                                     "styles": {
                                                                                                         "color": "#008000"
@@ -23057,7 +23201,7 @@
                                                                                         "type": "DATA_OUTPUT_BINDING",
                                                                                         "binding": {
                                                                                             "address": [
-                                                                                                "verticalC_headlinemetric2",
+                                                                                                "verticalC_headlinemetric2_daily",
                                                                                                 "output",
                                                                                                 "result",
                                                                                                 "2",
@@ -23490,7 +23634,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 3;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 3;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "e9ef28711bcd4a5cd9e4a755bd4bcb68",
                                                                                                         "target": null
                                                                                                     }
@@ -23600,6 +23744,48 @@
                                                                                 "styles": null,
                                                                                 "overrides": {
                                                                                     "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 138",
+                                                                                            "elementId": "icon_138",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "square-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalCMetric2ShowHealth[3] === 'platinum');\n}",
+                                                                                                    "scriptSysId": "e01fa62efb5c6e108592f65caeefdcde",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
                                                                                         {
                                                                                             "elementId": "icon_57",
                                                                                             "elementLabel": "Icon 57",
@@ -23740,6 +23926,12 @@
                                                                                             "rules": {},
                                                                                             "items": [
                                                                                                 {
+                                                                                                    "element_id": "icon_138",
+                                                                                                    "styles": {
+                                                                                                        "color": "#C0C0C0"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
                                                                                                     "rules": {},
                                                                                                     "styles": {
                                                                                                         "color": "#008000"
@@ -23842,7 +24034,7 @@
                                                                                         "type": "DATA_OUTPUT_BINDING",
                                                                                         "binding": {
                                                                                             "address": [
-                                                                                                "verticalC_headlinemetric2",
+                                                                                                "verticalC_headlinemetric2_daily",
                                                                                                 "output",
                                                                                                 "result",
                                                                                                 "3",
@@ -24275,7 +24467,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 4;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 4;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
                                                                                                         "scriptSysId": "9eef2c711bcd4a5cd9e4a755bd4bcbcb",
                                                                                                         "target": null
                                                                                                     }
@@ -24385,6 +24577,48 @@
                                                                                 "styles": null,
                                                                                 "overrides": {
                                                                                     "composition": [
+                                                                                        {
+                                                                                            "definition": {
+                                                                                                "id": "33eaddad37cf901283bbdc7a574773b9",
+                                                                                                "type": "MACROPONENT"
+                                                                                            },
+                                                                                            "elementLabel": "Icon 139",
+                                                                                            "elementId": "icon_139",
+                                                                                            "eventMappings": [
+                                                                                                
+                                                                                            ],
+                                                                                            "propertyValues": {
+                                                                                                "icon": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "square-fill"
+                                                                                                },
+                                                                                                "size": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "lg"
+                                                                                                },
+                                                                                                "configAria": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": null
+                                                                                                },
+                                                                                                "supportRtl": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": false
+                                                                                                }
+                                                                                            },
+                                                                                            "isHidden": {
+                                                                                                "type": "CLIENT_TRANSFORM_SCRIPT",
+                                                                                                "script": {
+                                                                                                    "apiVersion": "2.0.0",
+                                                                                                    "controllerElementId": null,
+                                                                                                    "inlineScript": "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {TransformApiHelpers} params.helpers\n  */\nfunction evaluateProperty({api, helpers}) {\n  return !(api.state.verticalCMetric2ShowHealth[4] === 'platinum');\n}",
+                                                                                                    "scriptSysId": "241fa62efb5c6e108592f65caeefdcde",
+                                                                                                    "target": null
+                                                                                                }
+                                                                                            },
+                                                                                            "preset": null,
+                                                                                            "slot": null,
+                                                                                            "styles": null
+                                                                                        },
                                                                                         {
                                                                                             "elementId": "icon_60",
                                                                                             "elementLabel": "Icon 60",
@@ -24525,6 +24759,12 @@
                                                                                             "rules": {},
                                                                                             "items": [
                                                                                                 {
+                                                                                                    "element_id": "icon_139",
+                                                                                                    "styles": {
+                                                                                                        "color": "#C0C0C0"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
                                                                                                     "rules": {},
                                                                                                     "styles": {
                                                                                                         "color": "#008000"
@@ -24627,10 +24867,10 @@
                                                                                         "type": "DATA_OUTPUT_BINDING",
                                                                                         "binding": {
                                                                                             "address": [
-                                                                                                "verticalC_headlinemetric2",
+                                                                                                "verticalC_headlinemetric2_daily",
                                                                                                 "output",
                                                                                                 "result",
-                                                                                                "0",
+                                                                                                "4",
                                                                                                 "value_unit"
                                                                                             ]
                                                                                         }
@@ -31060,8 +31300,8 @@
             "type": "REST"
         },
         "dependencies": {},
-        "elementId": "verticalC_headlinemetric2",
-        "elementLabel": "verticalC Headlinemetric2",
+        "elementId": "verticalC_headlinemetric2_daily",
+        "elementLabel": "verticalC Headlinemetric2 daily",
         "eventMappings": [
             {
                 "eventMappingId": "clssvmhheecaaaakgddjhhwhhggzjjbccjx",
@@ -32057,7 +32297,7 @@
         "fieldType": "string",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "asc"
+            "value": "desc"
         },
         "label": "Tab1VCM2SortDirection",
         "name": "Tab1VCM2SortDirection",
@@ -32236,7 +32476,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1190</sys_mod_count>
+        <sys_mod_count>1204</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32244,7 +32484,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-18 13:46:06</sys_updated_on>
+        <sys_updated_on>2025-03-18 15:20:13</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

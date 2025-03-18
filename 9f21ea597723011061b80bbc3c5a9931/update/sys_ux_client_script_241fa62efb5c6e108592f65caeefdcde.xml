@@ -3,63 +3,49 @@
         <controller_preset/>
         <includes/>
         <macroponent display_value="HO Product Performance Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
-        <name>stylized_text_233/text</name>
+        <name>icon_139/isHidden</name>
         <preset/>
         <required_translations>[
     
 ]</required_translations>
         <script><![CDATA[/**
- * @param {params} params
- * @param {api} params.api
- * @param {TransformApiHelpers} params.helpers
- */
-function evaluateProperty({
-    api,
-    helpers
-}) {
-    var i = 0;
-    var clientStateParameter = api.state.Tab11stBreakdown;
-    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value>=0
-        && api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {
-        if (clientStateParameter === '') {
-            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;
-            return element;
-        } else {
-            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;
-            return element_level2;
-        }
-    }
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  return !(api.state.verticalCMetric2ShowHealth[4] === 'platinum');
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-20 11:28:57</sys_created_on>
+        <sys_created_on>2025-03-18 14:37:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>dfdfac311bcd4a5cd9e4a755bd4bcbd1</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>stylized_text_233/text</sys_name>
+        <sys_id>241fa62efb5c6e108592f65caeefdcde</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>icon_139/isHidden</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
-        <sys_update_name>sys_ux_client_script_dfdfac311bcd4a5cd9e4a755bd4bcbd1</sys_update_name>
+        <sys_update_name>sys_ux_client_script_241fa62efb5c6e108592f65caeefdcde</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-18 15:16:48</sys_updated_on>
+        <sys_updated_on>2025-03-18 14:37:24</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
-        <claim_timestamp>18e5ba123370000001</claim_timestamp>
-        <metadata_update_name>sys_ux_client_script_dfdfac311bcd4a5cd9e4a755bd4bcbd1</metadata_update_name>
+        <claim_timestamp>195a9d9b6fe0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_241fa62efb5c6e108592f65caeefdcde</metadata_update_name>
         <previous_claim_app_version>1.0.5</previous_claim_app_version>
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2024-03-20 11:31:10</sys_created_on>
-        <sys_id>7350b8f51bcd4a5cd9e4a755bd4bcb4f</sys_id>
+        <sys_created_on>2025-03-18 15:22:52</sys_created_on>
+        <sys_id>098e7e6efb9c6e108592f65caeefdce0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2024-03-20 11:31:10</sys_updated_on>
+        <sys_updated_on>2025-03-18 15:22:52</sys_updated_on>
     </sys_claim>
 </record_update>
