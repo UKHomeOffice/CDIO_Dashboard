@@ -31843,6 +31843,83 @@
             
         ],
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "elementId": "verticalC_headlinemetric2_monthly",
+        "elementLabel": "verticalC Headlinemetric2 monthly",
+        "definition": {
+            "id": "693087eefb9c6e108592f65caeefdcaf",
+            "type": "REST"
+        },
+        "dependencies": {},
+        "inputValues": {
+            "uuid": {
+                "type": "DATA_OUTPUT_BINDING",
+                "binding": {
+                    "address": [
+                        "getmetricsofciodashboard",
+                        "output",
+                        "VerticalC",
+                        "headlineMetrics",
+                        "1",
+                        "metricSysid"
+                    ]
+                }
+            },
+            "1st_breakdown": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab11stBreakdown"
+                    ]
+                }
+            },
+            "1st_element": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab11stElement"
+                    ]
+                }
+            },
+            "2nd_breakdown": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab12ndBreakdown",
+                        "1"
+                    ]
+                }
+            },
+            "sortdir": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1VCM2SortDirection"
+                    ]
+                }
+            },
+            "pagenumber": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Tab1VCM2PageNumber"
+                    ]
+                }
+            },
+            "month": {
+                "type": "STATE_BINDING",
+                "binding": {
+                    "address": [
+                        "Month"
+                    ]
+                }
+            }
+        },
+        "eventMappings": [
+            
+        ],
+        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -32476,7 +32553,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1204</sys_mod_count>
+        <sys_mod_count>1207</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32484,7 +32561,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-18 15:20:13</sys_updated_on>
+        <sys_updated_on>2025-03-18 16:03:36</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
+        <api_name>sn_ciodashboard.Tab1getPAscoreVCM2Monthly</api_name>
+        <api_url>/api/now/pa/scorecards?sysparm_uuid={{uuid}}:{{1st_breakdown}}:{{1st_element}}:3e409011d7001100ba986f14ce610319&amp;sysparm_breakdown={{2nd_breakdown}}&amp;sysparm_per_page=5&amp;sysparm_page={{pagenumber}}&amp;sysparm_include_scores=true&amp;sysparm_limit=5&amp;sysparm_sortby=value&amp;sysparm_sortdir={{sortdir}}&amp;sysparm_to={{month}}</api_url>
+        <description>Retrieves PA indicator score using PA Scorecard API, aggregates 30d running sum, and breakdown for PIS for selected Portfolio (from the front-end). Scorecard returns two scores for the first 5 PIS elements in ascending order of score (nulls excluded)</description>
+        <http_method>GET</http_method>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Tab1getPAscoreVCM2Monthly</name>
+        <output_schema/>
+        <parameters/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "uuid",&#13;
+    "label": "PA Indicator",&#13;
+    "description": "PA Indicator UUID",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_indicators"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+  {&#13;
+    "name": "1st_breakdown",&#13;
+    "label": "1st breakdown",&#13;
+    "description": "1st Breakdown sysid",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_breakdowns"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+  {&#13;
+    "name": "1st_element",&#13;
+    "label": "1st element",&#13;
+    "description": "1st element sysid",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "2nd_breakdown",&#13;
+    "label": "2nd breakdown",&#13;
+    "description": "2nd breakdown sysid",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "reference",&#13;
+    "typeMetadata": {&#13;
+      "reference": "pa_breakdowns"&#13;
+    },&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "sortdir",&#13;
+    "label": "Sort direction",&#13;
+    "description": "Sort direction choice",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": "desc"&#13;
+  },&#13;
+{&#13;
+    "name": "pagenumber",&#13;
+    "label": "Page number",&#13;
+    "description": "Page number",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": "1"&#13;
+  },&#13;
+{&#13;
+    "name": "month",&#13;
+    "label": "Month of interest",&#13;
+    "description": "Month of interest",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+&#13;
+&#13;
+]</props>
+        <request_body/>
+        <required_translations>[ {
+  "message" : "1st Breakdown sysid",
+  "comment" : ""
+}, {
+  "message" : "1st breakdown",
+  "comment" : ""
+}, {
+  "message" : "1st element",
+  "comment" : ""
+}, {
+  "message" : "1st element sysid",
+  "comment" : ""
+}, {
+  "message" : "2nd breakdown",
+  "comment" : ""
+}, {
+  "message" : "2nd breakdown sysid",
+  "comment" : ""
+}, {
+  "message" : "Month of interest",
+  "comment" : ""
+}, {
+  "message" : "PA Indicator",
+  "comment" : ""
+}, {
+  "message" : "PA Indicator UUID",
+  "comment" : ""
+}, {
+  "message" : "Page number",
+  "comment" : ""
+}, {
+  "message" : "Sort direction",
+  "comment" : ""
+}, {
+  "message" : "Sort direction choice",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-18 15:31:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>693087eefb9c6e108592f65caeefdcaf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Tab1getPAscoreVCM2Monthly</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_693087eefb9c6e108592f65caeefdcaf</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-18 15:33:39</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>195aa0169570000001</claim_timestamp>
+        <metadata_update_name>sys_ux_data_broker_rest_693087eefb9c6e108592f65caeefdcaf</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-18 16:06:14</sys_created_on>
+        <sys_id>407883aafbdc6e108592f65caeefdc55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-18 16:06:14</sys_updated_on>
+    </sys_claim>
+</record_update>
