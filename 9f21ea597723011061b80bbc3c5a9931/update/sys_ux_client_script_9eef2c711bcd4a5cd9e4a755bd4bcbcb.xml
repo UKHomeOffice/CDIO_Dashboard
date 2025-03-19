@@ -9,34 +9,40 @@
     
 ]</required_translations>
         <script><![CDATA[/**
- * @param {params} params
- * @param {api} params.api
- * @param {TransformApiHelpers} params.helpers
+ * Evaluates and returns an element or element_level2 value based on conditions.
+ *
+ * @param {Object} params - The function parameters.
+ * @param {Object} params.api - API object containing data and state.
+ * @param {number} params.i - The starting index for iteration.
+ * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting.
  */
-function evaluateProperty({
-    api,
-    helpers
-}) {
-    var i = 4;
-    var clientStateParameter = api.state.Tab11stBreakdown;
-    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value>=0
-        && api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {
-        if (clientStateParameter === '') {
-            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;
-            return element;
-        } else {
-            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;
-            return element_level2;
-        }
+function evaluateProperty({ api, i = 4 }) {
+    const clientStateParameter = api.state.Tab11stBreakdown;
+
+    // Get the length of the daily frequency dataset
+    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;
+
+    // Check if i is within the daily frequency length
+    if (i >= dailyLength) {
+        return null; // Waiting for further instructions
     }
-}]]></script>
+
+    // Extract daily value at index i
+    const dailyResult = api.data.verticalC_headlinemetric2_daily?.output?.result[i];
+
+    // Return the appropriate element based on client state
+    return clientStateParameter === ''
+        ? dailyResult?.element.display_value
+        : dailyResult?.element_level2.display_value;
+}
+]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2024-03-20 11:29:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9eef2c711bcd4a5cd9e4a755bd4bcbcb</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>stylized_text_237/text</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -44,7 +50,7 @@ function evaluateProperty({
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_9eef2c711bcd4a5cd9e4a755bd4bcbcb</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-18 15:16:47</sys_updated_on>
+        <sys_updated_on>2025-03-19 11:47:37</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>

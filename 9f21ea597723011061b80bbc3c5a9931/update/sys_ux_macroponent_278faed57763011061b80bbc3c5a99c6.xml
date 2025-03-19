@@ -1935,6 +1935,87 @@
                                         "version": "3.0.0"
                                     }
                                 }
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementLabel": "Stylized text 274",
+                                "elementId": "stylized_text_274",
+                                "eventMappings": [
+                                    
+                                ],
+                                "propertyValues": {
+                                    "text": {
+                                        "type": "STATE_BINDING",
+                                        "binding": {
+                                            "address": [
+                                                "elementsDeploymentFrequencyDaily",
+                                                "length"
+                                            ]
+                                        }
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { }"
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    }
+                                },
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementLabel": "Stylized text 275",
+                                "elementId": "stylized_text_275",
+                                "eventMappings": [
+                                    
+                                ],
+                                "propertyValues": {
+                                    "text": {
+                                        "type": "STATE_BINDING",
+                                        "binding": {
+                                            "address": [
+                                                "elementsDeploymentFrequencyDaily"
+                                            ]
+                                        }
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { }"
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    }
+                                },
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "slot": null,
+                                "styles": null
                             }
                         ],
                         "layout": {
@@ -1966,6 +2047,14 @@
                                             "width": "100%",
                                             "background-color": "#DBDBDB"
                                         }
+                                    },
+                                    {
+                                        "element_id": "stylized_text_274",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_275",
+                                        "styles": {}
                                     }
                                 ],
                                 "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
@@ -21135,7 +21224,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 0;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - The starting index for iteration.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting.\n */\nfunction evaluateProperty({ api, i = 0 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get the length of the daily frequency dataset\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n\n    // Check if i is within the daily frequency length\n    if (i &gt;= dailyLength) {\n        return null; // Waiting for further instructions\n    }\n\n    // Extract daily value at index i\n    const dailyResult = api.data.verticalC_headlinemetric2_daily?.output?.result[i];\n\n    // Return the appropriate element based on client state\n    return clientStateParameter === ''\n        ? dailyResult?.element.display_value\n        : dailyResult?.element_level2.display_value;\n}\n",
                                                                                                         "scriptSysId": "dfdfac311bcd4a5cd9e4a755bd4bcbd1",
                                                                                                         "target": null
                                                                                                     }
@@ -21968,7 +22057,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 1;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - The starting index for iteration.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting.\n */\nfunction evaluateProperty({ api, i = 1 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get the length of the daily frequency dataset\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n\n    // Check if i is within the daily frequency length\n    if (i &gt;= dailyLength) {\n        return null; // Waiting for further instructions\n    }\n\n    // Extract daily value at index i\n    const dailyResult = api.data.verticalC_headlinemetric2_daily?.output?.result[i];\n\n    // Return the appropriate element based on client state\n    return clientStateParameter === ''\n        ? dailyResult?.element.display_value\n        : dailyResult?.element_level2.display_value;\n}\n",
                                                                                                         "scriptSysId": "c4efa0711bcd4a5cd9e4a755bd4bcbb5",
                                                                                                         "target": null
                                                                                                     }
@@ -22801,7 +22890,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 2;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - The starting index for iteration.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting.\n */\nfunction evaluateProperty({ api, i = 2 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get the length of the daily frequency dataset\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n\n    // Check if i is within the daily frequency length\n    if (i &gt;= dailyLength) {\n        return null; // Waiting for further instructions\n    }\n\n    // Extract daily value at index i\n    const dailyResult = api.data.verticalC_headlinemetric2_daily?.output?.result[i];\n\n    // Return the appropriate element based on client state\n    return clientStateParameter === ''\n        ? dailyResult?.element.display_value\n        : dailyResult?.element_level2.display_value;\n}\n",
                                                                                                         "scriptSysId": "34ef64711bcd4a5cd9e4a755bd4bcb88",
                                                                                                         "target": null
                                                                                                     }
@@ -23634,7 +23723,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 3;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - The starting index for iteration.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting.\n */\nfunction evaluateProperty({ api, i = 3 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get the length of the daily frequency dataset\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n\n    // Check if i is within the daily frequency length\n    if (i &gt;= dailyLength) {\n        return null; // Waiting for further instructions\n    }\n\n    // Extract daily value at index i\n    const dailyResult = api.data.verticalC_headlinemetric2_daily?.output?.result[i];\n\n    // Return the appropriate element based on client state\n    return clientStateParameter === ''\n        ? dailyResult?.element.display_value\n        : dailyResult?.element_level2.display_value;\n}\n",
                                                                                                         "scriptSysId": "e9ef28711bcd4a5cd9e4a755bd4bcb68",
                                                                                                         "target": null
                                                                                                     }
@@ -24467,7 +24556,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    var i = 4;\n    var clientStateParameter = api.state.Tab11stBreakdown;\n    if (api.data.verticalC_headlinemetric2_daily.output.result[i].value&gt;=0\n        &amp;&amp; api.data.verticalC_headlinemetric2_daily.output.result[i].value !== null) {\n        if (clientStateParameter === '') {\n            var element = api.data.verticalC_headlinemetric2_daily.output.result[i].element.display_value;\n            return element;\n        } else {\n            var element_level2 = api.data.verticalC_headlinemetric2_daily.output.result[i].element_level2.display_value;\n            return element_level2;\n        }\n    }\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - The starting index for iteration.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting.\n */\nfunction evaluateProperty({ api, i = 4 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get the length of the daily frequency dataset\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n\n    // Check if i is within the daily frequency length\n    if (i &gt;= dailyLength) {\n        return null; // Waiting for further instructions\n    }\n\n    // Extract daily value at index i\n    const dailyResult = api.data.verticalC_headlinemetric2_daily?.output?.result[i];\n\n    // Return the appropriate element based on client state\n    return clientStateParameter === ''\n        ? dailyResult?.element.display_value\n        : dailyResult?.element_level2.display_value;\n}\n",
                                                                                                         "scriptSysId": "9eef2c711bcd4a5cd9e4a755bd4bcbcb",
                                                                                                         "target": null
                                                                                                     }
@@ -31343,6 +31432,22 @@
                         },
                         "conditional": null,
                         "broker": null
+                    },
+                    {
+                        "targetId": "cmiifsffyjgaaeeqmddjhhueebbbjjeeaew",
+                        "type": "CLIENT_SCRIPT",
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "clientScript": {
+                            "sysId": "cd7b6236fb9ca25028c2f063aeefdc3f",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "conditional": null,
+                        "broker": null
                     }
                 ]
             }
@@ -32546,6 +32651,35 @@
         "name": "Tab1PortfolioElement",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "fieldType": "json",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": [
+                "element1",
+                "element2",
+                "element3",
+                "element4",
+                "element5"
+            ]
+        },
+        "name": "elementsDeploymentFrequencyDaily",
+        "shape": "",
+        "valueType": "json"
+    },
+    {
+        "fieldType": "json",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": [
+                "element1",
+                "element2"
+            ]
+        },
+        "name": "elementsDeploymentFrequencyMonthly",
+        "shape": "",
+        "valueType": "json"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
@@ -32553,7 +32687,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1207</sys_mod_count>
+        <sys_mod_count>1230</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32561,7 +32695,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:03:36</sys_updated_on>
+        <sys_updated_on>2025-03-19 11:48:05</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
@@ -32571,10 +32705,10 @@
         <previous_claim_name>CIO Dashboard</previous_claim_name>
         <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
         <sys_created_by>VelentL</sys_created_by>
-        <sys_created_on>2025-01-13 17:02:38</sys_created_on>
-        <sys_id>2e9f658efb0bd6505260f650beefdc01</sys_id>
+        <sys_created_on>2025-03-19 11:30:33</sys_created_on>
+        <sys_id>e7e2db7efb586650add3f65caeefdc1c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-01-13 17:02:38</sys_updated_on>
+        <sys_updated_on>2025-03-19 11:30:33</sys_updated_on>
     </sys_claim>
 </record_update>
