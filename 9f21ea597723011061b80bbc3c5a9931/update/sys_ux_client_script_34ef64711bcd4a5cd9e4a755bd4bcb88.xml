@@ -19,6 +19,10 @@
 function evaluateProperty({ api, i = 2 }) {
     const clientStateParameter = api.state.Tab11stBreakdown;
     
+    // Get daily and monthly frequency arrays
+    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;
+    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;
+
     // Get lengths of daily and monthly results
     const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;
     const monthlyLength = api.state.elementsDeploymentFrequencyMonthly.length;
@@ -29,13 +33,24 @@ function evaluateProperty({ api, i = 2 }) {
         return clientStateParameter === ''
             ? dailyResult?.element.display_value
             : dailyResult?.element_level2.display_value;
-    } 
-    
-    // Compute k for monthly retrieval
-    const k = i - dailyLength;
+    }
 
-    if (k < monthlyLength) {
-        // Retrieve from monthly data
+    // Step 1: Generate intersection mask (1 for match, 0 for non-match)
+    const intersectionMask = monthlyFrequency.map(pis => dailyFrequency.includes(pis) ? 1 : 0);
+
+    // Step 2: Identify valid k indices (indices of non-matching elements)
+    const validKIndices = intersectionMask
+        .map((match, idx) => match === 0 ? idx : -1)
+        .filter(idx => idx !== -1);
+
+    // Compute dynamic k for monthly retrieval
+    const kIndex = i - dailyLength;
+
+    // Ensure kIndex stays within valid range
+    if (kIndex < validKIndices.length) {
+        const k = validKIndices[kIndex];
+
+        // Retrieve from monthly data using adjusted k
         const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];
         return clientStateParameter === ''
             ? monthlyResult?.element.display_value
@@ -44,15 +59,14 @@ function evaluateProperty({ api, i = 2 }) {
 
     // If i exceeds both daily and monthly ranges, wait for further instructions
     return null;
-}
-]]></script>
+}]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2024-03-20 11:29:03</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>34ef64711bcd4a5cd9e4a755bd4bcb88</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>stylized_text_235/text</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -60,7 +74,7 @@ function evaluateProperty({ api, i = 2 }) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_34ef64711bcd4a5cd9e4a755bd4bcb88</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-19 12:56:27</sys_updated_on>
+        <sys_updated_on>2025-03-20 09:15:45</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
