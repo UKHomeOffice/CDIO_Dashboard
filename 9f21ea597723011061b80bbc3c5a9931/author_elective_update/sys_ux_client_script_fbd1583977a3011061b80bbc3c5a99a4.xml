@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="HO Product Performance Table default">278faed57763011061b80bbc3c5a99c6</macroponent>
+        <name>showVerticalCMetric2Health</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api
+}) {
+    var arr = [];
+    var results_daily = api.data.verticalC_headlinemetric2_daily.output.result;
+    var results_monthly = api.data.verticalC_headlinemetric2_monthly.output.result;
+
+    const clientStateParameter = api.state.Tab11stBreakdown;
+
+    // Get daily and monthly frequency lists
+    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;
+    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;
+
+    // Get their lengths
+    const dailyLength = dailyFrequency.length;
+    const monthlyLength = monthlyFrequency.length;
+
+    for (let i = 0; i < dailyLength; i++) {
+        arr.push('platinum');
+    }
+
+    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)
+    const intersectionMask = monthlyFrequency.map(pis => dailyFrequency.includes(pis) ? 1 : 0);
+    const zeroCount = intersectionMask.filter(value => value === 0).length;
+    for (let k = 0; k < zeroCount; k++) {
+        arr.push('green');
+    }
+
+
+    var clientStateParameter2 = 'verticalCMetric2ShowHealth';
+    api.setState(clientStateParameter2, arr);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-19 07:10:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fbd1583977a3011061b80bbc3c5a99a4</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>showVerticalCMetric2Health</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_update_name>sys_ux_client_script_fbd1583977a3011061b80bbc3c5a99a4</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-21 10:42:55</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
+        <claim_timestamp>00000000</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_fbd1583977a3011061b80bbc3c5a99a4</metadata_update_name>
+        <previous_claim_app_version>1.0.5</previous_claim_app_version>
+        <previous_claim_name>CIO Dashboard</previous_claim_name>
+        <previous_claim_scope>9f21ea597723011061b80bbc3c5a9931</previous_claim_scope>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-19 13:07:43</sys_created_on>
+        <sys_id>83296bbafb94e2502a65f65caeefdc26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-19 13:07:43</sys_updated_on>
+    </sys_claim>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</application>
+        <file_path/>
+        <instance_id>cf8ab9b36faf020056007b2f5d3ee46c</instance_id>
+        <instance_name>lssidev2</instance_name>
+        <name>sys_ux_client_script_fbd1583977a3011061b80bbc3c5a99a4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="HO Product Performance Table default"&gt;278faed57763011061b80bbc3c5a99c6&lt;/macroponent&gt;&lt;name&gt;showVerticalCMetric2Health&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api
+}) {
+    var arr = [];
+    var results_daily = api.data.verticalC_headlinemetric2_daily.output.result;
+    var results_monthly = api.data.verticalC_headlinemetric2_monthly.output.result;
+
+    const clientStateParameter = api.state.Tab11stBreakdown;
+
+    // Get daily and monthly frequency lists
+    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;
+    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;
+
+    // Get their lengths
+    const dailyLength = dailyFrequency.length;
+    const monthlyLength = monthlyFrequency.length;
+
+    for (let i = 0; i &lt; dailyLength; i++) {
+        arr.push('platinum');
+    }
+
+    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)
+    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);
+    const zeroCount = intersectionMask.filter(value =&gt; value === 0).length;
+    for (let k = 0; k &lt; zeroCount; k++) {
+        arr.push('green');
+    }
+
+
+    var clientStateParameter2 = 'verticalCMetric2ShowHealth';
+    api.setState(clientStateParameter2, arr);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-19 07:10:17&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;fbd1583977a3011061b80bbc3c5a99a4&lt;/sys_id&gt;&lt;sys_mod_count&gt;31&lt;/sys_mod_count&gt;&lt;sys_name&gt;showVerticalCMetric2Health&lt;/sys_name&gt;&lt;sys_package display_value="CIO Dashboard" source="sn_ciodashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="CIO Dashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_fbd1583977a3011061b80bbc3c5a99a4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;VelentL&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-21 10:42:55&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;sys_claim action="INSERT_OR_UPDATE"&gt;&lt;claim_owner_scope display_value="CIO Dashboard"&gt;9f21ea597723011061b80bbc3c5a9931&lt;/claim_owner_scope&gt;&lt;claim_timestamp&gt;00000000&lt;/claim_timestamp&gt;&lt;metadata_update_name&gt;sys_ux_client_script_fbd1583977a3011061b80bbc3c5a99a4&lt;/metadata_update_name&gt;&lt;previous_claim_app_version&gt;1.0.5&lt;/previous_claim_app_version&gt;&lt;previous_claim_name&gt;CIO Dashboard&lt;/previous_claim_name&gt;&lt;previous_claim_scope&gt;9f21ea597723011061b80bbc3c5a9931&lt;/previous_claim_scope&gt;&lt;sys_created_by&gt;VelentL&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-19 13:07:43&lt;/sys_created_on&gt;&lt;sys_id&gt;83296bbafb94e2502a65f65caeefdc26&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;VelentL&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-19 13:07:43&lt;/sys_updated_on&gt;&lt;/sys_claim&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1282155540</payload_hash>
+        <record_name>showVerticalCMetric2Health</record_name>
+        <reverted_from/>
+        <source>d6b0c885fb5ca6108592f65caeefdc94</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-21 10:42:55</sys_created_on>
+        <sys_id>e53b1de3fb946a50add3f65caeefdc74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195b84c7f5a0000001</sys_recorded_at>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-21 10:42:55</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>2d3b1de3c1946a507240d7df338e2873</update_guid>
+        <update_guid_history>2d3b1de3c1946a507240d7df338e2873:-1282155540,b2d7c76a86dc6e1084a94f01ae2555cb:-1710110517,0617c72a66dc6e10869bce79882e9bbd:-622447848,9fed7e2ee39c6e10b6d3e086446dd1a4:1588787021,6c2cbeaabc9c6e105019bd2a9f0e41a2:-1281710733,67753ee24d9c6e106760a38c6973fd02:594338125,7a203f30357f9210face26e15184bd87:0,2adb29c19edd9e103da159804b8cf2c7:-606891717,a7a053d383c51e94ddf95550b77b1fdf:-606891717,67c33e5756811e949058ed0749ca1f0b:0,87933257d9811e9436a46af3f68fae99:0,ffeb45beb5411ad0f3058ded1a2f0a7b:-606891717,7044ccadd689da905644d2f1fb1fdd5d:0,08de2ac187491a90f8ef205e297eb3f8:-606891717,00d5c04fecf852d084e10d9ac83e39b7:0,d50340073bf852d0b463a07f6047906b:0,d1424843f5f852d064db6a4275cb2261:-606891717,e3b4bb76dc7852d0d5970e90147b1e44:0,5e933fb2c07852d019fff7ce33155b0e:0,8a34f63eeafc12d05118fdbb364e67af:-606891717,610a0c89fcf812106ebc98ef286cfa67:677271720,395d3b7471781210b38761fda1dcc243:0,c77c33968f241650ebe824ec9c275325:677271720,dc5f2715d46c1a10d51f40b6b8c025bf:677271720,2ef33eeafb405a907361bf24c4c56ca6:0,74e3feaabf405a907f20ac7bd1065d3f:0,20f9eae2990c1a90a20c695edbf1e600:677271720,526a222a9b0c1a90d5064072965ac656:0,d2c630f550c89a90864d0ed5183faa13:677271720,64e53c354dc89a90bfe28566ccdb6bfe:-741599903,7385b03589c89a90d2734136e287d416:-606891717,7b70fc3949889a905ccfe159f1df4526:0,728af3e134c09a9057b84863d313222e:-606891717,54f8bfadeb809a90bf215f8d77b8db69:0,9cb3971d2e84d690dcc2cc65498d55d0:-606891717,57715395f884d6908f514f5ed2886096:0,eee017916a84d6909c975aad6f57369b:0,f20ec319f244d690387f8796e084b3ad:-606891717,a26ec7593544d690e0f28de76b780c1c:0,ab3c7fecd2841290a7937b8d76a706ff:-606891717,1e3b5b9c56445e1046c71cb483f1a00f:0,5316d790b9c05e10807e69bd5c75041d:-606891717,dedbc3985f4c1e10255331e1b7c8cb64:0,b3898c8a63eb86545c512bbe4dec5022:-606891717,428918b9d9abc254555b7e7f5c230322:-606891717,89a077e90f27c2548b581b454abc9f58:-439445338,fafeabe51e27c2542b1bf563b243ce93:0,38d5671cdae74294f2e5d2fe0fa2ec59:-439445338,c78567d8a7e7429434dfa05f0770916a:0,80c4e7584be742945a55f73c5d998842:-439445338,16546b18a9e7429461a4ac8cf6db8475:0,7eb36f9455e74294a9eeff806f75a4cc:-439445338,c9cb475414274294ca22da95eca66933:0,254beca24cd74a1424710d2908ec953f:-439445338,e9385ed80bab0294f7feda4521b57120:0,254beca24cd74a1424710d2908ec953f:-439445338,1c64929016ab029452160c7ad0f71c8d:0,254beca24cd74a1424710d2908ec953f:-439445338,9d9392dc526b02943fd7371863f3ce92:0,ba56dd04546f0e54712e78b54f7545b2:-439445338,535ee0ee83d74a14b874feeed27f7e94:0,254beca24cd74a1424710d2908ec953f:-439445338,548b6ce277d74a1451962d97b783cd9a:0,08871c227d174a1465be7fbc964e58d5:-439445338,bae06ca698574a1440b09bcc7ed86028:0,08871c227d174a1465be7fbc964e58d5:-439445338,20cbdcaa97174a14249a4c51b998832e:0,08871c227d174a1465be7fbc964e58d5:-439445338,7f1850e2b9174a1432af58a039ef6201:0,6fc618eeccd34a14e828383f910dbb34:-439445338,bbe5546eccd34a14a1f4f663626b0a9b:0,57a11ce294d34a14bd5f0e80853aa4a1:-439445338,3e426a3dc31f8214e4753e3b66f5edd4:0,8b0bfeb2454b4a10c9043ce510f7c350:-439445338,27cea67ec7874a10ad70def61e35dbd7:0,ec8a894374fa8e10f226f7c7d0c5a3cb:-439445338,c85d65f074760a5068c44e925317949a:0,5252b2beebee4650bb282098e57023ab:-439445338,1ff4ae3e096e46502762c3e6883ebf10:0,e091e2b27e6e465043d7caf2d5194dff:0,92d06632c26e465044eca75dfb2a9691:0,647440dedc26ce10d8f50782fec08e10:-439445338,8139a38263ea029085bc828728a3a342:0,83dec30688e60290013f85de48a527f8:-439445338,503e27fd2eea0e10d5925c27a58a505f:-439445338,508ba6da457e86503acce6111975caff:-1348048964,ddcdb729d8c30210f7a069acd0cf9c3e:-1348048964</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-03-21 13:19:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>38ff04f6b71b4a008da6d02219ef8010</sys_id>
+        <sys_metadata>fbd1583977a3011061b80bbc3c5a99a4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>showVerticalCMetric2Health</sys_name>
+        <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
+        <sys_scope_delete display_value="">94cae931f87c423c81291c2bbd3a9864</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_fbd1583977a3011061b80bbc3c5a99a4</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_fbd1583977a3011061b80bbc3c5a99a4">e53b1de3fb946a50add3f65caeefdc74</sys_update_version>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-03-21 13:19:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

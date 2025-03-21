@@ -11,6 +11,11 @@
         <script><![CDATA[/**
  * Evaluates and returns an element or element_level2 value based on conditions.
  *
+ * This function determines whether to retrieve data from the daily or monthly frequency list
+ * based on the provided index `i`. If `i` is within the daily frequency range, the corresponding
+ * daily result is returned. If `i` exceeds the daily frequency length, the function calculates 
+ * an adjusted index `k` to retrieve the next available non-intersecting value from the monthly frequency.
+ *
  * @param {Object} params - The function parameters.
  * @param {Object} params.api - API object containing data and state.
  * @param {number} params.i - Index value provided.
@@ -18,55 +23,55 @@
  */
 function evaluateProperty({ api, i = 2 }) {
     const clientStateParameter = api.state.Tab11stBreakdown;
-    
-    // Get daily and monthly frequency arrays
+
+    // Get daily and monthly frequency lists
     const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;
     const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;
 
-    // Get lengths of daily and monthly results
-    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;
-    const monthlyLength = api.state.elementsDeploymentFrequencyMonthly.length;
+    // Get their lengths
+    const dailyLength = dailyFrequency.length;
+    const monthlyLength = monthlyFrequency.length;
 
+    // Step 1: Retrieve from daily frequency if i is within bounds
     if (i < dailyLength) {
-        // Retrieve from daily data
         const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];
         return clientStateParameter === ''
             ? dailyResult?.element.display_value
             : dailyResult?.element_level2.display_value;
     }
 
-    // Step 1: Generate intersection mask (1 for match, 0 for non-match)
+    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)
     const intersectionMask = monthlyFrequency.map(pis => dailyFrequency.includes(pis) ? 1 : 0);
 
-    // Step 2: Identify valid k indices (indices of non-matching elements)
+    // Step 3: Extract valid indices (only non-matching elements)
     const validKIndices = intersectionMask
-        .map((match, idx) => match === 0 ? idx : -1)
+        .map((match, idx) => (match === 0 ? idx : -1))
         .filter(idx => idx !== -1);
 
-    // Compute dynamic k for monthly retrieval
+    // Compute adjusted index k for non-intersecting monthly values
     const kIndex = i - dailyLength;
 
-    // Ensure kIndex stays within valid range
+    // Step 4: Ensure kIndex remains within valid indices
     if (kIndex < validKIndices.length) {
         const k = validKIndices[kIndex];
-
-        // Retrieve from monthly data using adjusted k
         const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];
+
         return clientStateParameter === ''
             ? monthlyResult?.element.display_value
             : monthlyResult?.element_level2.display_value;
     }
 
-    // If i exceeds both daily and monthly ranges, wait for further instructions
+    // Step 5: If i exceeds available data, return null (wait for instructions)
     return null;
-}]]></script>
+}
+]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2024-03-20 11:29:03</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>34ef64711bcd4a5cd9e4a755bd4bcb88</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>stylized_text_235/text</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -74,7 +79,7 @@ function evaluateProperty({ api, i = 2 }) {
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_34ef64711bcd4a5cd9e4a755bd4bcb88</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-20 09:15:45</sys_updated_on>
+        <sys_updated_on>2025-03-20 09:52:02</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>

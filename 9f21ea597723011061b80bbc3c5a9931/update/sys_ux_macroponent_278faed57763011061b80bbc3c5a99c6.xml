@@ -1692,22 +1692,6 @@
                                                             "broker": null
                                                         },
                                                         {
-                                                            "targetId": "clzwubnieeaabbggddjiiggokkxaaaccz",
-                                                            "type": "CLIENT_SCRIPT",
-                                                            "declarativeAction": null,
-                                                            "event": null,
-                                                            "operation": null,
-                                                            "clientScript": {
-                                                                "sysId": "fbd1583977a3011061b80bbc3c5a99a4",
-                                                                "payload": {
-                                                                    "type": "JSON_LITERAL",
-                                                                    "value": {}
-                                                                }
-                                                            },
-                                                            "conditional": null,
-                                                            "broker": null
-                                                        },
-                                                        {
                                                             "targetId": "cmccaafgobbjaacceetddjiiccftacchgjjii",
                                                             "type": "CLIENT_SCRIPT",
                                                             "declarativeAction": null,
@@ -1948,12 +1932,13 @@
                                 ],
                                 "propertyValues": {
                                     "text": {
-                                        "type": "STATE_BINDING",
-                                        "binding": {
-                                            "address": [
-                                                "elementsDeploymentFrequencyDaily",
-                                                "length"
-                                            ]
+                                        "type": "CLIENT_TRANSFORM_SCRIPT",
+                                        "script": {
+                                            "apiVersion": "2.0.0",
+                                            "controllerElementId": null,
+                                            "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.event\n * @param {any} params.imports\n * @param {ApiHelpers} params.helpers\n */\nfunction handler({\n    api\n}) {\n    var arr = [];\n    var results_daily = api.data.verticalC_headlinemetric2_daily.output.result;\n    var results_monthly = api.data.verticalC_headlinemetric2_monthly.output.result;\n\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get daily and monthly frequency lists\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get their lengths\n    const dailyLength = dailyFrequency.length;\n    const monthlyLength = monthlyFrequency.length;\n\n    for (let i = 0; i &lt; dailyLength; i++) {\n        arr.push('platinum');\n    }\n\n    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n    const zeroCount = intersectionMask.filter(value =&gt; value === 0).length;\n    for (let k = 0; k &lt; zeroCount; k++) {\n        arr.push('green');\n    }\n    \n    return arr;\n\n\n    // var clientStateParameter2 = 'verticalCMetric2ShowHealth';\n    // api.setState(clientStateParameter2, arr);\n}",
+                                            "scriptSysId": "8631d5e3fb546a50add3f65caeefdca3",
+                                            "target": null
                                         }
                                     },
                                     "tag": {
@@ -1992,88 +1977,7 @@
                                         "type": "STATE_BINDING",
                                         "binding": {
                                             "address": [
-                                                "elementsDeploymentFrequencyDaily"
-                                            ]
-                                        }
-                                    },
-                                    "tag": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "div"
-                                    },
-                                    "css": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "* { }"
-                                    },
-                                    "configAria": {
-                                        "type": "JSON_LITERAL",
-                                        "value": {}
-                                    }
-                                },
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "slot": null,
-                                "styles": null
-                            },
-                            {
-                                "definition": {
-                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementLabel": "Stylized text 276",
-                                "elementId": "stylized_text_276",
-                                "eventMappings": [
-                                    
-                                ],
-                                "propertyValues": {
-                                    "text": {
-                                        "type": "STATE_BINDING",
-                                        "binding": {
-                                            "address": [
-                                                "elementsDeploymentFrequencyMonthly",
-                                                "length"
-                                            ]
-                                        }
-                                    },
-                                    "tag": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "div"
-                                    },
-                                    "css": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "* { }"
-                                    },
-                                    "configAria": {
-                                        "type": "JSON_LITERAL",
-                                        "value": {}
-                                    }
-                                },
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "slot": null,
-                                "styles": null
-                            },
-                            {
-                                "definition": {
-                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementLabel": "Stylized text 277",
-                                "elementId": "stylized_text_277",
-                                "eventMappings": [
-                                    
-                                ],
-                                "propertyValues": {
-                                    "text": {
-                                        "type": "STATE_BINDING",
-                                        "binding": {
-                                            "address": [
-                                                "elementsDeploymentFrequencyMonthly"
+                                                "verticalCMetric2ShowHealth"
                                             ]
                                         }
                                     },
@@ -2135,14 +2039,6 @@
                                     },
                                     {
                                         "element_id": "stylized_text_275",
-                                        "styles": {}
-                                    },
-                                    {
-                                        "element_id": "stylized_text_276",
-                                        "styles": {}
-                                    },
-                                    {
-                                        "element_id": "stylized_text_277",
                                         "styles": {}
                                     }
                                 ],
@@ -21313,7 +21209,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 0 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n    \n    // Get daily and monthly frequency arrays\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get lengths of daily and monthly results\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n    const monthlyLength = api.state.elementsDeploymentFrequencyMonthly.length;\n\n    if (i &lt; dailyLength) {\n        // Retrieve from daily data\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 1: Generate intersection mask (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 2: Identify valid k indices (indices of non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; match === 0 ? idx : -1)\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute dynamic k for monthly retrieval\n    const kIndex = i - dailyLength;\n\n    // Ensure kIndex stays within valid range\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n\n        // Retrieve from monthly data using adjusted k\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // If i exceeds both daily and monthly ranges, wait for further instructions\n    return null;\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * This function determines whether to retrieve data from the daily or monthly frequency list\n * based on the provided index `i`. If `i` is within the daily frequency range, the corresponding\n * daily result is returned. If `i` exceeds the daily frequency length, the function calculates \n * an adjusted index `k` to retrieve the next available non-intersecting value from the monthly frequency.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 0 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get daily and monthly frequency lists\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get their lengths\n    const dailyLength = dailyFrequency.length;\n    const monthlyLength = monthlyFrequency.length;\n\n    // Step 1: Retrieve from daily frequency if i is within bounds\n    if (i &lt; dailyLength) {\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 3: Extract valid indices (only non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; (match === 0 ? idx : -1))\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute adjusted index k for non-intersecting monthly values\n    const kIndex = i - dailyLength;\n\n    // Step 4: Ensure kIndex remains within valid indices\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // Step 5: If i exceeds available data, return null (wait for instructions)\n    return null;\n}\n",
                                                                                                         "scriptSysId": "dfdfac311bcd4a5cd9e4a755bd4bcbd1",
                                                                                                         "target": null
                                                                                                     }
@@ -22146,7 +22042,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 1 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n    \n    // Get daily and monthly frequency arrays\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get lengths of daily and monthly results\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n    const monthlyLength = api.state.elementsDeploymentFrequencyMonthly.length;\n\n    if (i &lt; dailyLength) {\n        // Retrieve from daily data\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 1: Generate intersection mask (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 2: Identify valid k indices (indices of non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; match === 0 ? idx : -1)\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute dynamic k for monthly retrieval\n    const kIndex = i - dailyLength;\n\n    // Ensure kIndex stays within valid range\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n\n        // Retrieve from monthly data using adjusted k\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // If i exceeds both daily and monthly ranges, wait for further instructions\n    return null;\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * This function determines whether to retrieve data from the daily or monthly frequency list\n * based on the provided index `i`. If `i` is within the daily frequency range, the corresponding\n * daily result is returned. If `i` exceeds the daily frequency length, the function calculates \n * an adjusted index `k` to retrieve the next available non-intersecting value from the monthly frequency.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 1 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get daily and monthly frequency lists\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get their lengths\n    const dailyLength = dailyFrequency.length;\n    const monthlyLength = monthlyFrequency.length;\n\n    // Step 1: Retrieve from daily frequency if i is within bounds\n    if (i &lt; dailyLength) {\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 3: Extract valid indices (only non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; (match === 0 ? idx : -1))\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute adjusted index k for non-intersecting monthly values\n    const kIndex = i - dailyLength;\n\n    // Step 4: Ensure kIndex remains within valid indices\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // Step 5: If i exceeds available data, return null (wait for instructions)\n    return null;\n}\n",
                                                                                                         "scriptSysId": "c4efa0711bcd4a5cd9e4a755bd4bcbb5",
                                                                                                         "target": null
                                                                                                     }
@@ -22979,7 +22875,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 2 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n    \n    // Get daily and monthly frequency arrays\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get lengths of daily and monthly results\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n    const monthlyLength = api.state.elementsDeploymentFrequencyMonthly.length;\n\n    if (i &lt; dailyLength) {\n        // Retrieve from daily data\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 1: Generate intersection mask (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 2: Identify valid k indices (indices of non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; match === 0 ? idx : -1)\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute dynamic k for monthly retrieval\n    const kIndex = i - dailyLength;\n\n    // Ensure kIndex stays within valid range\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n\n        // Retrieve from monthly data using adjusted k\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // If i exceeds both daily and monthly ranges, wait for further instructions\n    return null;\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * This function determines whether to retrieve data from the daily or monthly frequency list\n * based on the provided index `i`. If `i` is within the daily frequency range, the corresponding\n * daily result is returned. If `i` exceeds the daily frequency length, the function calculates \n * an adjusted index `k` to retrieve the next available non-intersecting value from the monthly frequency.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 2 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get daily and monthly frequency lists\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get their lengths\n    const dailyLength = dailyFrequency.length;\n    const monthlyLength = monthlyFrequency.length;\n\n    // Step 1: Retrieve from daily frequency if i is within bounds\n    if (i &lt; dailyLength) {\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 3: Extract valid indices (only non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; (match === 0 ? idx : -1))\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute adjusted index k for non-intersecting monthly values\n    const kIndex = i - dailyLength;\n\n    // Step 4: Ensure kIndex remains within valid indices\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // Step 5: If i exceeds available data, return null (wait for instructions)\n    return null;\n}\n",
                                                                                                         "scriptSysId": "34ef64711bcd4a5cd9e4a755bd4bcb88",
                                                                                                         "target": null
                                                                                                     }
@@ -23812,7 +23708,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 3 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n    \n    // Get daily and monthly frequency arrays\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get lengths of daily and monthly results\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n    const monthlyLength = api.state.elementsDeploymentFrequencyMonthly.length;\n\n    if (i &lt; dailyLength) {\n        // Retrieve from daily data\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 1: Generate intersection mask (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 2: Identify valid k indices (indices of non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; match === 0 ? idx : -1)\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute dynamic k for monthly retrieval\n    const kIndex = i - dailyLength;\n\n    // Ensure kIndex stays within valid range\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n\n        // Retrieve from monthly data using adjusted k\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // If i exceeds both daily and monthly ranges, wait for further instructions\n    return null;\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * This function determines whether to retrieve data from the daily or monthly frequency list\n * based on the provided index `i`. If `i` is within the daily frequency range, the corresponding\n * daily result is returned. If `i` exceeds the daily frequency length, the function calculates \n * an adjusted index `k` to retrieve the next available non-intersecting value from the monthly frequency.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 3 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get daily and monthly frequency lists\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get their lengths\n    const dailyLength = dailyFrequency.length;\n    const monthlyLength = monthlyFrequency.length;\n\n    // Step 1: Retrieve from daily frequency if i is within bounds\n    if (i &lt; dailyLength) {\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 3: Extract valid indices (only non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; (match === 0 ? idx : -1))\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute adjusted index k for non-intersecting monthly values\n    const kIndex = i - dailyLength;\n\n    // Step 4: Ensure kIndex remains within valid indices\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // Step 5: If i exceeds available data, return null (wait for instructions)\n    return null;\n}\n",
                                                                                                         "scriptSysId": "e9ef28711bcd4a5cd9e4a755bd4bcb68",
                                                                                                         "target": null
                                                                                                     }
@@ -24645,7 +24541,7 @@
                                                                                                     "script": {
                                                                                                         "apiVersion": "2.0.0",
                                                                                                         "controllerElementId": null,
-                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 4 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n    \n    // Get daily and monthly frequency arrays\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get lengths of daily and monthly results\n    const dailyLength = api.state.elementsDeploymentFrequencyDaily.length;\n    const monthlyLength = api.state.elementsDeploymentFrequencyMonthly.length;\n\n    if (i &lt; dailyLength) {\n        // Retrieve from daily data\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 1: Generate intersection mask (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 2: Identify valid k indices (indices of non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; match === 0 ? idx : -1)\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute dynamic k for monthly retrieval\n    const kIndex = i - dailyLength;\n\n    // Ensure kIndex stays within valid range\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n\n        // Retrieve from monthly data using adjusted k\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // If i exceeds both daily and monthly ranges, wait for further instructions\n    return null;\n}",
+                                                                                                        "inlineScript": "/**\n * Evaluates and returns an element or element_level2 value based on conditions.\n *\n * This function determines whether to retrieve data from the daily or monthly frequency list\n * based on the provided index `i`. If `i` is within the daily frequency range, the corresponding\n * daily result is returned. If `i` exceeds the daily frequency length, the function calculates \n * an adjusted index `k` to retrieve the next available non-intersecting value from the monthly frequency.\n *\n * @param {Object} params - The function parameters.\n * @param {Object} params.api - API object containing data and state.\n * @param {number} params.i - Index value provided.\n * @returns {string|null} - The corresponding element or element_level2 value, or null if waiting for instructions.\n */\nfunction evaluateProperty({ api, i = 4 }) {\n    const clientStateParameter = api.state.Tab11stBreakdown;\n\n    // Get daily and monthly frequency lists\n    const dailyFrequency = api.state.elementsDeploymentFrequencyDaily;\n    const monthlyFrequency = api.state.elementsDeploymentFrequencyMonthly;\n\n    // Get their lengths\n    const dailyLength = dailyFrequency.length;\n    const monthlyLength = monthlyFrequency.length;\n\n    // Step 1: Retrieve from daily frequency if i is within bounds\n    if (i &lt; dailyLength) {\n        const dailyResult = api.data.verticalC_headlinemetric2_daily.output.result[i];\n        return clientStateParameter === ''\n            ? dailyResult?.element.display_value\n            : dailyResult?.element_level2.display_value;\n    }\n\n    // Step 2: Generate a mask marking intersections (1 for match, 0 for non-match)\n    const intersectionMask = monthlyFrequency.map(pis =&gt; dailyFrequency.includes(pis) ? 1 : 0);\n\n    // Step 3: Extract valid indices (only non-matching elements)\n    const validKIndices = intersectionMask\n        .map((match, idx) =&gt; (match === 0 ? idx : -1))\n        .filter(idx =&gt; idx !== -1);\n\n    // Compute adjusted index k for non-intersecting monthly values\n    const kIndex = i - dailyLength;\n\n    // Step 4: Ensure kIndex remains within valid indices\n    if (kIndex &lt; validKIndices.length) {\n        const k = validKIndices[kIndex];\n        const monthlyResult = api.data.verticalC_headlinemetric2_monthly.output.result[k];\n\n        return clientStateParameter === ''\n            ? monthlyResult?.element.display_value\n            : monthlyResult?.element_level2.display_value;\n    }\n\n    // Step 5: If i exceeds available data, return null (wait for instructions)\n    return null;\n}\n",
                                                                                                         "scriptSysId": "9eef2c711bcd4a5cd9e4a755bd4bcbcb",
                                                                                                         "target": null
                                                                                                     }
@@ -31495,18 +31391,6 @@
                 "sourceEventSysId": null,
                 "targets": [
                     {
-                        "broker": null,
-                        "clientScript": {
-                            "sysId": "fbd1583977a3011061b80bbc3c5a99a4"
-                        },
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": null,
-                        "targetId": "cltxffjffaggaabbplddjhhwcsepsyap",
-                        "type": "CLIENT_SCRIPT"
-                    },
-                    {
                         "targetId": "clubnwsfeaabbhcddjhhqyhheeffdwus",
                         "type": "CLIENT_SCRIPT",
                         "declarativeAction": null,
@@ -32385,24 +32269,6 @@
         "fieldType": "string",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": [
-                "colour1",
-                "colour2",
-                "colour3",
-                "colour4",
-                "colour5"
-            ]
-        },
-        "label": "verticalCMetric2ShowHealth",
-        "name": "verticalCMetric2ShowHealth",
-        "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": "",
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
             "value": "amber"
         },
         "label": "verticalDMetric1ShowHealth",
@@ -32574,24 +32440,6 @@
         "name": "Tab1VCM1SortDirection",
         "shape": "",
         "valueType": "string"
-    },
-    {
-        "description": "",
-        "fieldType": "json",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": [
-                "colour1",
-                "colour2",
-                "colour3",
-                "colour4",
-                "colour5"
-            ]
-        },
-        "label": "verticalCMetric2ShowHealth",
-        "name": "verticalCMetric2ShowHealth",
-        "shape": "",
-        "valueType": "json"
     },
     {
         "description": "",
@@ -32792,8 +32640,7 @@
                 "element3",
                 "element1",
                 "element4",
-                "element2",
-                "element5"
+                "element2"
             ]
         },
         "name": "elementsDeploymentFrequencyMonthly",
@@ -32806,7 +32653,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1243</sys_mod_count>
+        <sys_mod_count>1256</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32814,7 +32661,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-20 09:24:49</sys_updated_on>
+        <sys_updated_on>2025-03-21 13:19:07</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
