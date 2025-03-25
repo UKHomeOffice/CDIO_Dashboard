@@ -23,7 +23,7 @@ function handler({api, clientStateParameter = 'elementsDeploymentFrequencyDaily'
     var dailyResults = api.data.verticalC_headlinemetric2_daily?.output?.result || [];
     
     dailyResults.forEach((item) => {
-        if (item?.value >= 6 && item?.value !== null) {
+        if (item?.value >= 2 && item?.value !== null) {
             elementsList.push(clientStateParameter1 === '' 
                 ? item.element.display_value 
                 : item.element_level2.display_value
@@ -43,7 +43,7 @@ function handler({api, clientStateParameter = 'elementsDeploymentFrequencyDaily'
         <sys_created_on>2025-03-19 10:03:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd7b6236fb9ca25028c2f063aeefdc3f</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>elementsDeploymentFrequencyDaily</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -51,7 +51,7 @@ function handler({api, clientStateParameter = 'elementsDeploymentFrequencyDaily'
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_cd7b6236fb9ca25028c2f063aeefdc3f</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-25 11:36:07</sys_updated_on>
+        <sys_updated_on>2025-03-25 12:57:52</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
