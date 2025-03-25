@@ -17,13 +17,17 @@
 */
 function handler({api, clientStateParameter = 'elementsDeploymentFrequencyMonthly'}) {
     var elementsList = [];
-
-    // Iterate over dailyfrequency results
-    var dailyResults = api.data.verticalC_headlinemetric2_monthly?.output?.result || [];
+    var clientStateParameter1 = api.state.Tab11stBreakdown;
     
-    dailyResults.forEach((item) => {
+    // Iterate over dailyfrequency results
+    var monthlyResults = api.data.verticalC_headlinemetric2_monthly?.output?.result || [];
+    
+    monthlyResults.forEach((item) => {
         if (item?.value >= 10 && item?.value !== null) {
-            elementsList.push(item.element.display_value);
+            elementsList.push(clientStateParameter1 === '' 
+                ? item.element.display_value 
+                : item.element_level2.display_value
+            );
         }
     });
 
@@ -39,7 +43,7 @@ function handler({api, clientStateParameter = 'elementsDeploymentFrequencyMonthl
         <sys_created_on>2025-03-19 11:06:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>417b6236fb9ca25028c2f063aeefdc40</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>elementsDeploymentFrequencyMonthly</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -47,7 +51,7 @@ function handler({api, clientStateParameter = 'elementsDeploymentFrequencyMonthl
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_client_script_417b6236fb9ca25028c2f063aeefdc40</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-19 11:06:53</sys_updated_on>
+        <sys_updated_on>2025-03-25 11:46:41</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

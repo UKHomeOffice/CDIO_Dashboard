@@ -1967,6 +1967,46 @@
                                     "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                     "type": "MACROPONENT"
                                 },
+                                "elementLabel": "Stylized text 276",
+                                "elementId": "stylized_text_276",
+                                "eventMappings": [
+                                    
+                                ],
+                                "propertyValues": {
+                                    "text": {
+                                        "type": "STATE_BINDING",
+                                        "binding": {
+                                            "address": [
+                                                "elementsDeploymentFrequencyMonthly"
+                                            ]
+                                        }
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "div"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { }"
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    }
+                                },
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
                                 "elementLabel": "Stylized text 275",
                                 "elementId": "stylized_text_275",
                                 "eventMappings": [
@@ -2035,6 +2075,10 @@
                                     },
                                     {
                                         "element_id": "stylized_text_274",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_276",
                                         "styles": {}
                                     },
                                     {
@@ -32653,7 +32697,7 @@
         <sys_created_on>2022-05-18 05:22:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>278faed57763011061b80bbc3c5a99c6</sys_id>
-        <sys_mod_count>1256</sys_mod_count>
+        <sys_mod_count>1263</sys_mod_count>
         <sys_name>HO Product Performance Table default</sys_name>
         <sys_package display_value="CIO Dashboard" source="sn_ciodashboard">9f21ea597723011061b80bbc3c5a9931</sys_package>
         <sys_policy/>
@@ -32661,7 +32705,7 @@
         <sys_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</sys_scope>
         <sys_update_name>sys_ux_macroponent_278faed57763011061b80bbc3c5a99c6</sys_update_name>
         <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-03-21 13:19:07</sys_updated_on>
+        <sys_updated_on>2025-03-25 11:47:14</sys_updated_on>
     </sys_ux_macroponent>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CIO Dashboard">9f21ea597723011061b80bbc3c5a9931</claim_owner_scope>
